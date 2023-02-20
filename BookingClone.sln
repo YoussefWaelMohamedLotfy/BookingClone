@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{257657F0-3DB3-4F6A-9BB3-9E65F9B246E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{3C84AFD2-ECAC-4AF1-9AC2-DF1C7B080316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.API", "src\Services\BookingClone.API\BookingClone.API.csproj", "{FDD497A3-CB4A-4367-B9D2-28233489B8F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDD497A3-CB4A-4367-B9D2-28233489B8F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD497A3-CB4A-4367-B9D2-28233489B8F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD497A3-CB4A-4367-B9D2-28233489B8F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD497A3-CB4A-4367-B9D2-28233489B8F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED} = {257657F0-3DB3-4F6A-9BB3-9E65F9B246E4}
+		{3C84AFD2-ECAC-4AF1-9AC2-DF1C7B080316} = {257657F0-3DB3-4F6A-9BB3-9E65F9B246E4}
+		{FDD497A3-CB4A-4367-B9D2-28233489B8F6} = {7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {17F51297-E6A6-4297-822A-0106E461DB95}
+	EndGlobalSection
+EndGlobal
