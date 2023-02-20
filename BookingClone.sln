@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.API", "src\Ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.Domain", "src\Services\BookingClone.Domain\BookingClone.Domain.csproj", "{2E758023-793C-4581-8DDE-8AAD18DD2946}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.Infrastructure", "src\Services\BookingClone.Infrastructure\BookingClone.Infrastructure.csproj", "{00067696-3FD0-4764-B828-3243AB8B24C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2E758023-793C-4581-8DDE-8AAD18DD2946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E758023-793C-4581-8DDE-8AAD18DD2946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E758023-793C-4581-8DDE-8AAD18DD2946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00067696-3FD0-4764-B828-3243AB8B24C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00067696-3FD0-4764-B828-3243AB8B24C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00067696-3FD0-4764-B828-3243AB8B24C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00067696-3FD0-4764-B828-3243AB8B24C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 		{3C84AFD2-ECAC-4AF1-9AC2-DF1C7B080316} = {257657F0-3DB3-4F6A-9BB3-9E65F9B246E4}
 		{FDD497A3-CB4A-4367-B9D2-28233489B8F6} = {7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}
 		{2E758023-793C-4581-8DDE-8AAD18DD2946} = {7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}
+		{00067696-3FD0-4764-B828-3243AB8B24C3} = {7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17F51297-E6A6-4297-822A-0106E461DB95}

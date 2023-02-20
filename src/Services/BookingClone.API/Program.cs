@@ -1,6 +1,14 @@
+using BookingClone.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<BookingDbContext>(o =>
+{
+    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
+});
 
 builder.Services.AddControllers();
 

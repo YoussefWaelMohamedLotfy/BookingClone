@@ -3,7 +3,7 @@
 public sealed class CityHotel
 {
     public int CityID { get; set; }
-    
+
     public int HotelID { get; set; }
 
     public City City { get; set; }
