@@ -4,4 +4,4 @@
 
 - Backend (ASP.NET Web API)
 - Admin Dashboard (Angular)
-- Platform (ASP.NET MVC)
+- Main Platform (ASP.NET MVC)
