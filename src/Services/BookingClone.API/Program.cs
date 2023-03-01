@@ -1,11 +1,13 @@
 using BookingClone.API.Extensions;
+using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddApplicationServices();
 
 builder.Services.AddDbContext<BookingDbContext>(o =>
 {
