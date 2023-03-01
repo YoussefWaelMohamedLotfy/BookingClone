@@ -3,6 +3,7 @@ using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Serilog;
 using System.Reflection;
 
@@ -18,8 +19,29 @@ builder.Services.AddDbContext<BookingDbContext>(o =>
 {
     o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
 });
-
 builder.Services.AddControllers();
+
+builder.Services.AddHealthChecks()
+    .AddSqlServer(
+        builder.Configuration.GetConnectionString("SqlServerConnection")!,
+        name: "SQL Server Connection Check",
+        failureStatus: HealthStatus.Degraded,
+        tags: new[] { "ready" })
+    //.AddRedis(
+    //    builder.Configuration.GetConnectionString("RedisConnection")!,
+    //    name: "Redis Cache Connection Check",
+    //    failureStatus: HealthStatus.Degraded,
+    //    tags: new[] { "ready" })
+    .AddDbContextCheck<BookingDbContext>(
+        "BookingDbContext EF Core Check",
+        failureStatus: HealthStatus.Degraded,
+        tags: new[] { "ready" })
+    .AddUrlGroup(
+        new Uri("https://www.google.com"),
+        name: "External URL Check",
+        failureStatus: HealthStatus.Degraded,
+        timeout: TimeSpan.FromSeconds(10),
+        tags: new[] { "live" });
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
@@ -48,5 +70,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapCustomHealthChecks();
 
 app.Run();
