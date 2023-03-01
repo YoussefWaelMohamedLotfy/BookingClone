@@ -10,11 +10,12 @@ public static class HealthCheckExtension
     {
         endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions()
         {
-            ResultStatusCodes = {
+            ResultStatusCodes =
+            {
                     [HealthStatus.Healthy] = StatusCodes.Status200OK,
                     [HealthStatus.Degraded] = StatusCodes.Status503ServiceUnavailable,
                     [HealthStatus.Unhealthy] = StatusCodes.Status500InternalServerError,
-                },
+            },
             ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse,
             Predicate = (check) => check.Tags.Contains("ready"),
             AllowCachingResponses = false

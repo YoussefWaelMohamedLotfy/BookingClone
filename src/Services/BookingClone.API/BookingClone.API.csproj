@@ -30,8 +30,4 @@
         <ProjectReference Include="..\BookingClone.Application\BookingClone.Application.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <Folder Include="NewFolder\" />
-    </ItemGroup>
-
 </Project>

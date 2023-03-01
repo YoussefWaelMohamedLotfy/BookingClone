@@ -1,3 +1,5 @@
+using System.Reflection;
+using System.Threading.RateLimiting;
 using BookingClone.API.Extensions;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
@@ -5,8 +7,6 @@ using BookingClone.Serilog;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Serilog;
-using System.Reflection;
-using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +21,12 @@ builder.Services.AddDbContext<BookingDbContext>(o =>
     o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
 });
 
+//builder.Services.AddStackExchangeRedisCache(o =>
+//{
+//    o.Configuration = builder.Configuration.GetConnectionString("RedisConnection");
+//    //o.ConfigurationOptions = new() { AbortOnConnectFail = false };
+//});
+
 builder.Services.AddControllers();
 
 builder.Services.AddRateLimiter(options =>
@@ -31,7 +37,7 @@ builder.Services.AddRateLimiter(options =>
 
         if (context.Lease.TryGetMetadata(MetadataName.RetryAfter, out var retryAfter))
         {
-            await context.HttpContext.Response.WriteAsync($"Too many requests. Please try again after {retryAfter.TotalMinutes} minute(s).", token);
+            await context.HttpContext.Response.WriteAsync($"Too many requests. Please try again after {retryAfter.TotalSeconds} seconds.", token);
         }
         else
         {
@@ -45,7 +51,7 @@ builder.Services.AddRateLimiter(options =>
             factory: partition => new FixedWindowRateLimiterOptions
             {
                 AutoReplenishment = true,
-                PermitLimit = 10,
+                PermitLimit = 30,
                 QueueLimit = 0,
                 Window = TimeSpan.FromMinutes(1)
             }));
@@ -86,10 +92,8 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
 {
-    app.MigrateDatabase<BookingDbContext>((context, services) =>
-    {
-        context.Seed(services.GetRequiredService<ILogger<BookingDbContext>>());
-    });
+    app.MigrateDatabase<BookingDbContext>((context, services)
+        => context.Seed(services.GetRequiredService<ILogger<BookingDbContext>>()));
 
     app.UseSwagger();
     app.UseSwaggerUI();
