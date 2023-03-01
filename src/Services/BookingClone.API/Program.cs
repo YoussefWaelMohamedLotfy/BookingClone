@@ -1,5 +1,7 @@
+using BookingClone.API.Extensions;
 using BookingClone.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,8 +20,13 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
 {
+    app.MigrateDatabase<BookingDbContext>((context, services) =>
+    {
+        context.Seed(services.GetRequiredService<ILogger<BookingDbContext>>());
+    });
+
     app.UseSwagger();
     app.UseSwaggerUI();
 }
