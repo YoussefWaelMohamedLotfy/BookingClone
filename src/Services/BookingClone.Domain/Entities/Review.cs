@@ -1,8 +1,8 @@
-﻿namespace BookingClone.Domain.Entities;
+﻿using BookingClone.Domain.Common;
 
-public abstract class Review
+namespace BookingClone.Domain.Entities;
+
+public abstract class Review : BaseEntity<int>
 {
-    public int ID { get; set; }
-
     public DateTimeOffset ReviewDate { get; set; }
 }

@@ -1,11 +1,10 @@
-﻿using BookingClone.Domain.Enums;
+﻿using BookingClone.Domain.Common;
+using BookingClone.Domain.Enums;
 
 namespace BookingClone.Domain.Entities;
 
-public sealed class Room
+public sealed class Room : BaseEntity<int>
 {
-    public int ID { get; set; }
-
     public string RoomNumber { get; set; }
 
     public string Description { get; set; }

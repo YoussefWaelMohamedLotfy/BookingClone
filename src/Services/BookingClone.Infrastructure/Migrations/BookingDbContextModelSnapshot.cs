@@ -63,7 +63,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("CityID");
 
-                    b.ToTable("Attractions");
+                    b.ToTable("Attractions", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.City", b =>
@@ -86,7 +86,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("CountryID");
 
-                    b.ToTable("Cities");
+                    b.ToTable("Cities", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.CityHotel", b =>
@@ -106,7 +106,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("HotelID");
 
-                    b.ToTable("CityHotels");
+                    b.ToTable("CityHotels", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Continent", b =>
@@ -124,7 +124,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Continents");
+                    b.ToTable("Continents", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Country", b =>
@@ -147,7 +147,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("ContinentID");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Countries", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Hotel", b =>
@@ -174,7 +174,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Hotels");
+                    b.ToTable("Hotels", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Reservation", b =>
@@ -215,7 +215,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("AttractionReservationID");
 
-                    b.ToTable("ReservedAttractions");
+                    b.ToTable("ReservedAttractions", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.ReservedRoom", b =>
@@ -233,7 +233,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("RoomReservationID");
 
-                    b.ToTable("ReservedRooms");
+                    b.ToTable("ReservedRooms", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Review", b =>
@@ -293,7 +293,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("HotelID");
 
-                    b.ToTable("Rooms");
+                    b.ToTable("Rooms", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.AttractionReservation", b =>
@@ -303,7 +303,7 @@ namespace BookingClone.Infrastructure.Migrations
                     b.Property<DateTimeOffset>("TourStart")
                         .HasColumnType("datetimeoffset");
 
-                    b.ToTable("AttractionReservations");
+                    b.ToTable("AttractionReservations", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.RoomReservation", b =>
@@ -316,7 +316,7 @@ namespace BookingClone.Infrastructure.Migrations
                     b.Property<DateTimeOffset>("CheckOut")
                         .HasColumnType("datetimeoffset");
 
-                    b.ToTable("RoomReservations");
+                    b.ToTable("RoomReservations", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.AttractionReview", b =>
@@ -333,7 +333,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("AttractionID");
 
-                    b.ToTable("AttractionReviews");
+                    b.ToTable("AttractionReviews", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.HotelReview", b =>
@@ -377,7 +377,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("HotelID");
 
-                    b.ToTable("HotelReviews");
+                    b.ToTable("HotelReviews", (string)null);
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Attraction", b =>

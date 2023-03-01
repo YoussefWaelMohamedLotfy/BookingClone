@@ -1,11 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BookingClone.Domain.Common;
 
 namespace BookingClone.Domain.Entities;
 
-public sealed class Attraction
+public sealed class Attraction : BaseEntity<int>
 {
-    public int ID { get; set; }
-
     public string Name { get; set; }
 
     public string Description { get; set; }

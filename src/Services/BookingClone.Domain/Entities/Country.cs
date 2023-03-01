@@ -1,9 +1,9 @@
-﻿namespace BookingClone.Domain.Entities;
+﻿using BookingClone.Domain.Common;
 
-public sealed class Country
+namespace BookingClone.Domain.Entities;
+
+public sealed class Country : BaseEntity<int>
 {
-    public int ID { get; set; }
-
     public string Name { get; set; }
 
     public Continent Continent { get; set; }

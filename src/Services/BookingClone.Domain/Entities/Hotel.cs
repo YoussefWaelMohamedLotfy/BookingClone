@@ -1,9 +1,9 @@
-﻿namespace BookingClone.Domain.Entities;
+﻿using BookingClone.Domain.Common;
 
-public sealed class Hotel
+namespace BookingClone.Domain.Entities;
+
+public sealed class Hotel : BaseEntity<int>
 {
-    public int ID { get; set; }
-
     public string Name { get; set; }
 
     public string Description { get; set; }
