@@ -1,10 +1,11 @@
-﻿using BookingClone.Domain.Contracts;
+﻿using BookingClone.Domain.Common;
+using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookingClone.Infrastructure.Repositories;
 
-internal class GenericRepository<TEntity, TId> : IGenericRepository<TEntity, TId> where TEntity : class
+internal class GenericRepository<TEntity, TId> : IGenericRepository<TEntity, TId> where TEntity : BaseEntity<TId>
 {
     private readonly BookingDbContext _context;
     protected readonly DbSet<TEntity> _db;
@@ -30,10 +31,8 @@ internal class GenericRepository<TEntity, TId> : IGenericRepository<TEntity, TId
         return entity;
     }
 
-    public void Delete(TEntity entity)
-    {
-        _db.Remove(entity);
-    }
+    public async Task<int> Delete(TId id)
+        => await _db.Where(x => x.ID!.Equals(id)).ExecuteDeleteAsync();
 
     public async Task<int> SaveAsync(CancellationToken ct = default)
         => await _context.SaveChangesAsync(ct);

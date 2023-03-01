@@ -4,7 +4,6 @@ using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using Swashbuckle.AspNetCore.Swagger;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
