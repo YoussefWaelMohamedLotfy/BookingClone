@@ -1,4 +1,5 @@
 ﻿using BookingClone.Domain.Entities;
+using BookingClone.Infrastructure.Conventions;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -28,7 +29,21 @@ public sealed class BookingDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        foreach (var property in modelBuilder.Model.GetEntityTypes()
+            .SelectMany(t => t.GetProperties())
+            .Where(p => (Nullable.GetUnderlyingType(p.ClrType) ?? p.ClrType) == typeof(decimal)))
+        {
+            property.SetPrecision(18);
+            property.SetScale(2);
+        }
+
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         base.OnModelCreating(modelBuilder);
+    }
+
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+    {
+        configurationBuilder.Conventions.Add(_ => new StringMaxLengthConvention(90));
+        base.ConfigureConventions(configurationBuilder);
     }
 }

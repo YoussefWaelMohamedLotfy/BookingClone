@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookingClone.Infrastructure.Migrations
 {
     [DbContext(typeof(BookingDbContext))]
-    [Migration("20230301113950_InitialMigration")]
+    [Migration("20230301124433_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -45,17 +45,21 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<string>("Duration")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<decimal>("TicketPrice")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
@@ -78,7 +82,8 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.HasKey("ID");
 
@@ -97,7 +102,8 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Address")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.HasKey("CityID", "HotelID");
 
@@ -116,7 +122,8 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.HasKey("ID");
 
@@ -136,7 +143,8 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.HasKey("ID");
 
@@ -155,13 +163,16 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<decimal>("StarRating")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
@@ -182,6 +193,7 @@ namespace BookingClone.Infrastructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("TotalCost")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ID");
@@ -259,7 +271,8 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<int>("HotelID")
                         .HasColumnType("int");
@@ -268,11 +281,13 @@ namespace BookingClone.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("RoomNumber")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<int>("ViewType")
                         .HasColumnType("int");
@@ -316,7 +331,8 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.Property<string>("Comment")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.HasIndex("AttractionID");
 
@@ -328,30 +344,38 @@ namespace BookingClone.Infrastructure.Migrations
                     b.HasBaseType("BookingClone.Domain.Entities.Review");
 
                     b.Property<decimal>("CleanlinessRate")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("ComfortRate")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("FacilitiesRate")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("HotelID")
                         .HasColumnType("int");
 
                     b.Property<decimal>("LocationRate")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("NegativeReview")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<string>("PositiveReview")
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(90)
+                        .HasColumnType("nvarchar(90)");
 
                     b.Property<decimal>("StaffRate")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("ValueForMoneyRate")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasIndex("HotelID");

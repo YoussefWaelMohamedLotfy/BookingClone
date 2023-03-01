@@ -22,7 +22,7 @@ namespace BookingClone.Infrastructure.Migrations
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReservationSequence]"),
-                    TotalCost = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    TotalCost = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     TourStart = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
                 },
@@ -37,7 +37,7 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -50,9 +50,9 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StarRating = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
+                    Name = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
+                    StarRating = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -64,7 +64,7 @@ namespace BookingClone.Infrastructure.Migrations
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReservationSequence]"),
-                    TotalCost = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    TotalCost = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
                     CheckIn = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
                     CheckOut = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
@@ -80,7 +80,7 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
                     ContinentID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -100,14 +100,14 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReviewSequence]"),
                     ReviewDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    PositiveReview = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NegativeReview = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ComfortRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    StaffRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    FacilitiesRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    ValueForMoneyRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    CleanlinessRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    LocationRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    PositiveReview = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: true),
+                    NegativeReview = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: true),
+                    ComfortRate = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    StaffRate = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    FacilitiesRate = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    ValueForMoneyRate = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    CleanlinessRate = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    LocationRate = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
                     HotelID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -127,12 +127,12 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    RoomNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    RoomNumber = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
                     IsAvailable = table.Column<bool>(type: "bit", nullable: false),
                     BedCount = table.Column<int>(type: "int", nullable: false),
                     ViewType = table.Column<int>(type: "int", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
                     HotelID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -152,7 +152,7 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
                     CountryID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -197,11 +197,11 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
                     AvailableTickets = table.Column<int>(type: "int", nullable: false),
-                    TicketPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Duration = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TicketPrice = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    Duration = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
                     CityID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -221,7 +221,7 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     CityID = table.Column<int>(type: "int", nullable: false),
                     HotelID = table.Column<int>(type: "int", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Address = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false)
                 },
                 constraints: table =>
                 {
@@ -246,7 +246,7 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReviewSequence]"),
                     ReviewDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    Comment = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Comment = table.Column<string>(type: "nvarchar(90)", maxLength: 90, nullable: false),
                     AttractionID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
