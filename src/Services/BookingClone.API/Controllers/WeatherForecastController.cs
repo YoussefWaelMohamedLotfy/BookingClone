@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingClone.API.Controllers;
+
 [ApiController]
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
@@ -17,6 +18,10 @@ public class WeatherForecastController : ControllerBase
         _logger = logger;
     }
 
+    /// <summary>
+    /// Gets Random forecasts
+    /// </summary>
+    /// <returns></returns>
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
