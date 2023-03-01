@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingClone.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.Application", "src\Services\BookingClone.Application\BookingClone.Application.csproj", "{B3EFA2BF-1999-4E44-A8CB-2000484DCC30}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{66A1E9A2-E2BC-42C9-A3C9-F352278CEED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.Serilog", "src\Common\BookingClone.Serilog\BookingClone.Serilog.csproj", "{845E00A0-FE3C-40CE-865C-36FFFE9DE1D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{B3EFA2BF-1999-4E44-A8CB-2000484DCC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3EFA2BF-1999-4E44-A8CB-2000484DCC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3EFA2BF-1999-4E44-A8CB-2000484DCC30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845E00A0-FE3C-40CE-865C-36FFFE9DE1D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845E00A0-FE3C-40CE-865C-36FFFE9DE1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845E00A0-FE3C-40CE-865C-36FFFE9DE1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845E00A0-FE3C-40CE-865C-36FFFE9DE1D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +58,8 @@ Global
 		{2E758023-793C-4581-8DDE-8AAD18DD2946} = {7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}
 		{00067696-3FD0-4764-B828-3243AB8B24C3} = {7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}
 		{B3EFA2BF-1999-4E44-A8CB-2000484DCC30} = {7344AAC3-6D55-44D8-A8DE-AC6B22F2B1ED}
+		{66A1E9A2-E2BC-42C9-A3C9-F352278CEED4} = {257657F0-3DB3-4F6A-9BB3-9E65F9B246E4}
+		{845E00A0-FE3C-40CE-865C-36FFFE9DE1D1} = {66A1E9A2-E2BC-42C9-A3C9-F352278CEED4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17F51297-E6A6-4297-822A-0106E461DB95}

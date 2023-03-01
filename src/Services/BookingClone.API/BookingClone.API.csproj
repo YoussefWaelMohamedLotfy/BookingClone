@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Common\BookingClone.Serilog\BookingClone.Serilog.csproj" />
     <ProjectReference Include="..\BookingClone.Application\BookingClone.Application.csproj" />
   </ItemGroup>
 

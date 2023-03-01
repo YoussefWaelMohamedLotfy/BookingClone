@@ -1,9 +1,13 @@
 using BookingClone.API.Extensions;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
+using BookingClone.Serilog;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
 
