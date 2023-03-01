@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookingClone.Infrastructure.Migrations
 {
     [DbContext(typeof(BookingDbContext))]
-    [Migration("20230220212622_InitialMigration")]
+    [Migration("20230301113950_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -24,6 +24,10 @@ namespace BookingClone.Infrastructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.HasSequence("ReservationSequence");
+
+            modelBuilder.HasSequence("ReviewSequence");
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Attraction", b =>
                 {
@@ -169,13 +173,10 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR [ReservationSequence]");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("ID"));
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
@@ -185,11 +186,9 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Reservations");
+                    b.ToTable((string)null);
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Reservation");
-
-                    b.UseTphMappingStrategy();
+                    b.UseTpcMappingStrategy();
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.ReservedAttraction", b =>
@@ -232,24 +231,19 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("int")
+                        .HasDefaultValueSql("NEXT VALUE FOR [ReviewSequence]");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseSequence(b.Property<int>("ID"));
 
                     b.Property<DateTimeOffset>("ReviewDate")
                         .HasColumnType("datetimeoffset");
 
                     b.HasKey("ID");
 
-                    b.ToTable("Reviews");
+                    b.ToTable((string)null);
 
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Review");
-
-                    b.UseTphMappingStrategy();
+                    b.UseTpcMappingStrategy();
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Room", b =>
@@ -297,7 +291,7 @@ namespace BookingClone.Infrastructure.Migrations
                     b.Property<DateTimeOffset>("TourStart")
                         .HasColumnType("datetimeoffset");
 
-                    b.HasDiscriminator().HasValue("AttractionReservation");
+                    b.ToTable("AttractionReservations");
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.RoomReservation", b =>
@@ -310,7 +304,7 @@ namespace BookingClone.Infrastructure.Migrations
                     b.Property<DateTimeOffset>("CheckOut")
                         .HasColumnType("datetimeoffset");
 
-                    b.HasDiscriminator().HasValue("RoomReservation");
+                    b.ToTable("RoomReservations");
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.AttractionReview", b =>
@@ -326,7 +320,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("AttractionID");
 
-                    b.HasDiscriminator().HasValue("AttractionReview");
+                    b.ToTable("AttractionReviews");
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.HotelReview", b =>
@@ -362,7 +356,7 @@ namespace BookingClone.Infrastructure.Migrations
 
                     b.HasIndex("HotelID");
 
-                    b.HasDiscriminator().HasValue("HotelReview");
+                    b.ToTable("HotelReviews");
                 });
 
             modelBuilder.Entity("BookingClone.Domain.Entities.Attraction", b =>

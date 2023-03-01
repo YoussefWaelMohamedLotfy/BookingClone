@@ -11,6 +11,26 @@ namespace BookingClone.Infrastructure.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateSequence(
+                name: "ReservationSequence");
+
+            migrationBuilder.CreateSequence(
+                name: "ReviewSequence");
+
+            migrationBuilder.CreateTable(
+                name: "AttractionReservations",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReservationSequence]"),
+                    TotalCost = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Status = table.Column<int>(type: "int", nullable: false),
+                    TourStart = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AttractionReservations", x => x.ID);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Continents",
                 columns: table => new
@@ -40,21 +60,18 @@ namespace BookingClone.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Reservations",
+                name: "RoomReservations",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReservationSequence]"),
                     TotalCost = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     Status = table.Column<int>(type: "int", nullable: false),
-                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    TourStart = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CheckIn = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true),
-                    CheckOut = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: true)
+                    CheckIn = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    CheckOut = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Reservations", x => x.ID);
+                    table.PrimaryKey("PK_RoomReservations", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
@@ -73,6 +90,33 @@ namespace BookingClone.Infrastructure.Migrations
                         name: "FK_Countries_Continents_ContinentID",
                         column: x => x.ContinentID,
                         principalTable: "Continents",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "HotelReviews",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReviewSequence]"),
+                    ReviewDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    PositiveReview = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    NegativeReview = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ComfortRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    StaffRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    FacilitiesRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ValueForMoneyRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    CleanlinessRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    LocationRate = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    HotelID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_HotelReviews", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_HotelReviews_Hotels_HotelID",
+                        column: x => x.HotelID,
+                        principalTable: "Hotels",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -134,9 +178,9 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_ReservedRooms", x => new { x.RoomID, x.RoomReservationID });
                     table.ForeignKey(
-                        name: "FK_ReservedRooms_Reservations_RoomReservationID",
+                        name: "FK_ReservedRooms_RoomReservations_RoomReservationID",
                         column: x => x.RoomReservationID,
-                        principalTable: "Reservations",
+                        principalTable: "RoomReservations",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
@@ -197,6 +241,26 @@ namespace BookingClone.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "AttractionReviews",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false, defaultValueSql: "NEXT VALUE FOR [ReviewSequence]"),
+                    ReviewDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
+                    Comment = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    AttractionID = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_AttractionReviews", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_AttractionReviews_Attractions_AttractionID",
+                        column: x => x.AttractionID,
+                        principalTable: "Attractions",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "ReservedAttractions",
                 columns: table => new
                 {
@@ -208,55 +272,23 @@ namespace BookingClone.Infrastructure.Migrations
                 {
                     table.PrimaryKey("PK_ReservedAttractions", x => new { x.AttractionID, x.AttractionReservationID });
                     table.ForeignKey(
+                        name: "FK_ReservedAttractions_AttractionReservations_AttractionReservationID",
+                        column: x => x.AttractionReservationID,
+                        principalTable: "AttractionReservations",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_ReservedAttractions_Attractions_AttractionID",
                         column: x => x.AttractionID,
                         principalTable: "Attractions",
                         principalColumn: "ID",
                         onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ReservedAttractions_Reservations_AttractionReservationID",
-                        column: x => x.AttractionReservationID,
-                        principalTable: "Reservations",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Reviews",
-                columns: table => new
-                {
-                    ID = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    ReviewDate = table.Column<DateTimeOffset>(type: "datetimeoffset", nullable: false),
-                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Comment = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AttractionID = table.Column<int>(type: "int", nullable: true),
-                    PositiveReview = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NegativeReview = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ComfortRate = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    StaffRate = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    FacilitiesRate = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    ValueForMoneyRate = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    CleanlinessRate = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    LocationRate = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    HotelID = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Reviews", x => x.ID);
-                    table.ForeignKey(
-                        name: "FK_Reviews_Attractions_AttractionID",
-                        column: x => x.AttractionID,
-                        principalTable: "Attractions",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Reviews_Hotels_HotelID",
-                        column: x => x.HotelID,
-                        principalTable: "Hotels",
-                        principalColumn: "ID",
-                        onDelete: ReferentialAction.Cascade);
-                });
+            migrationBuilder.CreateIndex(
+                name: "IX_AttractionReviews_AttractionID",
+                table: "AttractionReviews",
+                column: "AttractionID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Attractions_CityID",
@@ -279,6 +311,11 @@ namespace BookingClone.Infrastructure.Migrations
                 column: "ContinentID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_HotelReviews_HotelID",
+                table: "HotelReviews",
+                column: "HotelID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_ReservedAttractions_AttractionReservationID",
                 table: "ReservedAttractions",
                 column: "AttractionReservationID");
@@ -287,16 +324,6 @@ namespace BookingClone.Infrastructure.Migrations
                 name: "IX_ReservedRooms_RoomReservationID",
                 table: "ReservedRooms",
                 column: "RoomReservationID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Reviews_AttractionID",
-                table: "Reviews",
-                column: "AttractionID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Reviews_HotelID",
-                table: "Reviews",
-                column: "HotelID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Rooms_HotelID",
@@ -308,7 +335,13 @@ namespace BookingClone.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
+                name: "AttractionReviews");
+
+            migrationBuilder.DropTable(
                 name: "CityHotels");
+
+            migrationBuilder.DropTable(
+                name: "HotelReviews");
 
             migrationBuilder.DropTable(
                 name: "ReservedAttractions");
@@ -317,28 +350,34 @@ namespace BookingClone.Infrastructure.Migrations
                 name: "ReservedRooms");
 
             migrationBuilder.DropTable(
-                name: "Reviews");
-
-            migrationBuilder.DropTable(
-                name: "Reservations");
-
-            migrationBuilder.DropTable(
-                name: "Rooms");
+                name: "AttractionReservations");
 
             migrationBuilder.DropTable(
                 name: "Attractions");
 
             migrationBuilder.DropTable(
-                name: "Hotels");
+                name: "RoomReservations");
+
+            migrationBuilder.DropTable(
+                name: "Rooms");
 
             migrationBuilder.DropTable(
                 name: "Cities");
+
+            migrationBuilder.DropTable(
+                name: "Hotels");
 
             migrationBuilder.DropTable(
                 name: "Countries");
 
             migrationBuilder.DropTable(
                 name: "Continents");
+
+            migrationBuilder.DropSequence(
+                name: "ReservationSequence");
+
+            migrationBuilder.DropSequence(
+                name: "ReviewSequence");
         }
     }
 }

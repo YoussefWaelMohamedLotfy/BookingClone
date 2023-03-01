@@ -1,5 +1,6 @@
 ﻿using BookingClone.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace BookingClone.Infrastructure.Data;
 
@@ -27,15 +28,7 @@ public sealed class BookingDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<CityHotel>()
-            .HasKey(ch => new { ch.CityID, ch.HotelID });
-
-        modelBuilder.Entity<ReservedAttraction>()
-            .HasKey(ra => new { ra.AttractionID, ra.AttractionReservationID });
-
-        modelBuilder.Entity<ReservedRoom>()
-            .HasKey(rr => new { rr.RoomID, rr.RoomReservationID });
-
+        modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         base.OnModelCreating(modelBuilder);
     }
 }
