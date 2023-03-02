@@ -1,12 +1,16 @@
 using System.Text.Json;
+
+using Asp.Versioning;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace BookingClone.API.Controllers;
+namespace BookingClone.API.Controllers.V2;
 
 [ApiController]
-[Route("[controller]")]
-public sealed class WeatherForecastController : ControllerBase
+[Route("api/[controller]")]
+[ApiVersion("2.0")]
+public sealed class WeatherForecast2Controller : ControllerBase
 {
     private static readonly string[] Summaries = new[]
     {
@@ -15,24 +19,22 @@ public sealed class WeatherForecastController : ControllerBase
 
     private readonly IDistributedCache _distributedCache;
 
-    public WeatherForecastController(IDistributedCache distributedCache)
+    public WeatherForecast2Controller(IDistributedCache distributedCache)
         => _distributedCache = distributedCache;
 
     /// <summary>
     /// Gets Random forecasts
     /// </summary>
     /// <returns></returns>
-    [HttpGet(Name = "GetWeatherForecast")]
-    public async Task<IActionResult> Get()
+    [MapToApiVersion("2.0")]
+    [HttpGet(Name = "GetWeatherForecastV2")]
+    public async Task<IActionResult> Get(CancellationToken ct)
     {
         var key = HttpContext.Request.Path.Value;
-        var cachedResult = await GetCachedResponseAsync(key);
+        var cachedResult = await GetCachedResponseAsync(key, ct);
 
         if (cachedResult is not null)
-        {
-            var x = JsonSerializer.Deserialize<List<WeatherForecast>>(cachedResult);
-            return Ok(x);
-        }
+            return Ok(JsonSerializer.Deserialize<List<WeatherForecast>>(cachedResult));
 
         var res = Enumerable.Range(1, 5).Select(index => new WeatherForecast
         {
@@ -42,11 +44,11 @@ public sealed class WeatherForecastController : ControllerBase
         })
         .ToArray();
 
-        await CacheResponseAsync(key, res, TimeSpan.FromSeconds(50));
+        await CacheResponseAsync(key, res, TimeSpan.FromSeconds(50), ct);
         return Ok(res);
     }
 
-    async Task CacheResponseAsync(string cacheKey, object response, TimeSpan timeToLive)
+    async Task CacheResponseAsync(string cacheKey, object response, TimeSpan timeToLive, CancellationToken ct = default)
     {
         if (response is null)
             return;
@@ -55,11 +57,9 @@ public sealed class WeatherForecastController : ControllerBase
         await _distributedCache.SetStringAsync(cacheKey, serializedResponse, new DistributedCacheEntryOptions
         {
             AbsoluteExpirationRelativeToNow = timeToLive,
-        });
+        }, ct);
     }
 
-    async Task<string?> GetCachedResponseAsync(string cacheKey)
-    {
-        return await _distributedCache.GetStringAsync(cacheKey);
-    }
+    async Task<string?> GetCachedResponseAsync(string cacheKey, CancellationToken ct = default)
+        => await _distributedCache.GetStringAsync(cacheKey, ct);
 }

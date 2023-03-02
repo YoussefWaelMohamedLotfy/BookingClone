@@ -1,12 +1,16 @@
 using System.Reflection;
 using System.Threading.RateLimiting;
+using Asp.Versioning;
 using BookingClone.API.Extensions;
+using BookingClone.API.OpenApi;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.Extensions.Options;
 using Serilog;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +30,28 @@ builder.Services.AddDbContext<BookingDbContext>(o =>
 //    o.Configuration = builder.Configuration.GetConnectionString("RedisConnection");
 //    //o.ConfigurationOptions = new() { AbortOnConnectFail = false };
 //});
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddApiVersioning(o =>
+{
+    o.DefaultApiVersion = new(1, 0);
+    o.AssumeDefaultVersionWhenUnspecified = true;
+    o.UnsupportedApiVersionStatusCode = 501;
+    o.ReportApiVersions = true;
+    o.ApiVersionReader = ApiVersionReader.Combine(
+            new HeaderApiVersionReader("X-api-version"),
+            //new QueryStringApiVersionReader(),
+            //new UrlSegmentApiVersionReader(),
+            new MediaTypeApiVersionReader()
+        );
+})
+    .AddApiExplorer(o =>
+    {
+        //o.GroupNameFormat = "'v'VVV";
+        o.SubstituteApiVersionInUrl = true;
+    });
+
+builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers();
 
@@ -82,6 +108,8 @@ builder.Services.AddHealthChecks()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
 {
+    o.OperationFilter<SwaggerDefaultValues>();
+
     string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     o.IncludeXmlComments(xmlPath);
@@ -96,7 +124,14 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
         => context.Seed(services.GetRequiredService<ILogger<BookingDbContext>>()));
 
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(o =>
+    {
+        foreach (var item in app.DescribeApiVersions())
+        {
+            string url = $"/swagger/{item.GroupName}/swagger.json";
+            o.SwaggerEndpoint(url, item.GroupName.ToUpperInvariant());
+        }
+    });
 }
 
 app.UseHttpsRedirection();
