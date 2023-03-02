@@ -1,9 +1,7 @@
 ﻿using AutoMapper;
-
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
-
 using MediatR;
 
 namespace BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation;
@@ -22,6 +20,7 @@ internal sealed class AddAttractionReservationCommandHandler : IRequestHandler<A
     public async Task<GetAttractionReservationDto> Handle(AddAttractionReservationCommand request, CancellationToken cancellationToken)
     {
         var newReservation = _mapper.Map<AttractionReservation>(request.Dto);
+        newReservation.Status = Domain.Enums.ReservationStatus.Pending;
 
         _attractionReservationRepository.Add(newReservation);
         await _attractionReservationRepository.SaveAsync(cancellationToken);
