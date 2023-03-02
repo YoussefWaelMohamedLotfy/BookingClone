@@ -1,6 +1,7 @@
 using System.Reflection;
 using System.Threading.RateLimiting;
 using Asp.Versioning;
+using BookingClone.API.Authentication;
 using BookingClone.API.Extensions;
 using BookingClone.API.OpenApi;
 using BookingClone.Application;
@@ -9,6 +10,7 @@ using BookingClone.Serilog;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
 using Serilog;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
@@ -40,20 +42,15 @@ builder.Services.AddApiVersioning(o =>
     o.ReportApiVersions = true;
     o.ApiVersionReader = ApiVersionReader.Combine(
             new HeaderApiVersionReader("X-api-version"),
-            //new QueryStringApiVersionReader(),
-            //new UrlSegmentApiVersionReader(),
             new MediaTypeApiVersionReader()
         );
 })
-    .AddApiExplorer(o =>
-    {
-        //o.GroupNameFormat = "'v'VVV";
-        o.SubstituteApiVersionInUrl = true;
-    });
+    .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
 
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers();
+builder.Services.AddScoped<ApiKeyAuthFilter>();
 
 builder.Services.AddRateLimiter(options =>
 {
@@ -110,6 +107,32 @@ builder.Services.AddSwaggerGen(o =>
 {
     o.OperationFilter<SwaggerDefaultValues>();
 
+    o.AddSecurityDefinition("ApiKey", new()
+    {
+        Name = "x-api-key",
+        Description = "The API Key to Authorize",
+        Type = SecuritySchemeType.ApiKey,
+        In = ParameterLocation.Header,
+        Scheme = "ApiKeyScheme"
+    });
+
+    var scheme = new OpenApiSecurityScheme
+    {
+        Reference = new()
+        {
+            Id = "ApiKey",
+            Type = ReferenceType.SecurityScheme
+        },
+        In = ParameterLocation.Header
+    };
+
+    var requirment = new OpenApiSecurityRequirement
+    {
+        { scheme, Array.Empty<string>() }
+    };
+
+    o.AddSecurityRequirement(requirment);
+
     string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
     o.IncludeXmlComments(xmlPath);
@@ -136,6 +159,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
 
 app.UseHttpsRedirection();
 
+app.UseMiddleware<ApiKeyAuthMiddleware>();
 app.UseAuthorization();
 
 app.UseRateLimiter();
