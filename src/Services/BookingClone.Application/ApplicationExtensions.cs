@@ -1,6 +1,7 @@
-﻿using FluentValidation;
+﻿using BookingClone.Domain.Contracts;
+using BookingClone.Infrastructure.Repositories;
+using FluentValidation;
 using FluentValidation.AspNetCore;
-
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -10,12 +11,14 @@ public static class ApplicationExtensions
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services)
     {
-        services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetCallingAssembly()));
-        services.AddAutoMapper(Assembly.GetCallingAssembly());
+        services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+        services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
         services.AddFluentValidationAutoValidation()
             .AddFluentValidationClientsideAdapters()
-            .AddValidatorsFromAssembly(Assembly.GetCallingAssembly());
+            .AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+        services.AddScoped<IAttractionReservationRepository, AttractionReservationRepository>();
 
         return services;
     }

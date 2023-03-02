@@ -20,12 +20,12 @@ builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
 
-builder.Services.AddApplicationServices();
-
 builder.Services.AddDbContext<BookingDbContext>(o =>
 {
     o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
 });
+
+builder.Services.AddApplicationServices();
 
 //builder.Services.AddStackExchangeRedisCache(o =>
 //{
