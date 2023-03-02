@@ -1,4 +1,6 @@
-﻿using BookingClone.Application.Features.AttractionReservation.Queries.GetAttractionReservationById;
+﻿using BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation;
+using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
+using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,10 +17,17 @@ public class AttractionReservationsController : ControllerBase
         _mediator = mediator;
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name = "Get_[controller]")]
     public async Task<IActionResult> GetById(int id, CancellationToken ct)
     {
-        var res = await _mediator.Send(new GetAttractionReservationByIdQuery { ID = id }, ct);
-        return res is null ? NotFound() : Ok(res);
+        var result = await _mediator.Send(new GetAttractionReservationByIdQuery { ID = id }, ct);
+        return result is null ? NotFound() : Ok(result);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> AddNewReservation(AddAttractionReservationDto request, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new AddAttractionReservationCommand { Dto = request }, ct);
+        return CreatedAtRoute("Get_AttractionReservations", new { id = result.ID }, result);
     }
 }

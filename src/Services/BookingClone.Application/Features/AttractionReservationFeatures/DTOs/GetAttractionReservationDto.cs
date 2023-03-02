@@ -1,6 +1,6 @@
 ﻿using BookingClone.Domain.Enums;
 
-namespace BookingClone.Application.Features.AttractionReservation.DTOs;
+namespace BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 
 public sealed class GetAttractionReservationDto
 {

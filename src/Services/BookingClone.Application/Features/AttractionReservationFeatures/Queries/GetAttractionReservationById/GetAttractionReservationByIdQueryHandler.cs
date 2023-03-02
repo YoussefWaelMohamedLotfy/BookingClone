@@ -1,18 +1,20 @@
 ﻿using AutoMapper;
-using BookingClone.Application.Features.AttractionReservation.DTOs;
+
+using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Domain.Contracts;
+
 using MediatR;
 
-namespace BookingClone.Application.Features.AttractionReservation.Queries.GetAttractionReservationById;
+namespace BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
 
 internal sealed class GetAttractionReservationByIdQueryHandler : IRequestHandler<GetAttractionReservationByIdQuery, GetAttractionReservationDto?>
 {
     private readonly IAttractionReservationRepository _attractionReservationRepository;
     private readonly IMapper _mapper;
 
-    public GetAttractionReservationByIdQueryHandler(IAttractionReservationRepository attractionReservationRepository, IMapper mapper)
+    public GetAttractionReservationByIdQueryHandler(IAttractionReservationRepository repository, IMapper mapper)
     {
-        _attractionReservationRepository = attractionReservationRepository;
+        _attractionReservationRepository = repository;
         _mapper = mapper;
     }
 
@@ -20,7 +22,7 @@ internal sealed class GetAttractionReservationByIdQueryHandler : IRequestHandler
     {
         var attractionReservation = await _attractionReservationRepository.GetByIdAsync(request.ID, cancellationToken);
 
-        if (attractionReservation is null) 
+        if (attractionReservation is null)
         {
             return null;
         }
