@@ -1,8 +1,6 @@
 ﻿using AutoMapper;
-
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Domain.Contracts;
-
 using MediatR;
 
 namespace BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;

@@ -1,6 +1,6 @@
 ﻿namespace BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 
-public sealed class AddAttractionReservationDto
+public class AddAttractionReservationDto
 {
     public decimal TotalCost { get; set; }
 

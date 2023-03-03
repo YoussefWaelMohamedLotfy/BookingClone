@@ -1,5 +1,6 @@
 ﻿using BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation;
+using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
 using MediatR;
@@ -32,7 +33,7 @@ public class AttractionReservationsController : ControllerBase
     /// <summary>
     /// Adds a new Reservation
     /// </summary>
-    /// <param name="request">The request Body containing data</param>
+    /// <param name="request">The request Body containing new data</param>
     /// <param name="ct"></param>
     /// <returns>The newly added entity with ID generated</returns>
     [HttpPost]
@@ -40,6 +41,14 @@ public class AttractionReservationsController : ControllerBase
     {
         var result = await _mediator.Send(new AddAttractionReservationCommand { Dto = request }, ct);
         return CreatedAtRoute("Get_AttractionReservations", new { id = result.ID }, result);
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> UpdateExistingReservation(UpdateAttractionReservationDto request, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new UpdateAttractionReservationCommand { Dto = request }, ct);
+
+        return result is not null ? Ok(result) : NotFound();
     }
 
     /// <summary>

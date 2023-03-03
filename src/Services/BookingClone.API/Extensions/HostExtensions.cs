@@ -22,10 +22,8 @@ public static class HostExtensions
                         .WaitAndRetry(
                             retryCount: 3,
                             sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
-                            onRetry: (exception, retryCount, context) =>
-                            {
-                                logger.LogError($"Retry {retryCount} of {context.PolicyKey} at {context.OperationKey}, due to: {exception}.");
-                            });
+                            onRetry: (exception, retryCount, context)
+                                => logger.LogError($"Retry {retryCount} of {context.PolicyKey} at {context.OperationKey}, due to: {exception}."));
 
                 retry.Execute(() => InvokeSeeder(seeder!, context!, services));
 

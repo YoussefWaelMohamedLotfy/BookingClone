@@ -10,5 +10,6 @@ internal sealed class EntityMappingConfig : Profile
     {
         CreateMap<AttractionReservation, GetAttractionReservationDto>();
         CreateMap<AddAttractionReservationDto, AttractionReservation>();
+        CreateMap<UpdateAttractionReservationDto, AttractionReservation>();
     }
 }
