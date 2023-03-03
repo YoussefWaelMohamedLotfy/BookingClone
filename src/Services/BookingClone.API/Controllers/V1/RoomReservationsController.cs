@@ -1,8 +1,8 @@
-﻿using BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation;
-using BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation;
-using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
-using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
-using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
+﻿using BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation;
+using BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation;
+using BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation;
+using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,11 +10,11 @@ namespace BookingClone.API.Controllers.V1;
 
 [Route("api/[controller]")]
 [ApiController]
-public class AttractionReservationsController : ControllerBase
+public class RoomReservationsController : ControllerBase
 {
     private readonly IMediator _mediator;
 
-    public AttractionReservationsController(IMediator mediator)
+    public RoomReservationsController(IMediator mediator)
         => _mediator = mediator;
 
     /// <summary>
@@ -26,7 +26,7 @@ public class AttractionReservationsController : ControllerBase
     [HttpGet("{id}", Name = "Get_[controller]")]
     public async Task<IActionResult> GetReservationById(int id, CancellationToken ct)
     {
-        var result = await _mediator.Send(new GetAttractionReservationByIdQuery { ID = id }, ct);
+        var result = await _mediator.Send(new GetRoomReservationByIdQuery { ID = id }, ct);
         return result is null ? NotFound() : Ok(result);
     }
 
@@ -37,10 +37,10 @@ public class AttractionReservationsController : ControllerBase
     /// <param name="ct"></param>
     /// <returns>The newly added entity with ID generated</returns>
     [HttpPost]
-    public async Task<IActionResult> AddNewReservation(AddAttractionReservationDto request, CancellationToken ct)
+    public async Task<IActionResult> AddNewReservation(AddRoomReservationDto request, CancellationToken ct)
     {
-        var result = await _mediator.Send(new AddAttractionReservationCommand { Dto = request }, ct);
-        return CreatedAtRoute("Get_AttractionReservations", new { id = result.ID }, result);
+        var result = await _mediator.Send(new AddRoomReservationCommand { Dto = request }, ct);
+        return CreatedAtRoute("Get_RoomReservations", new { id = result.ID }, result);
     }
 
     /// <summary>
@@ -50,9 +50,9 @@ public class AttractionReservationsController : ControllerBase
     /// <param name="ct"></param>
     /// <returns>The existing entity with updated Data</returns>
     [HttpPut]
-    public async Task<IActionResult> UpdateExistingReservation(UpdateAttractionReservationDto request, CancellationToken ct)
+    public async Task<IActionResult> UpdateExistingReservation(UpdateRoomReservationDto request, CancellationToken ct)
     {
-        var result = await _mediator.Send(new UpdateAttractionReservationCommand { Dto = request }, ct);
+        var result = await _mediator.Send(new UpdateRoomReservationCommand { Dto = request }, ct);
 
         return result is not null ? Ok(result) : NotFound();
     }
@@ -66,7 +66,7 @@ public class AttractionReservationsController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteReservationById(int id, CancellationToken ct)
     {
-        var result = await _mediator.Send(new DeleteAttractionReservationCommand { ID = id }, ct);
+        var result = await _mediator.Send(new DeleteRoomReservationCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
     }
 }

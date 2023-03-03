@@ -18,7 +18,8 @@ public static class ApplicationExtensions
             .AddFluentValidationClientsideAdapters()
             .AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
-        services.AddScoped<IAttractionReservationRepository, AttractionReservationRepository>();
+        services.AddScoped<IRoomReservationRepository, RoomReservationRepository>()
+            .AddScoped<IAttractionReservationRepository, AttractionReservationRepository>();
 
         return services;
     }
