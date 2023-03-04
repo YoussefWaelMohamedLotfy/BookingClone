@@ -19,7 +19,8 @@ public static class ApplicationExtensions
             .AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
         services.AddScoped<IRoomReservationRepository, RoomReservationRepository>()
-            .AddScoped<IAttractionReservationRepository, AttractionReservationRepository>();
+            .AddScoped<IAttractionReservationRepository, AttractionReservationRepository>()
+            .AddScoped<IAttractionRepository, AttractionRepository>();
 
         return services;
     }

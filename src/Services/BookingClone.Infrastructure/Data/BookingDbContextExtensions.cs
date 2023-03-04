@@ -19,6 +19,19 @@ public static class BookingDbContextExtensions
             context.SaveChanges();
         }
 
+        if (!context.Attractions.Any()) 
+        {
+            var attractionsFaker = new Faker<Attraction>()
+                .RuleFor(a => a.Name, f => f.Commerce.ProductName())
+                .RuleFor(a => a.Description, f => f.Commerce.ProductDescription())
+                .RuleFor(a => a.AvailableTickets, f => f.Random.Int(1, 100))
+                .RuleFor(a => a.TicketPrice, f => f.Random.Decimal(50, 500))
+                .RuleFor(a => a.Duration, f => f.Date.FutureOffset().ToString());
+
+            context.Attractions.AddRange(attractionsFaker.Generate(20));
+            context.SaveChanges();
+        }
+
         if (!context.AttractionReservations.Any())
         {
             var attractionReservationsFaker = new Faker<AttractionReservation>()

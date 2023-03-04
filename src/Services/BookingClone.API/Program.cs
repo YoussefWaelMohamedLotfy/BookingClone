@@ -134,12 +134,12 @@ builder.Services.AddSwaggerGen(o =>
         In = ParameterLocation.Header
     };
 
-    var requirment = new OpenApiSecurityRequirement
+    var requirement = new OpenApiSecurityRequirement
     {
         { scheme, Array.Empty<string>() }
     };
 
-    o.AddSecurityRequirement(requirment);
+    o.AddSecurityRequirement(requirement);
 
     string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
