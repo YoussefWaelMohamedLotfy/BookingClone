@@ -7,6 +7,7 @@ using BookingClone.API.OpenApi;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
@@ -15,6 +16,13 @@ using Serilog;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.AddServerHeader = false;
+    options.ConfigureHttpsDefaults(s => s.AllowAnyClientCertificate());
+    options.ConfigureEndpointDefaults(o => o.Protocols = HttpProtocols.Http1AndHttp2AndHttp3);
+});
 
 builder.Host.UseSerilog(Serilogger.Configure);
 
