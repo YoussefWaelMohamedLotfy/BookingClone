@@ -17,8 +17,4 @@
     <ProjectReference Include="..\BookingClone.Infrastructure\BookingClone.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\AttractionFeatures\Commands\" />
-  </ItemGroup>
-
 </Project>

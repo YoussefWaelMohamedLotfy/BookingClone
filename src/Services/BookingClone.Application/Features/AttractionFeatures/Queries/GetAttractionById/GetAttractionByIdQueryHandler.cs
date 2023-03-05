@@ -4,6 +4,7 @@ using BookingClone.Domain.Contracts;
 using MediatR;
 
 namespace BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
+
 internal class GetAttractionByIdQueryHandler : IRequestHandler<GetAttractionByIdQuery, GetAttractionDto?>
 {
     private readonly IAttractionRepository _attractionRepository;

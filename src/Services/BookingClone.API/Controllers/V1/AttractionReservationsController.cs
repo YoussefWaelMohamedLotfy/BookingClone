@@ -53,7 +53,6 @@ public class AttractionReservationsController : ControllerBase
     public async Task<IActionResult> UpdateExistingReservation(UpdateAttractionReservationDto request, CancellationToken ct)
     {
         var result = await _mediator.Send(new UpdateAttractionReservationCommand { Dto = request }, ct);
-
         return result is not null ? Ok(result) : NotFound();
     }
 
