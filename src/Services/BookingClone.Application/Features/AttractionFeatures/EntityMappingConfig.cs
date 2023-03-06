@@ -9,6 +9,7 @@ internal sealed class EntityMappingConfig : Profile
     public EntityMappingConfig()
     {
         CreateMap<Attraction, GetAttractionDto>();
+        CreateMap<AttractionImage, AttractionImageDto>();
         CreateMap<AddAttractionDto, Attraction>();
         CreateMap<UpdateAttractionDto, Attraction>();
     }
