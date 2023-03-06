@@ -13,4 +13,6 @@ public sealed class GetAttractionDto
     public decimal TicketPrice { get; set; }
 
     public string Duration { get; set; }
+
+    public List<AttractionImageDto> Images { get; set; }
 }

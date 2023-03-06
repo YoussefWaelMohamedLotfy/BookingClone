@@ -18,7 +18,7 @@ internal class GetAttractionByIdQueryHandler : IRequestHandler<GetAttractionById
 
     public async Task<GetAttractionDto?> Handle(GetAttractionByIdQuery request, CancellationToken cancellationToken)
     {
-        var result = await _attractionRepository.GetByIdAsync(request.ID, cancellationToken);
+        var result = await _attractionRepository.GetAttractionDetails(request.ID, cancellationToken);
         return result is null ? null : _mapper.Map<GetAttractionDto>(result);
     }
 }

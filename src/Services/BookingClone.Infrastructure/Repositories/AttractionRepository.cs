@@ -13,4 +13,8 @@ public sealed class AttractionRepository : GenericRepository<Attraction, int>, I
 
     public async Task<List<Attraction>> GetAll(CancellationToken ct = default)
     => await _db.ToListAsync(ct);
+
+    public async Task<Attraction?> GetAttractionDetails(int id, CancellationToken ct = default)
+        => await _db.Include(a => a.Images)
+            .FirstOrDefaultAsync(x => x.ID == id, ct);
 }
