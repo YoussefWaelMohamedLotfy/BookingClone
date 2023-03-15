@@ -4,7 +4,6 @@ using BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttrac
 using BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction;
 using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
-using BookingClone.Infrastructure.Data;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,13 +14,9 @@ namespace BookingClone.API.Controllers.V1;
 public class AttractionsController : ControllerBase
 {
     private readonly IMediator _mediator;
-    BookingDbContext _context;
 
-    public AttractionsController(IMediator mediator, BookingDbContext context)
-    {
-        _mediator = mediator;
-        _context = context;
-    }
+    public AttractionsController(IMediator mediator)
+        => _mediator = mediator;
 
     /// <summary>
     /// Gets a single Attraction by ID
