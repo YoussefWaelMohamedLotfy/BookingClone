@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  bookingclone.api:
+    image: ${DOCKER_REGISTRY-}bookingcloneapi
+    build:
+      context: .
+      dockerfile: src/Services/BookingClone.API/Dockerfile
+
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite
+
