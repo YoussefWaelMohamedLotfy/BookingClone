@@ -151,7 +151,7 @@ builder.Services.AddSwaggerGen(o =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
+if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Environment.IsEnvironment("DockerDevelopment"))
 {
     app.MigrateDatabase<BookingDbContext>((context, services)
         => context.Seed(services.GetRequiredService<ILogger<BookingDbContext>>()));
