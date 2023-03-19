@@ -20,7 +20,7 @@ public static class HostExtensions
 
                 var retry = Policy.Handle<SqlException>()
                         .WaitAndRetry(
-                            retryCount: 3,
+                            retryCount: 5,
                             sleepDurationProvider: retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
                             onRetry: (exception, retryCount, context)
                                 => logger.LogError($"Retry {retryCount} of {context.PolicyKey} at {context.OperationKey}, due to: {exception}."));
