@@ -13,3 +13,9 @@ services:
   azurite:
     image: mcr.microsoft.com/azure-storage/azurite
 
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.9
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.17.9
+

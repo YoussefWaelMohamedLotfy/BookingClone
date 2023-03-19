@@ -7,8 +7,10 @@ services:
       - ASPNETCORE_ENVIRONMENT=DockerDevelopment
       - ASPNETCORE_URLS=http://+:80
     ports:
-      - "13001:80"
-      #- "13000:443"
+      - 13001:80
+      #- 13000:443
+    depends_on: 
+      - sql-server
     #volumes:
     #  - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
     #  - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
@@ -29,3 +31,27 @@ services:
       - 10000:10000
       - 10001:10001
       - 10002:10002
+
+  elasticsearch:
+    container_name: elasticsearch
+    environment:
+      - xpack.monitoring.enabled=true
+      - xpack.watcher.enabled=false
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
+    ports:
+      - 9200:9200
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data 
+
+  kibana:
+    container_name: kibana
+    environment:        
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+    depends_on:
+      - elasticsearch
+    ports:
+      - 5601:5601
+
+volumes:
+  elasticsearch-data:
