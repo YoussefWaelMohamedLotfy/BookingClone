@@ -10,13 +10,25 @@ services:
       - 13001:80
       #- 13000:443
     depends_on: 
-      - sql-server
+      - sqlserver
     #volumes:
     #  - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
     #  - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
 
-  sql-server:
-    container_name: sql_server
+  bookingclone.yarp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      #- ASPNETCORE_URLS=https://+:443;http://+:80
+    ports:
+      - 12001:80
+      #- 12000:443
+    #volumes:
+    #  - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    #  - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+  
+  sqlserver:
+    container_name: sqlserver
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=abcde12345$
