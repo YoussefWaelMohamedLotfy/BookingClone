@@ -8,7 +8,7 @@ internal sealed class BookingProxyConfig : IProxyConfigProvider
 {
     private CustomMemoryConfig _config;
 
-    public BookingProxyConfig()
+    public BookingProxyConfig(IConfiguration configuration)
     {
         // Load a basic configuration
         // Should be based on your application needs.
@@ -33,7 +33,7 @@ internal sealed class BookingProxyConfig : IProxyConfigProvider
                 LoadBalancingPolicy = LoadBalancingPolicies.RoundRobin,
                 Destinations = new Dictionary<string, DestinationConfig>
                 {
-                    { "destination1", new DestinationConfig { Address = "https://localhost:13000/" } },
+                    { "destination1", new DestinationConfig { Address = configuration.GetConnectionString("Backend")! } },
                 }
             }
         };

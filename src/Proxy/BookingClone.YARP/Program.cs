@@ -18,7 +18,7 @@ builder.Host.UseSerilog(Serilogger.Configure);
 builder.Services.AddStackExchangeRedisCache(redisOptions
     => redisOptions.Configuration = builder.Configuration.GetConnectionString("RedisConnection"));
 
-var conf = new BookingProxyConfig().GetConfig();
+var conf = new BookingProxyConfig(builder.Configuration).GetConfig();
 
 builder.Services//.AddSingleton<IProxyConfigProvider>(new BookingProxyConfig())
     .AddReverseProxy()

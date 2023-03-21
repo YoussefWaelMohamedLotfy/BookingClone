@@ -13,7 +13,7 @@ services:
       context: .
       dockerfile: src/Proxy/BookingClone.YARP/Dockerfile
 
-  sql-server:
+  sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
 
   azurite:

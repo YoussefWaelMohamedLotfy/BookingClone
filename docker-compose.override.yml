@@ -16,6 +16,7 @@ services:
     #  - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
 
   bookingclone.yarp:
+    container_name: BookingClone_YARP
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
