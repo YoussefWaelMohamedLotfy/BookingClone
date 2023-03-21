@@ -7,7 +7,13 @@ services:
       context: .
       dockerfile: src/Services/BookingClone.API/Dockerfile
 
-  sql-server:
+  bookingclone.yarp:
+    image: ${DOCKER_REGISTRY-}bookingcloneyarp
+    build:
+      context: .
+      dockerfile: src/Proxy/BookingClone.YARP/Dockerfile
+
+  sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
 
   azurite:
@@ -18,4 +24,6 @@ services:
 
   kibana:
     image: docker.elastic.co/kibana/kibana:7.17.9
+
+
 
