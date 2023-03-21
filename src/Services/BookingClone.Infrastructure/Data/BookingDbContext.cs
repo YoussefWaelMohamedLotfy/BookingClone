@@ -12,6 +12,7 @@ public sealed class BookingDbContext : DbContext
     }
 
     public DbSet<Attraction> Attractions { get; set; }
+    public DbSet<AttractionImage> AttractionImages { get; set; }
     public DbSet<AttractionReservation> AttractionReservations { get; set; }
     public DbSet<AttractionReview> AttractionReviews { get; set; }
     public DbSet<City> Cities { get; set; }

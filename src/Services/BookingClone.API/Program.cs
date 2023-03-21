@@ -1,4 +1,5 @@
 using System.Reflection;
+using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
 using Asp.Versioning;
 using BookingClone.API.Authentication;
@@ -7,6 +8,7 @@ using BookingClone.API.OpenApi;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
@@ -16,16 +18,23 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.AddServerHeader = false;
+    options.ConfigureHttpsDefaults(s => s.AllowAnyClientCertificate());
+    options.ConfigureEndpointDefaults(o => o.Protocols = HttpProtocols.Http1AndHttp2AndHttp3);
+});
+
 builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
 
-builder.Services.AddApplicationServices();
-
 builder.Services.AddDbContext<BookingDbContext>(o =>
-{
-    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"));
-});
+    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"), c =>
+        c.EnableRetryOnFailure(3))
+);
+
+builder.Services.AddApplicationServices();
 
 //builder.Services.AddStackExchangeRedisCache(o =>
 //{
@@ -49,7 +58,8 @@ builder.Services.AddApiVersioning(o =>
 
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(o => o.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull | JsonIgnoreCondition.WhenWritingDefault);
 builder.Services.AddScoped<ApiKeyAuthFilter>();
 
 builder.Services.AddRateLimiter(options =>
@@ -126,12 +136,12 @@ builder.Services.AddSwaggerGen(o =>
         In = ParameterLocation.Header
     };
 
-    var requirment = new OpenApiSecurityRequirement
+    var requirement = new OpenApiSecurityRequirement
     {
         { scheme, Array.Empty<string>() }
     };
 
-    o.AddSecurityRequirement(requirment);
+    o.AddSecurityRequirement(requirement);
 
     string xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     string xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
@@ -141,7 +151,7 @@ builder.Services.AddSwaggerGen(o =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment() || app.Environment.IsStaging())
+if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Environment.IsEnvironment("DockerDevelopment"))
 {
     app.MigrateDatabase<BookingDbContext>((context, services)
         => context.Seed(services.GetRequiredService<ILogger<BookingDbContext>>()));
