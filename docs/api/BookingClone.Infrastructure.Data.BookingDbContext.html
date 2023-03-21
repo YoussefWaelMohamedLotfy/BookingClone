@@ -1,0 +1,896 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class BookingDbContext
+ | BookingClone Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class BookingDbContext
+ | BookingClone Docs ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.min.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/docfx/apiSpec/new?filename=BookingClone_Infrastructure_Data_BookingDbContext.md&amp;value=---%0Auid%3A%20BookingClone.Infrastructure.Data.BookingDbContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <body data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BookingClone Docs">
+            BookingClone Docs
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <form class="d-flex ms-auto" role="search" id="search">
+              <i class="bi bi-search"></i>
+              <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BookingClone.Infrastructure.Data.BookingDbContext">
+
+
+  <h1 id="BookingClone_Infrastructure_Data_BookingDbContext" data-uid="BookingClone.Infrastructure.Data.BookingDbContext" class="text-break">
+    Class BookingDbContext
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><span class="xref">BookingClone</span>.<span class="xref">Infrastructure</span>.<a class="xref" href="BookingClone.Infrastructure.Data.html">Data</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>BookingClone.Infrastructure.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class BookingDbContext : DbContext, IInfrastructure&lt;IServiceProvider&gt;, IDbContextDependencies, IDbSetCache, IDbContextPoolable, IResettableService, IDisposable, IAsyncDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><span class="xref">object</span></div>
+      <div><span class="xref">DbContext</span></div>
+      <div><span class="xref">BookingDbContext</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IInfrastructure</span>&lt;<span class="xref">IServiceProvider</span>&gt;</div>
+      <div><span class="xref">IDbContextDependencies</span></div>
+      <div><span class="xref">IDbSetCache</span></div>
+      <div><span class="xref">IDbContextPoolable</span></div>
+      <div><span class="xref">IResettableService</span></div>
+      <div><span class="xref">IDisposable</span></div>
+      <div><span class="xref">IAsyncDisposable</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <span class="xref">DbContext.Set&lt;TEntity&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Set&lt;TEntity&gt;(string)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.SaveChanges()</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.SaveChanges(bool)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.SaveChangesAsync(CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.SaveChangesAsync(bool, CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.DisposeAsync()</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Entry&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Entry(object)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Add&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AddAsync&lt;TEntity&gt;(TEntity, CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Attach&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Update&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Remove&lt;TEntity&gt;(TEntity)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Add(object)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AddAsync(object, CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Attach(object)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Update(object)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Remove(object)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AddRange(params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AddRangeAsync(params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AttachRange(params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.UpdateRange(params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.RemoveRange(params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AddRange(IEnumerable&lt;object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AddRangeAsync(IEnumerable&lt;object&gt;, CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.AttachRange(IEnumerable&lt;object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.UpdateRange(IEnumerable&lt;object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.RemoveRange(IEnumerable&lt;object&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Find(Type, params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.FindAsync(Type, params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.FindAsync(Type, object[], CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Find&lt;TEntity&gt;(params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.FindAsync&lt;TEntity&gt;(params object[])</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.FindAsync&lt;TEntity&gt;(object[], CancellationToken)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.FromExpression&lt;TResult&gt;(Expression&lt;Func&lt;IQueryable&lt;TResult&gt;&gt;&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Database</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.ChangeTracker</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.Model</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.ContextId</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.SavingChanges</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.SavedChanges</span>
+    </div>
+    <div>
+      <span class="xref">DbContext.SaveChangesFailed</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object)</span>
+    </div>
+    <div>
+      <span class="xref">object.Equals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">object.ReferenceEquals(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">object.ToString()</span>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="BookingClone.Infrastructure.Data.BookingDbContextExtensions.html#BookingClone_Infrastructure_Data_BookingDbContextExtensions_Seed_BookingClone_Infrastructure_Data_BookingDbContext_Microsoft_Extensions_Logging_ILogger_BookingClone_Infrastructure_Data_BookingDbContext__">BookingDbContextExtensions.Seed(BookingDbContext, ILogger&lt;BookingDbContext&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext__ctor_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.#ctor*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext__ctor_Microsoft_EntityFrameworkCore_DbContextOptions_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions)">
+  BookingDbContext(DbContextOptions)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L10"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BookingDbContext(DbContextOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <span class="xref">DbContextOptions</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_AttractionImages_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.AttractionImages*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_AttractionImages" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.AttractionImages">
+  AttractionImages
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;AttractionImage&gt; AttractionImages { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.AttractionImage.html">AttractionImage</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_AttractionReservations_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.AttractionReservations*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_AttractionReservations" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.AttractionReservations">
+  AttractionReservations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;AttractionReservation&gt; AttractionReservations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.AttractionReservation.html">AttractionReservation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_AttractionReviews_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.AttractionReviews*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_AttractionReviews" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.AttractionReviews">
+  AttractionReviews
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;AttractionReview&gt; AttractionReviews { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.AttractionReview.html">AttractionReview</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Attractions_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Attractions*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Attractions" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Attractions">
+  Attractions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Attraction&gt; Attractions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Attraction.html">Attraction</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Cities_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Cities*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Cities" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Cities">
+  Cities
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;City&gt; Cities { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.City.html">City</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_CityHotels_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.CityHotels*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_CityHotels" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.CityHotels">
+  CityHotels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;CityHotel&gt; CityHotels { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.CityHotel.html">CityHotel</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Continents_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Continents*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Continents" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Continents">
+  Continents
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Continent&gt; Continents { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Continent.html">Continent</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Countries_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Countries*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Countries" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Countries">
+  Countries
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Country&gt; Countries { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Country.html">Country</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_HotelReviews_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.HotelReviews*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_HotelReviews" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.HotelReviews">
+  HotelReviews
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;HotelReview&gt; HotelReviews { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.HotelReview.html">HotelReview</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Hotels_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Hotels*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Hotels" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Hotels">
+  Hotels
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Hotel&gt; Hotels { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Hotel.html">Hotel</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Reservations_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Reservations*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Reservations" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Reservations">
+  Reservations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Reservation&gt; Reservations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Reservation.html">Reservation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_ReservedAttractions_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.ReservedAttractions*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_ReservedAttractions" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.ReservedAttractions">
+  ReservedAttractions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;ReservedAttraction&gt; ReservedAttractions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.ReservedAttraction.html">ReservedAttraction</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_ReservedRooms_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.ReservedRooms*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_ReservedRooms" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.ReservedRooms">
+  ReservedRooms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;ReservedRoom&gt; ReservedRooms { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.ReservedRoom.html">ReservedRoom</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Reviews_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Reviews*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Reviews" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Reviews">
+  Reviews
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Review&gt; Reviews { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Review.html">Review</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_RoomReservations_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.RoomReservations*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_RoomReservations" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.RoomReservations">
+  RoomReservations
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;RoomReservation&gt; RoomReservations { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.RoomReservation.html">RoomReservation</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_Rooms_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Rooms*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_Rooms" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.Rooms">
+  Rooms
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DbSet&lt;Room&gt; Rooms { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">DbSet</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Room.html">Room</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_ConfigureConventions_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.ConfigureConventions*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_ConfigureConventions_Microsoft_EntityFrameworkCore_ModelConfigurationBuilder_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.ConfigureConventions(Microsoft.EntityFrameworkCore.ModelConfigurationBuilder)">
+  ConfigureConventions(ModelConfigurationBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configurationBuilder</code> <span class="xref">ModelConfigurationBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Infrastructure_Data_BookingDbContext_OnModelCreating_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.OnModelCreating*"></a>
+
+  <h3 id="BookingClone_Infrastructure_Data_BookingDbContext_OnModelCreating_Microsoft_EntityFrameworkCore_ModelBuilder_" data-uid="BookingClone.Infrastructure.Data.BookingDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+  OnModelCreating(ModelBuilder)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/docfx/src/Services/BookingClone.Infrastructure/Data/BookingDbContext.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnModelCreating(ModelBuilder modelBuilder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelBuilder</code> <span class="xref">ModelBuilder</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/docfx/apiSpec/new?filename=BookingClone_Infrastructure_Data_BookingDbContext.md&amp;value=---%0Auid%3A%20BookingClone.Infrastructure.Data.BookingDbContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+        </div>
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="../styles/docfx.min.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
