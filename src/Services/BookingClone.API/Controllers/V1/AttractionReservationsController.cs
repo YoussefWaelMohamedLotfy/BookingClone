@@ -3,10 +3,13 @@ using BookingClone.Application.Features.AttractionReservationFeatures.Commands.D
 using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
+<<<<<<< HEAD
 using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetails;
 using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetailsById;
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Domain.Common;
+=======
+>>>>>>> first commit
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,6 +25,7 @@ public class AttractionReservationsController : ControllerBase
         => _mediator = mediator;
 
     /// <summary>
+<<<<<<< HEAD
     /// Gets Attraction Reservation in pages
     /// </summary>
     /// <param name="query">Pagination Query</param>
@@ -35,6 +39,8 @@ public class AttractionReservationsController : ControllerBase
     }
 
     /// <summary>
+=======
+>>>>>>> first commit
     /// Gets a single Reservation by ID
     /// </summary>
     /// <param name="id">The unique Identifier of Reservation</param>
@@ -85,6 +91,7 @@ public class AttractionReservationsController : ControllerBase
         var result = await _mediator.Send(new DeleteAttractionReservationCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
     }
+<<<<<<< HEAD
 
     /// <summary>
     /// Gets all ReservedRooms for a single Reservation
@@ -112,4 +119,6 @@ public class AttractionReservationsController : ControllerBase
         var result = await _mediator.Send(new GetReservedAttractionDetailsByIdQuery(reservationId, attractionId), ct);
         return Ok(result);
     }
+=======
+>>>>>>> first commit
 }

@@ -9,17 +9,23 @@
 *.user
 *.userosscache
 *.sln.docstates
+<<<<<<< HEAD
 .DS_Stores
+=======
+>>>>>>> first commit
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+<<<<<<< HEAD
 # Development settings
 appsettings.Development.json
 
 # SQLite files
 *.db*
 
+=======
+>>>>>>> first commit
 # Mono auto generated files
 mono_crash.*
 

@@ -1,24 +1,35 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
+<<<<<<< HEAD
 
 using Asp.Versioning;
 
+=======
+using Asp.Versioning;
+>>>>>>> first commit
 using BookingClone.API.Authentication;
 using BookingClone.API.Extensions;
 using BookingClone.API.OpenApi;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
+<<<<<<< HEAD
 
+=======
+>>>>>>> first commit
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+<<<<<<< HEAD
 
 using Serilog;
 
+=======
+using Serilog;
+>>>>>>> first commit
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,7 +45,16 @@ builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
 
+<<<<<<< HEAD
 builder.Services.AddApplicationServices(builder.Configuration);
+=======
+builder.Services.AddDbContext<BookingDbContext>(o =>
+    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"), c =>
+        c.EnableRetryOnFailure(3))
+);
+
+builder.Services.AddApplicationServices();
+>>>>>>> first commit
 
 //builder.Services.AddStackExchangeRedisCache(o =>
 //{
@@ -56,7 +76,10 @@ builder.Services.AddApiVersioning(o =>
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> first commit
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers()
@@ -170,11 +193,21 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
 
 app.UseHttpsRedirection();
 
+<<<<<<< HEAD
 app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 app.UseAuthorization();
+=======
+app.UseMiddleware<ApiKeyAuthMiddleware>();
+app.UseAuthorization();
+
+>>>>>>> first commit
 app.UseRateLimiter();
 
 app.MapControllers();
 app.MapCustomHealthChecks();
 
+<<<<<<< HEAD
 app.Run();
+=======
+app.Run();
+>>>>>>> first commit

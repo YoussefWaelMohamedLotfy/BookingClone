@@ -18,11 +18,14 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+<<<<<<< HEAD
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "creditcardpayments": "^1.0.3",
     "json-server": "^0.17.3",
     "ngx-paypal": "^11.0.0",
+=======
+>>>>>>> first commit
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
@@ -31,7 +34,10 @@
     "@angular-devkit/build-angular": "^15.2.2",
     "@angular/cli": "~15.2.2",
     "@angular/compiler-cli": "^15.2.0",
+<<<<<<< HEAD
     "@angular/localize": "^15.2.3",
+=======
+>>>>>>> first commit
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",

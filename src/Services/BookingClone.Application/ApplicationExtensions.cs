@@ -1,10 +1,16 @@
 ﻿using BookingClone.Domain.Contracts;
+<<<<<<< HEAD
 using BookingClone.Infrastructure.Data;
 using BookingClone.Infrastructure.Repositories;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+=======
+using BookingClone.Infrastructure.Repositories;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+>>>>>>> first commit
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -12,12 +18,17 @@ namespace BookingClone.Application;
 
 public static class ApplicationExtensions
 {
+<<<<<<< HEAD
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<BookingDbContext>(o =>
         o.UseSqlServer(configuration.GetConnectionString("SqlServerConnection"), c =>
             c.EnableRetryOnFailure(3)));
 
+=======
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+    {
+>>>>>>> first commit
         services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
@@ -27,6 +38,7 @@ public static class ApplicationExtensions
 
         services.AddScoped<IRoomReservationRepository, RoomReservationRepository>()
             .AddScoped<IAttractionReservationRepository, AttractionReservationRepository>()
+<<<<<<< HEAD
             .AddScoped<IAttractionRepository, AttractionRepository>()
             .AddScoped<IRoomRepository, RoomRepository>()
             .AddScoped<IHotelRepository, HotelRepository>()
@@ -39,3 +51,10 @@ public static class ApplicationExtensions
         return services;
     }
 }
+=======
+            .AddScoped<IAttractionRepository, AttractionRepository>();
+
+        return services;
+    }
+}
+>>>>>>> first commit

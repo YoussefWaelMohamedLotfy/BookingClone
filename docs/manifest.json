@@ -9,7 +9,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyAuthFilter.html",
+<<<<<<< HEAD
           "hash": "SIfLSIsRDuLdsh+q3S/KHEJ8zwNoY1EyT+nBXcYZ5Is="
+=======
+          "hash": "o2NMCLAuIc8C147A8PMTkIWS07lrhXHM4+UiPANSJqg="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -20,7 +24,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyAuthMiddleware.html",
+<<<<<<< HEAD
           "hash": "LDkeahudZjI59hQCF4h1LPqZc1P7u0y49WJxGAv0x20="
+=======
+          "hash": "osD7vX9+eXa46CFfEUB9nkCK+LioWH2Ne/gat4MFzQM="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -31,7 +39,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyEndpointFilter.html",
+<<<<<<< HEAD
           "hash": "FrLuGzR0nFwKpIr5QshL92RPP+u4ar+wwuSdZ1/yctU="
+=======
+          "hash": "KgJTuJXa4oOz/+0sR0GE3mjgaL4gL8Lc7Vk3zeSgyvg="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -42,7 +54,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.AuthConstants.html",
+<<<<<<< HEAD
           "hash": "k11KjVoq5W3D19hmmd3J/UqH8lgNNvIJITq7Q0qdJ5k="
+=======
+          "hash": "fykEQTQaPMWn4jBCwPvykI58ivxcJhT5YMNdBdNOsWg="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -53,7 +69,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.html",
+<<<<<<< HEAD
           "hash": "BM4GNzN1XxdRKMp79l3tBv3sjeXYl2uo2fc2WqAA4xg="
+=======
+          "hash": "6/sRjUcAKgHPdE+/Tn/pRXWhnNtq1seB8ROjjMDnJYY="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -64,13 +84,18 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.AttractionReservationsController.html",
+<<<<<<< HEAD
           "hash": "NykW5myaS8pQJaL6RYWMAMccEArLhd6DjzgDksAh7zk="
+=======
+          "hash": "NTNz0eSz0MQIxVok9G+GLzSgn26kugSQ71MWUOL4X2o="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.API.Controllers.V1.AttractionReviewsController.yml",
       "output": {
         ".html": {
@@ -2749,699 +2774,1210 @@
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.DTOs.ContinentDetailsDto.html",
           "hash": "KMbIHrrP5pVH2hrTXynOqnG07g916CyXDWmhGESIltE="
+=======
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.AttractionsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.AttractionsController.html",
+          "hash": "aKJvUR5cE+WK1q/ria+HjbqpPhHX0ZaUYeVg2qXdtyk="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.DTOs.ContinentMinimalDto.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.DTOs.ContinentMinimalDto.html",
           "hash": "OERhNg82Ii6oBVzeF57DZ3YP8TShujxQG1ACaTXSVS4="
+=======
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.RoomReservationsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.RoomReservationsController.html",
+          "hash": "Xw8LctAZ1Z9MWDrvap2ilMcQdB4B/dexjlCApZi6qSY="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.DTOs.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.DTOs.html",
           "hash": "cq+sH1RGYp0WOI3Tr2cjO/dfEnkruElN60U1ow17obE="
+=======
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.WeatherForecastController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.WeatherForecastController.html",
+          "hash": "OHUDU2SxTv1JZULyIjElq8/3Z9WeMXADRYZrJ/SdWLs="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmand.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmand.html",
           "hash": "j32umBfgj2g99TJWC20+7p+r0WO5Va6GmBUy7BSARXM="
+=======
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.html",
+          "hash": "SpD9Hn1GoLHNlqkTpV4BnLtg6pNYVd58vnbEEkRKaRw="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandHandler.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandHandler.html",
           "hash": "IJhtVky1JxG6sqpvR3G5vxz3BlKU0oC4JqFVJCPPTmg="
+=======
+      "source_relative_path": "api/BookingClone.API.Controllers.V2.WeatherForecast2Controller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V2.WeatherForecast2Controller.html",
+          "hash": "w2JXX+628Ymyvp84dAkw4Akzj/VibAuR4Hl+VRXvpag="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandValidator.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandValidator.html",
           "hash": "0uGkKUWyxf++grwsdAPkCGKXYn0LWtffkLBx6mOXS+E="
+=======
+      "source_relative_path": "api/BookingClone.API.Controllers.V2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V2.html",
+          "hash": "24PWksc1NSK9YFdyaz9ZEtz4U3Cej+F/XjAXDlCrtU0="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommand2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommand2.html",
           "hash": "QxrXWW0a1dOEBYb/Yt/n8z61f7ph/qlwwUXxrHXOpCY="
+=======
+      "source_relative_path": "api/BookingClone.API.Extensions.HealthCheckExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Extensions.HealthCheckExtension.html",
+          "hash": "cKtZ/RZninT5yLz6LxpqaiDsbWQ+w3a2IRMMel46QpA="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommandhandler2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommandhandler2.html",
           "hash": "iBYxFkleYJoihVHZ4BySlRCpr6n4fMd6VT3xPWSE4Jw="
+=======
+      "source_relative_path": "api/BookingClone.API.Extensions.HostExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Extensions.HostExtensions.html",
+          "hash": "lFy333ymo+6sR307zttk/SgBwDGUEmahZe6j8cpntts="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.html",
           "hash": "vsCqaE0QeVP2ZhTPRb56qNtH4VMrP3YnirI6fFv+2yw="
+=======
+      "source_relative_path": "api/BookingClone.API.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Extensions.html",
+          "hash": "N2Q47JHc/OWa6Q0Pl30GgqqpM2usIztdR1dC95oW460="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmand.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmand.html",
           "hash": "Du1hNA7P/Twe7/rZRR0o6d5i6euFEMeQGenkKgfLN+Q="
+=======
+      "source_relative_path": "api/BookingClone.API.OpenApi.ConfigureSwaggerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.OpenApi.ConfigureSwaggerOptions.html",
+          "hash": "QH53k/lDUcuOvR9fMpr3+DDWhAplyQAcy6JOR8UrjZc="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmandHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmandHandlar.html",
           "hash": "vf5dsIvYHz4WUVHHSGjNJstz7my/NgPFrM06ncGDdvs="
+=======
+      "source_relative_path": "api/BookingClone.API.OpenApi.SwaggerDefaultValues.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.OpenApi.SwaggerDefaultValues.html",
+          "hash": "XwcJGPCjhGINVPpf3yG7E7ihaiAwMz4C+GLHKxp2FLA="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.html",
           "hash": "9hoMsFYUcqKDBKXGK7h6O/tFZ+QC4B/6NsrEnOPu09A="
+=======
+      "source_relative_path": "api/BookingClone.API.OpenApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.OpenApi.html",
+          "hash": "ZtuFl3m00f3Joo9tGAnhS7fp1D3LmmvLEgGbpP+0Hog="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmand.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmand.html",
           "hash": "d9rT0tfOD/hYDzEveYi45stxl/sLM5C9k1hOPnBup8g="
+=======
+      "source_relative_path": "api/BookingClone.API.WeatherForecast.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.WeatherForecast.html",
+          "hash": "RJnD8l9bv20guZBV0P61Dw06Tovvxa9pLQ/IzJTNcfE="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmandHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmandHandlar.html",
           "hash": "Yw7M43qCOBslyxiUJ5MYKUKc1iNhc4UdZPfYDjjN8rs="
+=======
+      "source_relative_path": "api/BookingClone.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.html",
+          "hash": "1LrJvVHOGckfLEtdTy69QlDQhz6zmoH0GHa8mrTH1U0="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.updatecontinentcommand2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.updatecontinentcommand2.html",
           "hash": "zV1SdMLQibJjxyLhrLz/V896ZWwqtyWv1RWqXgDapEo="
+=======
+      "source_relative_path": "api/BookingClone.Admin.Controllers.HomeController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.HomeController.html",
+          "hash": "Scs04s9NgPMcmJM3j82gED6sDCfqvkAVeUVufvlwbrg="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.html",
           "hash": "fjKi9tutErQ1V8VaMN9viOccMAXKJ6gpOi+D+348J6s="
+=======
+      "source_relative_path": "api/BookingClone.Admin.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.html",
+          "hash": "FvfpvF/4DpAHVJDSC5Uu4SIKnQjT3Ukh0vyAIO9R4NM="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQuery.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQuery.html",
           "hash": "WATbQOgQVGKof5QjbBEs4gR9D3WoPPs9ao6wD87ouBA="
+=======
+      "source_relative_path": "api/BookingClone.Admin.Models.ErrorViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Models.ErrorViewModel.html",
+          "hash": "RDKoAWy5bDVwrAz5VJdsU2FyQYX0JLomc6o55uKvGQE="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQueryHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQueryHandlar.html",
           "hash": "wrpTNZFoIgTLdScSZLSRPkjp38Ig/C8Nbnj9G8h2bMw="
+=======
+      "source_relative_path": "api/BookingClone.Admin.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Models.html",
+          "hash": "Y2RhQsQZkXmr5GxNQILsreAay77Nh16bm3cu+4K5jto="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.getallcontinentquery2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.getallcontinentquery2.html",
           "hash": "UwEQViN1SBOdpHEWyESG46DWGfB6C6GvAYXBZT0lu2M="
+=======
+      "source_relative_path": "api/BookingClone.Application.ApplicationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.ApplicationExtensions.html",
+          "hash": "p6Tm7iKTc1W23icUNJ8IwEJ5ElWkyD0XShdVBNljCAA="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.html",
           "hash": "FGw1NCN0C5JIkY1MRC8SzQwn6NFcUAkuUTghpusLmII="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttraction.AddAttractionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttraction.AddAttractionCommand.html",
+          "hash": "MqCPa2Eu1kfyDSPoJZ3T2C+JuNX8Y/MEqQJ9rz00usI="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQuery.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQuery.html",
           "hash": "ZuVPlImlWsyQaUb1gwOlopoxfD6dg7Jg7PdHMZI5gFo="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttraction.html",
+          "hash": "Ob7CvzVOBBEPqBiPUjD6MmoT2PlRMtlis1K3yIREIm0="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQueryHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQueryHandlar.html",
           "hash": "uULJnOSKJkCQophnZhaWcKx3KlDsFYeJdTbrDAPyuhc="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttractionImage.AddAttractionImageCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttractionImage.AddAttractionImageCommand.html",
+          "hash": "UM2PcX6IgFOqHeu2f1U6KgRPzZKotYhvJcNmi057Syc="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.html",
           "hash": "MwFC1OfjPgw2mNxL9P/CJtW4Xe4ymJXkicVnTtdArvg="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttractionImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttractionImage.html",
+          "hash": "GrdDgOS31pgzdtZ9IlK7wp7MPRC6rSjvTOea387BnyI="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.GetAllContinentsQuerywithoutpagination.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.GetAllContinentsQuerywithoutpagination.html",
           "hash": "MfDQicKo5IH/SijUbmdNNkZtNCJ0Ncx9fXyKXVAGvb4="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttraction.DeleteAttractionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttraction.DeleteAttractionCommand.html",
+          "hash": "E0pGzpulnDbp9lBtsmghPtZIAWOCUfBV3XOwzoLHJFM="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.getAllContinentswithoutpaginationQueryHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.getAllContinentswithoutpaginationQueryHandlar.html",
           "hash": "YIkp/5+a1R9E57Hk+jmaujKVmSh2OxW084KmPdnrJn0="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttraction.html",
+          "hash": "0l3a7VtlzdhlRhBLv19eOKYMUAGxtTnHywrv+iocKfY="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.html",
           "hash": "llwlgMLwTmFZ233h58MDi373doiwzoTbiXUc27m0MJg="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction.UpdateAttractionCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction.UpdateAttractionCommand.html",
+          "hash": "fN4MFnM7Rresyqu+6KkUbhGE3zaYSJ/VBSMexj6nZ6g="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryDetailsDto.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryDetailsDto.html",
           "hash": "mGj332aCW8yGPaxtBPcWvIpp+AwHK87gcwn4BKpFP/0="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction.html",
+          "hash": "AkCxd/1Y5POQMpxssvDA1SSX2uaMSSskxIasuocChZw="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryMinimalDto.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryMinimalDto.html",
           "hash": "zk/GEX56xZfZcm7Y6/BEom29Fy4Z351SEWHpcJ2foWQ="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AddAttractionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AddAttractionDto.html",
+          "hash": "T7rmA7+33bKiyGZcFwck6P5t23xIsrmZxB6HOEteO44="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.DTOs.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.DTOs.html",
           "hash": "vbzWxBEnXnzgvuJNEcd5NNlSP4y7zY3UPRwAKyRiicE="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AttractionImageDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AttractionImageDto.html",
+          "hash": "DUqpmvmch0Gjyk3FOlZPdl90iWzzQ+A+S2IT/o8Qwus="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmand.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmand.html",
           "hash": "02FXc0MsyOOX1LlEY4TSPb5ZcWd8huDYEi4JIHMAYyU="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.GetAttractionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.GetAttractionDto.html",
+          "hash": "UfQPsYxQ4IJuOpGFOMv72GpTOz3PsdEGrKZ+G2fSUC4="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmandHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmandHandlar.html",
           "hash": "q3E2bEbu96wDA1z3EhWfrib0kYfUILnOSwrXXAqfgvM="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.UpdateAttractionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.UpdateAttractionDto.html",
+          "hash": "3SEE14jv5BQPxzOOmookhF+M6lfRIMI+XHnWKk+SIOU="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountrycommand2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountrycommand2.html",
           "hash": "ihxdJTx16mRL3GbNwITzPsXdWNxzVfWLLWMHYtEJIWg="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.html",
+          "hash": "XmZAjZPn4PKGjR0LbgKTKjokfq7/G6cXTpgxnp2xAn4="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountycommandhandler2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountycommandhandler2.html",
           "hash": "DFNOmBt37sU51zuTObrk/MaFFYAMpmOzyFaxQIyYVso="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.GetAttractionByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.GetAttractionByIdQuery.html",
+          "hash": "SeAi8eWrZBlHEb93ksD4Qq/rxkyE84m04FLR3zDaykc="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.html",
           "hash": "Ms4s0okcm8X5sL3x3KEURoxc9AdrHPNO1LvfJrQa9t4="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.html",
+          "hash": "yX7KKcyD5wIGZK58J7h/xuaZ072YTnJIRpvOd+8z0Ts="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmand.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmand.html",
           "hash": "mmSHDvG3WzVYh7wcMwSAsbA/oRSCYPsSEpAgGAqBDlE="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.AddAttractionReservationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.AddAttractionReservationCommand.html",
+          "hash": "6Q72aK1A/pulcmzLSMZjodozULO9exOdhii0DCVhbDc="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmandHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmandHandlar.html",
           "hash": "w0ov5uNmOApAM4waRaRZ9kE6G1hqDMpov4yHjQCWS48="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.html",
+          "hash": "I9/08giOfpTMBvsoGy18AqneSrRb4vr3cedjz5BbZLs="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.html",
           "hash": "448VdcyhYn7GVeOLX10P098S1qFOaLzqizi1mo6b1Do="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.html",
+          "hash": "OQomLMgEdhNfz9kJ5p6Kduo3nDV5bIOO+1fQt/ys1gI="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmand.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmand.html",
           "hash": "ILJUBy14YqbDhk4rL+lpcGkRzxr7da4XXgCq1suu8IE="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.html",
+          "hash": "veUt3DCT3ovVP3xXq5NwkRY4XKiD/H5zfgh0/SB/C0Q="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmandHandler.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmandHandler.html",
           "hash": "kE6cusMcV5kgOcjrfOJ1PHBSAXirOGMopQZBAPe7vY8="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.html",
+          "hash": "9u7yutU+0Rp9NszLd7HxHpKxwWsWCuM4gyEld8guCnw="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.updatecountrycommand2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.updatecountrycommand2.html",
           "hash": "pDrUcPJdIJEnj93Pge1uzkbqK2qSZ/bO+bJ4pl//ubU="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.html",
+          "hash": "+LTgkcvskNxTMJyoPFKCq2nrUWch2soFa05+oQfSQWI="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.html",
           "hash": "ntPiWzXpWsZqcRCoIJIswRzcTY3VX8yGmcB7Uw1LzPw="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html",
+          "hash": "17w61orYyXiKuJ8WCNy6Hrvl0FbK4Ynu/hRZKcR9y8c="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuery.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuery.html",
           "hash": "cCqqHm6sSDXdPvM6aM31Frr3CJ5NlWLR/MWZRrUnWBE="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html",
+          "hash": "rAJYSvwE7V6lMSDs1LBwX6XdV8yA3UiYM4qAlrkQaUM="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQueryHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQueryHandlar.html",
           "hash": "038suEuuuqCzA2gVFTo9VGhyXXVCYgxW5NbWcGZXtnM="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html",
+          "hash": "ERIyDgvdxl/nIjRCjotEYIQZz/MtQZubf95LXGsZOHs="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuerywithoutpagination.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuerywithoutpagination.html",
           "hash": "CwBbS3gD45lbjRCOpGDhjkKFR94R31D51+ll45HoEd4="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.html",
+          "hash": "qT5kp37SW17BvGfXthmtcnNASICjmtNTKVWJUZIJHcc="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getAllCountrieswithoutpaginationQueryHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getAllCountrieswithoutpaginationQueryHandlar.html",
           "hash": "DUAVQWpCfF2QlJJFdsio/BkijzmK3VhzffbG6z6TMLk="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.html",
+          "hash": "E7diAk1SmjWRQjKm8Z9WQPbK0Dnmr8DnWmyAh76v3o4="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getallcountryquery2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getallcountryquery2.html",
           "hash": "3WYMioRg/nds7ha2mQmh2pTFMLMoPpv2J4barvL254Q="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.html",
+          "hash": "kLvrbWn/VGemDNFpOgYwDij/y9zkLYP2oJfoQz2gKFg="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.html",
           "hash": "117oVgWC/NZdh1wfyNB9TOMrTUPi0X/PWUdQnlOJOKQ="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.AddRoomReservationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.AddRoomReservationCommand.html",
+          "hash": "CLPZelwQuMqLEDMhBa82gbmV7Qy3d5m6fTRLpF1PQe8="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQuery.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQuery.html",
           "hash": "DOX5Sb/WU2icNLtJXs+vFSfVHCI1qmSefjBbVpN1xuo="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.html",
+          "hash": "kNeoEI3mhiEejhGmhq3CwoJS4MliO7XnK6i2SWfl93c="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQueryHandlar.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQueryHandlar.html",
           "hash": "NVYi7gmg7IBG6bc4tAUrd5vEJy20HCxRPa18CJJbmNs="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation.DeleteRoomReservationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation.DeleteRoomReservationCommand.html",
+          "hash": "6MWVYg4yALvgtwopLeqxRWersZAGUtP1jCTCoQI/W1A="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.html",
           "hash": "uXRqJgNP8ce1+bePTwBStC8ewF0dLxCUD+izWUTPn/o="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation.html",
+          "hash": "RHVaTz400krA4+1p2OGI/lrsYurtrQ/XFHwap1s27Ns="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.getallcountryqueryhandler2.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.getallcountryqueryhandler2.html",
           "hash": "SzYUExdPi0jh3PfiLUcctVb28r9vSdrJmqUBP8ke0qM="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation.UpdateRoomReservationCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation.UpdateRoomReservationCommand.html",
+          "hash": "DleyOpmXD/AmK7/uO1fNzBqsH/FdJoyU78845BVydZE="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.html",
           "hash": "pKE6r0i+8ic6fG1RZy+6AoZU9AISKfJJOLZ1IGm54s4="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation.html",
+          "hash": "L5gSxUjtKdtINEEsp2th5qAi7064f5qIPtp9HTp7FNI="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Application.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.html",
           "hash": "8E/2D3w+VNISe6VzrfsbYbPyRXEPqLNMNuYx9zXsW+E="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto.html",
+          "hash": "W75deNYkAVB0bLvXdoC9nZS7h7LAIVTskARJV25idfo="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Common.BaseAuditableEntity-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.BaseAuditableEntity-1.html",
           "hash": "XGdeWaCDSE4PhjZm+GKpALhPV1k9Lpb61Y0xsznK6Ts="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.GetRoomReservationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.GetRoomReservationDto.html",
+          "hash": "FtwpEvj2mj347JOBHrNCAZrepe8JSURrubiEuN2ByOw="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Common.BaseEntity-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.BaseEntity-1.html",
           "hash": "ZQuCeKXQTSWBGYRzAGxa4gsoRexShAaUSCKX2bOisgI="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto.html",
+          "hash": "ToPnUt7jbGjb9dyYyVsJxfvAfwbw0nMXUI26R+r2ESI="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Common.PagedList-1.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.PagedList-1.html",
           "hash": "48Y5i1/J0Eo7W74BxUFKMl2Ziu6sglmUjxMDiUOJP8A="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.html",
+          "hash": "rzKQUtuIbgb2IiT86CllkKGN619dwLfgAAkaYuxqVEc="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Common.PaginationQuery.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.PaginationQuery.html",
           "hash": "WW45smaHvxa2jUvyo2U8GnD61AYMiT1npqgDTbmtKMA="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery.html",
+          "hash": "h37unwGOOxqfunWKKzSteW5GHqz1WBQAb29YNJKJlpM="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Common.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.html",
           "hash": "M5Cx9AcALGYORm5oBZOeDeeyg4JjpvGbhRKkznbYUyo="
+=======
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.html",
+          "hash": "/JTWWq/06sHg36l24jfRoKrNW43BnWjPDqDl8x1Auhk="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Contracts.IAttractionRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IAttractionRepository.html",
           "hash": "CvG33F0QblYDyZECXR2/8R5mK8+kQtlzABvRcP8IXkM="
+=======
+      "source_relative_path": "api/BookingClone.Application.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.html",
+          "hash": "dsAKTgV+Cezv+UqWI4rVEZbYAU9tnUaHd2VQzF2Y8Ps="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Contracts.IAttractionReservationRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IAttractionReservationRepository.html",
           "hash": "VyDhCFsbnZ3nGxlPpmIjrQrRCCO3DBK+TPl2EgyuWVs="
+=======
+      "source_relative_path": "api/BookingClone.Domain.Common.BaseAuditableEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Common.BaseAuditableEntity-1.html",
+          "hash": "eDFGtUkPmBJ5sY1Cf1/prfM6fBiC7y6CRKUV3i2fclE="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Contracts.IAttractionReviewRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IAttractionReviewRepository.html",
           "hash": "6Z/MipRZwwpRRg3oy0TdyZXdSwk4hVKEBzqPaLGOZoU="
+=======
+      "source_relative_path": "api/BookingClone.Domain.Common.BaseEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Common.BaseEntity-1.html",
+          "hash": "rEOrTguf4CHP8HJ39ES6duDBXSJwiOdFYoyTKJYKfUU="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Contracts.ICityRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.ICityRepository.html",
           "hash": "4Lx9QoUgyOzw1vbJ99AGqXbKfzmWXVP3JK7H++i1hQ8="
+=======
+      "source_relative_path": "api/BookingClone.Domain.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Common.html",
+          "hash": "jDaoMUaIBnMZUMC4JYGRDFvbH8KT23M0eKLfJmRXzPk="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Contracts.IContinentRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IContinentRepository.html",
           "hash": "GCHZf8gqtvxR75ioyUXZFdnqrmlApHi+ofgkDr3yE+Y="
+=======
+      "source_relative_path": "api/BookingClone.Domain.Contracts.IAttractionRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.IAttractionRepository.html",
+          "hash": "oKvpkmfCeAFLAcjhhgftQ5LaZO3YD12NCz/3Xgq74G8="
+>>>>>>> first commit
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
+<<<<<<< HEAD
       "source_relative_path": "api/BookingClone.Domain.Contracts.ICountryRepository.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.ICountryRepository.html",
           "hash": "as4gIpGaD7mp6ss//Mc3aqIKR8LjnURb2sRgdkDn/60="
+=======
+      "source_relative_path": "api/BookingClone.Domain.Contracts.IAttractionReservationRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.IAttractionReservationRepository.html",
+          "hash": "sb5Jx5Gxeyzc4g99RpYtX7wuUNMTSewj/pCNvrLApJQ="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3452,6 +3988,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IGenericRepository-2.html",
+<<<<<<< HEAD
           "hash": "zD7c1orkwjpfbRXHyOnAMwEJFO0hmBlNHxzlshlTOFc="
         }
       },
@@ -3486,6 +4023,9 @@
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IRoomRepository.html",
           "hash": "VK8PMJS+DHiUna6lCWPcj+jhVb+A4Zyh3q28Cnq0XTM="
+=======
+          "hash": "zxio93Z9uWx4QI0jVK1if+k1HouAWUmWLFd3lHjC1pM="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3496,7 +4036,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IRoomReservationRepository.html",
+<<<<<<< HEAD
           "hash": "bygX2VKmKFpQYIQ/PLCWL+v19cmWY3Oe71Zd1eiLJWI="
+=======
+          "hash": "CJUTjSz1b9PejMbjPDmMXyE5/MPnC2/uxJfkJe6b8Bs="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3507,7 +4051,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.html",
+<<<<<<< HEAD
           "hash": "0a6GE5UskGh0XWcxfJRrjJop6v73ZVuKhN7KKjy2VsY="
+=======
+          "hash": "IAkOKS9OIMjpgdaieBS9hyFnAV9zLKdD464i0oTeA24="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3518,7 +4066,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Attraction.html",
+<<<<<<< HEAD
           "hash": "Ryg5xIVLjl/uMfhi6nweAeBsyhqpfuBliLXm0Z5kbzo="
+=======
+          "hash": "91X3t6ROVJGPWKdcuhSrig40UtR0UyaF2aOnRINulHY="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3529,7 +4081,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionImage.html",
+<<<<<<< HEAD
           "hash": "Jq+EhQX2+uBVhEIiW4co3u2hiRk1jua+ypJOwN9M6gc="
+=======
+          "hash": "FeYN3ZRX/i/5NP9afNx/sohnnddBmo4hHMYBj6eWo5g="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3540,7 +4096,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionReservation.html",
+<<<<<<< HEAD
           "hash": "POp/dloW5LwO/vuqQw6MboB7VB4rs4p0Jvq9202aKe4="
+=======
+          "hash": "Iz1UBxBNOnOKmbnd1pEDDHJ8py85netWOLL3/Lu+CEY="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3551,7 +4111,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionReview.html",
+<<<<<<< HEAD
           "hash": "HVjSb6ZdEkEHbbM57X3fYZxa/iyuWhwhtA2WYxgfEfI="
+=======
+          "hash": "CO2L4KiL6k962TfbeHUPLltsvGLYMLdM9AV8hAIn01M="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3562,7 +4126,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.City.html",
+<<<<<<< HEAD
           "hash": "Um0x+0mF3ulcEbAWowUjWZtgN4aVGV0PIXtp4I2AYu4="
+=======
+          "hash": "pstLuYg9r0nxPUtD3sj0nhyMTBEkZ6Vb/5ByfA+33Og="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3573,7 +4141,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.CityHotel.html",
+<<<<<<< HEAD
           "hash": "WJEDghUUQKTyjFgVzq5tpWpw+F1vl3vypS8vP++cAa8="
+=======
+          "hash": "RrO+eLM0+lBtIOR2873mkTm4XXPvmw04JTuJaJV3NCM="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3584,7 +4156,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Continent.html",
+<<<<<<< HEAD
           "hash": "wJpCMkxx0lTaHHWYva5g/17eNYc6aUCoTkptLdwdG1g="
+=======
+          "hash": "aNql4JQRadQ4opawise/IMFKgHjg82iSGN3xAIv7pd4="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3595,7 +4171,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Country.html",
+<<<<<<< HEAD
           "hash": "FDyAJ9QzFLj9OM2PY593ZQk/ln+BpUXWFlJoEg6GSX0="
+=======
+          "hash": "LWJJuceoMgDKcpTp0CHh0vyOPMXqHLNmFWizA+pnFMU="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3606,7 +4186,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Hotel.html",
+<<<<<<< HEAD
           "hash": "XVW8EZ1WGA5vI0j8R/cCDgO+zP0594BxdHpJ02MuSNM="
+=======
+          "hash": "qEbl7IivMYmD69/UtQsFTFzO9LyemBW/9ZYQIU19nlc="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3617,7 +4201,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.HotelReview.html",
+<<<<<<< HEAD
           "hash": "vkcNp1A4nyF7NZS86L//3lMmbWXZT60Cg/KDKWn7qsg="
+=======
+          "hash": "lk//fzMItadT4VgAX56CI7BEgJSnAMiqStvJc/7fJoE="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3628,7 +4216,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Reservation.html",
+<<<<<<< HEAD
           "hash": "BAlr36mNiR0mU6nGNHJmpT3S2ut9RTVCJtwRwVbtGDo="
+=======
+          "hash": "TjImCLEe12uFAe649fBEa1eh4jxed/PiRZ2uvkntDW0="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3639,7 +4231,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.ReservedAttraction.html",
+<<<<<<< HEAD
           "hash": "l3jBx93mgOVfu6jUA6IcGDg0UyLbwDD7Gu0KH2+g1h8="
+=======
+          "hash": "ylXGeIFJ86rR82XS40hWgqtVt7ue3TV7glSY6zBNnoc="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3650,7 +4246,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.ReservedRoom.html",
+<<<<<<< HEAD
           "hash": "DuaNmY5IhN14xO6EECjOHXrAv6L8pwuIqFUrixEBvIE="
+=======
+          "hash": "LJE3iUiTyEy+ko82BxKeWTSk9+A6g3Y5hcs9ApTgdhE="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3661,7 +4261,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Review.html",
+<<<<<<< HEAD
           "hash": "0GaTU/qs74kbO0TroGMTJL+DcY5FEQc1IOr+E+Sfhpk="
+=======
+          "hash": "CDPnWa4QuxfoVuMTnluziDernJ4zwH9yMLOYzY4lmm0="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3672,7 +4276,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Room.html",
+<<<<<<< HEAD
           "hash": "tSI4/9VWtWev2dzC0A+jUyqHkWBeU8LACjbsZkb0FbE="
+=======
+          "hash": "mVU1OnKTCmlOv/XzSf6iEkmxQITEgB8CM6LC311VWlI="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3683,7 +4291,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.RoomReservation.html",
+<<<<<<< HEAD
           "hash": "j3wcTP0alZxibcgpMb2Kkogntt5AgaFhPQZ/0pd3NEA="
+=======
+          "hash": "ftihLssBjyTaufYZNH3a+uQ478GD6qyXaEpSz65Zkn4="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3694,7 +4306,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.html",
+<<<<<<< HEAD
           "hash": "nDbLcrkUTHSAhAgdz+nP/QrtWHf8bnXMzUj7WjfnAFE="
+=======
+          "hash": "Fj6g8l3Kb3vTCYdTvzZqNkFCsG4VFDvq72nyg8626ag="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3705,7 +4321,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.ReservationStatus.html",
+<<<<<<< HEAD
           "hash": "TcFtSdAhjqV4lZUKgK6AoVUIZMoQ2lrnrBJpYlGOXpM="
+=======
+          "hash": "es3T2kVC++F5DlSFCTBbACTQOMhkHYjeXNFpsQjmbjU="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3716,7 +4336,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.RoomViewType.html",
+<<<<<<< HEAD
           "hash": "d3AfaTNJBZZYuffexGzm9p7jqJ7zSTIhetvLsVSVv+4="
+=======
+          "hash": "2iAeBklSOmd1FfJg9/nQ/p6rEcDTJXK6d1ObJr1HC2I="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3727,7 +4351,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.html",
+<<<<<<< HEAD
           "hash": "L12peRFKxTrprfmpHFvLU0R+Vmih/Z13XTEFqWpyWMo="
+=======
+          "hash": "ndr4tVwkp7jkFxy3S8AuePxtbF1vqFtSTkZuaiw3lWE="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3738,7 +4366,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.BookingDbContext.html",
+<<<<<<< HEAD
           "hash": "ubhyaBwVQYF0ei31yV7vAeJ6svqwNJ76WeG/JU5x6Yc="
+=======
+          "hash": "qRIYv58V6+w4TDB0dDHJuZhAN1ia6oVT5x7MCvzNqaE="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3749,7 +4381,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.BookingDbContextExtensions.html",
+<<<<<<< HEAD
           "hash": "vHYNPDrOR4J28Zbdyroucd0k7D0/ZnrtIkb1UrZ28wY="
+=======
+          "hash": "0Iseo7dvTGKVmkVdeNSVXDbl46y0aUBcAW2KkG9a3o0="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3760,6 +4396,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.html",
+<<<<<<< HEAD
           "hash": "CFrfljcM5vNgmTgULGKfOSjO/1jxzifDtL7m0I0GZeo="
         }
       },
@@ -3805,6 +4442,9 @@
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Extensions.html",
           "hash": "sqNoXTuOU9WqeGwHXKn04lWniO5rBTLX+mCbfJW3xc0="
+=======
+          "hash": "E7xUJ4Yn0HUoj/VHWDT2QTSKVQ9HQGsGbAhS7/8yiHs="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3815,7 +4455,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.AddAttractionImagesTable.html",
+<<<<<<< HEAD
           "hash": "ciAcQd/0cDoTFykKDDWY/N7JM5+8jwwEBOYkp6Bkg/0="
+=======
+          "hash": "/If0W0qeMHNmLEKrcXR3dOMJy1LTJm3dJXPV/Xz1n5A="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3826,7 +4470,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.AddCityNullInAttractionTable.html",
+<<<<<<< HEAD
           "hash": "kPRAtuHq8tQWMQb+liJjrBTjRp+0QVPcpqI/70ZAZUg="
+=======
+          "hash": "8wfCvkfsVZ7MhaZBuwSo3/Y68QqNwuf76wpWgU6DY2c="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3837,7 +4485,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.DescriptionMaxLengthInAttractionTable.html",
+<<<<<<< HEAD
           "hash": "CCXmnXBksm4U+oYiS21aWjBdGcEDt+rNL6F3cpegmWA="
+=======
+          "hash": "imgU2h714AuIyuC9zvDH5PQHX97YF7MafwzFBMnYlmk="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3848,7 +4500,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.InitialMigration.html",
+<<<<<<< HEAD
           "hash": "hnhEitW3VE8Peatvva8krln4yAnpllPd/P8ZKqOmpew="
+=======
+          "hash": "MqeyKT6fNRtX1I4VbspNXNSCcijW+QfjBZDw7lSq/vk="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3859,7 +4515,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.html",
+<<<<<<< HEAD
           "hash": "uZqtZXxWko0e3XnIo/Yt6YkWwobdMt5dJlU65C1PRNA="
+=======
+          "hash": "jg5RrjFR41cfHKmjDuvVYbV4aU14YYSbkwBkBBIBzlc="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3870,7 +4530,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionRepository.html",
+<<<<<<< HEAD
           "hash": "1ss+GsCKoh3CRZJdtEQp/AyQwxk0zf30yGlyBcXmOJY="
+=======
+          "hash": "PwpbIqo7n9TlJzkQeisYR7c+DtcGJc2L12TutIyC/f0="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3881,6 +4545,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionReservationRepository.html",
+<<<<<<< HEAD
           "hash": "sHps2sOvjKcB8GCPKZ+/D0VHOsvXrikSM4bzd8U3LZM="
         }
       },
@@ -3926,6 +4591,9 @@
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.CountryRepository.html",
           "hash": "1vdRlC2r6ryeNWr9lB1+7hjHGSzfDmnHFHWeXYZjZLI="
+=======
+          "hash": "le3W5Tg0PYb0AIuMmN7CZva3gHzMk2ZnlhlGgmcaPpY="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3936,6 +4604,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.GenericRepository-2.html",
+<<<<<<< HEAD
           "hash": "pvLT+NwMNP0CLMul1lNSTY8aa6Bul8nH5ZaTBZbkYKE="
         }
       },
@@ -3970,6 +4639,9 @@
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.RoomRepository.html",
           "hash": "LxZs2ifm4zQtVGWuRMyHYZzdmg3O4bRmR1255sygbts="
+=======
+          "hash": "r4EvJIMbT0J6IUvMAA16S7n6Il1+73AoYBDRdmqIVdE="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3980,7 +4652,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.RoomReservationRepository.html",
+<<<<<<< HEAD
           "hash": "44CjIK2xiWmsp/e55+WKZDl00pNcDmZRDwgOEvLnyfw="
+=======
+          "hash": "riQ+mCrf7Y3efvR+OwokvHbSri4lmhYUMb5v0rEYuQc="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -3991,7 +4667,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.html",
+<<<<<<< HEAD
           "hash": "4VQM3qYx4dRiWLAseuAlJZM+3FO/K7F0YY8eqZPxGCU="
+=======
+          "hash": "hyFWHTeKSamUJpfNlfsQjAAxZmE6BjsHbuL1fSMY0i4="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -4002,7 +4682,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Serilog.Serilogger.html",
+<<<<<<< HEAD
           "hash": "Ftw5BlziPCcgKrGz7YWrW7os91d4uzwr4+Xru1nTBAM="
+=======
+          "hash": "pjGh+RIuv7bJzBJTS54NVvxJ9uLEPwPC+ze9gJ0dMU8="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -4013,7 +4697,11 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Serilog.html",
+<<<<<<< HEAD
           "hash": "+X16e4+ywwn0DITOMtIa/Otsv5c0HDXm9lruDivWpQc="
+=======
+          "hash": "B0Pv452Iskkme28R08vRRzyBCn83bPlUkx24AI7NIUE="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -4024,7 +4712,11 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
+<<<<<<< HEAD
           "hash": "F8yz88OPcN6XnDsMYgmU6d80khONMDt3DXVZI1WqxAE="
+=======
+          "hash": "UNpvH6omFrx5MB8PtfKKU2TwrWeXLLp0l88bIkdYoWk="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -4035,11 +4727,19 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
+<<<<<<< HEAD
           "hash": "0AkpHvy2Nqq3VOoOeNujRiKU8i0/6DEwLXzhe1xlWeQ="
         },
         ".json": {
           "relative_path": "api/toc.json",
           "hash": "dmNLOGpX/mgmGDJ0t2YWFK7dCW8D66DgiN22beqVUAY="
+=======
+          "hash": "0Jx4p3IIw6Dj6De/6Q6xS92LwcPeingteyTzYJmaf1g="
+        },
+        ".json": {
+          "relative_path": "api/toc.json",
+          "hash": "vzXmFGtI5ngHvdV6+Kd/y9iSzxoZ5VYOrjFVpZxKrEg="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -4050,7 +4750,11 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
+<<<<<<< HEAD
           "hash": "8dK7gKGfPpEsooS65vwq7dTguRc3td4DLXSX4o+7Fjk="
+=======
+          "hash": "ewxkVRK4uOVD2Q7+M4x7VhLBTmA2DAx+KV5d8CRSMpk="
+>>>>>>> first commit
         }
       },
       "version": ""
@@ -4076,7 +4780,11 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
+<<<<<<< HEAD
           "hash": "vPfQcthBUM+I4UIFwLOvTHimsbGK1MmUHNMOWFpOUlU="
+=======
+          "hash": "zgPQ0axGIHKdnwBlkIEk06o6++1bXdvfSxZrQLnE9zg="
+>>>>>>> first commit
         }
       },
       "version": ""

@@ -1,6 +1,7 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+<<<<<<< HEAD
 - uid: BookingClone.Admin.Areas.Identity.Pages
   name: BookingClone.Admin.Areas.Identity.Pages
   href: api/BookingClone.Admin.Areas.Identity.Pages.html
@@ -2855,12 +2856,15 @@ references:
   isSpec: "True"
   fullName: BookingClone.Admin.Areas.Identity.Pages.ErrorModel.ShowRequestId
   nameWithType: ErrorModel.ShowRequestId
+=======
+>>>>>>> first commit
 - uid: BookingClone.Admin.Controllers
   name: BookingClone.Admin.Controllers
   href: api/BookingClone.Admin.Controllers.html
   commentId: N:BookingClone.Admin.Controllers
   fullName: BookingClone.Admin.Controllers
   nameWithType: BookingClone.Admin.Controllers
+<<<<<<< HEAD
 - uid: BookingClone.Admin.Controllers.AttractionReservationsController
   name: AttractionReservationsController
   href: api/BookingClone.Admin.Controllers.AttractionReservationsController.html
@@ -3545,6 +3549,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Admin.Controllers.CountryController.Index
   nameWithType: CountryController.Index
+=======
+>>>>>>> first commit
 - uid: BookingClone.Admin.Controllers.HomeController
   name: HomeController
   href: api/BookingClone.Admin.Controllers.HomeController.html
@@ -3577,6 +3583,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Admin.Controllers.HomeController.Index
   nameWithType: HomeController.Index
+<<<<<<< HEAD
 - uid: BookingClone.Admin.Controllers.HotelReviewsController
   name: HotelReviewsController
   href: api/BookingClone.Admin.Controllers.HotelReviewsController.html
@@ -4128,6 +4135,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Admin.Migrations.InitialMigration.Up
   nameWithType: InitialMigration.Up
+=======
+>>>>>>> first commit
 - uid: BookingClone.Admin.Models
   name: BookingClone.Admin.Models
   href: api/BookingClone.Admin.Models.html
@@ -4351,6 +4360,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionReservationsController.DeleteReservationById
   nameWithType: AttractionReservationsController.DeleteReservationById
+<<<<<<< HEAD
 - uid: BookingClone.API.Controllers.V1.AttractionReservationsController.GetPaginatedReservations(BookingClone.Domain.Common.PaginationQuery,System.Threading.CancellationToken)
   name: GetPaginatedReservations(PaginationQuery, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.AttractionReservationsController.html#BookingClone_API_Controllers_V1_AttractionReservationsController_GetPaginatedReservations_BookingClone_Domain_Common_PaginationQuery_System_Threading_CancellationToken_
@@ -4364,6 +4374,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionReservationsController.GetPaginatedReservations
   nameWithType: AttractionReservationsController.GetPaginatedReservations
+=======
+>>>>>>> first commit
 - uid: BookingClone.API.Controllers.V1.AttractionReservationsController.GetReservationById(System.Int32,System.Threading.CancellationToken)
   name: GetReservationById(int, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.AttractionReservationsController.html#BookingClone_API_Controllers_V1_AttractionReservationsController_GetReservationById_System_Int32_System_Threading_CancellationToken_
@@ -4380,6 +4392,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionReservationsController.GetReservationById
   nameWithType: AttractionReservationsController.GetReservationById
+<<<<<<< HEAD
 - uid: BookingClone.API.Controllers.V1.AttractionReservationsController.GetReservedAttractionDetails(System.Int32,System.Threading.CancellationToken)
   name: GetReservedAttractionDetails(int, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.AttractionReservationsController.html#BookingClone_API_Controllers_V1_AttractionReservationsController_GetReservedAttractionDetails_System_Int32_System_Threading_CancellationToken_
@@ -4412,6 +4425,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionReservationsController.GetReservedAttractionDetailsById
   nameWithType: AttractionReservationsController.GetReservedAttractionDetailsById
+=======
+>>>>>>> first commit
 - uid: BookingClone.API.Controllers.V1.AttractionReservationsController.UpdateExistingReservation(BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto,System.Threading.CancellationToken)
   name: UpdateExistingReservation(UpdateAttractionReservationDto, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.AttractionReservationsController.html#BookingClone_API_Controllers_V1_AttractionReservationsController_UpdateExistingReservation_BookingClone_Application_Features_AttractionReservationFeatures_DTOs_UpdateAttractionReservationDto_System_Threading_CancellationToken_
@@ -4425,6 +4440,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionReservationsController.UpdateExistingReservation
   nameWithType: AttractionReservationsController.UpdateExistingReservation
+<<<<<<< HEAD
 - uid: BookingClone.API.Controllers.V1.AttractionReviewsController
   name: AttractionReviewsController
   href: api/BookingClone.API.Controllers.V1.AttractionReviewsController.html
@@ -4521,6 +4537,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionReviewsController.UpdateExistingAttractionReview
   nameWithType: AttractionReviewsController.UpdateExistingAttractionReview
+=======
+>>>>>>> first commit
 - uid: BookingClone.API.Controllers.V1.AttractionsController
   name: AttractionsController
   href: api/BookingClone.API.Controllers.V1.AttractionsController.html
@@ -4607,6 +4625,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionsController.GetAttractionById
   nameWithType: AttractionsController.GetAttractionById
+<<<<<<< HEAD
 - uid: BookingClone.API.Controllers.V1.AttractionsController.GetPaginatedAttractions(BookingClone.Domain.Common.PaginationQuery,System.Threading.CancellationToken)
   name: GetPaginatedAttractions(PaginationQuery, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.AttractionsController.html#BookingClone_API_Controllers_V1_AttractionsController_GetPaginatedAttractions_BookingClone_Domain_Common_PaginationQuery_System_Threading_CancellationToken_
@@ -4620,6 +4639,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionsController.GetPaginatedAttractions
   nameWithType: AttractionsController.GetPaginatedAttractions
+=======
+>>>>>>> first commit
 - uid: BookingClone.API.Controllers.V1.AttractionsController.UpdateExistingAttraction(BookingClone.Application.Features.AttractionFeatures.DTOs.UpdateAttractionDto,System.Threading.CancellationToken)
   name: UpdateExistingAttraction(UpdateAttractionDto, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.AttractionsController.html#BookingClone_API_Controllers_V1_AttractionsController_UpdateExistingAttraction_BookingClone_Application_Features_AttractionFeatures_DTOs_UpdateAttractionDto_System_Threading_CancellationToken_
@@ -4633,6 +4654,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.AttractionsController.UpdateExistingAttraction
   nameWithType: AttractionsController.UpdateExistingAttraction
+<<<<<<< HEAD
 - uid: BookingClone.API.Controllers.V1.CitiesController
   name: CitiesController
   href: api/BookingClone.API.Controllers.V1.CitiesController.html
@@ -5100,6 +5122,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.HotelsController.UpdateExistingHotel
   nameWithType: HotelsController.UpdateExistingHotel
+=======
+>>>>>>> first commit
 - uid: BookingClone.API.Controllers.V1.RoomReservationsController
   name: RoomReservationsController
   href: api/BookingClone.API.Controllers.V1.RoomReservationsController.html
@@ -5154,6 +5178,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.RoomReservationsController.DeleteReservationById
   nameWithType: RoomReservationsController.DeleteReservationById
+<<<<<<< HEAD
 - uid: BookingClone.API.Controllers.V1.RoomReservationsController.GetPaginatedReservations(BookingClone.Domain.Common.PaginationQuery,System.Threading.CancellationToken)
   name: GetPaginatedReservations(PaginationQuery, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.RoomReservationsController.html#BookingClone_API_Controllers_V1_RoomReservationsController_GetPaginatedReservations_BookingClone_Domain_Common_PaginationQuery_System_Threading_CancellationToken_
@@ -5167,6 +5192,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.RoomReservationsController.GetPaginatedReservations
   nameWithType: RoomReservationsController.GetPaginatedReservations
+=======
+>>>>>>> first commit
 - uid: BookingClone.API.Controllers.V1.RoomReservationsController.GetReservationById(System.Int32,System.Threading.CancellationToken)
   name: GetReservationById(int, CancellationToken)
   href: api/BookingClone.API.Controllers.V1.RoomReservationsController.html#BookingClone_API_Controllers_V1_RoomReservationsController_GetReservationById_System_Int32_System_Threading_CancellationToken_
@@ -5196,6 +5223,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.RoomReservationsController.UpdateExistingReservation
   nameWithType: RoomReservationsController.UpdateExistingReservation
+<<<<<<< HEAD
 - uid: BookingClone.API.Controllers.V1.RoomsController
   name: RoomsController
   href: api/BookingClone.API.Controllers.V1.RoomsController.html
@@ -5279,6 +5307,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.API.Controllers.V1.RoomsController.UpdateExistingRoom
   nameWithType: RoomsController.UpdateExistingRoom
+=======
+>>>>>>> first commit
 - uid: BookingClone.API.Controllers.V1.WeatherForecastController
   name: WeatherForecastController
   href: api/BookingClone.API.Controllers.V1.WeatherForecastController.html
@@ -5522,12 +5552,21 @@ references:
   commentId: T:BookingClone.Application.ApplicationExtensions
   fullName: BookingClone.Application.ApplicationExtensions
   nameWithType: ApplicationExtensions
+<<<<<<< HEAD
 - uid: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   name: AddApplicationServices(IServiceCollection, IConfiguration)
   href: api/BookingClone.Application.ApplicationExtensions.html#BookingClone_Application_ApplicationExtensions_AddApplicationServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
   commentId: M:BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
   fullName: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
   nameWithType: ApplicationExtensions.AddApplicationServices(IServiceCollection, IConfiguration)
+=======
+- uid: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddApplicationServices(IServiceCollection)
+  href: api/BookingClone.Application.ApplicationExtensions.html#BookingClone_Application_ApplicationExtensions_AddApplicationServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ApplicationExtensions.AddApplicationServices(IServiceCollection)
+>>>>>>> first commit
 - uid: BookingClone.Application.ApplicationExtensions.AddApplicationServices*
   name: AddApplicationServices
   href: api/BookingClone.Application.ApplicationExtensions.html#BookingClone_Application_ApplicationExtensions_AddApplicationServices_
@@ -5885,6 +5924,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.GetAttractionByIdQuery.ID
   nameWithType: GetAttractionByIdQuery.ID
+<<<<<<< HEAD
 - uid: BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions
   name: BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions
   href: api/BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions.html
@@ -5910,6 +5950,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions.GetPaginatedAttractionsQuery.Query
   nameWithType: GetPaginatedAttractionsQuery.Query
+=======
+>>>>>>> first commit
 - uid: BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation
   name: BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation
   href: api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.html
@@ -5952,6 +5994,7 @@ references:
   href: api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.html#BookingClone_Application_Features_AttractionReservationFeatures_Commands_DeleteAttractionReservation_DeleteAttractionReservationCommand_ID
   commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.ID
   fullName: BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.ID
+<<<<<<< HEAD
   nameWithType: DeleteAttractionReservationCommand.ID
 - uid: BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.ID*
   name: ID
@@ -10184,6 +10227,194 @@ references:
   isSpec: "True"
   fullName: BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById.GetRoomByIdQueryHandler.Handle
   nameWithType: GetRoomByIdQueryHandler.Handle
+=======
+  nameWithType: DeleteAttractionReservationCommand.ID
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.ID*
+  name: ID
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.html#BookingClone_Application_Features_AttractionReservationFeatures_Commands_DeleteAttractionReservation_DeleteAttractionReservationCommand_ID_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.ID
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.ID
+  nameWithType: DeleteAttractionReservationCommand.ID
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation
+  name: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.html
+  commentId: N:BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation
+  nameWithType: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand
+  name: UpdateAttractionReservationCommand
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.html
+  commentId: T:BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand
+  nameWithType: UpdateAttractionReservationCommand
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.Dto
+  name: Dto
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.html#BookingClone_Application_Features_AttractionReservationFeatures_Commands_UpdateAttractionReservation_UpdateAttractionReservationCommand_Dto
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.Dto
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.Dto
+  nameWithType: UpdateAttractionReservationCommand.Dto
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.Dto*
+  name: Dto
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.html#BookingClone_Application_Features_AttractionReservationFeatures_Commands_UpdateAttractionReservation_UpdateAttractionReservationCommand_Dto_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.Dto
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.Dto
+  nameWithType: UpdateAttractionReservationCommand.Dto
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs
+  name: BookingClone.Application.Features.AttractionReservationFeatures.DTOs
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.html
+  commentId: N:BookingClone.Application.Features.AttractionReservationFeatures.DTOs
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs
+  nameWithType: BookingClone.Application.Features.AttractionReservationFeatures.DTOs
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto
+  name: AddAttractionReservationDto
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html
+  commentId: T:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto
+  nameWithType: AddAttractionReservationDto
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TotalCost
+  name: TotalCost
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_AddAttractionReservationDto_TotalCost
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TotalCost
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TotalCost
+  nameWithType: AddAttractionReservationDto.TotalCost
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TotalCost*
+  name: TotalCost
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_AddAttractionReservationDto_TotalCost_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TotalCost
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TotalCost
+  nameWithType: AddAttractionReservationDto.TotalCost
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TourStart
+  name: TourStart
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_AddAttractionReservationDto_TourStart
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TourStart
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TourStart
+  nameWithType: AddAttractionReservationDto.TourStart
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TourStart*
+  name: TourStart
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_AddAttractionReservationDto_TourStart_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TourStart
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.TourStart
+  nameWithType: AddAttractionReservationDto.TourStart
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto
+  name: GetAttractionReservationDto
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html
+  commentId: T:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto
+  nameWithType: GetAttractionReservationDto
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.ID
+  name: ID
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_ID
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.ID
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.ID
+  nameWithType: GetAttractionReservationDto.ID
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.ID*
+  name: ID
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_ID_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.ID
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.ID
+  nameWithType: GetAttractionReservationDto.ID
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.Status
+  name: Status
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_Status
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.Status
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.Status
+  nameWithType: GetAttractionReservationDto.Status
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.Status*
+  name: Status
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_Status_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.Status
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.Status
+  nameWithType: GetAttractionReservationDto.Status
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TotalCost
+  name: TotalCost
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_TotalCost
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TotalCost
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TotalCost
+  nameWithType: GetAttractionReservationDto.TotalCost
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TotalCost*
+  name: TotalCost
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_TotalCost_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TotalCost
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TotalCost
+  nameWithType: GetAttractionReservationDto.TotalCost
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TourStart
+  name: TourStart
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_TourStart
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TourStart
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TourStart
+  nameWithType: GetAttractionReservationDto.TourStart
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TourStart*
+  name: TourStart
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_GetAttractionReservationDto_TourStart_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TourStart
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.TourStart
+  nameWithType: GetAttractionReservationDto.TourStart
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto
+  name: UpdateAttractionReservationDto
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html
+  commentId: T:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto
+  nameWithType: UpdateAttractionReservationDto
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.ID
+  name: ID
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_UpdateAttractionReservationDto_ID
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.ID
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.ID
+  nameWithType: UpdateAttractionReservationDto.ID
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.ID*
+  name: ID
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_UpdateAttractionReservationDto_ID_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.ID
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.ID
+  nameWithType: UpdateAttractionReservationDto.ID
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.Status
+  name: Status
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_UpdateAttractionReservationDto_Status
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.Status
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.Status
+  nameWithType: UpdateAttractionReservationDto.Status
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.Status*
+  name: Status
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html#BookingClone_Application_Features_AttractionReservationFeatures_DTOs_UpdateAttractionReservationDto_Status_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.Status
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.Status
+  nameWithType: UpdateAttractionReservationDto.Status
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById
+  name: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.html
+  commentId: N:BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById
+  nameWithType: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery
+  name: GetAttractionReservationByIdQuery
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.html
+  commentId: T:BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery
+  nameWithType: GetAttractionReservationByIdQuery
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.ID
+  name: ID
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.html#BookingClone_Application_Features_AttractionReservationFeatures_Queries_GetAttractionReservationById_GetAttractionReservationByIdQuery_ID
+  commentId: P:BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.ID
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.ID
+  nameWithType: GetAttractionReservationByIdQuery.ID
+- uid: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.ID*
+  name: ID
+  href: api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.html#BookingClone_Application_Features_AttractionReservationFeatures_Queries_GetAttractionReservationById_GetAttractionReservationByIdQuery_ID_
+  commentId: Overload:BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.ID
+  isSpec: "True"
+  fullName: BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.ID
+  nameWithType: GetAttractionReservationByIdQuery.ID
+>>>>>>> first commit
 - uid: BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation
   name: BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation
   href: api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.html
@@ -10413,6 +10644,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto.Status
   nameWithType: UpdateRoomReservationDto.Status
+<<<<<<< HEAD
 - uid: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations
   name: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations
   href: api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.html
@@ -10457,6 +10689,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery.Query
   nameWithType: GetAllRoomReservationsQuery.Query
+=======
+>>>>>>> first commit
 - uid: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById
   name: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById
   href: api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.html
@@ -10523,6 +10757,7 @@ references:
   fullName.vb: BookingClone.Domain.Common.BaseEntity(Of T).ID
   nameWithType: BaseEntity<T>.ID
   nameWithType.vb: BaseEntity(Of T).ID
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Common.PagedList`1
   name: PagedList<T>
   href: api/BookingClone.Domain.Common.PagedList-1.html
@@ -10741,6 +10976,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Common.PaginationQuery.PageSize
   nameWithType: PaginationQuery.PageSize
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Contracts
   name: BookingClone.Domain.Contracts
   href: api/BookingClone.Domain.Contracts.html
@@ -10801,6 +11038,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Contracts.IAttractionReservationRepository.GetAll
   nameWithType: IAttractionReservationRepository.GetAll
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Contracts.IAttractionReservationRepository.GetAllReservedAttractionsDetails(System.Int32,System.Threading.CancellationToken)
   name: GetAllReservedAttractionsDetails(int, CancellationToken)
   href: api/BookingClone.Domain.Contracts.IAttractionReservationRepository.html#BookingClone_Domain_Contracts_IAttractionReservationRepository_GetAllReservedAttractionsDetails_System_Int32_System_Threading_CancellationToken_
@@ -10909,6 +11147,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Contracts.ICountryRepository.GetAll
   nameWithType: ICountryRepository.GetAll
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Contracts.IGenericRepository`2
   name: IGenericRepository<TEntity, TId>
   href: api/BookingClone.Domain.Contracts.IGenericRepository-2.html
@@ -10969,6 +11209,7 @@ references:
   fullName.vb: BookingClone.Domain.Contracts.IGenericRepository(Of TEntity, TId).GetByIdAsync
   nameWithType: IGenericRepository<TEntity, TId>.GetByIdAsync
   nameWithType.vb: IGenericRepository(Of TEntity, TId).GetByIdAsync
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Contracts.IGenericRepository`2.GetPaginatedList(BookingClone.Domain.Common.PaginationQuery,System.Threading.CancellationToken)
   name: GetPaginatedList(PaginationQuery, CancellationToken)
   href: api/BookingClone.Domain.Contracts.IGenericRepository-2.html#BookingClone_Domain_Contracts_IGenericRepository_2_GetPaginatedList_BookingClone_Domain_Common_PaginationQuery_System_Threading_CancellationToken_
@@ -10986,6 +11227,8 @@ references:
   fullName.vb: BookingClone.Domain.Contracts.IGenericRepository(Of TEntity, TId).GetPaginatedList
   nameWithType: IGenericRepository<TEntity, TId>.GetPaginatedList
   nameWithType.vb: IGenericRepository(Of TEntity, TId).GetPaginatedList
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Contracts.IGenericRepository`2.SaveAsync(System.Threading.CancellationToken)
   name: SaveAsync(CancellationToken)
   href: api/BookingClone.Domain.Contracts.IGenericRepository-2.html#BookingClone_Domain_Contracts_IGenericRepository_2_SaveAsync_System_Threading_CancellationToken_
@@ -11020,6 +11263,7 @@ references:
   fullName.vb: BookingClone.Domain.Contracts.IGenericRepository(Of TEntity, TId).Update
   nameWithType: IGenericRepository<TEntity, TId>.Update
   nameWithType.vb: IGenericRepository(Of TEntity, TId).Update
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Contracts.IHotelRepository
   name: IHotelRepository
   href: api/BookingClone.Domain.Contracts.IHotelRepository.html
@@ -11093,6 +11337,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Contracts.IRoomRepository.GetRoomDetails
   nameWithType: IRoomRepository.GetRoomDetails
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Contracts.IRoomReservationRepository
   name: IRoomReservationRepository
   href: api/BookingClone.Domain.Contracts.IRoomReservationRepository.html
@@ -11337,6 +11583,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.AttractionReview.Attraction
   nameWithType: AttractionReview.Attraction
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Entities.AttractionReview.AttractionID
   name: AttractionID
   href: api/BookingClone.Domain.Entities.AttractionReview.html#BookingClone_Domain_Entities_AttractionReview_AttractionID
@@ -11350,6 +11597,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.AttractionReview.AttractionID
   nameWithType: AttractionReview.AttractionID
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Entities.AttractionReview.Comment
   name: Comment
   href: api/BookingClone.Domain.Entities.AttractionReview.html#BookingClone_Domain_Entities_AttractionReview_Comment
@@ -11408,6 +11657,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.City.Country
   nameWithType: City.Country
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Entities.City.CountryID
   name: CountryID
   href: api/BookingClone.Domain.Entities.City.html#BookingClone_Domain_Entities_City_CountryID
@@ -11421,6 +11671,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.City.CountryID
   nameWithType: City.CountryID
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Entities.City.Name
   name: Name
   href: api/BookingClone.Domain.Entities.City.html#BookingClone_Domain_Entities_City_Name
@@ -11569,6 +11821,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.Country.Continent
   nameWithType: Country.Continent
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Entities.Country.ContinentID
   name: ContinentID
   href: api/BookingClone.Domain.Entities.Country.html#BookingClone_Domain_Entities_Country_ContinentID
@@ -11582,6 +11835,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.Country.ContinentID
   nameWithType: Country.ContinentID
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Entities.Country.Name
   name: Name
   href: api/BookingClone.Domain.Entities.Country.html#BookingClone_Domain_Entities_Country_Name
@@ -11737,6 +11992,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.HotelReview.Hotel
   nameWithType: HotelReview.Hotel
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Entities.HotelReview.HotelID
   name: HotelID
   href: api/BookingClone.Domain.Entities.HotelReview.html#BookingClone_Domain_Entities_HotelReview_HotelID
@@ -11750,6 +12006,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.HotelReview.HotelID
   nameWithType: HotelReview.HotelID
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Entities.HotelReview.LocationRate
   name: LocationRate
   href: api/BookingClone.Domain.Entities.HotelReview.html#BookingClone_Domain_Entities_HotelReview_LocationRate
@@ -12053,6 +12311,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.Room.Hotel
   nameWithType: Room.Hotel
+<<<<<<< HEAD
 - uid: BookingClone.Domain.Entities.Room.HotelId
   name: HotelId
   href: api/BookingClone.Domain.Entities.Room.html#BookingClone_Domain_Entities_Room_HotelId
@@ -12066,6 +12325,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Domain.Entities.Room.HotelId
   nameWithType: Room.HotelId
+=======
+>>>>>>> first commit
 - uid: BookingClone.Domain.Entities.Room.IsAvailable
   name: IsAvailable
   href: api/BookingClone.Domain.Entities.Room.html#BookingClone_Domain_Entities_Room_IsAvailable
@@ -12529,6 +12790,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Infrastructure.Data.BookingDbContextExtensions.Seed
   nameWithType: BookingDbContextExtensions.Seed
+<<<<<<< HEAD
 - uid: BookingClone.Infrastructure.EntityConfigurations
   name: BookingClone.Infrastructure.EntityConfigurations
   href: api/BookingClone.Infrastructure.EntityConfigurations.html
@@ -12585,6 +12847,8 @@ references:
   fullName.vb: BookingClone.Infrastructure.Extensions.PagedListQueryableExtensions.ToPagedListAsync(Of T)(System.Linq.IQueryable(Of T), Integer, Integer, System.Threading.CancellationToken)
   nameWithType: PagedListQueryableExtensions.ToPagedListAsync<T>(IQueryable<T>, int, int, CancellationToken)
   nameWithType.vb: PagedListQueryableExtensions.ToPagedListAsync(Of T)(IQueryable(Of T), Integer, Integer, CancellationToken)
+=======
+>>>>>>> first commit
 - uid: BookingClone.Infrastructure.Migrations
   name: BookingClone.Infrastructure.Migrations
   href: api/BookingClone.Infrastructure.Migrations.html
@@ -12869,6 +13133,7 @@ references:
   isSpec: "True"
   fullName: BookingClone.Infrastructure.Repositories.AttractionReservationRepository.GetAll
   nameWithType: AttractionReservationRepository.GetAll
+<<<<<<< HEAD
 - uid: BookingClone.Infrastructure.Repositories.AttractionReservationRepository.GetAllReservedAttractionsDetails(System.Int32,System.Threading.CancellationToken)
   name: GetAllReservedAttractionsDetails(int, CancellationToken)
   href: api/BookingClone.Infrastructure.Repositories.AttractionReservationRepository.html#BookingClone_Infrastructure_Repositories_AttractionReservationRepository_GetAllReservedAttractionsDetails_System_Int32_System_Threading_CancellationToken_
@@ -13053,6 +13318,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Infrastructure.Repositories.CountryRepository.GetAll
   nameWithType: CountryRepository.GetAll
+=======
+>>>>>>> first commit
 - uid: BookingClone.Infrastructure.Repositories.GenericRepository`2
   name: GenericRepository<TEntity, TId>
   href: api/BookingClone.Infrastructure.Repositories.GenericRepository-2.html
@@ -13140,6 +13407,7 @@ references:
   fullName.vb: BookingClone.Infrastructure.Repositories.GenericRepository(Of TEntity, TId).GetByIdAsync
   nameWithType: GenericRepository<TEntity, TId>.GetByIdAsync
   nameWithType.vb: GenericRepository(Of TEntity, TId).GetByIdAsync
+<<<<<<< HEAD
 - uid: BookingClone.Infrastructure.Repositories.GenericRepository`2.GetPaginatedList(BookingClone.Domain.Common.PaginationQuery,System.Threading.CancellationToken)
   name: GetPaginatedList(PaginationQuery, CancellationToken)
   href: api/BookingClone.Infrastructure.Repositories.GenericRepository-2.html#BookingClone_Infrastructure_Repositories_GenericRepository_2_GetPaginatedList_BookingClone_Domain_Common_PaginationQuery_System_Threading_CancellationToken_
@@ -13157,6 +13425,8 @@ references:
   fullName.vb: BookingClone.Infrastructure.Repositories.GenericRepository(Of TEntity, TId).GetPaginatedList
   nameWithType: GenericRepository<TEntity, TId>.GetPaginatedList
   nameWithType.vb: GenericRepository(Of TEntity, TId).GetPaginatedList
+=======
+>>>>>>> first commit
 - uid: BookingClone.Infrastructure.Repositories.GenericRepository`2.SaveAsync(System.Threading.CancellationToken)
   name: SaveAsync(CancellationToken)
   href: api/BookingClone.Infrastructure.Repositories.GenericRepository-2.html#BookingClone_Infrastructure_Repositories_GenericRepository_2_SaveAsync_System_Threading_CancellationToken_
@@ -13191,6 +13461,7 @@ references:
   fullName.vb: BookingClone.Infrastructure.Repositories.GenericRepository(Of TEntity, TId).Update
   nameWithType: GenericRepository<TEntity, TId>.Update
   nameWithType.vb: GenericRepository(Of TEntity, TId).Update
+<<<<<<< HEAD
 - uid: BookingClone.Infrastructure.Repositories.HotelRepository
   name: HotelRepository
   href: api/BookingClone.Infrastructure.Repositories.HotelRepository.html
@@ -13321,6 +13592,8 @@ references:
   isSpec: "True"
   fullName: BookingClone.Infrastructure.Repositories.RoomRepository.GetRoomDetails
   nameWithType: RoomRepository.GetRoomDetails
+=======
+>>>>>>> first commit
 - uid: BookingClone.Infrastructure.Repositories.RoomReservationRepository
   name: RoomReservationRepository
   href: api/BookingClone.Infrastructure.Repositories.RoomReservationRepository.html

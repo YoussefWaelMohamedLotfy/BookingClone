@@ -1,11 +1,20 @@
+<<<<<<< HEAD
 {
   "profiles": {
     "https": {
       "commandName": "Project",
+=======
+﻿{
+  "profiles": {
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+>>>>>>> first commit
       "launchBrowser": true,
       "applicationUrl": "https://localhost:10000;http://localhost:10001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
+<<<<<<< HEAD
       },
       "dotnetRunMessages": true
     },
@@ -19,3 +28,9 @@
     }
   }
 }
+=======
+      }
+    }
+  }
+}
+>>>>>>> first commit

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 using System.Reflection;
 using BookingClone.Application;
 using BookingClone.Serilog;
@@ -19,6 +20,14 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 
 builder.Services.AddRazorPages();
 
+=======
+using BookingClone.Serilog;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
+using Serilog;
+
+var builder = WebApplication.CreateBuilder(args);
+
+>>>>>>> first commit
 builder.WebHost.ConfigureKestrel(options =>
 {
     options.AddServerHeader = false;
@@ -28,6 +37,7 @@ builder.WebHost.ConfigureKestrel(options =>
 
 builder.Host.UseSerilog(Serilogger.Configure);
 
+<<<<<<< HEAD
 builder.Services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
@@ -38,13 +48,20 @@ builder.Services.AddFluentValidationAutoValidation()
 // Add services to the container.
 builder.Services.AddApplicationServices(builder.Configuration);
 
+=======
+// Add services to the container.
+>>>>>>> first commit
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
+<<<<<<< HEAD
 {   
+=======
+{
+>>>>>>> first commit
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
@@ -59,6 +76,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+<<<<<<< HEAD
 app.MapRazorPages();
+=======
+>>>>>>> first commit
 
 app.Run();

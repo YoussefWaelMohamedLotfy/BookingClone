@@ -7,6 +7,7 @@ namespace BookingClone.Infrastructure.Data;
 
 public sealed class BookingDbContext : DbContext
 {
+<<<<<<< HEAD
    
     public BookingDbContext(DbContextOptions options) : base(options)
     {
@@ -16,6 +17,12 @@ public sealed class BookingDbContext : DbContext
 
 
 
+=======
+    public BookingDbContext(DbContextOptions options) : base(options)
+    {
+    }
+
+>>>>>>> first commit
     public DbSet<Attraction> Attractions { get; set; }
     public DbSet<AttractionImage> AttractionImages { get; set; }
     public DbSet<AttractionReservation> AttractionReservations { get; set; }
@@ -52,6 +59,9 @@ public sealed class BookingDbContext : DbContext
         configurationBuilder.Conventions.Add(_ => new StringMaxLengthConvention(90));
         base.ConfigureConventions(configurationBuilder);
     }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> first commit
 }

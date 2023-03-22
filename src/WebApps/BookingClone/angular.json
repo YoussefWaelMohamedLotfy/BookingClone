@@ -4,12 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "BookingClone": {
+<<<<<<< HEAD
       "i18n": {
         "sourceLocale": "en-US",
         "locales": {
           "es-PR": "src/locales/messages.es.xlf"
         }
       },
+=======
+>>>>>>> first commit
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -19,9 +22,12 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+<<<<<<< HEAD
             "localize": [
               "es-PR"
             ],
+=======
+>>>>>>> first commit
             "outputPath": "dist/booking-clone",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -34,12 +40,18 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css",
               "./src/bootstrap-latest/custom/custom-bootstrap.css"
             ],
             "scripts": [
               "./src/bootstrap-latest/dist/js/bootstrap.bundle.min.js"
             ]
+=======
+              "src/styles.css"
+            ],
+            "scripts": []
+>>>>>>> first commit
           },
           "configurations": {
             "production": {
@@ -106,8 +118,11 @@
         }
       }
     }
+<<<<<<< HEAD
   },
   "cli": {
     "analytics": "d0966bdb-70f7-4851-9a5c-8e7cd18c7587"
+=======
+>>>>>>> first commit
   }
 }

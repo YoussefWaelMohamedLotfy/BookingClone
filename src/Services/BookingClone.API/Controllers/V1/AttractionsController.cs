@@ -4,8 +4,11 @@ using BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttrac
 using BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction;
 using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
+<<<<<<< HEAD
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions;
 using BookingClone.Domain.Common;
+=======
+>>>>>>> first commit
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +24,7 @@ public class AttractionsController : ControllerBase
         => _mediator = mediator;
 
     /// <summary>
+<<<<<<< HEAD
     /// Get Attractions in pages
     /// </summary>
     /// <param name="query"></param>
@@ -34,6 +38,8 @@ public class AttractionsController : ControllerBase
     }
 
     /// <summary>
+=======
+>>>>>>> first commit
     /// Gets a single Attraction by ID
     /// </summary>
     /// <param name="id">The unique Identifier of Attraction</param>

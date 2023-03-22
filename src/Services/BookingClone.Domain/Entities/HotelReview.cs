@@ -18,7 +18,10 @@ public sealed class HotelReview : Review
     
     public decimal LocationRate { get; set; }
 
+<<<<<<< HEAD
     public int HotelID { get; set; }
 
+=======
+>>>>>>> first commit
     public Hotel Hotel { get; set; }
 }

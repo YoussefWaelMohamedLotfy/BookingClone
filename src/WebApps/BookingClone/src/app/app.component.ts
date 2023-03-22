@@ -1,12 +1,17 @@
+<<<<<<< HEAD
 import { DOCUMENT } from '@angular/common';
 import { Component, Inject, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+=======
+import { Component } from '@angular/core';
+>>>>>>> first commit
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+<<<<<<< HEAD
 export class AppComponent implements OnInit {
   lang: string = 'en'
   curentLang: any;
@@ -46,4 +51,8 @@ export class AppComponent implements OnInit {
     }
 
   }
+=======
+export class AppComponent {
+  title = 'BookingClone';
+>>>>>>> first commit
 }

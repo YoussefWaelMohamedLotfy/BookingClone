@@ -2,9 +2,13 @@
 using BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation;
 using BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation;
 using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+<<<<<<< HEAD
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById;
 using BookingClone.Domain.Common;
+=======
+using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById;
+>>>>>>> first commit
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -20,6 +24,7 @@ public class RoomReservationsController : ControllerBase
         => _mediator = mediator;
 
     /// <summary>
+<<<<<<< HEAD
     /// Gets Room Reservation in pages
     /// </summary>
     /// <param name="query">Pagination Query</param>
@@ -33,6 +38,8 @@ public class RoomReservationsController : ControllerBase
     }
 
     /// <summary>
+=======
+>>>>>>> first commit
     /// Gets a single Reservation by ID
     /// </summary>
     /// <param name="id">The unique Identifier of Reservation</param>

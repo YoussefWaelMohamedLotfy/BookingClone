@@ -1,7 +1,10 @@
 # Booking Clone
 
+<<<<<<< HEAD
 A Clone for [Booking.com](https://www.booking.com)
 
+=======
+>>>>>>> first commit
 ## System Components
 
 - Backend (ASP.NET Web API)

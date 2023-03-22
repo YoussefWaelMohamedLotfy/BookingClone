@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 /// <reference types="@angular/localize" />
 
+=======
+>>>>>>> first commit
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
