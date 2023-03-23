@@ -4,6 +4,8 @@ namespace BookingClone.Domain.Entities;
 
 public sealed class City : BaseEntity<int>
 {
+   
+
     public string Name { get; set; }
 <<<<<<< HEAD
     
