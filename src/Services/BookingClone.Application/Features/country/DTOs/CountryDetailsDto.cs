@@ -9,12 +9,22 @@ using BookingClone.Domain.Entities;
 namespace BookingClone.Application.Features.country.DTOs;
 public class CountryDetailsDto
 {
+<<<<<<< HEAD
 
     public int ID { get; set; }
     public int? ContinentID { get; set; }
     public string Name { get; set; }
 
     
+=======
+    
+
+    public string Name { get; set; }
+
+    public Continent? Continent { get; set; }
+
+    public List<City>? Cities { get; set; }
+>>>>>>> add city and country and continent
 
   
 }

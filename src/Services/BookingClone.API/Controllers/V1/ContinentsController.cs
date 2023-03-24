@@ -8,7 +8,10 @@ using BookingClone.Application.Features.continent.commands.DeleteContinent;
 using BookingClone.Application.Features.continent.commands.UpdateContinent;
 using BookingClone.Application.Features.continent.queries.GetAllcontinent;
 using BookingClone.Application.Features.continent.queries.GetContinentById;
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.commands.UpdateCountry;
+=======
+>>>>>>> add city and country and continent
 using BookingClone.Infrastructure.Data;
 using MediatR;
 
@@ -20,6 +23,7 @@ namespace BookingClone.API.Controllers.V1;
 [ApiController]
 public class ContinentsController : ControllerBase
 {
+<<<<<<< HEAD
 
     private readonly IMediator _mediator;
 
@@ -29,10 +33,21 @@ public class ContinentsController : ControllerBase
        => _mediator = mediator;
 
 
+=======
+    private readonly BookingDbContext _context;
+    private readonly IMediator _mediator;
+
+    public ContinentsController(BookingDbContext bookingDbContext, IMediator mediator)
+    {
+        _context = bookingDbContext;
+        _mediator = mediator;
+    }
+>>>>>>> add city and country and continent
 
 
 
     [HttpGet]
+<<<<<<< HEAD
     public async Task<IActionResult> GetAllContinent(CancellationToken ct)
     {
         return Ok(await _mediator.Send(new GetAllcontinentQuery(), ct));
@@ -46,12 +61,26 @@ public class ContinentsController : ControllerBase
     {
         var result = await _mediator.Send(new GetContinentByIdQuery(id), ct);
         return result is null ? NotFound() : Ok(result);
+=======
+    public IActionResult GetAllContinent()
+    {
+        return Ok(_mediator.Send(new GetAllcontinentQuery()));
+    }
+
+
+    [HttpGet("{id}")]
+     
+    public async Task<IActionResult> GetContinentById([FromRoute] int id)
+    {
+        return Ok(await _mediator.Send(new GetContinentByIdQuery(id)));
+>>>>>>> add city and country and continent
     }
 
 
 
 
 
+<<<<<<< HEAD
 
 
     [HttpPost]
@@ -78,4 +107,28 @@ public class ContinentsController : ControllerBase
 
 
 
+=======
+    [HttpPost]
+    public async Task<IActionResult> AddContinent([FromBody] AddContinentCommmand addContinentCommmand)
+    {
+
+        return Ok(await _mediator.Send(addContinentCommmand));
+
+    }
+
+
+
+    [HttpDelete]
+    public async Task<IActionResult> DeleteContinent([FromBody] DeleteContinentCommmand deleteContinentCommmand)
+    {
+        return Ok(await _mediator.Send(deleteContinentCommmand));
+
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> UpdateContinent([FromBody] UpdateContinentCommmand updateContinentCommmand)
+    {
+        return Ok(await _mediator.Send(updateContinentCommmand));
+    }
+>>>>>>> add city and country and continent
 }

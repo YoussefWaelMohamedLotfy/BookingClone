@@ -10,16 +10,21 @@ using Bogus.DataSets;
 using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
 using BookingClone.Application.Features.city.DTOs;
+<<<<<<< HEAD
 
 using BookingClone.Domain.Contracts;
 
 
+=======
+using BookingClone.Domain.Contracts;
+>>>>>>> add city and country and continent
 using MediatR;
 
 namespace BookingClone.Application.Features.city.queries.GetCityById;
 public class GetCityByIdQueryHandler : IRequestHandler<GetCityByIdQuery, CityDetailsDto?>
 {
     private readonly ICityRepository _cityRepository;
+<<<<<<< HEAD
     private readonly IMapper _mapper;
 
     public GetCityByIdQueryHandler(ICityRepository cityRepository, IMapper mapper)
@@ -43,4 +48,30 @@ public class GetCityByIdQueryHandler : IRequestHandler<GetCityByIdQuery, CityDet
      
     }
 
+=======
+   
+
+    public GetCityByIdQueryHandler(ICityRepository cityRepository)
+    {
+        _cityRepository = cityRepository;
+    }
+
+    public async Task<CityDetailsDto?> Handle(GetCityByIdQuery request, CancellationToken cancellationToken)
+    {
+        var city = await _cityRepository.GetByIdAsync(request.ID); /*calling*/
+
+        return new CityDetailsDto()
+        {
+            Name = city.Name,
+            Country = city.Country,
+            Attractions = city.Attractions,
+            CityHotels = city.CityHotels
+        };  /*mapping*/
+
+
+
+        //return new CityDetailsDto(city.Name, city.Country);
+    }
+}
+>>>>>>> add city and country and continent
 

@@ -4,19 +4,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
 using AutoMapper;
 
+=======
+>>>>>>> add city and country and continent
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetCityById;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
+<<<<<<< HEAD
 using BookingClone.Infrastructure.Repositories;
 
+=======
+>>>>>>> add city and country and continent
 using MediatR;
 
 namespace BookingClone.Application.Features.continent.queries.GetContinentById;
 public class GetContinentByIdQueryHandlar : IRequestHandler<GetContinentByIdQuery, ContinentDetailsDto?>
 {
+<<<<<<< HEAD
 
     private readonly IContinentRepository _continentRepository;
     private readonly IMapper _mapper;
@@ -24,13 +31,29 @@ public class GetContinentByIdQueryHandlar : IRequestHandler<GetContinentByIdQuer
     {
         _continentRepository = continentRepository;
         _mapper = mapper;
+=======
+    private readonly IContinentRepository _continentRepository;
+
+    public GetContinentByIdQueryHandlar(IContinentRepository continentRepository)
+    {
+        _continentRepository = continentRepository;
+
+>>>>>>> add city and country and continent
     }
 
     public async Task<ContinentDetailsDto?> Handle(GetContinentByIdQuery request, CancellationToken cancellationToken)
     {
+<<<<<<< HEAD
         var result = await _continentRepository.GetByIdAsync(request.ID, cancellationToken);
         return result is null ? null : _mapper.Map<ContinentDetailsDto>(result);
     }
 
 
+=======
+        var continent = await _continentRepository.GetByIdAsync(request.ID); /*calling*/
+        return new ContinentDetailsDto() { Name =continent.Name, Countries =continent.Countries };  /*mapping*/
+    }
+
+    
+>>>>>>> add city and country and continent
 }

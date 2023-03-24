@@ -30,7 +30,7 @@ public sealed class BookingDbContext : DbContext
     public DbSet<City> Cities { get; set; }
     public DbSet<CityHotel> CityHotels { get; set; }
     public DbSet<Continent> Continents { get; set; }
-    public DbSet<Country> Countries { get; set; }
+    public DbSet<City> Countries { get; set; }
     public DbSet<Hotel> Hotels { get; set; }
     public DbSet<HotelReview> HotelReviews { get; set; }
     public DbSet<Reservation> Reservations { get; set; }
@@ -60,8 +60,17 @@ public sealed class BookingDbContext : DbContext
         base.ConfigureConventions(configurationBuilder);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> first commit
+=======
+
+    //protected override void OnConfiguring(DbContextOptionsBuilder DbContextOptionsBuilder)
+    //{
+    //    DbContextOptionsBuilder.UseSqlServer("Data Source=DESKTOP-P73CSRJ\\SQLEXPRESS;Database=BookingClone;Integrated Security=True;Connect Timeout=30;Encrypt=False") ;
+    //}
+
+>>>>>>> add city and country and continent
 }

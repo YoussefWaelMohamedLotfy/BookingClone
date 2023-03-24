@@ -4,9 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 
+=======
+using BookingClone.Application.Features.continent.commands.UpdateContinent;
+using BookingClone.Application.Features.continent.DTOs;
+using BookingClone.Application.Features.country.DTOs;
+using BookingClone.Domain.Contracts;
+using BookingClone.Infrastructure.Repositories;
+>>>>>>> add city and country and continent
 
 using MediatR;
 
@@ -27,6 +35,7 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
     {
         var country = await _countryRepository.GetByIdAsync(request.ID);
 
+<<<<<<< HEAD
         
 
         var con =new CountryDetailsDto {
@@ -46,5 +55,9 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
 
 
 
+=======
+        _countryRepository.Update(country);
+        return new CountryDetailsDto { Name = country.Name };
+>>>>>>> add city and country and continent
     }
 }

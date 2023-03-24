@@ -12,7 +12,9 @@ using BookingClone.API.Authentication;
 using BookingClone.API.Extensions;
 using BookingClone.API.OpenApi;
 using BookingClone.Application;
+using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Data;
+using BookingClone.Infrastructure.Repositories;
 using BookingClone.Serilog;
 <<<<<<< HEAD
 
@@ -75,11 +77,17 @@ builder.Services.AddApiVersioning(o =>
         );
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
 =======
 >>>>>>> first commit
+=======
+builder.Services.AddScoped<ICityRepository,CityRepository > ();
+builder.Services.AddScoped<IContinentRepository, ContinentRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+>>>>>>> add city and country and continent
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers()

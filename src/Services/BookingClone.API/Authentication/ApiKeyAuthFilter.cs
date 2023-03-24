@@ -33,11 +33,19 @@ public sealed class ApiKeyAuthFilter : Attribute, IAuthorizationFilter
         var configuration = context.HttpContext.RequestServices.GetRequiredService<IConfiguration>();
         var apiKey = configuration.GetValue<string>(AuthConstants.ApiKeySectionName);
 
+<<<<<<< HEAD
         if (!apiKey.Equals(extractedApiKey))
         {
             context.Result = new UnauthorizedObjectResult("Invalid API Key.");
             return;
         }
 >>>>>>> first commit
+=======
+        //if (!apiKey.Equals(extractedApiKey))
+        //{
+        //    context.Result = new UnauthorizedObjectResult("Invalid API Key.");
+        //    return;
+        //}
+>>>>>>> add city and country and continent
     }
 }

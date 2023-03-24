@@ -15,16 +15,30 @@ using Polly;
 namespace BookingClone.API.Controllers.V1;
 [Route("api/[controller]")]
 [ApiController]
+<<<<<<< HEAD
 public class CitiesController : ControllerBase
 {
     private readonly IMediator _mediator;
 
     public CitiesController(IMediator mediator)
         => _mediator = mediator;
+=======
+public class CitysController : ControllerBase
+{
+    private readonly  BookingDbContext _context;
+    private readonly IMediator _mediator;
+
+    public CitysController(BookingDbContext bookingDbContext, IMediator mediator)
+    {
+        _context = bookingDbContext;
+        _mediator = mediator;
+    }
+>>>>>>> add city and country and continent
 
 
 
     [HttpGet]
+<<<<<<< HEAD
     public async Task<IActionResult> GetAllCities(CancellationToken ct)
     {
         return Ok(await _mediator.Send(new GetAllCitiesQuery(), ct));
@@ -46,10 +60,36 @@ public class CitiesController : ControllerBase
     {
         var result = await _mediator.Send(addCityCommand, ct);
         return CreatedAtRoute("Get_Cities", new { id = result.ID }, result);
+=======
+    public async Task<IActionResult> GetAllCities()
+    {
+        return Ok(await _mediator.Send(new GetAllCitiesQuery()));
+    }
+
+
+    [HttpGet("{id}")]
+
+    public async Task<IActionResult> GetCityById([FromRoute] int id)
+    {
+        return Ok(await _mediator.Send(new GetCityByIdQuery(id)));
     }
 
 
 
+
+
+    [HttpPost]
+    public async Task<IActionResult> AddCity([FromBody] AddCityCommand addCityCommand)
+    {
+
+        return Ok(await _mediator.Send(addCityCommand));
+
+>>>>>>> add city and country and continent
+    }
+
+
+
+<<<<<<< HEAD
     [HttpPut]
     public async Task<IActionResult> UpdateCity([FromBody] UpdateCityCommand updateCityCommand, CancellationToken ct)
     {
@@ -66,3 +106,18 @@ public class CitiesController : ControllerBase
 
 
 }
+=======
+    [HttpDelete]
+    public async Task<IActionResult> DeleteCity([FromBody] DeleteCityCommand deleteCityCommand)
+    {
+        return Ok(await _mediator.Send(deleteCityCommand));
+
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> UpdateCity([FromBody] UpdateCityCommand updateCityCommand)
+    {
+        return Ok(await _mediator.Send(updateCityCommand));
+    }
+}
+>>>>>>> add city and country and continent

@@ -27,6 +27,7 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
         var city = await _cityRepository.GetByIdAsync(request.ID);
         var cityy = new CityDetailsDto
         {
+<<<<<<< HEAD
            Name = request.Name,
            CountryID=request.CountryID
 
@@ -36,6 +37,15 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
        
           _cityRepository.Update(city);
         _cityRepository.SaveAsync(cancellationToken);
+=======
+           Name = city.Name,
+           
+
+        };
+       
+       
+          _cityRepository.Update(city);
+>>>>>>> add city and country and continent
 
         return cityy;
     }

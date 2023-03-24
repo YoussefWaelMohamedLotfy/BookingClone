@@ -13,7 +13,10 @@ namespace BookingClone.Application.Features.city.commands.UpdateCity;
 public class UpdateCityCommand : IRequest<CityDetailsDto>
 {
     public int ID { get; set; }
+<<<<<<< HEAD
     public int? CountryID { get; set; }
+=======
+>>>>>>> add city and country and continent
     public string? Name { get; set; }
 
 
