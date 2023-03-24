@@ -17,10 +17,10 @@ public sealed class ApiKeyAuthFilter : Attribute, IAuthorizationFilter
         var configuration = context.HttpContext.RequestServices.GetRequiredService<IConfiguration>();
         var apiKey = configuration.GetValue<string>(AuthConstants.ApiKeySectionName);
 
-        if (!apiKey.Equals(extractedApiKey))
-        {
-            context.Result = new UnauthorizedObjectResult("Invalid API Key.");
-            return;
-        }
+        //if (!apiKey.Equals(extractedApiKey))
+        //{
+        //    context.Result = new UnauthorizedObjectResult("Invalid API Key.");
+        //    return;
+        //}
     }
 }
