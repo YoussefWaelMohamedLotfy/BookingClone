@@ -9,9 +9,9 @@ using BookingClone.Domain.Entities;
 namespace BookingClone.Application.Features.continent.DTOs;
 public class ContinentDetailsDto
 {
-   
+
 
     public string Name { get; set; }
 
-    public List<City>? Countries { get; set; }
+
 }

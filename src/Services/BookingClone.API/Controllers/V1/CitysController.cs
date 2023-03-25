@@ -31,7 +31,8 @@ public class CitysController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAllCities()
     {
-        return Ok(await _mediator.Send(new GetAllCitiesQuery()));
+        var x = await _mediator.Send(new GetAllCitiesQuery());
+        return Ok(x);
     }
 
 
@@ -49,8 +50,8 @@ public class CitysController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> AddCity([FromBody] AddCityCommand addCityCommand)
     {
-
-        return Ok(await _mediator.Send(addCityCommand));
+        var x = await _mediator.Send(addCityCommand);
+        return Ok(x);
 
     }
 

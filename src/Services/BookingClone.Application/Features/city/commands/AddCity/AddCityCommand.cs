@@ -15,19 +15,12 @@ public class AddCityCommand : IRequest<CityDetailsDto>
     
 
     public string Name { get; set; }
+    public int? CountryID { get; set; }
 
-    public City Country { get; set; }
-
-    public List<Attraction>? Attractions { get; set; }
-
-    public List<CityHotel>? CityHotels { get; set; }
-
-    public AddCityCommand(string name, City country, List<Attraction>? attractions, List<CityHotel>? cityHotels)
+    public AddCityCommand(string name)
     {
         Name = name;
-        Country = country;
-        Attractions = attractions;
-        CityHotels = cityHotels;
+
     }
 
 

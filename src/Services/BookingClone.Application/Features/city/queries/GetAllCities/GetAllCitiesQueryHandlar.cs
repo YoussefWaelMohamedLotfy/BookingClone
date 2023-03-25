@@ -23,8 +23,10 @@ public class GetAllCitiesQueryHandlar : IRequestHandler<GetAllCitiesQuery, IEnum
 
     public async Task<IEnumerable<CityMinimalDto>> Handle(GetAllCitiesQuery request, CancellationToken cancellationToken)
     {
-        return (await _cityRepository.GetAll()) /*calling */
-         .Select(a => new CityMinimalDto { Name =a.Name} );  /*Mapping*/
+        var x =  _cityRepository.GetAll().Result;
+        var y = x.Select(a => new CityMinimalDto { Name = a.Name }); 
+        return (y);
+         
     }
 
 

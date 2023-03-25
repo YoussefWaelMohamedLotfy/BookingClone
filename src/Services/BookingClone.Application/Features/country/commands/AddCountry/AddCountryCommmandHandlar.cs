@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 using BookingClone.Application.Features.city.commands.AddCity;
 using BookingClone.Application.Features.city.DTOs;
+using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
+using BookingClone.Infrastructure.Repositories;
+
 using MediatR;
 
 namespace BookingClone.Application.Features.country.commands.AddCountry;
@@ -27,21 +30,27 @@ public class AddCountryCommmandHandlar : IRequestHandler<AddCountryCommmand, Cou
         var country = new Country
         {
             Name = request.Name,
-            Continent = request.Continent,
-            Cities = request.Cities,
-           
+            ContinentID = request.ContinentID,
+
+
         };
 
 
 
         country =  _countryRepository.Add(country);
+
+        _countryRepository.SaveAsync(cancellationToken);
+
         return new CountryDetailsDto()
         {
             Name = country.Name,
-            Continent = country.Continent,
-            Cities = country.Cities,
+            //ContinentID = country.ContinentID,
 
-            };
+
+        };
+
+
+       
     }
 
 

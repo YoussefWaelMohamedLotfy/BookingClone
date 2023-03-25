@@ -13,9 +13,7 @@ public class CountryDetailsDto
 
     public string Name { get; set; }
 
-    public Continent? Continent { get; set; }
-
-    public List<City>? Cities { get; set; }
+    
 
   
 }

@@ -9,6 +9,8 @@ using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
+using BookingClone.Infrastructure.Repositories;
+
 using MediatR;
 
 namespace BookingClone.Application.Features.continent.commands.AddContinent;
@@ -27,18 +29,23 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
         var continent = new Continent()
         {
             Name = request.Name,
-            Countries = request.Countries,
+            
            
         };
 
 
 
         continent = _continentRepository.Add(continent);
+        _continentRepository.SaveAsync(cancellationToken);
         return new ContinentDetailsDto()
         {   Name = continent.Name,
-            Countries = continent.Countries,
+           
         };
+
+
+       
+
     }
-    
+
 
 }

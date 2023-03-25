@@ -27,8 +27,20 @@ public class UpdateContinentCommmandHandlar : IRequestHandler<UpdateContinentCom
     {
         var Continent = await _continentRepository.GetByIdAsync(request.ID);
        
-          _continentRepository.Update(Continent);
+         
 
-        return new ContinentDetailsDto { Name = Continent.Name };
+        var cont = new ContinentDetailsDto { Name = request.Name };
+        Continent.Name = request.Name;
+
+        _continentRepository.Update(Continent);
+
+        _continentRepository.SaveAsync(cancellationToken);
+        return cont;
+
+       
+        
+        
+
     }
 }
+

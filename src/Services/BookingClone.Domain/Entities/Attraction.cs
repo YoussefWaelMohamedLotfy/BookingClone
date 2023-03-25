@@ -14,7 +14,7 @@ public sealed class Attraction : BaseEntity<int>
 
     public string Duration { get; set; }
 
-    public City? City { get; set; }
+    public Cities? City { get; set; }
 
     public List<AttractionReview> Reviews { get; set; }
 

@@ -10,7 +10,8 @@ public sealed class Country : BaseEntity<int>
 
     public Continent Continent { get; set; }
 
-    public List<City>? Cities { get; set; }
+    public int? ContinentID { get; set; }
+    public List<Cities>? Cities { get; set; }
 
    
 }

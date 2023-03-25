@@ -17,14 +17,13 @@ public class AddCountryCommmand : IRequest<CountryDetailsDto>
 
     public string Name { get; set; }
 
-    public Continent Continent { get; set; }
+    public int? ContinentID { get; set; }
 
-    public List<City>? Cities { get; set; }
+    
 
-    public AddCountryCommmand(string name, Continent continent, List<City>? cities)
+    public AddCountryCommmand(string name, int? continentID)
     {
         Name = name;
-        Continent = continent;
-        Cities = cities;
+        ContinentID = continentID;
     }
 }

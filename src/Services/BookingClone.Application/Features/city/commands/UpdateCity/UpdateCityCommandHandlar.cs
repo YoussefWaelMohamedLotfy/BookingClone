@@ -27,13 +27,15 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
         var city = await _cityRepository.GetByIdAsync(request.ID);
         var cityy = new CityDetailsDto
         {
-           Name = city.Name,
+           Name = request.Name,
            
 
         };
+        city.Name = request.Name;
        
        
           _cityRepository.Update(city);
+        _cityRepository.SaveAsync(cancellationToken);
 
         return cityy;
     }

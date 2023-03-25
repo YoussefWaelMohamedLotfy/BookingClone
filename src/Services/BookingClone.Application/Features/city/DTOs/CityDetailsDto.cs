@@ -13,11 +13,7 @@ public sealed class CityDetailsDto
 
     public string Name { get; set; }
 
-    public City? Country { get; set; }
-
-    public List<Attraction>? Attractions { get; set; }
-
-    public List<CityHotel>? CityHotels { get; set; }
+   
 
 
     

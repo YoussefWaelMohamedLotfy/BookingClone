@@ -8,6 +8,7 @@ using BookingClone.Application.Features.continent.commands.UpdateContinent;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
+using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
 
 using MediatR;
@@ -29,7 +30,20 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
     {
         var country = await _countryRepository.GetByIdAsync(request.ID);
 
+        
+
+        var con =new CountryDetailsDto { Name = request.Name };
+        country.Name = request.Name;
+
         _countryRepository.Update(country);
-        return new CountryDetailsDto { Name = country.Name };
+        _countryRepository.SaveAsync(cancellationToken);
+
+        return con;
+
+       
+
+
+
+
     }
 }

@@ -15,11 +15,11 @@ public class AddContinentCommmand : IRequest<ContinentDetailsDto>
    
     public string Name { get; set; }
 
-    public List<City>? Countries { get; set; }
+   
 
-    public AddContinentCommmand(string name, List<City>? countries)
+    public AddContinentCommmand(string name)
     {
         Name = name;
-        Countries = countries;
+       
     }
 }

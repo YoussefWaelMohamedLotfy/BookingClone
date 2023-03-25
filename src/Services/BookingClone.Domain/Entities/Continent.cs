@@ -8,7 +8,7 @@ public sealed class Continent : BaseEntity<int>
 
     public string Name { get; set; }
 
-    public List<City>? Countries { get; set; }
+    public List<Country>? Countries { get; set; }
 
 
     

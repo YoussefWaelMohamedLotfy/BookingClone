@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 using Bogus.DataSets;
 
 using BookingClone.Application.Features.city.DTOs;
+using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
+using BookingClone.Infrastructure.Repositories;
 
 using MediatR;
+
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace BookingClone.Application.Features.city.commands.AddCity;
 public class AddCityCommandHandlar : IRequestHandler<AddCityCommand, CityDetailsDto>
@@ -26,24 +30,26 @@ public class AddCityCommandHandlar : IRequestHandler<AddCityCommand, CityDetails
     public async Task<CityDetailsDto> Handle(AddCityCommand request, CancellationToken cancellationToken)
     {
 
-        var city = new City
+        var city = new Cities
         {
             Name = request.Name,
-            Country = request.Country,
-            Attractions = request.Attractions,
-            CityHotels = request.CityHotels
+            CountryID=request.CountryID
         };
 
 
+       
+        city =  _cityRepository.Add(city);
+           _cityRepository.SaveAsync(cancellationToken);
+         
 
-         city =  _cityRepository.Add(city);
-        return new CityDetailsDto() { Name = city.Name, Attractions = city.Attractions, CityHotels = city.CityHotels, Country = city.Country };
-
+        return new CityDetailsDto() { Name = city.Name };
 
 
         
+
+
     }
 
-   
+
 
 }
