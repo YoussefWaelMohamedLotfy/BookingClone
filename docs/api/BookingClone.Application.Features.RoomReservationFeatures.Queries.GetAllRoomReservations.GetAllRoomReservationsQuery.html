@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class GetRoomReservationByIdQuery
+      <title>Class GetAllRoomReservationsQuery
  | BookingClone Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class GetRoomReservationByIdQuery
+      <meta name="title" content="Class GetAllRoomReservationsQuery
  | BookingClone Docs ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       
-      <meta name="docfx:docurl" content="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Application_Features_RoomReservationFeatures_Queries_GetRoomReservationById_GetRoomReservationByIdQuery.md&amp;value=---%0Auid%3A%20BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Application_Features_RoomReservationFeatures_Queries_GetAllRoomReservations_GetAllRoomReservationsQuery.md&amp;value=---%0Auid%3A%20BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <body data-layout="" data-yaml-mime="ManagedReference">
@@ -61,16 +61,16 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery">
+        <article data-uid="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery">
 
 
-  <h1 id="BookingClone_Application_Features_RoomReservationFeatures_Queries_GetRoomReservationById_GetRoomReservationByIdQuery" data-uid="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery" class="text-break">
-    Class GetRoomReservationByIdQuery
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.Application/Features/RoomReservationFeatures/Queries/GetRoomReservationById/GetRoomReservationByIdQuery.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BookingClone_Application_Features_RoomReservationFeatures_Queries_GetAllRoomReservations_GetAllRoomReservationsQuery" data-uid="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery" class="text-break">
+    Class GetAllRoomReservationsQuery
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.Application/Features/RoomReservationFeatures/Queries/GetAllRoomReservations/GetAllRoomReservationsQuery.cs/#L6"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><span class="xref">BookingClone</span>.<a class="xref" href="BookingClone.Application.html">Application</a>.<span class="xref">Features</span>.<span class="xref">RoomReservationFeatures</span>.<span class="xref">Queries</span>.<a class="xref" href="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.html">GetRoomReservationById</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">BookingClone</span>.<a class="xref" href="BookingClone.Application.html">Application</a>.<span class="xref">Features</span>.<span class="xref">RoomReservationFeatures</span>.<span class="xref">Queries</span>.<a class="xref" href="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.html">GetAllRoomReservations</a></dd></dl>
     <dl><dt>Assembly</dt><dd>BookingClone.Application.dll</dd></dl>
   </div>
 
@@ -78,7 +78,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class GetRoomReservationByIdQuery : IRequest&lt;GetRoomReservationDto?&gt;, IBaseRequest</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class GetAllRoomReservationsQuery : IRequest&lt;IEnumerable&lt;GetRoomReservationDto&gt;&gt;, IBaseRequest</code></pre>
   </div>
 
 
@@ -88,14 +88,14 @@
     <dt>Inheritance</dt>
     <dd>
       <div><span class="xref">object</span></div>
-      <div><span class="xref">GetRoomReservationByIdQuery</span></div>
+      <div><span class="xref">GetAllRoomReservationsQuery</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><span class="xref">IRequest</span>&lt;<a class="xref" href="BookingClone.Application.Features.RoomReservationFeatures.DTOs.GetRoomReservationDto.html">GetRoomReservationDto</a>&gt;</div>
+      <div><span class="xref">IRequest</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="BookingClone.Application.Features.RoomReservationFeatures.DTOs.GetRoomReservationDto.html">GetRoomReservationDto</a>&gt;&gt;</div>
       <div><span class="xref">IBaseRequest</span></div>
     </dd>
   </dl>
@@ -128,44 +128,11 @@
 
 
 
-  <h2 class="section" id="properties">Properties
-</h2>
-
-  <a id="BookingClone_Application_Features_RoomReservationFeatures_Queries_GetRoomReservationById_GetRoomReservationByIdQuery_ID_" data-uid="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery.ID*"></a>
-
-  <h3 id="BookingClone_Application_Features_RoomReservationFeatures_Queries_GetRoomReservationById_GetRoomReservationByIdQuery_ID" data-uid="BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery.ID">
-  ID
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.Application/Features/RoomReservationFeatures/Queries/GetRoomReservationById/GetRoomReservationByIdQuery.cs/#L8"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required int ID { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><span class="xref">int</span></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Application_Features_RoomReservationFeatures_Queries_GetRoomReservationById_GetRoomReservationByIdQuery.md&amp;value=---%0Auid%3A%20BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Application_Features_RoomReservationFeatures_Queries_GetAllRoomReservations_GetAllRoomReservationsQuery.md&amp;value=---%0Auid%3A%20BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
       </div>
 

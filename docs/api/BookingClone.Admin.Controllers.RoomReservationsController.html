@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class AttractionsController
+      <title>Class RoomReservationsController
  | BookingClone Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class AttractionsController
+      <meta name="title" content="Class RoomReservationsController
  | BookingClone Docs ">
       
       <link rel="icon" href="../favicon.ico">
@@ -15,7 +15,7 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       
-      <meta name="docfx:docurl" content="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_API_Controllers_V1_AttractionsController.md&amp;value=---%0Auid%3A%20BookingClone.API.Controllers.V1.AttractionsController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Admin_Controllers_RoomReservationsController.md&amp;value=---%0Auid%3A%20BookingClone.Admin.Controllers.RoomReservationsController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
   </head>
 
   <body data-layout="" data-yaml-mime="ManagedReference">
@@ -61,26 +61,24 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BookingClone.API.Controllers.V1.AttractionsController">
+        <article data-uid="BookingClone.Admin.Controllers.RoomReservationsController">
 
 
-  <h1 id="BookingClone_API_Controllers_V1_AttractionsController" data-uid="BookingClone.API.Controllers.V1.AttractionsController" class="text-break">
-    Class AttractionsController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.API/Controllers/V1/AttractionsController.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  <h1 id="BookingClone_Admin_Controllers_RoomReservationsController" data-uid="BookingClone.Admin.Controllers.RoomReservationsController" class="text-break">
+    Class RoomReservationsController
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L12"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><span class="xref">BookingClone</span>.<a class="xref" href="BookingClone.API.html">API</a>.<span class="xref">Controllers</span>.<a class="xref" href="BookingClone.API.Controllers.V1.html">V1</a></dd></dl>
-    <dl><dt>Assembly</dt><dd>BookingClone.API.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><span class="xref">BookingClone</span>.<span class="xref">Admin</span>.<a class="xref" href="BookingClone.Admin.Controllers.html">Controllers</a></dd></dl>
+    <dl><dt>Assembly</dt><dd>BookingClone.Admin.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Route(&quot;api/[controller]&quot;)]
-[ApiController]
-public class AttractionsController : ControllerBase</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class RoomReservationsController : Controller, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable</code></pre>
   </div>
 
 
@@ -91,15 +89,88 @@ public class AttractionsController : ControllerBase</code></pre>
     <dd>
       <div><span class="xref">object</span></div>
       <div><span class="xref">ControllerBase</span></div>
-      <div><span class="xref">AttractionsController</span></div>
+      <div><span class="xref">Controller</span></div>
+      <div><span class="xref">RoomReservationsController</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IActionFilter</span></div>
+      <div><span class="xref">IAsyncActionFilter</span></div>
+      <div><span class="xref">IFilterMetadata</span></div>
+      <div><span class="xref">IDisposable</span></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <span class="xref">Controller.View()</span>
+    </div>
+    <div>
+      <span class="xref">Controller.View(string)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.View(object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.View(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.PartialView()</span>
+    </div>
+    <div>
+      <span class="xref">Controller.PartialView(string)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.PartialView(object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.PartialView(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.ViewComponent(string)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.ViewComponent(Type)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.ViewComponent(string, object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.ViewComponent(Type, object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.Json(object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.Json(object, object)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.OnActionExecuting(ActionExecutingContext)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.OnActionExecuted(ActionExecutedContext)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.OnActionExecutionAsync(ActionExecutingContext, ActionExecutionDelegate)</span>
+    </div>
+    <div>
+      <span class="xref">Controller.Dispose()</span>
+    </div>
+    <div>
+      <span class="xref">Controller.ViewData</span>
+    </div>
+    <div>
+      <span class="xref">Controller.TempData</span>
+    </div>
+    <div>
+      <span class="xref">Controller.ViewBag</span>
+    </div>
     <div>
       <span class="xref">ControllerBase.StatusCode(int)</span>
     </div>
@@ -629,9 +700,6 @@ public class AttractionsController : ControllerBase</code></pre>
       <span class="xref">object.GetType()</span>
     </div>
     <div>
-      <span class="xref">object.MemberwiseClone()</span>
-    </div>
-    <div>
       <span class="xref">object.ReferenceEquals(object, object)</span>
     </div>
     <div>
@@ -646,18 +714,18 @@ public class AttractionsController : ControllerBase</code></pre>
   <h2 class="section" id="constructors">Constructors
 </h2>
 
-  <a id="BookingClone_API_Controllers_V1_AttractionsController__ctor_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.#ctor*"></a>
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController__ctor_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.#ctor*"></a>
 
-  <h3 id="BookingClone_API_Controllers_V1_AttractionsController__ctor_MediatR_IMediator_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.#ctor(MediatR.IMediator)">
-  AttractionsController(IMediator)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.API/Controllers/V1/AttractionsController.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController__ctor_MediatR_IMediator_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.#ctor(MediatR.IMediator)">
+  RoomReservationsController(IMediator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AttractionsController(IMediator mediator)</code></pre>
+    <pre><code class="lang-csharp hljs">public RoomReservationsController(IMediator mediator)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -679,39 +747,25 @@ public class AttractionsController : ControllerBase</code></pre>
   <h2 class="section" id="methods">Methods
 </h2>
 
-  <a id="BookingClone_API_Controllers_V1_AttractionsController_AddAttractionImages_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.AddAttractionImages*"></a>
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController_Create_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Create*"></a>
 
-  <h3 id="BookingClone_API_Controllers_V1_AttractionsController_AddAttractionImages_System_Int32_System_Collections_Generic_List_Microsoft_AspNetCore_Http_IFormFile__System_Threading_CancellationToken_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.AddAttractionImages(System.Int32,System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile},System.Threading.CancellationToken)">
-  AddAttractionImages(int, List&lt;IFormFile&gt;, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.API/Controllers/V1/AttractionsController.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController_Create" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Create">
+  Create()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L31"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds images to an Attraction</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpPost(&quot;{id}/images&quot;)]
-public Task&lt;IActionResult&gt; AddAttractionImages(int id, List&lt;IFormFile&gt; images, CancellationToken ct)</code></pre>
+    <pre><code class="lang-csharp hljs">public IActionResult Create()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>id</code> <span class="xref">int</span></dt>
-    <dd><p>The unique Identifier of Attraction</p>
-</dd>
-    <dt><code>images</code> <span class="xref">List</span>&lt;<span class="xref">IFormFile</span>&gt;</dt>
-    <dd><p>THe images from request Body</p>
-</dd>
-    <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
-    <dd></dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</dt>
-    <dd><p>The Generated URLs for images</p>
-</dd>
+    <dt><span class="xref">IActionResult</span></dt>
+    <dd></dd>
   </dl>
 
 
@@ -724,27 +778,26 @@ public Task&lt;IActionResult&gt; AddAttractionImages(int id, List&lt;IFormFile&g
 
 
 
-  <a id="BookingClone_API_Controllers_V1_AttractionsController_AddNewAttraction_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.AddNewAttraction*"></a>
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController_Create_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Create*"></a>
 
-  <h3 id="BookingClone_API_Controllers_V1_AttractionsController_AddNewAttraction_BookingClone_Application_Features_AttractionFeatures_DTOs_AddAttractionDto_System_Threading_CancellationToken_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.AddNewAttraction(BookingClone.Application.Features.AttractionFeatures.DTOs.AddAttractionDto,System.Threading.CancellationToken)">
-  AddNewAttraction(AddAttractionDto, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.API/Controllers/V1/AttractionsController.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController_Create_BookingClone_Application_Features_RoomReservationFeatures_DTOs_AddRoomReservationDto_System_Threading_CancellationToken_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Create(BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto,System.Threading.CancellationToken)">
+  Create(AddRoomReservationDto, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds a new Attraction</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HttpPost]
-public Task&lt;IActionResult&gt; AddNewAttraction(AddAttractionDto request, CancellationToken ct)</code></pre>
+[ValidateAntiForgeryToken]
+public Task&lt;IActionResult&gt; Create(AddRoomReservationDto request, CancellationToken ct)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="BookingClone.Application.Features.AttractionFeatures.DTOs.AddAttractionDto.html">AddAttractionDto</a></dt>
-    <dd><p>The request Body containing new data</p>
-</dd>
+    <dt><code>request</code> <a class="xref" href="BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto.html">AddRoomReservationDto</a></dt>
+    <dd></dd>
     <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
     <dd></dd>
   </dl>
@@ -752,8 +805,7 @@ public Task&lt;IActionResult&gt; AddNewAttraction(AddAttractionDto request, Canc
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</dt>
-    <dd><p>The newly added entity with ID generated</p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -766,27 +818,26 @@ public Task&lt;IActionResult&gt; AddNewAttraction(AddAttractionDto request, Canc
 
 
 
-  <a id="BookingClone_API_Controllers_V1_AttractionsController_DeleteAttractionById_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.DeleteAttractionById*"></a>
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController_Delete_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Delete*"></a>
 
-  <h3 id="BookingClone_API_Controllers_V1_AttractionsController_DeleteAttractionById_System_Int32_System_Threading_CancellationToken_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.DeleteAttractionById(System.Int32,System.Threading.CancellationToken)">
-  DeleteAttractionById(int, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.API/Controllers/V1/AttractionsController.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController_Delete_System_Int32_System_Threading_CancellationToken_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Delete(System.Int32,System.Threading.CancellationToken)">
+  Delete(int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Deletes an existing Attraction</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpDelete(&quot;{id}&quot;)]
-public Task&lt;IActionResult&gt; DeleteAttractionById(int id, CancellationToken ct)</code></pre>
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[ValidateAntiForgeryToken]
+public Task&lt;IActionResult&gt; Delete(int id, CancellationToken ct)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>id</code> <span class="xref">int</span></dt>
-    <dd><p>The unique Identifier of Attraction</p>
-</dd>
+    <dd></dd>
     <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
     <dd></dd>
   </dl>
@@ -807,27 +858,24 @@ public Task&lt;IActionResult&gt; DeleteAttractionById(int id, CancellationToken 
 
 
 
-  <a id="BookingClone_API_Controllers_V1_AttractionsController_GetAttractionById_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.GetAttractionById*"></a>
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController_Details_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Details*"></a>
 
-  <h3 id="BookingClone_API_Controllers_V1_AttractionsController_GetAttractionById_System_Int32_System_Threading_CancellationToken_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.GetAttractionById(System.Int32,System.Threading.CancellationToken)">
-  GetAttractionById(int, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.API/Controllers/V1/AttractionsController.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController_Details_System_Int32_System_Threading_CancellationToken_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Details(System.Int32,System.Threading.CancellationToken)">
+  Details(int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L25"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets a single Attraction by ID</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpGet(&quot;{id}&quot;)]
-public Task&lt;IActionResult&gt; GetAttractionById(int id, CancellationToken ct)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;IActionResult&gt; Details(int id, CancellationToken ct)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>id</code> <span class="xref">int</span></dt>
-    <dd><p>The unique Identifier of Attraction</p>
-</dd>
+    <dd></dd>
     <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
     <dd></dd>
   </dl>
@@ -835,8 +883,7 @@ public Task&lt;IActionResult&gt; GetAttractionById(int id, CancellationToken ct)
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</dt>
-    <dd><p>Attraction with specified ID</p>
-</dd>
+    <dd></dd>
   </dl>
 
 
@@ -849,27 +896,26 @@ public Task&lt;IActionResult&gt; GetAttractionById(int id, CancellationToken ct)
 
 
 
-  <a id="BookingClone_API_Controllers_V1_AttractionsController_UpdateExistingAttraction_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.UpdateExistingAttraction*"></a>
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController_Edit_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Edit*"></a>
 
-  <h3 id="BookingClone_API_Controllers_V1_AttractionsController_UpdateExistingAttraction_BookingClone_Application_Features_AttractionFeatures_DTOs_UpdateAttractionDto_System_Threading_CancellationToken_" data-uid="BookingClone.API.Controllers.V1.AttractionsController.UpdateExistingAttraction(BookingClone.Application.Features.AttractionFeatures.DTOs.UpdateAttractionDto,System.Threading.CancellationToken)">
-  UpdateExistingAttraction(UpdateAttractionDto, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.API/Controllers/V1/AttractionsController.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController_Edit_BookingClone_Application_Features_RoomReservationFeatures_DTOs_UpdateRoomReservationDto_System_Threading_CancellationToken_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Edit(BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto,System.Threading.CancellationToken)">
+  Edit(UpdateRoomReservationDto, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Updates an existing Attraction</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HttpPut]
-public Task&lt;IActionResult&gt; UpdateExistingAttraction(UpdateAttractionDto request, CancellationToken ct)</code></pre>
+    <pre><code class="lang-csharp hljs">[HttpPost]
+[ValidateAntiForgeryToken]
+public Task&lt;IActionResult&gt; Edit(UpdateRoomReservationDto request, CancellationToken ct)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>request</code> <a class="xref" href="BookingClone.Application.Features.AttractionFeatures.DTOs.UpdateAttractionDto.html">UpdateAttractionDto</a></dt>
-    <dd><p>The request Body containing updated data</p>
-</dd>
+    <dt><code>request</code> <a class="xref" href="BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto.html">UpdateRoomReservationDto</a></dt>
+    <dd></dd>
     <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
     <dd></dd>
   </dl>
@@ -877,8 +923,81 @@ public Task&lt;IActionResult&gt; UpdateExistingAttraction(UpdateAttractionDto re
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</dt>
-    <dd><p>The existing entity with updated Data</p>
-</dd>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController_Edit_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Edit*"></a>
+
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController_Edit_System_Int32_System_Threading_CancellationToken_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Edit(System.Int32,System.Threading.CancellationToken)">
+  Edit(int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IActionResult&gt; Edit(int id, CancellationToken ct)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">int</span></dt>
+    <dd></dd>
+    <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BookingClone_Admin_Controllers_RoomReservationsController_Index_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Index*"></a>
+
+  <h3 id="BookingClone_Admin_Controllers_RoomReservationsController_Index_System_Threading_CancellationToken_" data-uid="BookingClone.Admin.Controllers.RoomReservationsController.Index(System.Threading.CancellationToken)">
+  Index(CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/WebApps/BookingClone.Admin/Controllers/RoomReservationsController.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;IActionResult&gt; Index(CancellationToken ct)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Task</span>&lt;<span class="xref">IActionResult</span>&gt;</dt>
+    <dd></dd>
   </dl>
 
 
@@ -894,7 +1013,7 @@ public Task&lt;IActionResult&gt; UpdateExistingAttraction(UpdateAttractionDto re
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_API_Controllers_V1_AttractionsController.md&amp;value=---%0Auid%3A%20BookingClone.API.Controllers.V1.AttractionsController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Admin_Controllers_RoomReservationsController.md&amp;value=---%0Auid%3A%20BookingClone.Admin.Controllers.RoomReservationsController%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
       </div>
 
