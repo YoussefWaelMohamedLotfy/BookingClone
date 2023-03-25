@@ -24,6 +24,7 @@ public class GetAllCitiesQueryHandlar : IRequestHandler<GetAllCitiesQuery, IEnum
     public async Task<IEnumerable<CityMinimalDto>> Handle(GetAllCitiesQuery request, CancellationToken cancellationToken)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var city =  _cityRepository.GetAll().Result;
         var city_Dto = city.Select(a => new CityMinimalDto { Name = a.Name }); 
         return (city_Dto);
@@ -32,6 +33,12 @@ public class GetAllCitiesQueryHandlar : IRequestHandler<GetAllCitiesQuery, IEnum
         return (await _cityRepository.GetAll()) /*calling */
          .Select(a => new CityMinimalDto { Name =a.Name} );  /*Mapping*/
 >>>>>>> add city and country and continent
+=======
+        var x =  _cityRepository.GetAll().Result;
+        var y = x.Select(a => new CityMinimalDto { Name = a.Name }); 
+        return (y);
+         
+>>>>>>> api(country_continent_city)
     }
 
 

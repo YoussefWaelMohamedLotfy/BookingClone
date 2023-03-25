@@ -32,6 +32,9 @@ public class UpdateContinentCommmandHandlar : IRequestHandler<UpdateContinentCom
         var Continent = await _continentRepository.GetByIdAsync(request.ID);
        
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> api(country_continent_city)
          
 
         var cont = new ContinentDetailsDto { Name = request.Name };
@@ -45,14 +48,20 @@ public class UpdateContinentCommmandHandlar : IRequestHandler<UpdateContinentCom
        
         
         
+<<<<<<< HEAD
 
     }
 }
 
 =======
           _continentRepository.Update(Continent);
+=======
+>>>>>>> api(country_continent_city)
 
-        return new ContinentDetailsDto { Name = Continent.Name };
     }
 }
+<<<<<<< HEAD
 >>>>>>> add city and country and continent
+=======
+
+>>>>>>> api(country_continent_city)

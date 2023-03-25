@@ -16,7 +16,12 @@ using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
+<<<<<<< HEAD
 >>>>>>> add city and country and continent
+=======
+using BookingClone.Infrastructure.Repositories;
+
+>>>>>>> api(country_continent_city)
 using MediatR;
 
 namespace BookingClone.Application.Features.continent.commands.AddContinent;
@@ -36,16 +41,21 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
         {
             Name = request.Name,
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
             Countries = request.Countries,
 >>>>>>> add city and country and continent
+=======
+            
+>>>>>>> api(country_continent_city)
            
         };
 
 
 
         continent = _continentRepository.Add(continent);
+<<<<<<< HEAD
 <<<<<<< HEAD
         _continentRepository.SaveAsync(cancellationToken);
         return new ContinentDetailsDto()
@@ -59,12 +69,23 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
     }
 
 =======
+=======
+        _continentRepository.SaveAsync(cancellationToken);
+>>>>>>> api(country_continent_city)
         return new ContinentDetailsDto()
         {   Name = continent.Name,
-            Countries = continent.Countries,
+           
         };
+
+
+       
+
     }
+<<<<<<< HEAD
     
 >>>>>>> add city and country and continent
+=======
+
+>>>>>>> api(country_continent_city)
 
 }

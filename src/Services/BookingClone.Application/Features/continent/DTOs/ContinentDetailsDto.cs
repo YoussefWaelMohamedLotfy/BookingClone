@@ -10,6 +10,7 @@ namespace BookingClone.Application.Features.continent.DTOs;
 public class ContinentDetailsDto
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public int ID { get; set; }
     public string Name { get; set; }
@@ -24,3 +25,11 @@ public class ContinentDetailsDto
     public List<City>? Countries { get; set; }
 }
 >>>>>>> add city and country and continent
+=======
+
+
+    public string Name { get; set; }
+
+
+}
+>>>>>>> api(country_continent_city)

@@ -15,7 +15,12 @@ using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
+<<<<<<< HEAD
 >>>>>>> add city and country and continent
+=======
+using BookingClone.Infrastructure.Repositories;
+
+>>>>>>> api(country_continent_city)
 using MediatR;
 
 namespace BookingClone.Application.Features.continent.queries.GetAllcontinent;
@@ -33,6 +38,7 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
     public async Task<IEnumerable<ContinentMinimalDto>> Handle(GetAllcontinentQuery request, CancellationToken cancellationToken)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         // return (await _continentRepository.GetAll()) /*calling */
         //.Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
 
@@ -43,5 +49,13 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
         return (await _continentRepository.GetAll()) /*calling */
        .Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
 >>>>>>> add city and country and continent
+=======
+        // return (await _continentRepository.GetAll()) /*calling */
+        //.Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
+
+        var x = _continentRepository.GetAll().Result;
+        var y = x.Select(a => new ContinentMinimalDto { Name = a.Name });
+        return (y);
+>>>>>>> api(country_continent_city)
     }
 }

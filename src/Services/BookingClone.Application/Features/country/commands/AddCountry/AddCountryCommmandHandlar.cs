@@ -7,17 +7,23 @@ using System.Threading.Tasks;
 using BookingClone.Application.Features.city.commands.AddCity;
 using BookingClone.Application.Features.city.DTOs;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> api(country_continent_city)
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
 
+<<<<<<< HEAD
 =======
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 >>>>>>> add city and country and continent
+=======
+>>>>>>> api(country_continent_city)
 using MediatR;
 
 namespace BookingClone.Application.Features.country.commands.AddCountry;
@@ -37,6 +43,7 @@ public class AddCountryCommmandHandlar : IRequestHandler<AddCountryCommmand, Cou
         {
             Name = request.Name,
 <<<<<<< HEAD
+<<<<<<< HEAD
             ContinentID = request.ContinentID,
 
 
@@ -45,11 +52,17 @@ public class AddCountryCommmandHandlar : IRequestHandler<AddCountryCommmand, Cou
             Cities = request.Cities,
            
 >>>>>>> add city and country and continent
+=======
+            ContinentID = request.ContinentID,
+
+
+>>>>>>> api(country_continent_city)
         };
 
 
 
         country =  _countryRepository.Add(country);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         _countryRepository.SaveAsync(cancellationToken);
@@ -65,14 +78,26 @@ public class AddCountryCommmandHandlar : IRequestHandler<AddCountryCommmand, Cou
 
        
 =======
+=======
+
+        _countryRepository.SaveAsync(cancellationToken);
+
+>>>>>>> api(country_continent_city)
         return new CountryDetailsDto()
         {
             Name = country.Name,
-            Continent = country.Continent,
-            Cities = country.Cities,
+            //ContinentID = country.ContinentID,
 
+
+        };
+
+
+<<<<<<< HEAD
             };
 >>>>>>> add city and country and continent
+=======
+       
+>>>>>>> api(country_continent_city)
     }
 
 

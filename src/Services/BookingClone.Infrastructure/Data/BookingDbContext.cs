@@ -27,10 +27,10 @@ public sealed class BookingDbContext : DbContext
     public DbSet<AttractionImage> AttractionImages { get; set; }
     public DbSet<AttractionReservation> AttractionReservations { get; set; }
     public DbSet<AttractionReview> AttractionReviews { get; set; }
-    public DbSet<City> Cities { get; set; }
+    public DbSet<Cities> Cities { get; set; }
     public DbSet<CityHotel> CityHotels { get; set; }
     public DbSet<Continent> Continents { get; set; }
-    public DbSet<City> Countries { get; set; }
+    public DbSet<Country> Countries { get; set; }
     public DbSet<Hotel> Hotels { get; set; }
     public DbSet<HotelReview> HotelReviews { get; set; }
     public DbSet<Reservation> Reservations { get; set; }

@@ -21,10 +21,14 @@ public class CountryDetailsDto
 
     public string Name { get; set; }
 
+<<<<<<< HEAD
     public Continent? Continent { get; set; }
 
     public List<City>? Cities { get; set; }
 >>>>>>> add city and country and continent
+=======
+    
+>>>>>>> api(country_continent_city)
 
   
 }

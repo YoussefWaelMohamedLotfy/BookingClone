@@ -15,8 +15,13 @@ public sealed class Country : BaseEntity<int>
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     public int? ContinentID { get; set; }
     public List<City>? Cities { get; set; }
+=======
+    public int? ContinentID { get; set; }
+    public List<Cities>? Cities { get; set; }
+>>>>>>> api(country_continent_city)
 
    
 =======

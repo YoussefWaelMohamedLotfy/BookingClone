@@ -21,12 +21,16 @@ public sealed class CityDetailsDto
 
     public string Name { get; set; }
 
+<<<<<<< HEAD
     public City? Country { get; set; }
 
     public List<Attraction>? Attractions { get; set; }
 
     public List<CityHotel>? CityHotels { get; set; }
 >>>>>>> add city and country and continent
+=======
+   
+>>>>>>> api(country_continent_city)
 
 
     

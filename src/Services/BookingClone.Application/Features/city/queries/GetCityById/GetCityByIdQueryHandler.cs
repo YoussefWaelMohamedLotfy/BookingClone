@@ -58,19 +58,17 @@ public class GetCityByIdQueryHandler : IRequestHandler<GetCityByIdQuery, CityDet
 
     public async Task<CityDetailsDto?> Handle(GetCityByIdQuery request, CancellationToken cancellationToken)
     {
-        var city = await _cityRepository.GetByIdAsync(request.ID); /*calling*/
+        var city = await _cityRepository.GetByIdAsync(request.ID); 
 
-        return new CityDetailsDto()
+        return new CityDetailsDto()    
         {
             Name = city.Name,
-            Country = city.Country,
-            Attractions = city.Attractions,
-            CityHotels = city.CityHotels
-        };  /*mapping*/
+            
+        }; 
 
 
 
-        //return new CityDetailsDto(city.Name, city.Country);
+       
     }
 }
 >>>>>>> add city and country and continent

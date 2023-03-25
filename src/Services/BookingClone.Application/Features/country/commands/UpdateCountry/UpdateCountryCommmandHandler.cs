@@ -13,6 +13,7 @@ using BookingClone.Application.Features.continent.commands.UpdateContinent;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
+using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
 >>>>>>> add city and country and continent
 
@@ -35,6 +36,7 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
     {
         var country = await _countryRepository.GetByIdAsync(request.ID);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
         
 
@@ -59,5 +61,22 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
         _countryRepository.Update(country);
         return new CountryDetailsDto { Name = country.Name };
 >>>>>>> add city and country and continent
+=======
+        
+
+        var con =new CountryDetailsDto { Name = request.Name };
+        country.Name = request.Name;
+
+        _countryRepository.Update(country);
+        _countryRepository.SaveAsync(cancellationToken);
+
+        return con;
+
+       
+
+
+
+
+>>>>>>> api(country_continent_city)
     }
 }

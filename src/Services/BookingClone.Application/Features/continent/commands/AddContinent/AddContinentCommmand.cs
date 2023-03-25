@@ -16,6 +16,7 @@ public class AddContinentCommmand : IRequest<ContinentDetailsDto>
     public string Name { get; set; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 
     public AddContinentCommmand(string name)
@@ -24,11 +25,18 @@ public class AddContinentCommmand : IRequest<ContinentDetailsDto>
        
 =======
     public List<City>? Countries { get; set; }
+=======
+   
+>>>>>>> api(country_continent_city)
 
-    public AddContinentCommmand(string name, List<City>? countries)
+    public AddContinentCommmand(string name)
     {
         Name = name;
+<<<<<<< HEAD
         Countries = countries;
 >>>>>>> add city and country and continent
+=======
+       
+>>>>>>> api(country_continent_city)
     }
 }
