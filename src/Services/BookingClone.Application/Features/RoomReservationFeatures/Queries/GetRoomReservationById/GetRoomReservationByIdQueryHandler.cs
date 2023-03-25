@@ -18,14 +18,14 @@ internal sealed class GetRoomReservationByIdQueryHandler : IRequestHandler<GetRo
 
     public async Task<GetRoomReservationDto?> Handle(GetRoomReservationByIdQuery request, CancellationToken cancellationToken)
     {
-        var RoomReservation = await _RoomReservationRepository.GetByIdAsync(request.ID, cancellationToken);
+        var roomReservation = await _RoomReservationRepository.GetByIdAsync(request.ID, cancellationToken);
 
-        if (RoomReservation is null)
+        if (roomReservation is null)
         {
             return null;
         }
 
-        GetRoomReservationDto result = _mapper.Map<GetRoomReservationDto>(RoomReservation);
+        GetRoomReservationDto result = _mapper.Map<GetRoomReservationDto>(roomReservation);
         return result;
     }
 }

@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-
 using Serilog;
 using Serilog.Debugging;
 using Serilog.Sinks.Elasticsearch;
@@ -9,6 +8,9 @@ namespace BookingClone.Serilog;
 
 public static class Serilogger
 {
+    /// <summary>
+    /// The main configuration for Serilog
+    /// </summary>
     public static Action<HostBuilderContext, LoggerConfiguration> Configure =>
         (context, configuration) =>
         {

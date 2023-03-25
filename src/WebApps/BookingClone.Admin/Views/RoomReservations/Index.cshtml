@@ -1,0 +1,77 @@
+﻿@using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+@using BookingClone.Domain.Enums;
+@model List<GetRoomReservationDto>
+@{
+    ViewData["Title"] = "Index";
+
+    string SetBadgeColor(ReservationStatus status)
+    {
+        return status switch
+        {
+            ReservationStatus.Confirmed => "bg-success",
+            ReservationStatus.NotConfirmed => "bg-secondary",
+            ReservationStatus.Pending => "bg-warning",
+            ReservationStatus.Cancelled => "bg-danger",
+            _ => string.Empty
+        };
+    }
+}
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">Room Reservations List</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus"></i>
+            Create New Room Reservation
+        </a>
+    </div>
+</div>
+<div class="p-1 border rounded">
+    @if (Model.Any())
+    {
+        <table class="table table-striped border">
+            <thead>
+                <tr class="table-secondary">
+                    <th>ID</th>
+                    <th>Status</th>
+                    <th>Total Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.ID
+                        </td>
+                        <td>
+                            <span class="badge @SetBadgeColor(@item.Status)">@item.Status.ToString()</span>
+                        </td>
+                        <td>
+                            @item.TotalCost
+                        </td>
+                        <td>
+                            <div>
+                                <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">
+                                    <i class="bi bi-list"></i>
+                                    Details
+                                </a>
+                                <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-info">
+                                    <i class="bi bi-pen"></i>
+                                    Edit
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No Data Available</p>
+    }
+</div>

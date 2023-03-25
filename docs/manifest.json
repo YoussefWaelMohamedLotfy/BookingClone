@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyAuthFilter.html",
-          "hash": "o2NMCLAuIc8C147A8PMTkIWS07lrhXHM4+UiPANSJqg="
+          "hash": "aWRUwhr+cfj2RrahXpHiKikyUifQgNTZpbWBkrVifM8="
         }
       },
       "version": ""
@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyAuthMiddleware.html",
-          "hash": "osD7vX9+eXa46CFfEUB9nkCK+LioWH2Ne/gat4MFzQM="
+          "hash": "gj7/4ulAQb3K8LtqkxdjodfLQUQV+L3jekgXod4bqKU="
         }
       },
       "version": ""
@@ -31,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyEndpointFilter.html",
-          "hash": "KgJTuJXa4oOz/+0sR0GE3mjgaL4gL8Lc7Vk3zeSgyvg="
+          "hash": "o5D4zsC7Z7fPvQZQ64zPrC83eqCnmoiiwsT+r1EJEX0="
         }
       },
       "version": ""
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.AuthConstants.html",
-          "hash": "fykEQTQaPMWn4jBCwPvykI58ivxcJhT5YMNdBdNOsWg="
+          "hash": "y7WPjkTWTgOLi+0AEGoFzNoj4HKOLEcm9uCzO7/+HqE="
         }
       },
       "version": ""
@@ -64,7 +64,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.AttractionReservationsController.html",
-          "hash": "NTNz0eSz0MQIxVok9G+GLzSgn26kugSQ71MWUOL4X2o="
+          "hash": "VE/F/gt0n654mnW0+gwtqsWmo/3h1VgZzJUM86Vs5I8="
         }
       },
       "version": ""
@@ -75,7 +75,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.AttractionsController.html",
-          "hash": "aKJvUR5cE+WK1q/ria+HjbqpPhHX0ZaUYeVg2qXdtyk="
+          "hash": "/iExvlW4DceVYKgYEix1vLsNZaGAhnw0OYtpvEkKtIY="
         }
       },
       "version": ""
@@ -86,7 +86,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.RoomReservationsController.html",
-          "hash": "Xw8LctAZ1Z9MWDrvap2ilMcQdB4B/dexjlCApZi6qSY="
+          "hash": "AocSDHwEgXJ1YZun7DsYlwA1uGS5PE9Xqh2ksTodxpc="
         }
       },
       "version": ""
@@ -97,7 +97,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.WeatherForecastController.html",
-          "hash": "OHUDU2SxTv1JZULyIjElq8/3Z9WeMXADRYZrJ/SdWLs="
+          "hash": "SDwcjkLsCPV3m38ZEPoF8IZJtqELpcKRE9mh94YrfzE="
         }
       },
       "version": ""
@@ -119,7 +119,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V2.WeatherForecast2Controller.html",
-          "hash": "w2JXX+628Ymyvp84dAkw4Akzj/VibAuR4Hl+VRXvpag="
+          "hash": "XSQPWB3/I2nwy0OjHTvXVJbH4MzazPc3ee1XApA7ADw="
         }
       },
       "version": ""
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Extensions.HealthCheckExtension.html",
-          "hash": "cKtZ/RZninT5yLz6LxpqaiDsbWQ+w3a2IRMMel46QpA="
+          "hash": "lOEEWSxBxkshiSiol19+4ETkqycr/KrLtt0cmJk7s6c="
         }
       },
       "version": ""
@@ -152,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Extensions.HostExtensions.html",
-          "hash": "lFy333ymo+6sR307zttk/SgBwDGUEmahZe6j8cpntts="
+          "hash": "HSJ1rbNypR7QtFesXcqqdKaAAIXcxNva0ge+xzP8gRk="
         }
       },
       "version": ""
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.OpenApi.ConfigureSwaggerOptions.html",
-          "hash": "QH53k/lDUcuOvR9fMpr3+DDWhAplyQAcy6JOR8UrjZc="
+          "hash": "yriuq32sdnzyf34LF1lOgqpny2NUZjewQpkGbJeHpds="
         }
       },
       "version": ""
@@ -185,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.OpenApi.SwaggerDefaultValues.html",
-          "hash": "XwcJGPCjhGINVPpf3yG7E7ihaiAwMz4C+GLHKxp2FLA="
+          "hash": "mHCMVf2QxQ9O0GPQu3jTxab+3LA/DOkImlx/nSA528Y="
         }
       },
       "version": ""
@@ -207,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.WeatherForecast.html",
-          "hash": "RJnD8l9bv20guZBV0P61Dw06Tovvxa9pLQ/IzJTNcfE="
+          "hash": "XiV6qfgCuBnvvecmk+VNnlqYV4qtq6qTQ+5PNmoEovQ="
         }
       },
       "version": ""
@@ -229,7 +229,18 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Admin.Controllers.HomeController.html",
-          "hash": "Scs04s9NgPMcmJM3j82gED6sDCfqvkAVeUVufvlwbrg="
+          "hash": "6bZStb2o4ZdnDii8k/PbYRDHeItDmIS7n3mmLIxsu24="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.RoomReservationsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.RoomReservationsController.html",
+          "hash": "HirMKDoqTiVSW6KnaCiu1CCgzve3UY9tEOL71XFyXpI="
         }
       },
       "version": ""
@@ -240,7 +251,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Admin.Controllers.html",
-          "hash": "FvfpvF/4DpAHVJDSC5Uu4SIKnQjT3Ukh0vyAIO9R4NM="
+          "hash": "0RqdH36CPZeKw8qusdGxGlSr46rtZgKDYoAoa5PrMrE="
         }
       },
       "version": ""
@@ -251,7 +262,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Admin.Models.ErrorViewModel.html",
-          "hash": "RDKoAWy5bDVwrAz5VJdsU2FyQYX0JLomc6o55uKvGQE="
+          "hash": "5KaXe/p1hyZ5wcs92+gT1ixjCMpABU7CSp1hKz+lqHM="
         }
       },
       "version": ""
@@ -273,7 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.ApplicationExtensions.html",
-          "hash": "p6Tm7iKTc1W23icUNJ8IwEJ5ElWkyD0XShdVBNljCAA="
+          "hash": "jIWx/lNxQ8G+a2+k4wCsr2gIl9NPK4NCI1IfH1Xf1fI="
         }
       },
       "version": ""
@@ -284,7 +295,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttraction.AddAttractionCommand.html",
-          "hash": "MqCPa2Eu1kfyDSPoJZ3T2C+JuNX8Y/MEqQJ9rz00usI="
+          "hash": "8hwqYxGmIPTwuGkDBcZSRo4Da3zMxlbNKDU8bPjUIYE="
         }
       },
       "version": ""
@@ -306,7 +317,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttractionImage.AddAttractionImageCommand.html",
-          "hash": "UM2PcX6IgFOqHeu2f1U6KgRPzZKotYhvJcNmi057Syc="
+          "hash": "HgL6NsR0v4/1jVvBAEUdPKdh7QlQMaVHcfA9EmgMP4w="
         }
       },
       "version": ""
@@ -328,7 +339,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttraction.DeleteAttractionCommand.html",
-          "hash": "E0pGzpulnDbp9lBtsmghPtZIAWOCUfBV3XOwzoLHJFM="
+          "hash": "7srKcI8IB7JjYY5LVuByzx3mL/2CiBRt67Xi1peXjaQ="
         }
       },
       "version": ""
@@ -350,7 +361,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction.UpdateAttractionCommand.html",
-          "hash": "fN4MFnM7Rresyqu+6KkUbhGE3zaYSJ/VBSMexj6nZ6g="
+          "hash": "Me5HlV9vT/kr+hZfrOmmni8ME1RfrOXMsv3ZnmpiFVk="
         }
       },
       "version": ""
@@ -372,7 +383,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AddAttractionDto.html",
-          "hash": "T7rmA7+33bKiyGZcFwck6P5t23xIsrmZxB6HOEteO44="
+          "hash": "2G06bRPe1grQ6AASRwS7n+BqPwe/CPlWBXAmfLw47VE="
         }
       },
       "version": ""
@@ -383,7 +394,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AttractionImageDto.html",
-          "hash": "DUqpmvmch0Gjyk3FOlZPdl90iWzzQ+A+S2IT/o8Qwus="
+          "hash": "Bf2WUsdyzl1zmtmh/+wSM342ycZMQFVL1n/AHKqHokM="
         }
       },
       "version": ""
@@ -394,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.GetAttractionDto.html",
-          "hash": "UfQPsYxQ4IJuOpGFOMv72GpTOz3PsdEGrKZ+G2fSUC4="
+          "hash": "UmkdN3C1/dITXvzW6g3P85AHMzGqFmd2gYktjn1GRWY="
         }
       },
       "version": ""
@@ -405,7 +416,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.UpdateAttractionDto.html",
-          "hash": "3SEE14jv5BQPxzOOmookhF+M6lfRIMI+XHnWKk+SIOU="
+          "hash": "24on8tDOWk6csp+pG1oig6Pe50lS0Tjb85uVcc7/cTM="
         }
       },
       "version": ""
@@ -427,7 +438,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.GetAttractionByIdQuery.html",
-          "hash": "SeAi8eWrZBlHEb93ksD4Qq/rxkyE84m04FLR3zDaykc="
+          "hash": "CMrSPdAkoXNugHx0ElsiUDpOlJT6Mg2939zF5+n//sE="
         }
       },
       "version": ""
@@ -449,7 +460,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.AddAttractionReservationCommand.html",
-          "hash": "6Q72aK1A/pulcmzLSMZjodozULO9exOdhii0DCVhbDc="
+          "hash": "PU/nTOV+ODk2O3z3cWjIsHO6uZmrRRL+vfMxH2NJ4e0="
         }
       },
       "version": ""
@@ -471,7 +482,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.html",
-          "hash": "OQomLMgEdhNfz9kJ5p6Kduo3nDV5bIOO+1fQt/ys1gI="
+          "hash": "AqgJWJnoIpJ69QR/gcCs1Hu5RLcJtuDfHvSuGjL0bmU="
         }
       },
       "version": ""
@@ -493,7 +504,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.html",
-          "hash": "9u7yutU+0Rp9NszLd7HxHpKxwWsWCuM4gyEld8guCnw="
+          "hash": "ArGDOId6hJVIzSAokgV1QbeL4C7hrq/QXTpN0NINfQc="
         }
       },
       "version": ""
@@ -515,7 +526,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html",
-          "hash": "17w61orYyXiKuJ8WCNy6Hrvl0FbK4Ynu/hRZKcR9y8c="
+          "hash": "bG/6ykNoGeDmcr960uhxIO7BWrNAPMW7NtgGCKTBQYE="
         }
       },
       "version": ""
@@ -526,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html",
-          "hash": "rAJYSvwE7V6lMSDs1LBwX6XdV8yA3UiYM4qAlrkQaUM="
+          "hash": "qqI/ss3cQIr55hdqXWs8QjIYfKsC/DB0lEKqhVX7cIw="
         }
       },
       "version": ""
@@ -537,7 +548,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html",
-          "hash": "ERIyDgvdxl/nIjRCjotEYIQZz/MtQZubf95LXGsZOHs="
+          "hash": "3o5oCg9TSh3LySx3sjxb6GYWMBj8opOhe/ku2g4g3eg="
         }
       },
       "version": ""
@@ -559,7 +570,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.html",
-          "hash": "E7diAk1SmjWRQjKm8Z9WQPbK0Dnmr8DnWmyAh76v3o4="
+          "hash": "r6KJp9EAdEb7DEiioGa2KZ0X0e7sG0Vhi1rTNxpXP/o="
         }
       },
       "version": ""
@@ -581,7 +592,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.AddRoomReservationCommand.html",
-          "hash": "CLPZelwQuMqLEDMhBa82gbmV7Qy3d5m6fTRLpF1PQe8="
+          "hash": "extd6z84X733Di5RU2/NR+HQX4HBLBqcKW481yDHTfI="
         }
       },
       "version": ""
@@ -603,7 +614,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation.DeleteRoomReservationCommand.html",
-          "hash": "6MWVYg4yALvgtwopLeqxRWersZAGUtP1jCTCoQI/W1A="
+          "hash": "YNusPvbRHlTI+hF1uHBTSGltLfe8+X2kezJFQKzngbs="
         }
       },
       "version": ""
@@ -625,7 +636,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation.UpdateRoomReservationCommand.html",
-          "hash": "DleyOpmXD/AmK7/uO1fNzBqsH/FdJoyU78845BVydZE="
+          "hash": "rPG/b8Y+NCzxS5HROxpMFe9f8djPtchpHTlkxAaDCUs="
         }
       },
       "version": ""
@@ -647,7 +658,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto.html",
-          "hash": "W75deNYkAVB0bLvXdoC9nZS7h7LAIVTskARJV25idfo="
+          "hash": "fpHQtuwv9rfVaxjrEzboGQmlrkizO96X1p5WCYV2HME="
         }
       },
       "version": ""
@@ -658,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.GetRoomReservationDto.html",
-          "hash": "FtwpEvj2mj347JOBHrNCAZrepe8JSURrubiEuN2ByOw="
+          "hash": "wPxCcHRLex4UTYijZupX4C1ko8JpCZNYP/DtVtas5bc="
         }
       },
       "version": ""
@@ -669,7 +680,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto.html",
-          "hash": "ToPnUt7jbGjb9dyYyVsJxfvAfwbw0nMXUI26R+r2ESI="
+          "hash": "bn4MDCVuo+Tg+OW5Bj16YHaK2zTOLlbSoOyIIg/FFJc="
         }
       },
       "version": ""
@@ -687,11 +698,33 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery.html",
+          "hash": "7QCuoIMtDP4sS2lchThqkrY4IFCzaQQA7dvvhNpDRxE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.html",
+          "hash": "oxszIvtL/dMLOwDDi4ScJ9ld3xQpnEWWoCqLwPxgqoA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery.yml",
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery.html",
-          "hash": "h37unwGOOxqfunWKKzSteW5GHqz1WBQAb29YNJKJlpM="
+          "hash": "BPeOv4fSZdnGbEhmuUQiaT6EEFhWhEtzQwDumKtliJA="
         }
       },
       "version": ""
@@ -724,7 +757,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.BaseAuditableEntity-1.html",
-          "hash": "eDFGtUkPmBJ5sY1Cf1/prfM6fBiC7y6CRKUV3i2fclE="
+          "hash": "IMUxqfqh3mH5OCvoOgDrQ11v4rwRSjXO1y1T8wOOMOY="
         }
       },
       "version": ""
@@ -735,7 +768,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.BaseEntity-1.html",
-          "hash": "rEOrTguf4CHP8HJ39ES6duDBXSJwiOdFYoyTKJYKfUU="
+          "hash": "vbsBfCDRaMhipxFtq3i/MA1o4H3GK8pvWkD8zdmNn64="
         }
       },
       "version": ""
@@ -757,7 +790,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IAttractionRepository.html",
-          "hash": "oKvpkmfCeAFLAcjhhgftQ5LaZO3YD12NCz/3Xgq74G8="
+          "hash": "0GH7FyWTk0vFr+5A6Xl4RA7JnqqbxOT3SsCQJkUJylo="
         }
       },
       "version": ""
@@ -768,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IAttractionReservationRepository.html",
-          "hash": "sb5Jx5Gxeyzc4g99RpYtX7wuUNMTSewj/pCNvrLApJQ="
+          "hash": "58OHKtIoTBd2aPE/X/nKAbdg6+7YogqbfTrV6yKqAjM="
         }
       },
       "version": ""
@@ -779,7 +812,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IGenericRepository-2.html",
-          "hash": "zxio93Z9uWx4QI0jVK1if+k1HouAWUmWLFd3lHjC1pM="
+          "hash": "9H2EsdlRix6Cl0swVeKU8KjlSycrzhjUEoS0TNcd5ww="
         }
       },
       "version": ""
@@ -790,7 +823,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IRoomReservationRepository.html",
-          "hash": "CJUTjSz1b9PejMbjPDmMXyE5/MPnC2/uxJfkJe6b8Bs="
+          "hash": "tFxfsjAqfo5wiaGPvsDjKU+hoGurWQPyeDWYCxDQRN4="
         }
       },
       "version": ""
@@ -812,7 +845,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Attraction.html",
-          "hash": "91X3t6ROVJGPWKdcuhSrig40UtR0UyaF2aOnRINulHY="
+          "hash": "59lcyodNrevrkA9AwOKs2mY1J5XW8BbaQWntfbhISDg="
         }
       },
       "version": ""
@@ -823,7 +856,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionImage.html",
-          "hash": "FeYN3ZRX/i/5NP9afNx/sohnnddBmo4hHMYBj6eWo5g="
+          "hash": "nhOs9xPlFMiqvzLbyUEYqrmirW/PZQJYmo22BwHGthI="
         }
       },
       "version": ""
@@ -834,7 +867,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionReservation.html",
-          "hash": "Iz1UBxBNOnOKmbnd1pEDDHJ8py85netWOLL3/Lu+CEY="
+          "hash": "s9F00CU1qhDkwALZPab/riQ3lRpHN3mh982LUeBJm88="
         }
       },
       "version": ""
@@ -845,7 +878,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionReview.html",
-          "hash": "CO2L4KiL6k962TfbeHUPLltsvGLYMLdM9AV8hAIn01M="
+          "hash": "k9A9lsRpyX+LysZMpOmYCUZtP15iNYvG76n+FZTBrfA="
         }
       },
       "version": ""
@@ -856,7 +889,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.City.html",
-          "hash": "pstLuYg9r0nxPUtD3sj0nhyMTBEkZ6Vb/5ByfA+33Og="
+          "hash": "liX8J0cJ81dRrvM/eJGyBOnYVldljVmDig3Td03p2Zk="
         }
       },
       "version": ""
@@ -867,7 +900,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.CityHotel.html",
-          "hash": "RrO+eLM0+lBtIOR2873mkTm4XXPvmw04JTuJaJV3NCM="
+          "hash": "0pSXFohi5szXPM8olaI9L/UZKeL6bJ0YEdYCT+ExzCI="
         }
       },
       "version": ""
@@ -878,7 +911,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Continent.html",
-          "hash": "aNql4JQRadQ4opawise/IMFKgHjg82iSGN3xAIv7pd4="
+          "hash": "D3s6P1dqWkoXYKbI7Uq1i6nk3JpXFHWNvt0+A5EmcsA="
         }
       },
       "version": ""
@@ -889,7 +922,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Country.html",
-          "hash": "LWJJuceoMgDKcpTp0CHh0vyOPMXqHLNmFWizA+pnFMU="
+          "hash": "6VClZvUjS+IzE2+A/7CHFJ7BzUjHVZXQbf3BJNxIH0Q="
         }
       },
       "version": ""
@@ -900,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Hotel.html",
-          "hash": "qEbl7IivMYmD69/UtQsFTFzO9LyemBW/9ZYQIU19nlc="
+          "hash": "DMFobKslSAB2quMuZrVyIW+mEVOBx/Zn2bH8JZL37Dg="
         }
       },
       "version": ""
@@ -911,7 +944,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.HotelReview.html",
-          "hash": "lk//fzMItadT4VgAX56CI7BEgJSnAMiqStvJc/7fJoE="
+          "hash": "Dvd8iBcTVPaCh9HpiWUm8Dr4OOQzTipbg9GS4LFPGSw="
         }
       },
       "version": ""
@@ -922,7 +955,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Reservation.html",
-          "hash": "TjImCLEe12uFAe649fBEa1eh4jxed/PiRZ2uvkntDW0="
+          "hash": "tgEj8D1zsVMcG2D5jvUd9v9S7whyNGuAx9W6v6Tm2Nc="
         }
       },
       "version": ""
@@ -933,7 +966,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.ReservedAttraction.html",
-          "hash": "ylXGeIFJ86rR82XS40hWgqtVt7ue3TV7glSY6zBNnoc="
+          "hash": "rGga2CsM6d1DIxi7EEkE75pgeA597iFg1rBC6zxCBpg="
         }
       },
       "version": ""
@@ -944,7 +977,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.ReservedRoom.html",
-          "hash": "LJE3iUiTyEy+ko82BxKeWTSk9+A6g3Y5hcs9ApTgdhE="
+          "hash": "1OC6CbVLL7VBV0NjmcW9OMn7AHMNsV0xP6oHCCx2suw="
         }
       },
       "version": ""
@@ -955,7 +988,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Review.html",
-          "hash": "CDPnWa4QuxfoVuMTnluziDernJ4zwH9yMLOYzY4lmm0="
+          "hash": "ZXm3Ed3gBo+i+5vlPNVyZ2FL8FT18IBzjTMf8nmKGc0="
         }
       },
       "version": ""
@@ -966,7 +999,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Room.html",
-          "hash": "mVU1OnKTCmlOv/XzSf6iEkmxQITEgB8CM6LC311VWlI="
+          "hash": "0bPjG8HW2SmSIionz83MX+hMqCsuTDpEJIJS1uNxrcA="
         }
       },
       "version": ""
@@ -977,7 +1010,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.RoomReservation.html",
-          "hash": "ftihLssBjyTaufYZNH3a+uQ478GD6qyXaEpSz65Zkn4="
+          "hash": "KBvWSlVx7F12fjhSYRbEaWJDZXFt3OMQi9kPfTIQDyg="
         }
       },
       "version": ""
@@ -999,7 +1032,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.ReservationStatus.html",
-          "hash": "es3T2kVC++F5DlSFCTBbACTQOMhkHYjeXNFpsQjmbjU="
+          "hash": "FZu0no7mSjkuf+auxEbCcXfhLAE37keLaOS6cZyhXN8="
         }
       },
       "version": ""
@@ -1010,7 +1043,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.RoomViewType.html",
-          "hash": "2iAeBklSOmd1FfJg9/nQ/p6rEcDTJXK6d1ObJr1HC2I="
+          "hash": "XGCEgO23TN0FlQ1/3mMTXQvMN5OsbdmurRjsUi/+XIM="
         }
       },
       "version": ""
@@ -1032,7 +1065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.BookingDbContext.html",
-          "hash": "qRIYv58V6+w4TDB0dDHJuZhAN1ia6oVT5x7MCvzNqaE="
+          "hash": "Rr74xRk2f1hrFtww1IDycp9bCtO7GL9RwJOXBQFpesc="
         }
       },
       "version": ""
@@ -1043,7 +1076,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.BookingDbContextExtensions.html",
-          "hash": "0Iseo7dvTGKVmkVdeNSVXDbl46y0aUBcAW2KkG9a3o0="
+          "hash": "0WSfBKiUyqsS4H/6PXjW6Ueb3kPqnQ/QU/YQEhVSeIk="
         }
       },
       "version": ""
@@ -1065,7 +1098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.AddAttractionImagesTable.html",
-          "hash": "/If0W0qeMHNmLEKrcXR3dOMJy1LTJm3dJXPV/Xz1n5A="
+          "hash": "E5mYMQW7t039bCUtn1OZBWVbUgLu0KeTqrJcCDCQ80M="
         }
       },
       "version": ""
@@ -1076,7 +1109,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.AddCityNullInAttractionTable.html",
-          "hash": "8wfCvkfsVZ7MhaZBuwSo3/Y68QqNwuf76wpWgU6DY2c="
+          "hash": "RRCu3rms4k9ME43aZ/CcE3BGPyJ3zzJAAd2Ipmg+mUk="
         }
       },
       "version": ""
@@ -1087,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.DescriptionMaxLengthInAttractionTable.html",
-          "hash": "imgU2h714AuIyuC9zvDH5PQHX97YF7MafwzFBMnYlmk="
+          "hash": "bMXmrRC38p4AqATMIVzW2TJSj3/sfd20DG6+tCkzaRY="
         }
       },
       "version": ""
@@ -1098,7 +1131,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.InitialMigration.html",
-          "hash": "MqeyKT6fNRtX1I4VbspNXNSCcijW+QfjBZDw7lSq/vk="
+          "hash": "9/z50rwv+nrwMlDW/syQucQprd21r+6LDyU8BX0AkvI="
         }
       },
       "version": ""
@@ -1120,7 +1153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionRepository.html",
-          "hash": "PwpbIqo7n9TlJzkQeisYR7c+DtcGJc2L12TutIyC/f0="
+          "hash": "37csTQiz4XaJrT4SVfTOnsFE/c/2VQZ1n9sKyKJTUAo="
         }
       },
       "version": ""
@@ -1131,7 +1164,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionReservationRepository.html",
-          "hash": "le3W5Tg0PYb0AIuMmN7CZva3gHzMk2ZnlhlGgmcaPpY="
+          "hash": "fx/iLtP9cAOn9bUrs2uzkxgDyVDMaD23f9eX1NRPgX0="
         }
       },
       "version": ""
@@ -1142,7 +1175,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.GenericRepository-2.html",
-          "hash": "r4EvJIMbT0J6IUvMAA16S7n6Il1+73AoYBDRdmqIVdE="
+          "hash": "7y0KAOgMgGibhIo//cvRJhssFluLGwjhhPeoDD51MEo="
         }
       },
       "version": ""
@@ -1153,7 +1186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.RoomReservationRepository.html",
-          "hash": "riQ+mCrf7Y3efvR+OwokvHbSri4lmhYUMb5v0rEYuQc="
+          "hash": "UaR6TZXyh7TlnfWCV7q3TbIaXYfAEWEcN1tkQ7POV3g="
         }
       },
       "version": ""
@@ -1175,7 +1208,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Serilog.Serilogger.html",
-          "hash": "pjGh+RIuv7bJzBJTS54NVvxJ9uLEPwPC+ze9gJ0dMU8="
+          "hash": "Gz1SB48ylodJhIiTDJyl7kzptBNkZ1mhW2n5cC/yxig="
         }
       },
       "version": ""
@@ -1197,7 +1230,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "UNpvH6omFrx5MB8PtfKKU2TwrWeXLLp0l88bIkdYoWk="
+          "hash": "ZeLZGrKf9iEZOazj8w4DhkQJSCrIkomxuNXL1XdnPTs="
         }
       },
       "version": ""
@@ -1208,11 +1241,11 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0Jx4p3IIw6Dj6De/6Q6xS92LwcPeingteyTzYJmaf1g="
+          "hash": "SGkt7/JNRy+ENaFlmZFkSwNuf5OBukW/SJUTZ0tkf3A="
         },
         ".json": {
           "relative_path": "api/toc.json",
-          "hash": "vzXmFGtI5ngHvdV6+Kd/y9iSzxoZ5VYOrjFVpZxKrEg="
+          "hash": "83Mg9BTwbMe/A5mvirFAImIqvn+4DICtUDoZfg5zE7Q="
         }
       },
       "version": ""
@@ -1223,7 +1256,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "ewxkVRK4uOVD2Q7+M4x7VhLBTmA2DAx+KV5d8CRSMpk="
+          "hash": "Crx7xGE0FgHPATYhOWALLvwux+oInKAPbukgapBYJMA="
         }
       },
       "version": ""
@@ -1249,7 +1282,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "zgPQ0axGIHKdnwBlkIEk06o6++1bXdvfSxZrQLnE9zg="
+          "hash": "uTT6XuLEeDhJ5MqBqO5NRTyZYavQbKCWfrsU6YvDz74="
         }
       },
       "version": ""
