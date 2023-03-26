@@ -14,11 +14,11 @@ using BookingClone.Infrastructure.Repositories;
 using MediatR;
 
 namespace BookingClone.Application.Features.country.queries.GitAllCountries;
-public class GitAllCountriesQueryHandlar : IRequestHandler<GitAllCountriesQuery, IEnumerable<CountryMinimalDto>>
+public class GetAllCountriesQueryHandlar : IRequestHandler<GetAllCountriesQuery, IEnumerable<CountryMinimalDto>>
 {
     private readonly ICountryRepository _countryRepository;
 
-    public GitAllCountriesQueryHandlar(ICountryRepository countryRepository)
+    public GetAllCountriesQueryHandlar(ICountryRepository countryRepository)
     {
         _countryRepository = countryRepository;
 
@@ -26,12 +26,12 @@ public class GitAllCountriesQueryHandlar : IRequestHandler<GitAllCountriesQuery,
 
 
     
-    public async Task<IEnumerable<CountryMinimalDto>> Handle(GitAllCountriesQuery request, CancellationToken cancellationToken)
+    public async Task<IEnumerable<CountryMinimalDto>> Handle(GetAllCountriesQuery request, CancellationToken cancellationToken)
     {
         //return (await _countryRepository.GetAll()) /*calling */
         //.Select(a => new CountryMinimalDto { Name = a.Name });  /*Mapping*/
-        var x = _countryRepository.GetAll().Result;
-        var y = x.Select(a => new CountryMinimalDto { Name = a.Name });
-        return (y);
+        var Country = _countryRepository.GetAll().Result;
+        var CountryDto = Country.Select(a => new CountryMinimalDto { Name = a.Name });
+        return (CountryDto);
     }
 }

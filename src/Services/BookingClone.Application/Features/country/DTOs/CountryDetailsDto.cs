@@ -9,8 +9,8 @@ using BookingClone.Domain.Entities;
 namespace BookingClone.Application.Features.country.DTOs;
 public class CountryDetailsDto
 {
-    
 
+    public int ID { get; set; }
     public string Name { get; set; }
 
     

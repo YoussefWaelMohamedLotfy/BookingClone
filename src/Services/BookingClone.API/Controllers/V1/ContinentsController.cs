@@ -19,55 +19,58 @@ namespace BookingClone.API.Controllers.V1;
 [ApiController]
 public class ContinentsController : ControllerBase
 {
-    private readonly BookingDbContext _context;
+
     private readonly IMediator _mediator;
 
-    public ContinentsController(BookingDbContext bookingDbContext, IMediator mediator)
-    {
-        _context = bookingDbContext;
-        _mediator = mediator;
-    }
+    public ContinentsController(IMediator mediator)
+
+
+       => _mediator = mediator;
+
+
 
 
 
     [HttpGet]
-    public IActionResult GetAllContinent()
+    public async Task<IActionResult> GetAllContinent(CancellationToken ct)
     {
-        return Ok(_mediator.Send(new GetAllcontinentQuery()));
+        return Ok(await _mediator.Send(new GetAllcontinentQuery(), ct));
     }
 
 
-    [HttpGet("{id}")]
-     
-    public async Task<IActionResult> GetContinentById([FromRoute] int id)
+
+
+    [HttpGet("{id}", Name = "Get_[controller]")]
+
+    public async Task<IActionResult> GetContinentById(int id, CancellationToken ct)
     {
-        return Ok(await _mediator.Send(new GetContinentByIdQuery(id)));
+        var result = await _mediator.Send(new GetContinentByIdQuery(id), ct);
+        return result is null ? NotFound() : Ok(result);
     }
+
+
 
 
 
 
 
     [HttpPost]
-    public async Task<IActionResult> AddContinent([FromBody] AddContinentCommmand addContinentCommmand)
+    public async Task<IActionResult> AddContinent([FromBody] AddContinentCommmand addContinentCommmand, CancellationToken ct)
     {
-
-        return Ok(await _mediator.Send(addContinentCommmand));
-
+        var result = await _mediator.Send(addContinentCommmand, ct);
+        return CreatedAtRoute("Get_Continents", new { id = result.ID }, result);
     }
 
 
 
-    [HttpDelete]
-    public async Task<IActionResult> DeleteContinent([FromBody] DeleteContinentCommmand deleteContinentCommmand)
-    {
-        return Ok(await _mediator.Send(deleteContinentCommmand));
 
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteContinent(int id, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new DeleteContinentCommmand(id), ct);
+        return result <= 0 ? NotFound() : NoContent();
     }
 
-    [HttpPut]
-    public async Task<IActionResult> UpdateContinent([FromBody] UpdateContinentCommmand updateContinentCommmand)
-    {
-        return Ok(await _mediator.Send(updateContinentCommmand));
-    }
+
+
 }

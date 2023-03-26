@@ -10,7 +10,7 @@ namespace BookingClone.Application.Features.continent.DTOs;
 public class ContinentDetailsDto
 {
 
-
+    public int ID { get; set; }
     public string Name { get; set; }
 
 

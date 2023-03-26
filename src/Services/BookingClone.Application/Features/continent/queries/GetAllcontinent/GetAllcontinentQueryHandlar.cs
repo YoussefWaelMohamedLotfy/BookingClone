@@ -29,8 +29,8 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
         // return (await _continentRepository.GetAll()) /*calling */
         //.Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
 
-        var x = _continentRepository.GetAll().Result;
-        var y = x.Select(a => new ContinentMinimalDto { Name = a.Name });
-        return (y);
+        var Continent = _continentRepository.GetAll().Result;
+        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name });
+        return (ContinentDto);
     }
 }
