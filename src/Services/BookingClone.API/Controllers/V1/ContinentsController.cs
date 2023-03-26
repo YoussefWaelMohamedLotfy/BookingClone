@@ -8,6 +8,7 @@ using BookingClone.Application.Features.continent.commands.DeleteContinent;
 using BookingClone.Application.Features.continent.commands.UpdateContinent;
 using BookingClone.Application.Features.continent.queries.GetAllcontinent;
 using BookingClone.Application.Features.continent.queries.GetContinentById;
+using BookingClone.Application.Features.country.commands.UpdateCountry;
 using BookingClone.Infrastructure.Data;
 using MediatR;
 
@@ -61,7 +62,12 @@ public class ContinentsController : ControllerBase
         return CreatedAtRoute("Get_Continents", new { id = result.ID }, result);
     }
 
-
+    [HttpPut]
+    public async Task<IActionResult> UpdateContinent([FromBody] UpdateContinentCommmand updateContinentCommmand, CancellationToken ct)
+    {
+        var result = await _mediator.Send(updateContinentCommmand, ct);
+        return result is not null ? Ok(result) : NotFound();
+    }
 
 
     [HttpDelete("{id}")]
