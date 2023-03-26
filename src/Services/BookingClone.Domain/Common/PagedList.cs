@@ -1,31 +1,29 @@
-﻿using System.Collections;
+﻿namespace BookingClone.Domain.Common;
 
-namespace BookingClone.Domain.Common;
-
-public sealed class PagedList<T> : IReadOnlyList<T>
+public sealed class PagedList<T>
 {
-    private readonly IList<T> _subset;
+    public List<T> Data { get; set; }
+
+    public PagedList()
+    {    
+    }
 
     public PagedList(IEnumerable<T> items, int count, int pageNumber, int pageSize)
     {
         PageNumber = pageNumber;
         TotalPages = (int)Math.Ceiling(count / (double)pageSize);
-        _subset = items as IList<T> ?? new List<T>(items);
+        Data = items as List<T> ?? new List<T>(items);
     }
 
-    public int PageNumber { get; }
+    public int PageNumber { get; set; }
 
-    public int TotalPages { get; }
+    public int TotalPages { get; set; }
 
     public bool IsFirstPage => PageNumber == 1;
 
     public bool IsLastPage => PageNumber == TotalPages;
 
-    public int Count => _subset.Count;
+    public int PageSize => Data.Count;
 
-    public T this[int index] => _subset[index];
-
-    public IEnumerator<T> GetEnumerator() => _subset.GetEnumerator();
-
-    IEnumerator IEnumerable.GetEnumerator() => _subset.GetEnumerator();
+    public T this[int index] => Data[index];
 }

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 
-public sealed class GetAllRoomReservationsQuery : IRequest<IEnumerable<GetRoomReservationDto>>
+public sealed class GetAllRoomReservationsQuery : IRequest<PagedList<GetRoomReservationDto>>
 {
     public required PaginationQuery Query { get; set; }
 }
