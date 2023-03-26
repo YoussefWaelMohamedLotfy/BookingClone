@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Common\BookingClone.Serilog\BookingClone.Serilog.csproj" />
+    <ProjectReference Include="..\..\Services\BookingClone.Application\BookingClone.Application.csproj" />
   </ItemGroup>
 
 </Project>
