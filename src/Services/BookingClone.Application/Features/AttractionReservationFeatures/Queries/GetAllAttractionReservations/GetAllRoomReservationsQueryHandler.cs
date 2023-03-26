@@ -7,18 +7,18 @@ namespace BookingClone.Application.Features.RoomReservationFeatures.Queries.GetA
 
 internal sealed class GetAllAttractionReservationsQueryHandler : IRequestHandler<GetAllAttractionReservationsQuery, IEnumerable<GetAttractionReservationDto>>
 {
-    private readonly IRoomReservationRepository _roomReservationRepository;
+    private readonly IAttractionReservationRepository _attractionReservationRepository;
     private readonly IMapper _mapper;
 
-    public GetAllAttractionReservationsQueryHandler(IRoomReservationRepository repository, IMapper mapper)
+    public GetAllAttractionReservationsQueryHandler(IAttractionReservationRepository repository, IMapper mapper)
     {
-        _roomReservationRepository = repository;
+        _attractionReservationRepository = repository;
         _mapper = mapper;
     }
 
     public async Task<IEnumerable<GetAttractionReservationDto>> Handle(GetAllAttractionReservationsQuery request, CancellationToken cancellationToken)
     {
-        var reservations = await _roomReservationRepository.GetAll(cancellationToken);
+        var reservations = await _attractionReservationRepository.GetAll(cancellationToken);
         return _mapper.Map<List<GetAttractionReservationDto>>(reservations);
     }
 }
