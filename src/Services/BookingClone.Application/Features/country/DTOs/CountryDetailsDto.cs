@@ -10,6 +10,7 @@ namespace BookingClone.Application.Features.country.DTOs;
 public class CountryDetailsDto
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public int ID { get; set; }
     public int? ContinentID { get; set; }
@@ -18,7 +19,10 @@ public class CountryDetailsDto
     
 =======
     
+=======
+>>>>>>> finalcommit
 
+    public int ID { get; set; }
     public string Name { get; set; }
 
 <<<<<<< HEAD

@@ -27,7 +27,7 @@ public class ContinentDetailsDto
 >>>>>>> add city and country and continent
 =======
 
-
+    public int ID { get; set; }
     public string Name { get; set; }
 
 

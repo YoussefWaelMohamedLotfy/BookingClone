@@ -10,7 +10,7 @@ using BookingClone.Application.Features.country.DTOs;
 using MediatR;
 
 namespace BookingClone.Application.Features.country.queries.GitAllCountries;
-public class GitAllCountriesQuery : IRequest<IEnumerable<CountryMinimalDto>>
+public class GetAllCountriesQuery : IRequest<IEnumerable<CountryMinimalDto>>
 {
 
     public string? Name { get; set; }

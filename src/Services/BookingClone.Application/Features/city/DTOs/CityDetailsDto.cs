@@ -10,6 +10,7 @@ namespace BookingClone.Application.Features.city.DTOs;
 public sealed class CityDetailsDto
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     public int ID { get; set; }
     public int? CountryID { get; set; }
@@ -18,7 +19,10 @@ public sealed class CityDetailsDto
    
 =======
    
+=======
+>>>>>>> finalcommit
 
+    public int ID { get; set; }
     public string Name { get; set; }
 
 <<<<<<< HEAD

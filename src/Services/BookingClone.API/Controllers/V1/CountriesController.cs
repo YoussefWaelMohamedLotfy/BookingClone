@@ -18,6 +18,7 @@ namespace BookingClone.API.Controllers.V1;
 [Route("api/[controller]")]
 [ApiController]
 <<<<<<< HEAD
+<<<<<<< HEAD
 public sealed class CountriesController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -62,58 +63,52 @@ public sealed class CountriesController : ControllerBase
 
 =======
 public class CountriesController : ControllerBase
+=======
+public sealed class CountriesController : ControllerBase
+>>>>>>> finalcommit
 {
-
-    private readonly BookingDbContext _context;
     private readonly IMediator _mediator;
 
-    public CountriesController(BookingDbContext bookingDbContext, IMediator mediator)
-    {
-        _context = bookingDbContext;
-        _mediator = mediator;
-    }
-
-
+    public CountriesController(IMediator mediator)
+        => _mediator = mediator;
 
     [HttpGet]
-    public IActionResult GetAllCountry()
+    public async Task<IActionResult> GetAllCountry(CancellationToken ct)
     {
-        return Ok(_mediator.Send(new GitAllCountriesQuery()));
+        return Ok(await _mediator.Send(new GetAllCountriesQuery(), ct));
     }
 
+    [HttpGet("{id}", Name = "Get_[controller]")]
 
-    [HttpGet("{id}")]
-
-    public async Task<IActionResult> GetCountryById([FromRoute] int id)
+    public async Task<IActionResult> GetCountryById(int id, CancellationToken ct)
     {
-        return Ok(await _mediator.Send(new GitCountryByIdQuery(id)));
+        var result = await _mediator.Send(new GitCountryByIdQuery(id), ct);
+        return result is null ? NotFound() : Ok(result);
     }
-
-
-
-
 
     [HttpPost]
-    public async Task<IActionResult> AddCountry([FromBody] AddCountryCommmand addCountryCommmand)
+    public async Task<IActionResult> AddCountry([FromBody] AddCountryCommmand addCountryCommmand, CancellationToken ct)
     {
-
-        return Ok(await _mediator.Send(addCountryCommmand));
-
-    }
-
-
-
-    [HttpDelete]
-    public async Task<IActionResult> DeleteCountry([FromBody] DeleteCountryCommmand deleteCountryCommmand)
-    {
-        return Ok(await _mediator.Send(deleteCountryCommmand));
-
+        var result = await _mediator.Send(addCountryCommmand, ct);
+        return CreatedAtRoute("Get_Countries", new { id = result.ID }, result);
     }
 
     [HttpPut]
-    public async Task<IActionResult> UpdateCountry([FromBody] UpdateCountryCommmand updateCountryCommmand)
+    public async Task<IActionResult> UpdateCountry([FromBody] UpdateCountryCommmand updateCountryCommmand, CancellationToken ct)
     {
-        return Ok(await _mediator.Send(updateCountryCommmand));
+        var result = await _mediator.Send(updateCountryCommmand, ct);
+        return result is not null ? Ok(result) : NotFound();
     }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteCountry(int id, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new DeleteCountryCommmand(id), ct);
+        return result <= 0 ? NotFound() : NoContent();
+    }
+<<<<<<< HEAD
 >>>>>>> add city and country and continent
+=======
+
+>>>>>>> finalcommit
 }
