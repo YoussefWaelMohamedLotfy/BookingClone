@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using BookingClone.Domain.Entities;
+using BookingClone.Domain.Enums;
+
+namespace BookingClone.Application.Features.RoomFeatures.DTOs;
+public class GetRoomDto
+{
+    public int ID { get; set; }
+    public string RoomNumber { get; set; }
+
+    public string Description { get; set; }
+
+    public bool IsAvailable { get; set; }
+
+    public int BedCount { get; set; }
+
+    public RoomViewType ViewType { get; set; }
+
+    public decimal Price { get; set; }
+
+    public Hotel? Hotel { get; set; }
+
+    
+}
