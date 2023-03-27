@@ -28,7 +28,8 @@ public static class ApplicationExtensions
         services.AddScoped<IRoomReservationRepository, RoomReservationRepository>()
             .AddScoped<IAttractionReservationRepository, AttractionReservationRepository>()
             .AddScoped<IAttractionRepository, AttractionRepository>()
-            .AddScoped<IRoomRepository, RoomRepository>();
+            .AddScoped<IRoomRepository, RoomRepository>()
+            .AddScoped<IHotelRepository, HotelRepository>();
 
         return services;
     }
