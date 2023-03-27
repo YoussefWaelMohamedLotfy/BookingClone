@@ -1,4 +1,4 @@
-﻿using BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation;
+using BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
@@ -16,9 +16,9 @@ public sealed class AttractionReservationsController : Controller
     public AttractionReservationsController(IMediator mediator)
         => _mediator = mediator;
 
-    public async Task<IActionResult> Index(CancellationToken ct)
+    public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
-        var reservations = await _mediator.Send(new GetAllAttractionReservationsQuery(), ct);
+        var reservations = await _mediator.Send(new GetAllAttractionReservationsQuery() { Query = new(pageNumber, pageSize) }, ct);
         return View(reservations);
     }
 

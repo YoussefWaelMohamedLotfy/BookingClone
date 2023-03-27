@@ -16,9 +16,9 @@ public sealed class RoomReservationsController : Controller
     public RoomReservationsController(IMediator mediator)
         => _mediator = mediator;
 
-    public async Task<IActionResult> Index(CancellationToken ct)
+    public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
-        var reservations = await _mediator.Send(new GetAllRoomReservationsQuery(), ct);
+        var reservations = await _mediator.Send(new GetAllRoomReservationsQuery() { Query = new(pageNumber, pageSize) }, ct);
         return View(reservations);
     }
 

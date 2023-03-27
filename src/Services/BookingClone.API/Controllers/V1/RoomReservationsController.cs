@@ -2,7 +2,9 @@
 using BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation;
 using BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation;
 using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById;
+using BookingClone.Domain.Common;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +18,19 @@ public class RoomReservationsController : ControllerBase
 
     public RoomReservationsController(IMediator mediator)
         => _mediator = mediator;
+
+    /// <summary>
+    /// Gets Room Reservation in pages
+    /// </summary>
+    /// <param name="query">Pagination Query</param>
+    /// <param name="ct"></param>
+    /// <returns>A page of Room Reservations</returns>
+    [HttpGet]
+    public async Task<IActionResult> GetPaginatedReservations([FromQuery] PaginationQuery query, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAllRoomReservationsQuery() { Query = query }, ct);
+        return Ok(result);
+    }
 
     /// <summary>
     /// Gets a single Reservation by ID

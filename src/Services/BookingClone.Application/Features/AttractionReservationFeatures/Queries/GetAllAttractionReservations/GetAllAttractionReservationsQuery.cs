@@ -1,10 +1,10 @@
-using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+﻿using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Domain.Common;
 using MediatR;
 
 namespace BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 
-public sealed class GetAllRoomReservationsQuery : IRequest<PagedList<GetRoomReservationDto>>
+public sealed class GetAllAttractionReservationsQuery : IRequest<PagedList<GetAttractionReservationDto>>
 {
     public required PaginationQuery Query { get; set; }
 }
