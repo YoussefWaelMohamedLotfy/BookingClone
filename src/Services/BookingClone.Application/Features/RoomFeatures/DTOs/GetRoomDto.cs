@@ -18,7 +18,7 @@ public sealed class GetRoomDto
 
     public decimal Price { get; set; }
 
-    public Hotel? Hotel { get; set; }
+   
 
 
 }
