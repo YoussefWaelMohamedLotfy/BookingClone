@@ -29,12 +29,7 @@ builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<BookingDbContext>(o =>
-    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"), c =>
-        c.EnableRetryOnFailure(3))
-);
-
-builder.Services.AddApplicationServices();
+builder.Services.AddApplicationServices(builder.Configuration);
 
 //builder.Services.AddStackExchangeRedisCache(o =>
 //{
@@ -55,6 +50,7 @@ builder.Services.AddApiVersioning(o =>
         );
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
+
 
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 

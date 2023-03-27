@@ -12,5 +12,5 @@ public sealed class RoomReservationRepository : GenericRepository<RoomReservatio
     }
 
     public async Task<List<RoomReservation>> GetAll(CancellationToken ct = default)
-        => await _db.ToListAsync(ct);
+        => await _db.AsNoTracking().ToListAsync(ct);
 }
