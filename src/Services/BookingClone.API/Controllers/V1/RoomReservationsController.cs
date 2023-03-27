@@ -19,6 +19,12 @@ public class RoomReservationsController : ControllerBase
     public RoomReservationsController(IMediator mediator)
         => _mediator = mediator;
 
+    /// <summary>
+    /// Gets Room Reservation in pages
+    /// </summary>
+    /// <param name="query">Pagination Query</param>
+    /// <param name="ct"></param>
+    /// <returns>A page of Room Reservations</returns>
     [HttpGet]
     public async Task<IActionResult> GetPaginatedReservations([FromQuery] PaginationQuery query, CancellationToken ct)
     {

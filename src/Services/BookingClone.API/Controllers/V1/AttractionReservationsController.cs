@@ -3,6 +3,8 @@ using BookingClone.Application.Features.AttractionReservationFeatures.Commands.D
 using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
+using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
+using BookingClone.Domain.Common;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +18,19 @@ public class AttractionReservationsController : ControllerBase
 
     public AttractionReservationsController(IMediator mediator)
         => _mediator = mediator;
+
+    /// <summary>
+    /// Gets Attraction Reservation in pages
+    /// </summary>
+    /// <param name="query">Pagination Query</param>
+    /// <param name="ct"></param>
+    /// <returns>A page of Attraction Reservations</returns>
+    [HttpGet]
+    public async Task<IActionResult> GetPaginatedReservations([FromQuery] PaginationQuery query, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAllAttractionReservationsQuery() { Query = query }, ct);
+        return Ok(result);
+    }
 
     /// <summary>
     /// Gets a single Reservation by ID

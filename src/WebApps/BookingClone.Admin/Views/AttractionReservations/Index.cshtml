@@ -1,6 +1,7 @@
 ﻿@using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
+@using BookingClone.Domain.Common;
 @using BookingClone.Domain.Enums;
-@model List<GetAttractionReservationDto>
+@model PagedList<GetAttractionReservationDto>
 @{
     ViewData["Title"] = "Index";
 
@@ -29,7 +30,7 @@
     </div>
 </div>
 <div class="p-1 border rounded">
-    @if (Model.Any())
+    @if (Model.Data.Any())
     {
         <table class="table table-striped border">
             <thead>
@@ -41,7 +42,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in Model)
+                @foreach (var item in Model.Data)
                 {
                     <tr>
                         <td>
@@ -69,6 +70,26 @@
                 }
             </tbody>
         </table>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item @(Model.IsFirstPage ? "disabled" : string.Empty)">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber - 1)" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                @for (int i = 1; i < Model.TotalPages + 1; i++)
+                {
+                    <li class="page-item">
+                        <a class="page-link @(Model.PageNumber == i ? "active" : string.Empty)" asp-action="Index" asp-route-pageNumber="@i">@i</a>
+                    </li>
+                }
+                <li class="page-item @(Model.IsLastPage ? "disabled" : string.Empty)">
+                    <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber + 1)" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
     }
     else
     {
