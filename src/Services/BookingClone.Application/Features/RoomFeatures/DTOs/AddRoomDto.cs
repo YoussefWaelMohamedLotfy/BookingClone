@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using BookingClone.Domain.Entities;
-using BookingClone.Domain.Enums;
+﻿using BookingClone.Domain.Enums;
 
 namespace BookingClone.Application.Features.RoomFeatures.DTOs;
+
 public class AddRoomDto
 {
     public string RoomNumber { get; set; }

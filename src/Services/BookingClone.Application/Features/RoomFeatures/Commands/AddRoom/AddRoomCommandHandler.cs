@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using AutoMapper;
-
-using BookingClone.Application.Features.AttractionFeatures.DTOs;
+﻿using AutoMapper;
 using BookingClone.Application.Features.RoomFeatures.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
-using BookingClone.Infrastructure.Repositories;
-
 using MediatR;
 
 namespace BookingClone.Application.Features.RoomFeatures.Commands.AddRoom;
+
 public class AddRoomCommandHandler : IRequestHandler<AddRoomCommand, GetRoomDto>
 {
     private readonly IRoomRepository _roomRepository;
@@ -29,8 +20,6 @@ public class AddRoomCommandHandler : IRequestHandler<AddRoomCommand, GetRoomDto>
     public async Task<GetRoomDto> Handle(AddRoomCommand request, CancellationToken cancellationToken)
     {
         var newRoom = _mapper.Map<Room>(request.Dto);
-       
-
         _roomRepository.Add(newRoom);
         await _roomRepository.SaveAsync(cancellationToken);
 
