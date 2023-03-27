@@ -20,34 +20,5 @@ public sealed class GetRoomByIdQueryHandler : IRequestHandler<GetRoomByIdQuery, 
     {
         var result = await _roomRepository.GetRoomDetails(request.ID, cancellationToken);
         return result is null ? null : _mapper.Map<GetRoomDto>(result);
-
-        //var result = await _roomRepository.GetRoomDetails(request.ID, cancellationToken);
-        //    return result is null ? null : _mapper.Map<GetRoomDto>(result);
-
-        //var room = await _roomRepository.GetByIdAsync(request.ID);
-        //if (room != null)
-        //{
-        //    return new GetRoomDto
-        //    {
-        //        RoomNumber = room.RoomNumber,
-        //        Description = room.Description,
-        //        BedCount = room.BedCount,
-        //        ViewType = room.ViewType,
-        //        IsAvailable = room.IsAvailable,
-        //        Price = room.Price,
-        //        Hotel = room.Hotel
-        //    };
-
-
-        //}
-        //else
-        //{
-        //    throw new Exception("Not Found A Hotel");
-        //}
-
     }
-
-
-
-
 }

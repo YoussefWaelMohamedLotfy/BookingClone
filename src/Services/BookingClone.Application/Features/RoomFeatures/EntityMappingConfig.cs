@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using AutoMapper;
-
-using BookingClone.Application.Features.AttractionFeatures.DTOs;
+﻿using AutoMapper;
 using BookingClone.Application.Features.RoomFeatures.DTOs;
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.RoomFeatures;
-public class EntityMappingConfig:Profile
+
+public class EntityMappingConfig : Profile
 {
     public EntityMappingConfig()
     {
