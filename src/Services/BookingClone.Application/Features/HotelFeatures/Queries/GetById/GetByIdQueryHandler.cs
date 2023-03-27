@@ -18,16 +18,8 @@ public sealed class GetByIdQueryHandler : IRequestHandler<GetByIdQuery, GetHotel
 
     public async Task<GetHotelsDto> Handle(GetByIdQuery request, CancellationToken cancellationToken)
     {
-        //var result = await _hotelRepository.GetByIdAsync(request.ID, cancellationToken);
-        //return result is null ? null : _mapper.Map<GetHotelsDto>(result);
-        var hotel = await _hotelRepository.GetByIdAsync(request.ID);
-        if (hotel != null)
-        {
-            return new GetHotelsDto { Name = hotel.Name, Description = hotel.Description, Reviews = hotel.Reviews };
-        }
-        else
-        {
-            throw new Exception("Not Found A Hotel");
-        }
+        var result = await _hotelRepository.GetByIdAsync(request.ID, cancellationToken);
+        return result is null ? null : _mapper.Map<GetHotelsDto>(result);
+      
     }
 }
