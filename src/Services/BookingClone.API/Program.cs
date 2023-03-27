@@ -51,6 +51,7 @@ builder.Services.AddApiVersioning(o =>
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
 
+
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers()
@@ -164,7 +165,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
 
 app.UseHttpsRedirection();
 
-app.UseMiddleware<ApiKeyAuthMiddleware>();
+//app.UseMiddleware<ApiKeyAuthMiddleware>();
 app.UseAuthorization();
 
 app.UseRateLimiter();
