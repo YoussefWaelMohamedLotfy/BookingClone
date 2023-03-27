@@ -1,21 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using AutoMapper;
-
+﻿using AutoMapper;
 using BookingClone.Application.Features.HotelFeatures.AddHotel;
 using BookingClone.Application.Features.HotelFeatures.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
-using BookingClone.Infrastructure.Repositories;
-
 using MediatR;
 
 namespace BookingClone.Application.Features.Commands.AddHotel;
-public class AddHotelCommandHandler : IRequestHandler<AddHotelCommand, GetHotelsDto>
+
+public sealed class AddHotelCommandHandler : IRequestHandler<AddHotelCommand, GetHotelsDto>
 {
     private readonly IHotelRepository _hotelRepository;
     private readonly IMapper _mapper;
@@ -34,8 +26,5 @@ public class AddHotelCommandHandler : IRequestHandler<AddHotelCommand, GetHotels
         await _hotelRepository.SaveAsync(cancellationToken);
 
         return _mapper.Map<GetHotelsDto>(newHotel);
-
-
-
     }
 }

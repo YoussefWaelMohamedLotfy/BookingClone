@@ -14,7 +14,7 @@ internal sealed class EntityMappingConfig : Profile
         CreateMap<AddAttractionDto, Attraction>();
         CreateMap<UpdateAttractionDto, Attraction>();
         CreateMap<Hotel,GetHotelsDto>();
-        CreateMap<AddHotelsDto, Hotel>();
+        CreateMap<AddHotelDto, Hotel>();
         CreateMap<UpdateHotelDto, Hotel>();
 
         

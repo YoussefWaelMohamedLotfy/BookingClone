@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FluentValidation;
 
 namespace BookingClone.Application.Features.HotelFeatures.UpdateHotel;
-internal class UpdateHotelValidator
+
+internal sealed class UpdateHotelValidator : AbstractValidator<UpdateHotelCommand>
 {
+    public UpdateHotelValidator()
+    {
+        
+    }
 }
