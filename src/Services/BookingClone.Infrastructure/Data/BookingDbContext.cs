@@ -7,16 +7,14 @@ namespace BookingClone.Infrastructure.Data;
 
 public sealed class BookingDbContext : DbContext
 {
-    public BookingDbContext()
+   
+    public BookingDbContext(DbContextOptions options) : base(options)
     {
+
+
     }
-    //public BookingDbContext(DbContextOptions options) : base(options)
-    //{
-        
 
-    //}
 
-  
 
     public DbSet<Attraction> Attractions { get; set; }
     public DbSet<AttractionImage> AttractionImages { get; set; }
@@ -55,8 +53,5 @@ public sealed class BookingDbContext : DbContext
         base.ConfigureConventions(configurationBuilder);
     }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=BookingClone;Integrated Security=True;Trust Server Certificate=True");
-    }
+
 }
