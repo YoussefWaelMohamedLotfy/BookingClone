@@ -11,6 +11,10 @@ public sealed class BookingDbContext : DbContext
     {
     }
 
+    public BookingDbContext()
+    {
+    }
+
     public DbSet<Attraction> Attractions { get; set; }
     public DbSet<AttractionImage> AttractionImages { get; set; }
     public DbSet<AttractionReservation> AttractionReservations { get; set; }

@@ -1,0 +1,15 @@
+﻿@using BookingClone.Domain.Entities;
+
+
+@model List<Hotel>
+
+    <h3>Hotels List</h3>
+    @foreach (var item in Model)
+    {
+        <h5>@item.Name </h5>
+        <h5>@item.StarRating </h5>
+        <h5>@item.Rooms </h5>
+        <h5>@item.Reviews </h5>
+        <h5>@item.Description </h5>
+        
+    }

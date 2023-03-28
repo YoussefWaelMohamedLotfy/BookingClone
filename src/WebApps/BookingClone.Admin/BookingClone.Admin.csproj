@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="PagedList" Version="1.17.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\Common\BookingClone.Serilog\BookingClone.Serilog.csproj" />
+    <ProjectReference Include="..\..\Services\BookingClone.Infrastructure\BookingClone.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
