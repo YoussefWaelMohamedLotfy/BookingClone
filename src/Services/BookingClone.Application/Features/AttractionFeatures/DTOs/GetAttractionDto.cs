@@ -15,4 +15,5 @@ public sealed class GetAttractionDto
     public string Duration { get; set; }
 
     public List<AttractionImageDto> Images { get; set; }
+
 }
