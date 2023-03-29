@@ -39,6 +39,117 @@ references:
   isSpec: "True"
   fullName: BookingClone.Admin.Controllers.HomeController.Index
   nameWithType: HomeController.Index
+- uid: BookingClone.Admin.Controllers.RoomReservationsController
+  name: RoomReservationsController
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html
+  commentId: T:BookingClone.Admin.Controllers.RoomReservationsController
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController
+  nameWithType: RoomReservationsController
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.#ctor(MediatR.IMediator)
+  name: RoomReservationsController(IMediator)
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController__ctor_MediatR_IMediator_
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.#ctor(MediatR.IMediator)
+  name.vb: New(IMediator)
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.RoomReservationsController(MediatR.IMediator)
+  fullName.vb: BookingClone.Admin.Controllers.RoomReservationsController.New(MediatR.IMediator)
+  nameWithType: RoomReservationsController.RoomReservationsController(IMediator)
+  nameWithType.vb: RoomReservationsController.New(IMediator)
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.#ctor*
+  name: RoomReservationsController
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController__ctor_
+  commentId: Overload:BookingClone.Admin.Controllers.RoomReservationsController.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.RoomReservationsController
+  fullName.vb: BookingClone.Admin.Controllers.RoomReservationsController.New
+  nameWithType: RoomReservationsController.RoomReservationsController
+  nameWithType.vb: RoomReservationsController.New
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Create
+  name: Create()
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Create
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.Create
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Create()
+  nameWithType: RoomReservationsController.Create()
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Create(BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto,System.Threading.CancellationToken)
+  name: Create(AddRoomReservationDto, CancellationToken)
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Create_BookingClone_Application_Features_RoomReservationFeatures_DTOs_AddRoomReservationDto_System_Threading_CancellationToken_
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.Create(BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto,System.Threading.CancellationToken)
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Create(BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto, System.Threading.CancellationToken)
+  nameWithType: RoomReservationsController.Create(AddRoomReservationDto, CancellationToken)
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Create*
+  name: Create
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Create_
+  commentId: Overload:BookingClone.Admin.Controllers.RoomReservationsController.Create
+  isSpec: "True"
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Create
+  nameWithType: RoomReservationsController.Create
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Delete(System.Int32,System.Threading.CancellationToken)
+  name: Delete(int, CancellationToken)
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Delete_System_Int32_System_Threading_CancellationToken_
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.Delete(System.Int32,System.Threading.CancellationToken)
+  name.vb: Delete(Integer, CancellationToken)
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Delete(int, System.Threading.CancellationToken)
+  fullName.vb: BookingClone.Admin.Controllers.RoomReservationsController.Delete(Integer, System.Threading.CancellationToken)
+  nameWithType: RoomReservationsController.Delete(int, CancellationToken)
+  nameWithType.vb: RoomReservationsController.Delete(Integer, CancellationToken)
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Delete*
+  name: Delete
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Delete_
+  commentId: Overload:BookingClone.Admin.Controllers.RoomReservationsController.Delete
+  isSpec: "True"
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Delete
+  nameWithType: RoomReservationsController.Delete
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Details(System.Int32,System.Threading.CancellationToken)
+  name: Details(int, CancellationToken)
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Details_System_Int32_System_Threading_CancellationToken_
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.Details(System.Int32,System.Threading.CancellationToken)
+  name.vb: Details(Integer, CancellationToken)
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Details(int, System.Threading.CancellationToken)
+  fullName.vb: BookingClone.Admin.Controllers.RoomReservationsController.Details(Integer, System.Threading.CancellationToken)
+  nameWithType: RoomReservationsController.Details(int, CancellationToken)
+  nameWithType.vb: RoomReservationsController.Details(Integer, CancellationToken)
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Details*
+  name: Details
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Details_
+  commentId: Overload:BookingClone.Admin.Controllers.RoomReservationsController.Details
+  isSpec: "True"
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Details
+  nameWithType: RoomReservationsController.Details
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Edit(BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto,System.Threading.CancellationToken)
+  name: Edit(UpdateRoomReservationDto, CancellationToken)
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Edit_BookingClone_Application_Features_RoomReservationFeatures_DTOs_UpdateRoomReservationDto_System_Threading_CancellationToken_
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.Edit(BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto,System.Threading.CancellationToken)
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Edit(BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto, System.Threading.CancellationToken)
+  nameWithType: RoomReservationsController.Edit(UpdateRoomReservationDto, CancellationToken)
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Edit(System.Int32,System.Threading.CancellationToken)
+  name: Edit(int, CancellationToken)
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Edit_System_Int32_System_Threading_CancellationToken_
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.Edit(System.Int32,System.Threading.CancellationToken)
+  name.vb: Edit(Integer, CancellationToken)
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Edit(int, System.Threading.CancellationToken)
+  fullName.vb: BookingClone.Admin.Controllers.RoomReservationsController.Edit(Integer, System.Threading.CancellationToken)
+  nameWithType: RoomReservationsController.Edit(int, CancellationToken)
+  nameWithType.vb: RoomReservationsController.Edit(Integer, CancellationToken)
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Edit*
+  name: Edit
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Edit_
+  commentId: Overload:BookingClone.Admin.Controllers.RoomReservationsController.Edit
+  isSpec: "True"
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Edit
+  nameWithType: RoomReservationsController.Edit
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Index(System.Threading.CancellationToken)
+  name: Index(CancellationToken)
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Index_System_Threading_CancellationToken_
+  commentId: M:BookingClone.Admin.Controllers.RoomReservationsController.Index(System.Threading.CancellationToken)
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Index(System.Threading.CancellationToken)
+  nameWithType: RoomReservationsController.Index(CancellationToken)
+- uid: BookingClone.Admin.Controllers.RoomReservationsController.Index*
+  name: Index
+  href: api/BookingClone.Admin.Controllers.RoomReservationsController.html#BookingClone_Admin_Controllers_RoomReservationsController_Index_
+  commentId: Overload:BookingClone.Admin.Controllers.RoomReservationsController.Index
+  isSpec: "True"
+  fullName: BookingClone.Admin.Controllers.RoomReservationsController.Index
+  nameWithType: RoomReservationsController.Index
 - uid: BookingClone.Admin.Models
   name: BookingClone.Admin.Models
   href: api/BookingClone.Admin.Models.html
@@ -1536,6 +1647,18 @@ references:
   isSpec: "True"
   fullName: BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto.Status
   nameWithType: UpdateRoomReservationDto.Status
+- uid: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations
+  name: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations
+  href: api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.html
+  commentId: N:BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations
+  fullName: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations
+  nameWithType: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations
+- uid: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery
+  name: GetAllRoomReservationsQuery
+  href: api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery.html
+  commentId: T:BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery
+  fullName: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery
+  nameWithType: GetAllRoomReservationsQuery
 - uid: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById
   name: BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById
   href: api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.html

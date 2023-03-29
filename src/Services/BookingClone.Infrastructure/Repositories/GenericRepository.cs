@@ -1,6 +1,7 @@
 ﻿using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Data;
+using BookingClone.Infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookingClone.Infrastructure.Repositories;
@@ -14,6 +15,11 @@ public abstract class GenericRepository<TEntity, TId> : IGenericRepository<TEnti
     {
         _context = context;
         _db = context.Set<TEntity>();
+    }
+
+    public async Task<PagedList<TEntity>> GetPaginatedList(PaginationQuery query, CancellationToken ct = default)
+    {
+        return await _db.ToPagedListAsync(query.PageNumber, query.PageSize, ct);
     }
 
     public async Task<TEntity?> GetByIdAsync(TId id, CancellationToken ct = default)

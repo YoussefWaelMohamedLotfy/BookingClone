@@ -9,6 +9,9 @@ namespace BookingClone.Serilog;
 
 public static class Serilogger
 {
+    /// <summary>
+    /// The main configuration for Serilog
+    /// </summary>
     public static Action<HostBuilderContext, LoggerConfiguration> Configure =>
         (context, configuration) =>
         {
