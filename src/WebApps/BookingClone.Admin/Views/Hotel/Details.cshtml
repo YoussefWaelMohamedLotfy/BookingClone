@@ -1,0 +1,34 @@
+﻿@using BookingClone.Application.Features.HotelFeatures.DTOs;
+
+@model GetHotelsDto
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="border p-3 bg-white">
+    <div class="form-group row">
+        <h2 class="text-info ps-3">Hotel Details for ID @Model.Id</h2>
+
+        <div class="col-4">
+            <label asp-for="Name"></label>
+        </div>
+        <div class="col-8">
+            <span >@Model.Name</span>
+        </div>
+        <div class="col-4">
+                    <label asp-for="Description"></label>
+                </div>
+        <div class="col-8">
+            <span >@Model.Description</span>
+        </div>
+        <div class="col-4">
+            <label asp-for="StarRating"></label>
+        </div>
+        <div class="col-8">
+            <span >@Model.StarRating</span>
+        </div>
+    </div>
+
+    </div>
+
+

@@ -1,13 +1,23 @@
-﻿<form method="post" asp-controller="Hotel" asp-action="UpdateHotel">
-    <label>Hotel ID</label>
-    <input type="number" name="ID" />
-    <label>Hotel Name</label>
-    <input type="text" name="Name" />
-    <label>Hotel Description</label>
-    <input type="text" name="Description" />
-    <label>Hotel Rooms</label>
-    <input type="text" name="Rooms" />
-    <button type="submit">Submit</button>
+﻿@using BookingClone.Application.Features.HotelFeatures.DTOs;
+@model GetHotelsDto
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+
+<form method="post" asp-controller="Hotel" asp-action="Edit">
+    <label class="fs-4 mb-1 fw-lighter">Hotel ID</label>
+    <input type="number" name="ID"  class="form-control w-50"/>
+    <label class="fs-4 fw-lighter mb-1">Hotel Name</label>
+    <input type="text" name="Name" class="form-control w-50 " />
+    <label class="fs-4 mb-1 fw-lighter">Hotel Description</label>
+    <input type="text" name="StarRating" class="form-control w-50 " />
+    <label class="fs-4 mb-1 fw-lighter">StarRating</label>
+    <input type="text" name="Description" class="form-control w-50" />
+    @*<label>Hotel Rooms</label>
+    <input type="text" name="Rooms" />*@
+    <button type="submit" class="btn btn-primary mt-2">Submit</button>
 
 
 </form>
