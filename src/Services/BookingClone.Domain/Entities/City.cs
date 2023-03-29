@@ -4,6 +4,7 @@ namespace BookingClone.Domain.Entities;
 
 public sealed class Cities : BaseEntity<int>
 {
+<<<<<<< HEAD
     
 
     public string Name { get; set; }
@@ -13,6 +14,9 @@ public sealed class Cities : BaseEntity<int>
     public int? CountryID { get; set; }
     
     public Country Country { get; set; }
+=======
+   
+>>>>>>> city view
 
     public List<Attraction>? Attractions { get; set; }
 

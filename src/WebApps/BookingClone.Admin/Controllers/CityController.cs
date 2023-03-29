@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using BookingClone.Application.Features.city.commands.AddCity;
 using BookingClone.Application.Features.city.commands.DeleteCity;
 using BookingClone.Application.Features.city.commands.UpdateCity;
@@ -32,10 +33,39 @@ public sealed class CityController : Controller
     {
         var reservation = await _mediator.Send(new GetCityByIdQuery(id), ct);
         return View(reservation);
+=======
+﻿using BookingClone.Domain.Entities;
+using BookingClone.Infrastructure.Data;
+
+using Microsoft.AspNetCore.Mvc;
+
+namespace BookingClone.Admin.Controllers;
+public class CityController : Controller
+{
+    public IActionResult Index()
+    {
+        return View();
+    }
+
+
+    BookingDbContext context = new BookingDbContext();
+    ////public IActionResult Index()
+    ////{
+    ////    return View();
+    ////}
+
+    public IActionResult Get_Cities()
+    {
+
+        var Cities = context.Cities;
+        ViewBag.Citiess = Cities;
+        return View();
+>>>>>>> city view
     }
 
     public IActionResult Create()
     {
+<<<<<<< HEAD
         this.ViewData["Countries"] =  _mediator.Send(new GetAllCountriesQuerywithoutpagination()).Result
         
         .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
@@ -94,4 +124,52 @@ public sealed class CityController : Controller
     }
 
 
+=======
+
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Cities cities)
+    {
+
+        context.Add(cities);
+        context.SaveChanges();
+        return View();
+    }
+
+    public IActionResult Edit()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Edit(Cities cities)
+    {
+        context.Update(cities);
+        context.SaveChanges();
+        return View();
+    }
+
+
+    public IActionResult Delete()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Delete(long id)
+    {
+        var Deleted = context.Cities.Find(id);
+        context.Cities.Remove(Deleted);
+        context.SaveChanges();
+        return View();
+    }
+
+
+
+
+
+
+>>>>>>> city view
 }
