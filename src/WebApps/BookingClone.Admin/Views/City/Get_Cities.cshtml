@@ -1,0 +1,18 @@
+﻿<h1>Cities  List</h1>
+
+@{
+
+
+
+    var Cities = ViewBag.Citiess;
+
+}
+@foreach (var item in Cities)
+{
+    @*<h4>@item.ID</h4>*@
+    <h4>@item.Name</h4>
+    @*<h4>@item.CountryID</h4>*@
+    <hr />
+
+
+}
