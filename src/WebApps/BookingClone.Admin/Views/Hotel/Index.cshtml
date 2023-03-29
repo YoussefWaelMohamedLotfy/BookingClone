@@ -1,7 +1,54 @@
-﻿@using BookingClone.Domain.Entities;
+﻿@using BookingClone.Application.Features.HotelFeatures.DTOs;
+@using BookingClone.Domain.Common;
+@using BookingClone.Domain.Entities;
+@model PagedList<GetHotelsDto>
+
+    @{
+    ViewData["Title"] = "Index";
+    }
+
+       <h3>Hotels List</h3>
+       <div class="contanier">
+<table class="table table-striped border">
+    <thead>
+        <tr class="table-secondary">
+            <th>Name</th>
+            <th>StarRating</th>
+            <th> Reviews</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var item in Model.Data)
+    {
+        <tr>
+      <td><h5>@item.Name </h5> </td>
+     <td><h5>@item.StarRating </h5> </td>
+      
+       <td> <h5>@item.Reviews </h5> </td>
+       <td> <h5>@item.Description </h5></td>
+    </tr>
+
+    }
+
+    
+    </tbody>
+    </table>
+</div>
 
 
-@model List<Hotel>
+
+
+
+
+
+
+
+
+
+
+@*@model List<Hotel>
 
     <h3>Hotels List</h3>
     @foreach (var item in Model)
@@ -12,4 +59,4 @@
         <h5>@item.Reviews </h5>
         <h5>@item.Description </h5>
         
-    }
+    }*@

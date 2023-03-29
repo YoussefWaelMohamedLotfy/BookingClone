@@ -4,13 +4,11 @@ using BookingClone.Application.Features.HotelFeatures.DTOs;
 using BookingClone.Application.Features.HotelFeatures.Queries.GetAll;
 using BookingClone.Application.Features.HotelFeatures.Queries.GetById;
 using BookingClone.Application.Features.HotelFeatures.UpdateHotel;
-
-
 using MediatR;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace BookingClone.Admin.Controllers;
 public class HotelController : Controller
@@ -21,11 +19,16 @@ public class HotelController : Controller
     public HotelController(IMediator mediator)
        => _mediator = mediator;
 
-    public async Task<IActionResult> Index(CancellationToken ct)
+    public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
-        var hotel = await _mediator.Send(new GetAllQuery (), ct);
+        var hotel = await _mediator.Send(new GetAllQuery() { Query = new(pageNumber, pageSize) }, ct);
         return View(hotel);
     }
+    //public async Task<IActionResult> Index(CancellationToken ct)
+    //{
+    //    var hotel = await _mediator.Send(new GetAllQuery () { Query = new(pageNumber, pageSize) }, ct));
+    //    return View(hotel);
+    //}
 
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
