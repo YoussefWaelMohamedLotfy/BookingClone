@@ -36,7 +36,7 @@ builder.Services.AddDbContext<BookingDbContext>(o =>
         c.EnableRetryOnFailure(3))
 );
 
-builder.Services.AddApplicationServices();
+//builder.Services.AddApplicationServices();
 builder.Services.AddApplicationServices(builder.Configuration);
 
 //builder.Services.AddStackExchangeRedisCache(o =>

@@ -10,14 +10,14 @@ using BookingClone.Application.Features.country.DTOs;
 using MediatR;
 
 namespace BookingClone.Application.Features.country.queries.GitCountryById;
-public class GitCountryByIdQuery   :IRequest<CountryDetailsDto>
+public class GetCountryByIdQuery   :IRequest<CountryDetailsDto>
 {
 
    
 
         public  int ID { get; set; }
 
-        public GitCountryByIdQuery(int iD)
+        public GetCountryByIdQuery(int iD)
         {
             ID = iD;
         }

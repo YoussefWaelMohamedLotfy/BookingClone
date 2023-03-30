@@ -12,7 +12,7 @@ namespace BookingClone.Application;
 
 public static class ApplicationExtensions
 {
-    public static IServiceCollection AddApplicationServices(this IServiceCollection services)
+    public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<BookingDbContext>(o =>
             o.UseSqlServer(configuration.GetConnectionString("SqlServerConnection"), c =>
@@ -29,7 +29,12 @@ public static class ApplicationExtensions
             .AddScoped<IAttractionReservationRepository, AttractionReservationRepository>()
             .AddScoped<IAttractionRepository, AttractionRepository>()
             .AddScoped<IRoomRepository, RoomRepository>()
-            .AddScoped<IHotelRepository, HotelRepository>();
+            .AddScoped<IHotelRepository, HotelRepository>()
+            .AddScoped<ICityRepository, CityRepository>()
+            .AddScoped<IContinentRepository, ContinentRepository>()
+            .AddScoped<ICountryRepository, CountryRepository>();
+
+
 
         return services;
     }

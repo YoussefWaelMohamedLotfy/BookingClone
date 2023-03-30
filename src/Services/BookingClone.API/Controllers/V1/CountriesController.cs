@@ -34,7 +34,7 @@ public sealed class CountriesController : ControllerBase
 
     public async Task<IActionResult> GetCountryById(int id, CancellationToken ct)
     {
-        var result = await _mediator.Send(new GitCountryByIdQuery(id), ct);
+        var result = await _mediator.Send(new GetCountryByIdQuery(id), ct);
         return result is null ? NotFound() : Ok(result);
     }
 

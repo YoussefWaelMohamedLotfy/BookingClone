@@ -18,11 +18,11 @@ using BookingClone.Infrastructure.Repositories;
 using MediatR;
 
 namespace BookingClone.Application.Features.country.queries.GitCountryById;
-public class GitCountryByIdQueryHandlar : IRequestHandler<GitCountryByIdQuery, CountryDetailsDto?>
+public class GetCountryByIdQueryHandlar : IRequestHandler<GetCountryByIdQuery, CountryDetailsDto?>
 {
     private readonly ICountryRepository _countryRepository;
 
-    public GitCountryByIdQueryHandlar(ICountryRepository countryRepository)
+    public GetCountryByIdQueryHandlar(ICountryRepository countryRepository)
     {
         _countryRepository = countryRepository;
 
@@ -30,7 +30,7 @@ public class GitCountryByIdQueryHandlar : IRequestHandler<GitCountryByIdQuery, C
 
 
 
-    public async Task<CountryDetailsDto?> Handle(GitCountryByIdQuery request, CancellationToken cancellationToken)
+    public async Task<CountryDetailsDto?> Handle(GetCountryByIdQuery request, CancellationToken cancellationToken)
     {
         //    var country = await _countryRepository.GetByIdAsync(request.ID); /*calling*/
 
