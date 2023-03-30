@@ -7,15 +7,16 @@
 
 
 <form method="post" asp-controller="Hotel" asp-action="Edit">
-    <input asp-for="Id" hidden />
+    <input  asp-for="Id" hidden  />
+    
    @* <label class="fs-4 mb-1 fw-lighter">Hotel ID</label>
     <input type="number" name="ID"  class="form-control w-50"/>*@
     <label class="fs-4 fw-lighter mb-1">Hotel Name</label>
-    <input type="text" name="Name" class="form-control w-50 " asp-for="Name" />
+    <input  name="Name" class="form-control w-50 " asp-for="Name" />
     <label class="fs-4 mb-1 fw-lighter">Hotel Description</label>
-    <input type="text" name="StarRating" class="form-control w-50 " asp-for="Description" />
+    <input name="StarRating" class="form-control w-50 " asp-for="Description" />
     <label class="fs-4 mb-1 fw-lighter">StarRating</label>
-    <input type="text" name="Description" class="form-control w-50" asp-for="StarRating" />
+    <input  name="Description" class="form-control w-50" asp-for="StarRating" />
     @*<label>Hotel Rooms</label>
     <input type="text" name="Rooms" />*@
     @*<button type="submit" class="btn btn-primary mt-2">Submit</button>*@
