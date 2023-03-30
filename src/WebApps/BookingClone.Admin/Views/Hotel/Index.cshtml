@@ -63,6 +63,26 @@
     </table>
 </div>
 
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item @(Model.IsFirstPage ? "disabled" : string.Empty)">
+            <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber - 1)" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (int i = 1; i < Model.TotalPages + 1; i++)
+        {
+            <li class="page-item">
+                <a class="page-link @(Model.PageNumber == i ? "active" : string.Empty)" asp-action="Index" asp-route-pageNumber="@i">@i</a>
+            </li>
+        }
+        <li class="page-item @(Model.IsLastPage ? "disabled" : string.Empty)">
+            <a class="page-link" asp-action="Index" asp-route-pageNumber="@(Model.PageNumber + 1)" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 
 
 
