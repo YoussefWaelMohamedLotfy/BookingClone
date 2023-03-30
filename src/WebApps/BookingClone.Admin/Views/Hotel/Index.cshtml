@@ -7,7 +7,21 @@
     ViewData["Title"] = "Index";
     }
 
-       <h3>Hotels List</h3>
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">Hotels List</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus"></i>
+            Create New Hotel
+        </a>
+    </div>
+</div>
+
+
+      @* <h3>Hotels List</h3>*@
        <div class="contanier">
 <table class="table table-striped border">
     <thead>
@@ -28,6 +42,18 @@
       @* <td> <h5>@item.Rooms </h5> </td>
        <td> <h5>@item.Reviews </h5> </td>*@
        <td> <h5>@item.Description </h5></td>
+                    <td>
+                        <div>
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary">
+                                <i class="bi bi-list"></i>
+                                Details
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-info">
+                                <i class="bi bi-pen"></i>
+                                Edit
+                            </a>
+                        </div>
+                    </td>
     </tr>
 
     }
