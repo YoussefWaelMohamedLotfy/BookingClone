@@ -5,11 +5,16 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
+<<<<<<< HEAD
 
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Common;
+=======
+using BookingClone.Application.Features.continent.DTOs;
+using BookingClone.Application.Features.country.DTOs;
+>>>>>>> salmateest
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.country;
@@ -18,6 +23,7 @@ internal class EntityMappingConfig : Profile
    
         public EntityMappingConfig()
         {
+<<<<<<< HEAD
             CreateMap<Country, CountryDetailsDto>().ReverseMap();
             CreateMap<Country, CountryMinimalDto>().ReverseMap();
           
@@ -32,4 +38,14 @@ internal class EntityMappingConfig : Profile
 
 
 
+=======
+            CreateMap<Country, CountryDetailsDto>();
+            CreateMap<Country, CountryMinimalDto>();
+
+
+        }
+
+
+    
+>>>>>>> salmateest
 }

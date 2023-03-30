@@ -19,6 +19,9 @@ namespace BookingClone.Application;
 public static class ApplicationExtensions
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> salmateest
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<BookingDbContext>(o =>
@@ -44,6 +47,7 @@ public static class ApplicationExtensions
             .AddScoped<IHotelRepository, HotelRepository>()
             .AddScoped<ICityRepository, CityRepository>()
             .AddScoped<IContinentRepository, ContinentRepository>()
+<<<<<<< HEAD
             .AddScoped<ICountryRepository, CountryRepository>()
             .AddScoped<IHotelReviewRepository, HotelReviewRepository>()
             .AddScoped<IAttractionReviewRepository, AttractionReviewRepository>();
@@ -53,6 +57,11 @@ public static class ApplicationExtensions
 }
 =======
             .AddScoped<IAttractionRepository, AttractionRepository>();
+=======
+            .AddScoped<ICountryRepository, CountryRepository>();
+
+
+>>>>>>> salmateest
 
         return services;
     }

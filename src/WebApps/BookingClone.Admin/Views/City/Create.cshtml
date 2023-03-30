@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 @using BookingClone.Application.Features.city.DTOs;
 @model CityDetailsDto
@@ -61,20 +62,61 @@
 </form>
 =======
 ﻿<form method="post" asp-controller="City" asp-action="Create">
+=======
+﻿@using BookingClone.Application.Features.city.DTOs;
+@using BookingClone.Domain.Common;
+@using BookingClone.Domain.Entities;
+@model PagedList<CityDetailsDto>
 
-    <h1>create new City</h1>
-    <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Name</label>
-        <input type="text" name="Name" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+@{
+    ViewData["Title"] = "Index";
+}
+>>>>>>> salmateest
+
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">Cities List</h2>
     </div>
-
-    <div class="mb-3">
-        <label for="formGroupExampleInput2" class="form-label">CountryID</label>
-        <input type="number" name="Catigory_ID" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+    <div class="col-6 text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus"></i>
+            Create New City
+        </a>
     </div>
+</div>
 
-    <button class="btn btn-outline-success" type="submit">submit</button>
 
-</form>
 
+<div class="contanier">
+    <table class="table table-striped border">
+        <thead>
+            <tr class="table-secondary">
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Data)
+            {
+                <tr>
+                    <td><h5>@item.Name </h5> </td>
+
+<<<<<<< HEAD
 >>>>>>> city view
+=======
+                    <td>
+                        <div>
+                            <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">
+                                <i class="bi bi-list"></i>
+                                Details
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-info">
+                                <i class="bi bi-pen"></i>
+                                Edit
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+>>>>>>> salmateest

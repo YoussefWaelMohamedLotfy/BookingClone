@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 @using BookingClone.Application.Features.city.DTOs;
 
@@ -67,3 +68,26 @@
             </div>
         </div>
     </div>
+=======
+﻿@using BookingClone.Application.Features.city.DTOs;
+@using BookingClone.Domain.Common;
+@using BookingClone.Domain.Entities;
+@model PagedList<CityDetailsDto>
+
+<h1>products  List</h1>
+
+@{
+
+
+
+    var getproducts = ViewBag.products;
+
+}
+@foreach (var item in getproducts)
+{
+    @*<h4>@item.ID</h4>*@
+    <h4>@item.Name</h4>
+    @*<h4>@item.Discription</h4>*@
+    <hr />
+}
+>>>>>>> salmateest

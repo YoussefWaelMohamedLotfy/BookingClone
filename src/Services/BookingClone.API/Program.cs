@@ -55,8 +55,13 @@ builder.Services.AddDbContext<BookingDbContext>(o =>
         c.EnableRetryOnFailure(3))
 );
 
+<<<<<<< HEAD
 builder.Services.AddApplicationServices();
 >>>>>>> first commit
+=======
+//builder.Services.AddApplicationServices();
+builder.Services.AddApplicationServices(builder.Configuration);
+>>>>>>> salmateest
 
 //builder.Services.AddStackExchangeRedisCache(o =>
 //{

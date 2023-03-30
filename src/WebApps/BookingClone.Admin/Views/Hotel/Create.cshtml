@@ -1,16 +1,13 @@
-<<<<<<< HEAD
-﻿
-@using BookingClone.Application.Features.country.DTOs;
-@model CountryDetailsDto
+﻿@using BookingClone.Application.Features.HotelFeatures.DTOs;
+@model AddHotelDto
 @{
     ViewData["Title"] = "Create";
-    var selectList = (List<SelectListItem>)ViewData["Continents"];
 }
 
-<form method="post" asp-action="Create" asp-controller="Country">
+<form method="post" asp-action="Create" asp-controller="Hotel">
     <div class="border p-3 bg-white">
         <div class="form-group row">
-            <h2 class="text-info ps-3">Create new Country</h2>
+            <h2 class="text-info ps-3">Create new Hotel</h2>
         </div>
         <div class="row">
             <div class="col-8">
@@ -23,20 +20,27 @@
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                 </div>
-
                 <div class="form-group row py-2">
-
                     <div class="col-4">
-                        <label>Select Continent</label>
+                        <label asp-for="Description"></label>
                     </div>
                     <div class="col-8">
-                        <select class="form-select" aria-label="Default select example" asp-for="ContinentID" asp-items="@selectList"></select>
+                        <input asp-for="Description" class="form-control" type="text" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
-
                 </div>
 
+                 <div class="form-group row py-2">
+                    <div class="col-4">
+                        <label asp-for="StarRating"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="StarRating" class="form-control" type="text" />
+                        <span asp-validation-for="StarRating" class="text-danger"></span>
+                    </div>
+                </div>
 
-            </div>
+                </div>
             <div class="form-group row py-2">
                 <div class="col-8 offset-4 row">
                     <div class="col">
@@ -51,14 +55,23 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+                </div>
+                </div>
+                
+                </form>
 
-</form>
-=======
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
->>>>>>> salmateest
+
+
+
+
+@*<form method="post" asp-controller="Hotel" asp-action="CreateHotel">
+    <label>Hotel Name</label>
+    <input type="text" name="Name" />
+    <label>Hotel Description</label>
+    <input type="text" name="Description" />
+    <label>Hotel Rooms</label>
+    <input type="text" name="Rooms" />
+    <button type="submit">Submit</button>
+
+
+</form>*@

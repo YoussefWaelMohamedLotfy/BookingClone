@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+=======
+
+using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
+>>>>>>> salmateest
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Domain.Common;
 using MediatR;

@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 ﻿using BookingClone.Application.Features.continent.commands.AddContinent;
+=======
+﻿
+using BookingClone.Application.Features.continent.commands.AddContinent;
+>>>>>>> salmateest
 using BookingClone.Application.Features.continent.commands.DeleteContinent;
 using BookingClone.Application.Features.continent.commands.UpdateContinent;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.continent.queries.GetAllcontinent;
 using BookingClone.Application.Features.continent.queries.GetContinentById;
+<<<<<<< HEAD
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -12,6 +18,17 @@ namespace BookingClone.Admin.Controllers;
 
 [Authorize]
 public sealed class ContinentController : Controller
+=======
+using BookingClone.Domain.Entities;
+using BookingClone.Infrastructure.Data;
+
+using MediatR;
+
+using Microsoft.AspNetCore.Mvc;
+
+namespace BookingClone.Admin.Controllers;
+public class ContinentController : Controller
+>>>>>>> salmateest
 {
 
     private readonly IMediator _mediator;
@@ -33,7 +50,11 @@ public sealed class ContinentController : Controller
 
     public IActionResult Create()
         => View();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> salmateest
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(ContinentDetailsDto request, CancellationToken ct)
@@ -80,4 +101,10 @@ public sealed class ContinentController : Controller
 
 
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> salmateest
 }

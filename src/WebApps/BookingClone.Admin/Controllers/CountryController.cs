@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 ﻿using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
+=======
+﻿
+>>>>>>> salmateest
 using BookingClone.Application.Features.country.commands.AddCountry;
 using BookingClone.Application.Features.country.commands.DeleteCountry;
 using BookingClone.Application.Features.country.commands.UpdateCountry;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Application.Features.country.queries.GitCountryById;
+<<<<<<< HEAD
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +19,17 @@ namespace BookingClone.Admin.Controllers;
 
 [Authorize]
 public sealed class CountryController : Controller
+=======
+using BookingClone.Domain.Entities;
+using BookingClone.Infrastructure.Data;
+
+using MediatR;
+
+using Microsoft.AspNetCore.Mvc;
+
+namespace BookingClone.Admin.Controllers;
+public class CountryController : Controller
+>>>>>>> salmateest
 {
     private readonly IMediator _mediator;
 
@@ -33,6 +49,7 @@ public sealed class CountryController : Controller
     }
 
     public IActionResult Create()
+<<<<<<< HEAD
     {
         this.ViewData["Continents"] = _mediator.Send(new GetAllContinentsQuerywithoutpagination()).Result
 
@@ -41,6 +58,9 @@ public sealed class CountryController : Controller
         return View();
     }
        
+=======
+        => View();
+>>>>>>> salmateest
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -57,11 +77,14 @@ public sealed class CountryController : Controller
 
     public async Task<IActionResult> Edit(int id, CancellationToken ct)
     {
+<<<<<<< HEAD
         this.ViewData["Continents"] = _mediator.Send(new GetAllContinentsQuerywithoutpagination()).Result
 
       .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
       .ToList();
 
+=======
+>>>>>>> salmateest
         var reservations = await _mediator.Send(new GetCountryByIdQuery(id), ct);
         return View(reservations);
     }
@@ -88,6 +111,73 @@ public sealed class CountryController : Controller
         return RedirectToAction(nameof(Index));
     }
 
+<<<<<<< HEAD
    
+=======
+
+
+
+
+    //BookingDbContext context = new BookingDbContext();
+    ////public IActionResult Index()
+    ////{
+    ////    return View();
+    ////}
+
+
+    //public IActionResult Get_Country()
+    //{
+
+    //    var Country = context.Countries;
+    //    ViewBag.countries = Country;
+    //    return View();
+    //}
+
+    //public IActionResult Create()
+    //{
+
+    //    return View();
+    //}
+
+    //[HttpPost]
+    //public IActionResult Create(Country country)
+    //{
+
+    //    context.Add(country);
+    //    context.SaveChanges();
+    //    return View();
+    //}
+
+    //public IActionResult Edit()
+    //{
+    //    return View();
+    //}
+
+    //[HttpPost]
+    //public IActionResult Edit(Country country)
+    //{
+    //    context.Update(country);
+    //    context.SaveChanges();
+    //    return View();
+    //}
+
+
+    //public IActionResult Delete()
+    //{
+    //    return View();
+    //}
+
+    //[HttpPost]
+    //public IActionResult Delete(long id)
+    //{
+    //    var Deleted = context.Countries.Find(id);
+    //    context.Countries.Remove(Deleted);
+    //    context.SaveChanges();
+    //    return View();
+    //}
+
+
+
+>>>>>>> salmateest
 
 }
