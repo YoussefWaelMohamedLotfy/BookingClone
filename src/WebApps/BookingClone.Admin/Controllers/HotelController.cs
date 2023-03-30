@@ -6,30 +6,21 @@ using BookingClone.Application.Features.HotelFeatures.Queries.GetById;
 using BookingClone.Application.Features.HotelFeatures.UpdateHotel;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace BookingClone.Admin.Controllers;
+
 public class HotelController : Controller
 {
     private readonly IMediator _mediator;
-
 
     public HotelController(IMediator mediator)
        => _mediator = mediator;
 
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
-        var hotel = await _mediator.Send(new GetAllQuery() { Query = new(pageNumber, pageSize) }, ct);
+        var hotel = await _mediator.Send(new GetAllHotelsQuery() { Query = new(pageNumber, pageSize) }, ct);
         return View(hotel);
     }
-    //public async Task<IActionResult> Index(CancellationToken ct)
-    //{
-    //    var hotel = await _mediator.Send(new GetAllQuery () { Query = new(pageNumber, pageSize) }, ct));
-    //    return View(hotel);
-    //}
-
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {
@@ -50,8 +41,6 @@ public class HotelController : Controller
         var newHotel = await _mediator.Send(new AddHotelCommand { Dto = request }, ct);
         return RedirectToAction(nameof(Details), new { id = newHotel.Id });
     }
-
-
 
     public async Task<IActionResult> Edit(int id, CancellationToken ct)
     {
@@ -77,81 +66,4 @@ public class HotelController : Controller
         await _mediator.Send(new DeleteHotelCommand { Id = id }, ct);
         return RedirectToAction(nameof(Index));
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    //BookingDbContext _bookingDbContext = new BookingDbContext();
-    ////public IActionResult Index()
-    ////{
-    ////    return View();
-    ////}
-
-    //public IActionResult GetHotel()
-    //{
-
-    //    var hotel = _bookingDbContext.Hotels.ToList();
-    //    return View("GetHotel", hotel);
-    //}
-
-
-    //public IActionResult CreateHotel()
-    //{
-
-    //    return View();
-    //}
-    //[HttpPost]
-    //public IActionResult CreateHotel(Hotel hotel)
-    //{
-
-    //    _bookingDbContext.Add(hotel);
-    //    _bookingDbContext.SaveChanges();
-
-    //    return RedirectToAction("GetHotel");
-    //}
-
-
-    //public IActionResult UpdateHotel()
-    //{
-    //    return View();
-    //}
-
-    //[HttpPost]
-
-    //public IActionResult UpdateHotel(Hotel hotel)
-    //{
-
-    //    _bookingDbContext.Update(hotel);
-    //    _bookingDbContext.SaveChanges();
-
-    //    return RedirectToAction("GetHotel");
-    //}
-
-
-    //public IActionResult DeleteHotel()
-    //{
-    //    return View();
-    //}
-
-    //[HttpPost]
-    //public IActionResult DeleteCategory(int id)
-    //{
-
-    //    var DeletedHotel = _bookingDbContext.Hotels.Find(id);
-    //    _bookingDbContext.Hotels.Remove(DeletedHotel);
-    //    _bookingDbContext.SaveChanges();
-
-    //    return RedirectToAction("GetHotel");
-    //}
-
 }
