@@ -4,22 +4,14 @@
     ViewData["Title"] = "Edit";
 }
 
-
-
-<form method="post" asp-controller="Hotel" asp-action="Edit">
-    <input  asp-for="Id" hidden  />
-    
-   @* <label class="fs-4 mb-1 fw-lighter">Hotel ID</label>
-    <input type="number" name="ID"  class="form-control w-50"/>*@
+<form method="post" asp-action="Edit">
+    <input asp-for="Id" hidden />
     <label class="fs-4 fw-lighter mb-1">Hotel Name</label>
-    <input  name="Name" class="form-control w-50 " asp-for="Name" />
+    <input asp-for="Name" class="form-control w-50 " />
     <label class="fs-4 mb-1 fw-lighter">Hotel Description</label>
-    <input name="StarRating" class="form-control w-50 " asp-for="Description" />
+    <input class="form-control w-50 " asp-for="Description" />
     <label class="fs-4 mb-1 fw-lighter">StarRating</label>
-    <input  name="Description" class="form-control w-50" asp-for="StarRating" />
-    @*<label>Hotel Rooms</label>
-    <input type="text" name="Rooms" />*@
-    @*<button type="submit" class="btn btn-primary mt-2">Submit</button>*@
+    <input class="form-control w-50" asp-for="StarRating" />
 
     <div class="form-group row py-2">
         <div class="col-8 offset-4 row">

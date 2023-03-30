@@ -3,9 +3,9 @@
 @using BookingClone.Domain.Entities;
 @model PagedList<GetHotelsDto>
 
-    @{
+@{
     ViewData["Title"] = "Index";
-    }
+}
 
 
 <div class="row">
@@ -21,28 +21,27 @@
 </div>
 
 
-      @* <h3>Hotels List</h3>*@
-       <div class="contanier">
-<table class="table table-striped border">
-    <thead>
-        <tr class="table-secondary">
-            <th>Name</th>
-            <th>StarRating</th>
-           @* <th> Reviews</th>*@
-            <th>Description</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
+@* <h3>Hotels List</h3>*@
+<div class="container">
+    <table class="table table-striped border">
+        <thead>
+            <tr class="table-secondary">
+                <th>Name</th>
+                <th>StarRating</th>
+                @* <th> Reviews</th>*@
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
 
-    @foreach (var item in Model.Data)
-    {
-        <tr>
-      <td><h5>@item.Name </h5> </td>
-     <td><h5>@item.StarRating </h5> </td>
-      @* <td> <h5>@item.Rooms </h5> </td>
-       <td> <h5>@item.Reviews </h5> </td>*@
-       <td> <h5>@item.Description </h5></td>
+            @foreach (var item in Model.Data)
+            {
+                <tr>
+                    <td><h5>@item.Name </h5> </td>
+                    <td><h5>@item.StarRating </h5> </td>
+                    @* <td> <h5>@item.Rooms </h5> </td>
+                <td> <h5>@item.Reviews </h5> </td>*@
+                    <td> <h5>@item.Description </h5></td>
                     <td>
                         <div>
                             <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary">
@@ -55,12 +54,12 @@
                             </a>
                         </div>
                     </td>
-    </tr>
+                </tr>
 
-    }
+            }
 
-    
-    </tbody>
+
+        </tbody>
     </table>
 </div>
 
@@ -105,5 +104,5 @@
         <h5>@item.Rooms </h5>
         <h5>@item.Reviews </h5>
         <h5>@item.Description </h5>
-        
+
     }*@
