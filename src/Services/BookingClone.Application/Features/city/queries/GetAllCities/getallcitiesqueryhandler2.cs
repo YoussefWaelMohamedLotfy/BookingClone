@@ -32,6 +32,6 @@ public class getallcitiesqueryhandler2 : IRequestHandler<getallcitiesquery2, Pag
     public async Task<PagedList<CityDetailsDto>> Handle(getallcitiesquery2 request, CancellationToken cancellationToken)
     {
         var reservations = await _cityRepository.GetPaginatedList(request.Query, cancellationToken);
-        return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
+       return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
     }
 }
