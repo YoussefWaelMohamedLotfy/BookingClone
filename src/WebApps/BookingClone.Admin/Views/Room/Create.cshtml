@@ -1,4 +1,5 @@
 ﻿@using BookingClone.Application.Features.RoomFeatures.DTOs;
+@using BookingClone.Domain.Enums;
 @model AddRoomDto
 
 @{
@@ -12,6 +13,16 @@
         </div>
         <div class="row">
             <div class="col-8">
+
+                <div class="form-group row py-2">
+                    <div class="col-4">
+                        <label asp-for="RoomNumber"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="RoomNumber" class="form-control" />
+                        <span asp-validation-for="RoomNumber" class="text-danger"></span>
+                    </div>
+                </div>
                 <div class="form-group row py-2">
                     <div class="col-4">
                         <label asp-for="Price"></label>
@@ -49,12 +60,13 @@
                         <span asp-validation-for="BedCount" class="text-danger"></span>
                     </div>
                 </div>
+              
                  <div class="form-group row py-2">
                     <div class="col-4">
                         <label asp-for="ViewType"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="ViewType" class="form-control"  />
+                        <select asp-for="ViewType" asp-items="Html.GetEnumSelectList<RoomViewType>()" class="form-control"></select>
                         <span asp-validation-for="ViewType" class="text-danger"></span>
                     </div>
                 </div>

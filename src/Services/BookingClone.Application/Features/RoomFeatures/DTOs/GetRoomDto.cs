@@ -16,6 +16,7 @@ public sealed class GetRoomDto
 
     public RoomViewType ViewType { get; set; }
 
+    public int HotelId { get; set; }
     public decimal Price { get; set; }
 
    
