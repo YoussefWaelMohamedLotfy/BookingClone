@@ -38,9 +38,13 @@ public class getallcitiesqueryhandler2 : IRequestHandler<getallcitiesquery2, Pag
     {
         var reservations = await _cityRepository.GetPaginatedList(request.Query, cancellationToken);
 <<<<<<< HEAD
+<<<<<<< HEAD
        return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
 =======
         return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
 >>>>>>> city handler
+=======
+       return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
+>>>>>>> test 4
     }
 }
