@@ -20,30 +20,7 @@
                 <span class="text-success">@Model.Name.ToString()</span>
             </div>
         </div>
-        @*<div class="form-group row py-2">
-            <div class="col-4">
-                <label asp-for="TotalCost"></label>
-            </div>
-            <div class="col-8">
-                <input asp-for="TotalCost" class="form-control" disabled />
-            </div>
-        </div>
-        <div class="form-group row py-2">
-            <div class="col-4">
-                <label asp-for="CheckIn"></label>
-            </div>
-            <div class="col-8">
-                <input asp-for="CheckIn" class="form-control" asp-format="{0:dd/MM/yyyy HH:mm}" disabled />
-            </div>
-        </div>
-        <div class="form-group row py-2">
-            <div class="col-4">
-                <label asp-for="CheckOut"></label>
-            </div>
-            <div class="col-8">
-                <input asp-for="CheckOut" class="form-control" asp-format="{0:dd/MM/yyyy HH:mm}" disabled />
-            </div>
-        </div>*@
+
         <div class="form-group row py-2">
             <div class="col-8 offset-4 row">
                 <div class="col">
@@ -153,7 +130,7 @@
         </div>
     </div>*@
 
-</div>
+@*</div>*@
 
 
 @*<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -182,21 +159,3 @@
 
 
 
-
-
-@*<h1>products  List</h1>
-
-@{
-
-
-
-    var getproducts = ViewBag.products;
-
-}
-@foreach (var item in getproducts)
-{
-    @*<h4>@item.ID</h4>*@
-    @*<h4>@item.Name</h4>*@
-    @*<h4>@item.Discription</h4>*@
-    <hr />
-@*}*@
