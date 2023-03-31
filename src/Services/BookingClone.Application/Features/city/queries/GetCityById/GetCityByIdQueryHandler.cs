@@ -41,28 +41,7 @@ public class GetCityByIdQueryHandler : IRequestHandler<GetCityByIdQuery, CityDet
     
 
 
-        //private readonly ICityRepository _cityRepository;
-
-
-        //public GetCityByIdQueryHandler(ICityRepository cityRepository)
-        //{
-        //    _cityRepository = cityRepository;
-        //}
-
-        //public async Task<CityDetailsDto?> Handle(GetCityByIdQuery request, CancellationToken cancellationToken)
-        //{
-        //    var city = await _cityRepository.GetByIdAsync(request.ID); 
-
-        //    return new CityDetailsDto()    
-        //    {
-        //        Name = city.Name,
-
-        //    }; 
-
-
-
-
-        //}
+     
     }
 
 

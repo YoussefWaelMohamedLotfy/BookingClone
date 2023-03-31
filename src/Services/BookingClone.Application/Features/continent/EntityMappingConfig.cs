@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.continent.DTOs;
+using BookingClone.Domain.Common;
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.continent;
@@ -17,9 +18,14 @@ internal class EntityMappingConfig : Profile
     {
         CreateMap<Continent, ContinentDetailsDto>();
         CreateMap<Continent, ContinentMinimalDto>();
-        
 
-    } 
+        CreateMap<PagedList<Continent>, PagedList<ContinentDetailsDto>>()
+           .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
 
-   
+
+
+
+    }
+
+
 }

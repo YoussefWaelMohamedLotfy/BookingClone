@@ -14,12 +14,12 @@ using BookingClone.Infrastructure.Repositories;
 using MediatR;
 
 namespace BookingClone.Application.Features.country.commands.UpdateCountry;
-internal class updatecountryhandler2 : IRequestHandler<updatecountrycommand2, CountryDetailsDto?>
+internal class updatecountrycommandhandler2 : IRequestHandler<updatecountrycommand2, CountryDetailsDto?>
 {
     private readonly ICountryRepository _countryRepository;
     private readonly IMapper _mapper;
 
-    public updatecountryhandler2(ICountryRepository countryRepository, IMapper mapper)
+    public updatecountrycommandhandler2(ICountryRepository countryRepository, IMapper mapper)
     {
         _countryRepository = countryRepository;
         _mapper = mapper;
