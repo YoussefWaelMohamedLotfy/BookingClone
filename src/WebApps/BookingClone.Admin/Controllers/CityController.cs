@@ -11,6 +11,7 @@ using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -42,6 +43,9 @@ public sealed class CityController : Controller
 =======
 ﻿using BookingClone.Domain.Entities;
 =======
+=======
+using BookingClone.Application.Features.continent.queries.GetAllcontinent;
+>>>>>>> test1
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Domain.Entities;
 >>>>>>> salmateest
@@ -56,11 +60,13 @@ public class CityController : Controller
 {
     private readonly IMediator _mediator;
 
+    
     public CityController(IMediator mediator)
         => _mediator = mediator;
 
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -73,9 +79,21 @@ public class CityController : Controller
 =======
         var reservations =  await _mediator.Send(new GetAllCitiesQuery(), ct);
 >>>>>>> city handler
+=======
+        var reservations = await _mediator.Send(new getallcitiesquery2() { Query = new(pageNumber, pageSize) }, ct);
+>>>>>>> test1
         return View(reservations);
 >>>>>>> salmateest
     }
+
+
+
+
+    //public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
+    //{
+    //    var reservations = await _mediator.Send(new GetAllCitiesQuery(), ct);
+    //    return View(reservations);
+    //}
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {

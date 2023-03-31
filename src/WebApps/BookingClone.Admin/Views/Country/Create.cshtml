@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿
 @using BookingClone.Application.Features.country.DTOs;
 @model CountryDetailsDto
@@ -59,6 +60,76 @@
 ﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
+=======
+﻿
+@using BookingClone.Application.Features.country.DTOs;
+@model CountryDetailsDto
+>>>>>>> test1
 @{
+    ViewData["Title"] = "Create";
 }
+<<<<<<< HEAD
 >>>>>>> salmateest
+=======
+
+<form method="post" asp-action="Create" asp-controller="Country">
+    <div class="border p-3 bg-white">
+        <div class="form-group row">
+            <h2 class="text-info ps-3">Create new Country</h2>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row py-2">
+                    <div class="col-4">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Name" class="form-control" type="text" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row py-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+
+                </div>
+
+
+
+                @* <div class="form-group row py-2">
+                <div class="col-4">
+                <label asp-for="ContinentID"></label>
+                </div>
+                <div class="col-8">
+                <input asp-for="ContinentID" class="form-control" type="text" />
+                <span asp-validation-for="ContinentID" class="text-danger"></span>
+                </div>
+                </div>
+                *@
+               
+
+            </div>
+            <div class="form-group row py-2">
+                <div class="col-8 offset-4 row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-check-circle"></i>
+                            Create
+                        </button>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i>
+                            Back
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
+>>>>>>> test1
