@@ -13,6 +13,7 @@ using BookingClone.Application.Features.city.queries.GetCityById;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -58,6 +59,9 @@ using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRo
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById;
 =======
 >>>>>>> countryview
+=======
+using BookingClone.Application.Features.country.queries.GitAllCountries;
+>>>>>>> continent2
 using BookingClone.Domain.Entities;
 >>>>>>> salmateest
 using BookingClone.Infrastructure.Data;
@@ -172,11 +176,11 @@ public class CityController : Controller
 
     public IActionResult Create()
     {
-        //this.ViewData["items"] = commodities
-        //.GetAll()
-        //.Select(c => new SelectListItem() { Text = c.Code, Value = c.Oid.ToString() })
-        //.ToList();
-         return View(); 
+    //    this.ViewData["items"] =  _mediator.Send(new getallcountryquery2()).Result
+    //    .GetAll()
+    //    .Select(c => new SelectListItem() { Text = c.Code, Value = c.Oid.ToString() })
+    //    .ToList();
+        return View(); 
     }
         
 
