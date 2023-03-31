@@ -18,6 +18,7 @@ using BookingClone.Infrastructure.Data;
 using MediatR;
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookingClone.Admin.Controllers;
 public class CityController : Controller
@@ -50,7 +51,14 @@ public class CityController : Controller
     }
 
     public IActionResult Create()
-        => View();
+    {
+        //this.ViewData["items"] = commodities
+        //.GetAll()
+        //.Select(c => new SelectListItem() { Text = c.Code, Value = c.Oid.ToString() })
+        //.ToList();
+         return View(); 
+    }
+        
 
     [HttpPost]
     [ValidateAntiForgeryToken]
