@@ -12,7 +12,11 @@ using BookingClone.Domain.Common;
 =======
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.continent.DTOs;
+<<<<<<< HEAD
 >>>>>>> salmateest
+=======
+using BookingClone.Domain.Common;
+>>>>>>> continentview
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.continent;
@@ -37,10 +41,19 @@ internal class EntityMappingConfig : Profile
 =======
         CreateMap<Continent, ContinentDetailsDto>();
         CreateMap<Continent, ContinentMinimalDto>();
-        
 
-    } 
+        CreateMap<PagedList<Continent>, PagedList<ContinentDetailsDto>>()
+           .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
 
+
+
+
+    }
+
+
+<<<<<<< HEAD
    
 >>>>>>> salmateest
+=======
+>>>>>>> continentview
 }

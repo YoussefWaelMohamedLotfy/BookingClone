@@ -3,6 +3,7 @@
 @model CountryDetailsDto
 @{
     ViewData["Title"] = "Edit";
+<<<<<<< HEAD
     var selectList = (List<SelectListItem>)ViewData["Continents"];
 }
 
@@ -49,10 +50,35 @@
             </div>
             <div class="col-4">
                 @* Keep this empty *@
+=======
+}
+
+
+
+<form method="post" asp-controller="Country" asp-action="Edit">
+    <input asp-for="ID" hidden />
+
+    <label class="fs-4 fw-lighter mb-1">Country Name</label>
+    <input type="text" name="Name" class="form-control w-50 " />
+
+
+    <div class="form-group row py-2">
+        <div class="col-8 offset-4 row">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-check-circle"></i>
+                    Submit
+                </button>
+                <a asp-action="Details" asp-route-id="@Model.ID" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i>
+                    Back
+                </a>
+>>>>>>> continentview
             </div>
         </div>
     </div>
 </form>
+<<<<<<< HEAD
 
 
 
@@ -67,3 +93,5 @@
 
 
 
+=======
+>>>>>>> continentview

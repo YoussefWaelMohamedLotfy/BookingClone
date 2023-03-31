@@ -5,10 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 using AutoMapper;
 
 =======
 >>>>>>> add city and country and continent
+=======
+using AutoMapper;
+
+>>>>>>> continentview
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetCityById;
 using BookingClone.Application.Features.continent.DTOs;
@@ -29,6 +34,7 @@ namespace BookingClone.Application.Features.continent.queries.GetContinentById;
 public class GetContinentByIdQueryHandlar : IRequestHandler<GetContinentByIdQuery, ContinentDetailsDto?>
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private readonly IContinentRepository _continentRepository;
     private readonly IMapper _mapper;
@@ -38,16 +44,25 @@ public class GetContinentByIdQueryHandlar : IRequestHandler<GetContinentByIdQuer
         _mapper = mapper;
 =======
     private readonly IContinentRepository _continentRepository;
+=======
+>>>>>>> continentview
 
-    public GetContinentByIdQueryHandlar(IContinentRepository continentRepository)
+    private readonly IContinentRepository _continentRepository;
+    private readonly IMapper _mapper;
+    public GetContinentByIdQueryHandlar(IContinentRepository continentRepository, IMapper mapper)
     {
         _continentRepository = continentRepository;
+<<<<<<< HEAD
 
 >>>>>>> add city and country and continent
+=======
+        _mapper = mapper;
+>>>>>>> continentview
     }
 
     public async Task<ContinentDetailsDto?> Handle(GetContinentByIdQuery request, CancellationToken cancellationToken)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         var result = await _continentRepository.GetByIdAsync(request.ID, cancellationToken);
@@ -76,6 +91,10 @@ public class GetContinentByIdQueryHandlar : IRequestHandler<GetContinentByIdQuer
 
 
 
+=======
+        var result = await _continentRepository.GetByIdAsync(request.ID, cancellationToken);
+        return result is null ? null : _mapper.Map<ContinentDetailsDto>(result);
+>>>>>>> continentview
     }
 
 
