@@ -9,29 +9,29 @@
     <div class="form-group row">
         <h2 class="text-info ps-3">Hotel Details for ID @Model.Id</h2>
 
-        <div class="col-4">
+        <div class="col-4 mt-2">
             <label asp-for="Name"></label>
         </div>
         <div class="col-8">
-            <span >@Model.Name</span>
+            <span class="form-control w-50 mt-1" >@Model.Name</span>
         </div>
-        <div class="col-4">
+        <div class="col-4 mt-2">
                     <label asp-for="Description"></label>
                 </div>
         <div class="col-8">
-            <span >@Model.Description</span>
+            <span class="form-control w-50 mt-1">@Model.Description</span>
         </div>
-        <div class="col-4">
+        <div class="col-4 mt-2">
             <label asp-for="StarRating"></label>
         </div>
         <div class="col-8">
-            <span >@Model.StarRating</span>
+            <span class="form-control w-50 mt-1">@Model.StarRating</span>
         </div>
     </div>
 
     <div class="form-group row py-2">
         <div class="col-8 offset-4 row">
-            <div class="col">
+            <div class="col mt-2">
                 <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">
                     <i class="bi bi-pen"></i>
                     Edit

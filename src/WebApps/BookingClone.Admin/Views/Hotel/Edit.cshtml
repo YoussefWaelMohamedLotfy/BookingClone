@@ -6,25 +6,41 @@
 
 <form method="post" asp-action="Edit">
     <input asp-for="Id" hidden />
-    <label class="fs-4 fw-lighter mb-1">Hotel Name</label>
-    <input asp-for="Name" class="form-control w-50 " />
-    <label class="fs-4 mb-1 fw-lighter">Hotel Description</label>
-    <input class="form-control w-50 " asp-for="Description" />
-    <label class="fs-4 mb-1 fw-lighter">StarRating</label>
-    <input class="form-control w-50" asp-for="StarRating" />
+    <div class="border border-1 ">
+        <h2 class="text-info ps-3 my-2">Edit Hotel for ID @Model.Id</h2>
+    <div class=" row container"> 
+        <div class="col-4">
+            <label class=" my-2 d-block my-2">Hotel Name</label>
+             <label class="my-4  d-block my-2">Hotel Description</label>
+            <label class=" my-2 ">StarRating</label>
 
-    <div class="form-group row py-2">
-        <div class="col-8 offset-4 row">
+        </div>
+        <div class="col-8">
+
+            <input asp-for="Name" class="form-control w-50 my-2 " />
+            
+    <input class="form-control w-50 my-2 " asp-for="Description" />
+  
+    <input class="form-control w-50" asp-for="StarRating" /> 
+
+        <div class="form-group row py-2 ">
+      
             <div class="col">
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary mx-1 my-2">
                     <i class="bi bi-check-circle"></i>
-                    Submit
+                  Submit
                 </button>
-                <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-secondary">
+                <a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-secondary  my-2">
                     <i class="bi bi-arrow-left"></i>
                     Back
                 </a>
             </div>
+  
+    </div>
+
         </div>
     </div>
+
+    </div>
+
 </form>
