@@ -62,6 +62,7 @@ public class CityController : Controller
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         var Cities = context.Cities;
         ViewBag.Citiess = Cities;
@@ -69,6 +70,9 @@ public class CityController : Controller
 >>>>>>> city view
 =======
         var reservations = await _mediator.Send(new getallcitiesquery2() { Query = new(pageNumber, pageSize) }, ct);
+=======
+        var reservations =  await _mediator.Send(new GetAllCitiesQuery(), ct);
+>>>>>>> city handler
         return View(reservations);
 >>>>>>> salmateest
     }

@@ -1,9 +1,20 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System.Reflection;
 using BookingClone.Application;
 using BookingClone.Serilog;
 using FluentValidation;
 using FluentValidation.AspNetCore;
+=======
+using System.Reflection;
+
+using BookingClone.Application;
+using BookingClone.Serilog;
+
+using FluentValidation;
+using FluentValidation.AspNetCore;
+
+>>>>>>> city handler
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Serilog;
 using Microsoft.AspNetCore.Identity;
@@ -38,6 +49,9 @@ builder.WebHost.ConfigureKestrel(options =>
 builder.Host.UseSerilog(Serilogger.Configure);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> city handler
 builder.Services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

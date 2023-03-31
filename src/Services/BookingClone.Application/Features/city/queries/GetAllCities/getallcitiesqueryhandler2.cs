@@ -7,8 +7,16 @@ using System.Threading.Tasks;
 using AutoMapper;
 
 using BookingClone.Application.Features.city.DTOs;
+<<<<<<< HEAD
 using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
+=======
+using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
+using BookingClone.Domain.Common;
+using BookingClone.Domain.Contracts;
+using BookingClone.Infrastructure.Repositories;
+>>>>>>> city handler
 
 using MediatR;
 
@@ -29,6 +37,10 @@ public class getallcitiesqueryhandler2 : IRequestHandler<getallcitiesquery2, Pag
     public async Task<PagedList<CityDetailsDto>> Handle(getallcitiesquery2 request, CancellationToken cancellationToken)
     {
         var reservations = await _cityRepository.GetPaginatedList(request.Query, cancellationToken);
+<<<<<<< HEAD
        return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
+=======
+        return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
+>>>>>>> city handler
     }
 }
