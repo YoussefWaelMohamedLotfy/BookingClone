@@ -22,6 +22,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(options =>
 {
+    //Miduator
     options.AddServerHeader = false;
     options.ConfigureHttpsDefaults(s => s.AllowAnyClientCertificate());
     options.ConfigureEndpointDefaults(o => o.Protocols = HttpProtocols.Http1AndHttp2AndHttp3);

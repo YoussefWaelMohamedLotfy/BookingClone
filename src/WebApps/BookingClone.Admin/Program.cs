@@ -1,5 +1,11 @@
+using System.Reflection;
+
 using BookingClone.Application;
 using BookingClone.Serilog;
+
+using FluentValidation;
+using FluentValidation.AspNetCore;
+
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Serilog;
 
@@ -13,6 +19,13 @@ builder.WebHost.ConfigureKestrel(options =>
 });
 
 builder.Host.UseSerilog(Serilogger.Configure);
+
+builder.Services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
+builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
+builder.Services.AddFluentValidationAutoValidation()
+    .AddFluentValidationClientsideAdapters()
+    .AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
 // Add services to the container.
 builder.Services.AddApplicationServices(builder.Configuration);

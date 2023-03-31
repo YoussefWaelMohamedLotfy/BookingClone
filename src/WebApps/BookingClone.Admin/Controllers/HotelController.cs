@@ -19,11 +19,11 @@ public class HotelController : Controller
     public HotelController(IMediator mediator)
        => _mediator = mediator;
 
-    public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
-    {
-        var hotel = await _mediator.Send(new GetAllQuery() { Query = new(pageNumber, pageSize) }, ct);
-        return View(hotel);
-    }
+    //public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
+    //{
+    //    var hotel = await _mediator.Send(new GetAllQuery() { Query = new(pageNumber, pageSize) }, ct);
+    //    return View(hotel);
+    //}
     //public async Task<IActionResult> Index(CancellationToken ct)
     //{
     //    var hotel = await _mediator.Send(new GetAllQuery () { Query = new(pageNumber, pageSize) }, ct));
