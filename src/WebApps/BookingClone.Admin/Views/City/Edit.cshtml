@@ -1,8 +1,11 @@
 ﻿
-@using BookingClone.Application.Features.country.DTOs;
-@model CountryDetailsDto
+
+@using BookingClone.Application.Features.city.DTOs;
+
+@model CityDetailsDto
 @{
     ViewData["Title"] = "Edit";
+    var selectList = (List<SelectListItem>)ViewData["Countries"];
 }
 
 <form method="post" asp-action="Edit">
@@ -21,6 +24,10 @@
                         <input asp-for="Name" class="form-control" type="text" />
                         <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
+                </div>
+                <div class="form-group row py-2">
+                    <select class="form-select" aria-label="Default select example" asp-for="CountryID" asp-items="@selectList"></select>
+
                 </div>
 
                 <div class="form-group row py-2">

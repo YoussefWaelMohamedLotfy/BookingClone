@@ -28,7 +28,7 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
         var cityy = new CityDetailsDto
         {
            Name = request.Name,
-           
+           CountryID=request.CountryID
 
         };
         city.Name = request.Name;

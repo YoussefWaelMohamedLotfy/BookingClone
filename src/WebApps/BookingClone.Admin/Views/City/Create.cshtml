@@ -3,6 +3,8 @@
 @model CityDetailsDto
 @{
     ViewData["Title"] = "Create";
+
+    var selectList =( List<SelectListItem>)ViewData["Countries"];
 }
 
 <form method="post" asp-action="Create" asp-controller="City">
@@ -23,16 +25,11 @@
                 </div>
 
 
-                @*<select asp-for="City" asp-items="Model.Name"></select>*@
+             
 
 
                 <div class="form-group row py-2">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                    </select>
+                    <select class="form-select" aria-label="Default select example" asp-for="CountryID" asp-items="@selectList"></select>
                     
                 </div>
 

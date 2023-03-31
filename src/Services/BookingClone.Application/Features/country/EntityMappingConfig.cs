@@ -18,8 +18,9 @@ internal class EntityMappingConfig : Profile
    
         public EntityMappingConfig()
         {
-            CreateMap<Country, CountryDetailsDto>();
-            CreateMap<Country, CountryMinimalDto>();
+            CreateMap<Country, CountryDetailsDto>().ReverseMap();
+            CreateMap<Country, CountryMinimalDto>().ReverseMap();
+          
 
            CreateMap<PagedList<Country>, PagedList<CountryDetailsDto>>()
           .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));

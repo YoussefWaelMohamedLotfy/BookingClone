@@ -17,8 +17,8 @@ internal class EntityMappingConfig : Profile
     public EntityMappingConfig()
     {
        
-        CreateMap<Cities, CityDetailsDto>();
-        CreateMap<CityMinimalDto, Cities>();
+        CreateMap<Cities, CityDetailsDto>().ReverseMap();
+        CreateMap<CityMinimalDto, Cities>().ReverseMap();
 
 
         CreateMap<PagedList<Cities>, PagedList<CityDetailsDto>>()
