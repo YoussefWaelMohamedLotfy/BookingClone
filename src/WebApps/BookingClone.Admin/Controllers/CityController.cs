@@ -5,6 +5,7 @@ using BookingClone.Application.Features.city.commands.UpdateCity;
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
+using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Data;
 
@@ -37,11 +38,11 @@ public class CityController : Controller
 
     public IActionResult Create()
     {
-        //this.ViewData["items"] = commodities
-        //.GetAll()
-        //.Select(c => new SelectListItem() { Text = c.Code, Value = c.Oid.ToString() })
-        //.ToList();
-         return View(); 
+    //    this.ViewData["items"] =  _mediator.Send(new getallcountryquery2()).Result
+    //    .GetAll()
+    //    .Select(c => new SelectListItem() { Text = c.Code, Value = c.Oid.ToString() })
+    //    .ToList();
+        return View(); 
     }
         
 
