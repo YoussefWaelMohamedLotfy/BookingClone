@@ -1,5 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
+@using BookingClone.Application.Features.city.DTOs;
+@model CityDetailsDto
 @{
+    ViewData["Title"] = "Edit";
 }
+
+
+
+<form method="post" asp-controller="City" asp-action="Edit">
+    <input asp-for="ID" hidden />
+    
+    <label class="fs-4 fw-lighter mb-1">City Name</label>
+    <input type="text" name="Name" class="form-control w-50 " />
+   
+    
+    <div class="form-group row py-2">
+        <div class="col-8 offset-4 row">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-check-circle"></i>
+                    Submit
+                </button>
+                <a asp-action="Details" asp-route-id="@Model.ID" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i>
+                    Back
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+

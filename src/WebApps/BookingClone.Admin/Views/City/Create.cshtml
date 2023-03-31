@@ -1,52 +1,75 @@
-﻿@using BookingClone.Application.Features.city.DTOs;
-@using BookingClone.Domain.Common;
-@using BookingClone.Domain.Entities;
-@model List<CityDetailsDto>
-
+﻿
+@using BookingClone.Application.Features.city.DTOs;
+@model CityDetailsDto
 @{
     ViewData["Title"] = "Create";
 }
 
+<form method="post" asp-action="Create" asp-controller="City">
+    <div class="border p-3 bg-white">
+        <div class="form-group row">
+            <h2 class="text-info ps-3">Create new City</h2>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row py-2">
+                    <div class="col-4">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Name" class="form-control" type="text" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
 
-<div class="row">
-    <div class="col-6">
-        <h2 class="text-primary">Cities List</h2>
+                <div class="form-group row py-2">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    
+                </div>
+
+               
+
+               @* <div class="form-group row py-2">
+                    <div class="col-4">
+                <label asp-for="CountryID"></label>
+                    </div>
+                    <div class="col-8">
+                <input asp-for="CountryID" class="form-control" type="text" />
+                <span asp-validation-for="CountryID" class="text-danger"></span>
+                    </div>
+                </div>
+*@
+               @* <div class="form-group row py-2">
+                    <div class="col-4">
+                        <label asp-for="StarRating"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="StarRating" class="form-control" type="text" />
+                        <span asp-validation-for="StarRating" class="text-danger"></span>
+                    </div>
+                </div>*@
+
+            </div>
+            <div class="form-group row py-2">
+                <div class="col-8 offset-4 row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-success">
+                            <i class="bi bi-check-circle"></i>
+                            Create
+                        </button>
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="bi bi-arrow-left"></i>
+                            Back
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-6 text-end">
-        <a asp-action="Create" class="btn btn-primary">
-            <i class="bi bi-plus"></i>
-            Create New City
-        </a>
-    </div>
-</div>
 
-
-
-<div class="contanier">
-    <table class="table table-striped border">
-        <thead>
-            <tr class="table-secondary">
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody>
-
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td><h5>@item.Name </h5> </td>
-
-                    <td>
-                        <div>
-                            <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">
-                                <i class="bi bi-list"></i>
-                                Details
-                            </a>
-                            <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-info">
-                                <i class="bi bi-pen"></i>
-                                Edit
-                            </a>
-                        </div>
-                    </td>
-                </tr>
-            }
+</form>

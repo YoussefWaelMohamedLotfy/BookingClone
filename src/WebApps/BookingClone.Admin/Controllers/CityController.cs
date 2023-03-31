@@ -5,6 +5,7 @@ using BookingClone.Application.Features.city.commands.UpdateCity;
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
+using BookingClone.Application.Features.continent.queries.GetAllcontinent;
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Data;
@@ -18,14 +19,24 @@ public class CityController : Controller
 {
     private readonly IMediator _mediator;
 
+    
     public CityController(IMediator mediator)
         => _mediator = mediator;
 
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
-        var reservations =  await _mediator.Send(new GetAllCitiesQuery(), ct);
+        var reservations = await _mediator.Send(new getallcitiesquery2() { Query = new(pageNumber, pageSize) }, ct);
         return View(reservations);
     }
+
+
+
+
+    //public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
+    //{
+    //    var reservations = await _mediator.Send(new GetAllCitiesQuery(), ct);
+    //    return View(reservations);
+    //}
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {

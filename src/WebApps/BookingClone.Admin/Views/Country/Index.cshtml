@@ -1,5 +1,53 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
+@using BookingClone.Application.Features.country.DTOs;
+@using BookingClone.Domain.Common;
+@using BookingClone.Domain.Entities;
+@model PagedList<CountryDetailsDto>
+
 @{
+    ViewData["Title"] = "Index";
 }
+
+
+<div class="row">
+    <div class="col-6">
+        <h2 class="text-primary">Countries List</h2>
+    </div>
+    <div class="col-6 text-end">
+        <a asp-action="Create" class="btn btn-primary">
+            <i class="bi bi-plus"></i>
+            Create New Country
+        </a>
+    </div>
+</div>
+
+
+
+<div class="contanier">
+    <table class="table table-striped border">
+        <thead>
+            <tr class="table-secondary">
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model.Data)
+            {
+                <tr>
+                    <td><h5>@item.Name </h5> </td>
+
+                    <td>
+                        <div>
+                            <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">
+                                <i class="bi bi-list"></i>
+                                Details
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-info">
+                                <i class="bi bi-pen"></i>
+                                Edit
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            }
