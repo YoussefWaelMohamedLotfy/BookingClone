@@ -31,6 +31,7 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
 <<<<<<< HEAD
            Name = request.Name,
            CountryID=request.CountryID
+<<<<<<< HEAD
 
         };
         city.Name = request.Name;
@@ -44,6 +45,8 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
            Name = request.Name,
 >>>>>>> api(country_continent_city)
            
+=======
+>>>>>>> select
 
         };
         city.Name = request.Name;

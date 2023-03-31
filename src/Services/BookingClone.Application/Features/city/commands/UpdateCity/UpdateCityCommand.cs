@@ -14,9 +14,13 @@ public class UpdateCityCommand : IRequest<CityDetailsDto>
 {
     public int ID { get; set; }
 <<<<<<< HEAD
+<<<<<<< HEAD
     public int? CountryID { get; set; }
 =======
 >>>>>>> add city and country and continent
+=======
+    public int? CountryID { get; set; }
+>>>>>>> select
     public string? Name { get; set; }
 
 

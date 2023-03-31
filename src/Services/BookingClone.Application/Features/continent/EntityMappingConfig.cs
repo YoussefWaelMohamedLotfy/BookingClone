@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 using AutoMapper;
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Common;
 =======
 using BookingClone.Application.Features.city.DTOs;
+=======
+
+>>>>>>> select
 using BookingClone.Application.Features.continent.DTOs;
 <<<<<<< HEAD
 >>>>>>> salmateest

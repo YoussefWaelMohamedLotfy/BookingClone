@@ -32,6 +32,7 @@ internal class EntityMappingConfig : Profile
         public EntityMappingConfig()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             CreateMap<Country, CountryDetailsDto>().ReverseMap();
             CreateMap<Country, CountryMinimalDto>().ReverseMap();
           
@@ -49,6 +50,11 @@ internal class EntityMappingConfig : Profile
 =======
             CreateMap<Country, CountryDetailsDto>();
             CreateMap<Country, CountryMinimalDto>();
+=======
+            CreateMap<Country, CountryDetailsDto>().ReverseMap();
+            CreateMap<Country, CountryMinimalDto>().ReverseMap();
+          
+>>>>>>> select
 
            CreateMap<PagedList<Country>, PagedList<CountryDetailsDto>>()
           .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));

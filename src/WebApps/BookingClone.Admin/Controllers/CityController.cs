@@ -176,10 +176,10 @@ public class CityController : Controller
 
     public IActionResult Create()
     {
-    //    this.ViewData["items"] =  _mediator.Send(new getallcountryquery2()).Result
-    //    .GetAll()
-    //    .Select(c => new SelectListItem() { Text = c.Code, Value = c.Oid.ToString() })
-    //    .ToList();
+        this.ViewData["Countries"] =  _mediator.Send(new GetAllCountriesQuerywithoutpagination()).Result
+        
+        .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
+       .ToList();
         return View(); 
     }
         
@@ -201,6 +201,10 @@ public class CityController : Controller
 
     public async Task<IActionResult> Edit(int id, CancellationToken ct)
     {
+        this.ViewData["Countries"] = _mediator.Send(new GetAllCountriesQuerywithoutpagination()).Result
+
+       .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
+      .ToList();
         var reservations = await _mediator.Send(new GetCityByIdQuery (id ), ct);
         return View(reservations);
     }
