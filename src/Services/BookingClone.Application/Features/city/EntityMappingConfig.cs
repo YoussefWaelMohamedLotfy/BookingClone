@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using AutoMapper;
 using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.city.DTOs;
+using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+using BookingClone.Domain.Common;
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.city;
@@ -14,10 +16,16 @@ internal class EntityMappingConfig : Profile
 {
     public EntityMappingConfig()
     {
-        CreateMap<Cities, AddcityDto2>();
+       
         CreateMap<Cities, CityDetailsDto>();
         CreateMap<CityMinimalDto, Cities>();
-        CreateMap<updatecityDto2, Cities>();
+
+
+        CreateMap<PagedList<Cities>, PagedList<CityDetailsDto>>()
+            .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
+
+
+        
 
 
 

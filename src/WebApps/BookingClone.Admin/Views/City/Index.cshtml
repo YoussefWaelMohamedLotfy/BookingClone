@@ -24,7 +24,7 @@
 
      
   <div class="contanier">
-<table class="table table-striped border">
+  <table class="table table-striped border">
     <thead>
         <tr class="table-secondary">
             <th>Name</th>   
@@ -35,10 +35,9 @@
     @foreach (var item in Model.Data)
     {
         <tr>
-      <td><h5>@item.Name </h5> </td>
-     
-                    <td>
-                        <div>
+            <td><h5>@item.Name </h5> </td>
+            @*<td>
+                <div>
                             <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">
                                 <i class="bi bi-list"></i>
                                 Details
@@ -47,7 +46,9 @@
                                 <i class="bi bi-pen"></i>
                                 Edit
                             </a>
-                        </div>
-                    </td>
-    </tr>
+                </div>
+            </td>*@
+     
+                   
+        </tr>
 }

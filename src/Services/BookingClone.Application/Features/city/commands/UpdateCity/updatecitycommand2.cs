@@ -10,8 +10,8 @@ using BookingClone.Application.Features.city.DTOs;
 using MediatR;
 
 namespace BookingClone.Application.Features.city.commands.UpdateCity;
-public class updatecitycommand2 : IRequest<updatecityDto2?>
+public class updatecitycommand2 : IRequest<CityDetailsDto?>
 {
-    public required updatecityDto2 Dto { get; set; }
+    public required CityDetailsDto Dto { get; set; }
    
 }
