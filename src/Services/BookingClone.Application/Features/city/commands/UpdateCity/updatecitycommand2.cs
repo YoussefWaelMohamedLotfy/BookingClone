@@ -11,6 +11,7 @@ using MediatR;
 
 namespace BookingClone.Application.Features.city.commands.UpdateCity;
 <<<<<<< HEAD
+<<<<<<< HEAD
 public class updatecitycommand2 : IRequest<CityDetailsDto?>
 {
     public required CityDetailsDto Dto { get; set; }
@@ -19,5 +20,10 @@ public class updatecitycommand2 : IRequest<updatecityDto2?>
 {
     public required updatecityDto2 Dto { get; set; }
 >>>>>>> salmateest
+=======
+public class updatecitycommand2 : IRequest<CityDetailsDto?>
+{
+    public required CityDetailsDto Dto { get; set; }
+>>>>>>> test2
    
 }

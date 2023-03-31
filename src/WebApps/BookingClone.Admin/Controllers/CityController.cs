@@ -45,8 +45,16 @@ public sealed class CityController : Controller
 =======
 =======
 using BookingClone.Application.Features.continent.queries.GetAllcontinent;
+<<<<<<< HEAD
 >>>>>>> test1
+=======
+using BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation;
+using BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation;
+using BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation;
+using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+>>>>>>> test2
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
+using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById;
 using BookingClone.Domain.Entities;
 >>>>>>> salmateest
 using BookingClone.Infrastructure.Data;
@@ -195,7 +203,7 @@ public class CityController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public async Task<IActionResult> Edit(updatecityDto2 request, CancellationToken ct)
+    public async Task<IActionResult> Edit(CityDetailsDto request, CancellationToken ct)
     {
         if (!ModelState.IsValid)
             return View(request);
@@ -203,6 +211,24 @@ public class CityController : Controller
         await _mediator.Send(new updatecitycommand2 { Dto = request }, ct);
         return RedirectToAction(nameof(Details), new { id = request.ID });
     }
+
+    //public async Task<IActionResult> Edit(int id, CancellationToken ct)
+    //{
+    //    var reservations = await _mediator.Send(new GetRoomReservationByIdQuery { ID = id }, ct);
+    //    return View(reservations);
+    //}
+
+    //[HttpPost]
+    //[ValidateAntiForgeryToken]
+    //public async Task<IActionResult> Edit(UpdateRoomReservationDto request, CancellationToken ct)
+    //{
+    //    if (!ModelState.IsValid)
+    //        return View(request);
+
+    //    await _mediator.Send(new UpdateRoomReservationCommand { Dto = request }, ct);
+    //    return RedirectToAction(nameof(Details), new { id = request.ID });
+    //}
+
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -221,63 +247,61 @@ public class CityController : Controller
 >>>>>>> city view
 =======
 
-    //    private readonly IMediator _mediator;
+    //private readonly IMediator _mediator;
 
-    //    public AttractionReservationsController(IMediator mediator)
-    //        => _mediator = mediator;
+    //public RoomReservationsController(IMediator mediator)
+    //    => _mediator = mediator;
 
-    //    public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
-    //    {
-    //        var reservations = await _mediator.Send(new GetAllAttractionReservationsQuery() { Query = new(pageNumber, pageSize) }, ct);
-    //        return View(reservations);
-    //    }
-
-    //    public async Task<IActionResult> Details(int id, CancellationToken ct)
-    //    {
-    //        var reservation = await _mediator.Send(new GetAttractionReservationByIdQuery { ID = id }, ct);
-    //        return View(reservation);
-    //    }
-
-    //    public IActionResult Create()
-    //        => View();
-
-    //    [HttpPost]
-    //    [ValidateAntiForgeryToken]
-    //    public async Task<IActionResult> Create(AddAttractionReservationDto request, CancellationToken ct)
-    //    {
-    //        if (!ModelState.IsValid)
-    //            return View(request);
-
-    //        var newReservation = await _mediator.Send(new AddAttractionReservationCommand { Dto = request }, ct);
-    //        return RedirectToAction(nameof(Details), new { id = newReservation.ID });
-    //    }
-
-    //    public async Task<IActionResult> Edit(int id, CancellationToken ct)
-    //    {
-    //        var reservations = await _mediator.Send(new GetAttractionReservationByIdQuery { ID = id }, ct);
-    //        return View(reservations);
-    //    }
-
-    //    [HttpPost]
-    //    [ValidateAntiForgeryToken]
-    //    public async Task<IActionResult> Edit(UpdateAttractionReservationDto request, CancellationToken ct)
-    //    {
-    //        if (!ModelState.IsValid)
-    //            return View(request);
-
-    //        await _mediator.Send(new UpdateAttractionReservationCommand { Dto = request }, ct);
-    //        return RedirectToAction(nameof(Details), new { id = request.ID });
-    //    }
-
-    //    [HttpPost]
-    //    [ValidateAntiForgeryToken]
-    //    public async Task<IActionResult> Delete(int id, CancellationToken ct)
-    //    {
-    //        await _mediator.Send(new DeleteAttractionReservationCommand { ID = id }, ct);
-    //        return RedirectToAction(nameof(Index));
-    //    }
+    //public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
+    //{
+    //    var reservations = await _mediator.Send(new GetAllRoomReservationsQuery() { Query = new(pageNumber, pageSize) }, ct);
+    //    return View(reservations);
     //}
 
+    //public async Task<IActionResult> Details(int id, CancellationToken ct)
+    //{
+    //    var reservation = await _mediator.Send(new GetRoomReservationByIdQuery { ID = id }, ct);
+    //    return View(reservation);
+    //}
+
+    //public IActionResult Create()
+    //    => View();
+
+    //[HttpPost]
+    //[ValidateAntiForgeryToken]
+    //public async Task<IActionResult> Create(AddRoomReservationDto request, CancellationToken ct)
+    //{
+    //    if (!ModelState.IsValid)
+    //        return View(request);
+
+    //    var newReservation = await _mediator.Send(new AddRoomReservationCommand { Dto = request }, ct);
+    //    return RedirectToAction(nameof(Details), new { id = newReservation.ID });
+    //}
+
+    //public async Task<IActionResult> Edit(int id, CancellationToken ct)
+    //{
+    //    var reservations = await _mediator.Send(new GetRoomReservationByIdQuery { ID = id }, ct);
+    //    return View(reservations);
+    //}
+
+    //[HttpPost]
+    //[ValidateAntiForgeryToken]
+    //public async Task<IActionResult> Edit(UpdateRoomReservationDto request, CancellationToken ct)
+    //{
+    //    if (!ModelState.IsValid)
+    //        return View(request);
+
+    //    await _mediator.Send(new UpdateRoomReservationCommand { Dto = request }, ct);
+    //    return RedirectToAction(nameof(Details), new { id = request.ID });
+    //}
+
+    //[HttpPost]
+    //[ValidateAntiForgeryToken]
+    //public async Task<IActionResult> Delete(int id, CancellationToken ct)
+    //{
+    //    await _mediator.Send(new DeleteRoomReservationCommand { ID = id }, ct);
+    //    return RedirectToAction(nameof(Index));
+    //}
 
 
 

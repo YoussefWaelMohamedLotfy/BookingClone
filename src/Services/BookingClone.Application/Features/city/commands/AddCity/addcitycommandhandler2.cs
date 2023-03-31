@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 using AutoMapper;
 
 using BookingClone.Application.Features.city.DTOs;
+<<<<<<< HEAD
+=======
+using BookingClone.Application.Features.RoomFeatures.Commands.AddRoom;
+using BookingClone.Application.Features.RoomFeatures.DTOs;
+>>>>>>> test2
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
@@ -27,7 +32,11 @@ public class addcitycommandhandler2 : IRequestHandler<addcitycommand2, CityDetai
 
     public async Task<CityDetailsDto> Handle(addcitycommand2 request, CancellationToken cancellationToken)
     {
+<<<<<<< HEAD
         var newCity = _mapper.Map<City>(request.Dto);
+=======
+        var newCity = _mapper.Map<Cities>(request.Dto);
+>>>>>>> test2
         _cityRepository.Add(newCity);
         await _cityRepository.SaveAsync(cancellationToken);
 
