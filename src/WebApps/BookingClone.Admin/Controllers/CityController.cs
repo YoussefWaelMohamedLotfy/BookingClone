@@ -12,6 +12,7 @@ using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -55,6 +56,8 @@ using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
 >>>>>>> test2
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById;
+=======
+>>>>>>> countryview
 using BookingClone.Domain.Entities;
 >>>>>>> salmateest
 using BookingClone.Infrastructure.Data;
@@ -95,14 +98,6 @@ public class CityController : Controller
 >>>>>>> salmateest
     }
 
-
-
-
-    //public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
-    //{
-    //    var reservations = await _mediator.Send(new GetAllCitiesQuery(), ct);
-    //    return View(reservations);
-    //}
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {
@@ -220,23 +215,7 @@ public class CityController : Controller
         return RedirectToAction(nameof(Details), new { id = request.ID });
     }
 
-    //public async Task<IActionResult> Edit(int id, CancellationToken ct)
-    //{
-    //    var reservations = await _mediator.Send(new GetRoomReservationByIdQuery { ID = id }, ct);
-    //    return View(reservations);
-    //}
-
-    //[HttpPost]
-    //[ValidateAntiForgeryToken]
-    //public async Task<IActionResult> Edit(UpdateRoomReservationDto request, CancellationToken ct)
-    //{
-    //    if (!ModelState.IsValid)
-    //        return View(request);
-
-    //    await _mediator.Send(new UpdateRoomReservationCommand { Dto = request }, ct);
-    //    return RedirectToAction(nameof(Details), new { id = request.ID });
-    //}
-
+    
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -247,6 +226,7 @@ public class CityController : Controller
     }
 
 
+<<<<<<< HEAD
 
 
 
@@ -380,4 +360,6 @@ public class CityController : Controller
 
 
 >>>>>>> salmateest
+=======
+>>>>>>> countryview
 }

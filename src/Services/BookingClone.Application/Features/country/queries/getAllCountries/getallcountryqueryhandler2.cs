@@ -5,10 +5,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
+<<<<<<< HEAD
+=======
+using BookingClone.Application.Features.city.DTOs;
+using BookingClone.Application.Features.city.queries.GetAllCities;
+>>>>>>> countryview
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
+<<<<<<< HEAD
+=======
+using BookingClone.Infrastructure.Repositories;
+>>>>>>> countryview
 
 using MediatR;
 

@@ -10,6 +10,7 @@ using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Application.Features.country.queries.GitCountryById;
 <<<<<<< HEAD
+<<<<<<< HEAD
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,8 @@ public sealed class CountryController : Controller
 =======
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Data;
+=======
+>>>>>>> countryview
 
 using MediatR;
 
@@ -112,6 +115,7 @@ public class CountryController : Controller
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 
@@ -179,5 +183,8 @@ public class CountryController : Controller
 
 
 >>>>>>> salmateest
+=======
+   
+>>>>>>> countryview
 
 }
