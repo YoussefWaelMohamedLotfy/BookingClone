@@ -5,8 +5,6 @@ using BookingClone.Application.Features.country.commands.UpdateCountry;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Application.Features.country.queries.GitCountryById;
-using BookingClone.Domain.Entities;
-using BookingClone.Infrastructure.Data;
 
 using MediatR;
 
@@ -76,69 +74,6 @@ public class CountryController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-
-
-
-
-    //BookingDbContext context = new BookingDbContext();
-    ////public IActionResult Index()
-    ////{
-    ////    return View();
-    ////}
-
-
-    //public IActionResult Get_Country()
-    //{
-
-    //    var Country = context.Countries;
-    //    ViewBag.countries = Country;
-    //    return View();
-    //}
-
-    //public IActionResult Create()
-    //{
-
-    //    return View();
-    //}
-
-    //[HttpPost]
-    //public IActionResult Create(Country country)
-    //{
-
-    //    context.Add(country);
-    //    context.SaveChanges();
-    //    return View();
-    //}
-
-    //public IActionResult Edit()
-    //{
-    //    return View();
-    //}
-
-    //[HttpPost]
-    //public IActionResult Edit(Country country)
-    //{
-    //    context.Update(country);
-    //    context.SaveChanges();
-    //    return View();
-    //}
-
-
-    //public IActionResult Delete()
-    //{
-    //    return View();
-    //}
-
-    //[HttpPost]
-    //public IActionResult Delete(long id)
-    //{
-    //    var Deleted = context.Countries.Find(id);
-    //    context.Countries.Remove(Deleted);
-    //    context.SaveChanges();
-    //    return View();
-    //}
-
-
-
+   
 
 }
