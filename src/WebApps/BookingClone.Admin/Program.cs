@@ -1,3 +1,4 @@
+using BookingClone.Application;
 using BookingClone.Serilog;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Serilog;
@@ -14,6 +15,8 @@ builder.WebHost.ConfigureKestrel(options =>
 builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
+builder.Services.AddApplicationServices(builder.Configuration);
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
