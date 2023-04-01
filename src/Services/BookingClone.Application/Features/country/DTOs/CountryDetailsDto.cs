@@ -11,6 +11,7 @@ public class CountryDetailsDto
 {
 
     public int ID { get; set; }
+    public int? ContinentID { get; set; }
     public string Name { get; set; }
 
     

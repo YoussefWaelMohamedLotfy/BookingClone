@@ -3,10 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using BookingClone.Application.Features.city.DTOs;
-using BookingClone.Application.Features.city.queries.GetAllCities;
-using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
@@ -28,8 +24,6 @@ public class GetAllCountriesQueryHandlar : IRequestHandler<GetAllCountriesQuery,
     
     public async Task<IEnumerable<CountryMinimalDto>> Handle(GetAllCountriesQuery request, CancellationToken cancellationToken)
     {
-        //return (await _countryRepository.GetAll()) /*calling */
-        //.Select(a => new CountryMinimalDto { Name = a.Name });  /*Mapping*/
         var Country = _countryRepository.GetAll().Result;
         var CountryDto = Country.Select(a => new CountryMinimalDto { Name = a.Name });
         return (CountryDto);

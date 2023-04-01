@@ -15,10 +15,11 @@ public class UpdateCountryCommmand : IRequest<CountryDetailsDto>
     
         public int ID { get; set; }
         public string? Name { get; set; }
+        public int? ContinentID { get; set; }
 
 
 
 
-    
+
 
 }

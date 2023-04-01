@@ -32,7 +32,11 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
 
         
 
-        var con =new CountryDetailsDto { Name = request.Name };
+        var con =new CountryDetailsDto {
+            Name = request.Name,
+           ContinentID =request.ContinentID
+        };
+
         country.Name = request.Name;
 
         _countryRepository.Update(country);

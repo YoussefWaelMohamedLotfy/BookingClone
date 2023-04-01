@@ -1,4 +1,6 @@
 ﻿
+using BookingClone.Application.Features.city.queries.GetCityById;
+using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
 using BookingClone.Application.Features.country.commands.AddCountry;
 using BookingClone.Application.Features.country.commands.DeleteCountry;
 using BookingClone.Application.Features.country.commands.UpdateCountry;
@@ -9,6 +11,7 @@ using BookingClone.Application.Features.country.queries.GitCountryById;
 using MediatR;
 
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookingClone.Admin.Controllers;
 public class CountryController : Controller
@@ -31,7 +34,14 @@ public class CountryController : Controller
     }
 
     public IActionResult Create()
-        => View();
+    {
+        this.ViewData["Continents"] = _mediator.Send(new GetAllContinentsQuerywithoutpagination()).Result
+
+       .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
+      .ToList();
+        return View();
+    }
+       
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -48,6 +58,11 @@ public class CountryController : Controller
 
     public async Task<IActionResult> Edit(int id, CancellationToken ct)
     {
+        this.ViewData["Continents"] = _mediator.Send(new GetAllContinentsQuerywithoutpagination()).Result
+
+      .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
+      .ToList();
+
         var reservations = await _mediator.Send(new GetCountryByIdQuery(id), ct);
         return View(reservations);
     }
