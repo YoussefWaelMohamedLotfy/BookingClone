@@ -9,11 +9,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookingClone.Admin.Controllers;
 
-public class HotelController : Controller
+public sealed class HotelsController : Controller
 {
     private readonly IMediator _mediator;
 
-    public HotelController(IMediator mediator)
+    public HotelsController(IMediator mediator)
        => _mediator = mediator;
 
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)

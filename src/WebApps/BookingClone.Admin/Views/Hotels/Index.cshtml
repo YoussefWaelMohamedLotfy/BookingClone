@@ -2,11 +2,20 @@
 @using BookingClone.Domain.Common;
 @using BookingClone.Domain.Entities;
 @model PagedList<GetHotelsDto>
-
 @{
     ViewData["Title"] = "Index";
-}
 
+    string SetBadgeColor(decimal rating)
+    {
+        return rating switch
+        {
+            decimal i when i >= 4 => "bg-success",
+            decimal i when i >= 2 && i < 4 => "bg-warning",
+            decimal i when i < 2 => "bg-danger",
+            _ => string.Empty
+        };
+    }
+}
 
 <div class="row">
     <div class="col-6">
@@ -19,19 +28,14 @@
         </a>
     </div>
 </div>
-
-
-@* <h3>Hotels List</h3>*@
-<div class="container">
+<div class="p-1 border rounded">
     <table class="table table-striped border">
         <thead>
             <tr class="table-secondary">
                 <th>Name</th>
-                <th>StarRating</th>
-                @* <th> Reviews</th>*@
+                <th>Star Rating</th>
                 <th>Description</th>
                 <th>Actions</th>
-
             </tr>
         </thead>
         <tbody>
@@ -39,11 +43,11 @@
             @foreach (var item in Model.Data)
             {
                 <tr>
-                    <td><h5>@item.Name </h5> </td>
-                    <td><h5>@item.StarRating </h5> </td>
-                    @* <td> <h5>@item.Rooms </h5> </td>
-                <td> <h5>@item.Reviews </h5> </td>*@
-                    <td> <h5>@item.Description </h5></td>
+                    <td>@item.Name</td>
+                    <td>
+                        <span class="badge @SetBadgeColor(@item.StarRating)">@item.StarRating</span>
+                    </td>
+                    <td>@item.Description</td>
                     <td>
                         <div>
                             <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary">
@@ -57,10 +61,7 @@
                         </div>
                     </td>
                 </tr>
-
             }
-
-
         </tbody>
     </table>
 </div>
