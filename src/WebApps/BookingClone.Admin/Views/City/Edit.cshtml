@@ -58,7 +58,7 @@
     <input asp-for="ID" hidden />
     <div class="border p-3 bg-white">
         <div class="form-group row">
-            <h2 class="text-info ps-3">Edit Country for ID @Model.ID</h2>
+            <h2 class="text-info ps-3">Edit City for ID @Model.ID</h2>
         </div>
         <div class="row">
             <div class="col-8">
@@ -72,8 +72,12 @@
                     </div>
                 </div>
                 <div class="form-group row py-2">
-                    <select class="form-select" aria-label="Default select example" asp-for="CountryID" asp-items="@selectList"></select>
-
+                    <div class="col-4">
+                        <label>Select Country</label>
+                    </div>
+                    <div class="col-8">
+                        <select class="form-select" aria-label="Default select example" asp-for="CountryID" asp-items="@selectList"></select>
+                    </div>
                 </div>
 
                 <div class="form-group row py-2">
