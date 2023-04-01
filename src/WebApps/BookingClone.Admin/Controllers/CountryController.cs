@@ -1,5 +1,4 @@
 ﻿
-using BookingClone.Application.Features.city.queries.GetCityById;
 using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
 using BookingClone.Application.Features.country.commands.AddCountry;
 using BookingClone.Application.Features.country.commands.DeleteCountry;

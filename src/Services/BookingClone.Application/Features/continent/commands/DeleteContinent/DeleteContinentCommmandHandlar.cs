@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using BookingClone.Application.Features.city.commands.DeleteCity;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
 

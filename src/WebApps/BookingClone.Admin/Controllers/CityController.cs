@@ -6,8 +6,6 @@ using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
-using BookingClone.Domain.Entities;
-using BookingClone.Infrastructure.Data;
 
 using MediatR;
 

@@ -5,8 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
-using BookingClone.Application.Features.city.commands.UpdateCity;
-using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;

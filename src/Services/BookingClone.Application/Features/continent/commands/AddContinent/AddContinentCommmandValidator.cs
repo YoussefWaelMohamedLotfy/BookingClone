@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using BookingClone.Application.Features.city.commands.AddCity;
 using FluentValidation;
 
 namespace BookingClone.Application.Features.continent.commands.AddContinent;

@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using BookingClone.Application.Features.continent.commands.UpdateContinent;
-using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
-using BookingClone.Domain.Entities;
-using BookingClone.Infrastructure.Repositories;
+
 
 using MediatR;
 

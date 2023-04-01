@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 using AutoMapper;
 
 using BookingClone.Application.Features.city.DTOs;
-using BookingClone.Application.Features.RoomFeatures.Commands.AddRoom;
-using BookingClone.Application.Features.RoomFeatures.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;

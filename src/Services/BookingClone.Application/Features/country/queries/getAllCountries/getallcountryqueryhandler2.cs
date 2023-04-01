@@ -5,13 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
-using BookingClone.Application.Features.city.DTOs;
-using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
-using BookingClone.Infrastructure.Repositories;
 
 using MediatR;
 

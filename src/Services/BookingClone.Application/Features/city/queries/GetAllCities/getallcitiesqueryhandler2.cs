@@ -9,7 +9,6 @@ using AutoMapper;
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
-using BookingClone.Infrastructure.Repositories;
 
 using MediatR;
 
