@@ -9,13 +9,36 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
-    <PackageReference Include="Azure.Storage.Blobs" Version="12.15.0" />
-    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Azure.Storage.Blobs" Version="12.15.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
     <PackageReference Include="MediatR" Version="12.0.1" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BookingClone.Infrastructure\BookingClone.Infrastructure.csproj" />
+    <ProjectReference Include="..\BookingClone.Domain\BookingClone.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Features\HotelReviewFeatures\" />
+    <None Remove="Features\HotelReviewFeatures\Commands\" />
+    <None Remove="Features\HotelReviewFeatures\Queries\" />
+    <None Remove="Features\HotelReviewFeatures\DTOs\" />
+    <None Remove="Features\HotelReviewFeatures\Commands\AddHotelReview\" />
+    <None Remove="Features\HotelReviewFeatures\Commands\DeleteHotelReview\" />
+    <None Remove="Features\HotelReviewFeatures\Commands\UpdateHotelReview\" />
+    <None Remove="Features\HotelReviewFeatures\Queries\GetHotelReviewById\" />
+    <None Remove="Features\HotelReviewFeatures %28copy%29\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\HotelReviewFeatures\" />
+    <Folder Include="Features\HotelReviewFeatures\Commands\" />
+    <Folder Include="Features\HotelReviewFeatures\Queries\" />
+    <Folder Include="Features\HotelReviewFeatures\DTOs\" />
+    <Folder Include="Features\HotelReviewFeatures\Commands\AddHotelReview\" />
+    <Folder Include="Features\HotelReviewFeatures\Commands\DeleteHotelReview\" />
+    <Folder Include="Features\HotelReviewFeatures\Commands\UpdateHotelReview\" />
+    <Folder Include="Features\HotelReviewFeatures\Queries\GetHotelReviewById\" />
+    <Folder Include="Features\HotelReviewFeatures %28copy%29\" />
+  </ItemGroup>
 </Project>
