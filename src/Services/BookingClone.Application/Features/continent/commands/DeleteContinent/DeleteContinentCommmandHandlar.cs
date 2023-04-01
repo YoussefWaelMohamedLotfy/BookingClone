@@ -5,9 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 using BookingClone.Application.Features.city.commands.DeleteCity;
 >>>>>>> add city and country and continent
+=======
+>>>>>>> country,continent,city
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
 
