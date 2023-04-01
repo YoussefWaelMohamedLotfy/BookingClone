@@ -20,17 +20,25 @@ public class UpdateCountryCommmand : IRequest<CountryDetailsDto>
         public int ID { get; set; }
         public string? Name { get; set; }
 <<<<<<< HEAD
+<<<<<<< HEAD
         public int? ContinentID { get; set; }
 
 =======
 >>>>>>> add city and country and continent
+=======
+        public int? ContinentID { get; set; }
+
+>>>>>>> almostdone
 
 
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     
 >>>>>>> add city and country and continent
+=======
+>>>>>>> almostdone
 
 }

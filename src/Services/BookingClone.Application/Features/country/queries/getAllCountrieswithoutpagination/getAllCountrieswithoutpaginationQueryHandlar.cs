@@ -34,10 +34,13 @@ public class getAllCountrieswithoutpaginationQueryHandlar : IRequestHandler<GetA
     public async Task<IEnumerable<CountryDetailsDto>> Handle(GetAllCountriesQuerywithoutpagination request, CancellationToken cancellationToken)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         //return (await _countryRepository.GetAll()) /*calling */
         //.Select(a => new CountryMinimalDto { Name = a.Name });  /*Mapping*/
 >>>>>>> select
+=======
+>>>>>>> almostdone
         var Country = _countryRepository.GetAll().Result;
         var CountryDto = Country.Select(a => new CountryDetailsDto { Name = a.Name,ID=a.ID });
         return (CountryDto);
