@@ -1,29 +1,26 @@
 ﻿@using BookingClone.Application.Features.RoomFeatures.DTOs;
 @using BookingClone.Domain.Common;
 @using BookingClone.Domain.Enums;
-
 @model GetRoomDto
 @{
     ViewData["Title"] = "Edit";
 
 }
 
-
 <form method="post" asp-action="Edit">
     <input asp-for="ID" hidden />
     <div class="border p-3 bg-white">
         <div class="form-group row">
-            <h2 class="text-info ps-3">Edit Room  for ID @Model.ID</h2>
+            <h2 class="text-info ps-3">Edit Room for ID @Model.ID</h2>
         </div>
         <div class="row">
             <div class="col-8">
-
                 <div class="form-group row py-2">
                     <div class="col-4">
                         <label asp-for="RoomNumber"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="RoomNumber" class="form-control"  />
+                        <input asp-for="RoomNumber" class="form-control" />
                         <span asp-validation-for="RoomNumber" class="text-danger"></span>
                     </div>
                 </div>
@@ -41,7 +38,7 @@
                         <label asp-for="Price"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="Price" class="form-control"  />
+                        <input asp-for="Price" class="form-control" />
                         <span asp-validation-for="Price" class="text-danger"></span>
                     </div>
                 </div>
@@ -50,7 +47,7 @@
                         <label asp-for="Description"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="Description" class="form-control"  />
+                        <input asp-for="Description" class="form-control" />
                         <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
                 </div>
@@ -68,12 +65,13 @@
                         <label asp-for="IsAvailable"></label>
                     </div>
                     <div class="col-8">
-                        <span asp-for="IsAvailable" class="form-control">@(Model.IsAvailable ) </span>
-
-                        <span asp-validation-for="IsAvailable" class="text-danger"></span>
+                        <div class="form-check">
+                            <input asp-for="IsAvailable" class="form-check-input">
+                            <span asp-validation-for="IsAvailable" class="text-danger"></span>
+                        </div>
                     </div>
                 </div>
-                  <div class="form-group row py-2">
+                <div class="form-group row py-2">
                     <div class="col-4">
                         <label asp-for="HotelId"></label>
                     </div>

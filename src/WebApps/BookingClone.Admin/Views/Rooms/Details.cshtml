@@ -6,7 +6,6 @@
 @{
     ViewData["Title"] = "Index";
 
-
     string SetBadgeColor(RoomViewType view)
     {
         return view switch
@@ -28,6 +27,14 @@
         <div class="col-8">
             <div class="form-group row py-2">
                 <div class="col-4">
+                    <label asp-for="RoomNumber"></label>
+                </div>
+                <div class="col-8">
+                    <input asp-for="RoomNumber" class="form-control" disabled/>
+                </div>
+            </div>
+            <div class="form-group row py-2">
+                <div class="col-4">
                     <label asp-for="ViewType"></label>
                 </div>
                 <div class="col-8">
@@ -47,7 +54,7 @@
                     <label asp-for="BedCount"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="BedCount" class="form-control"  disabled />
+                    <input asp-for="BedCount" class="form-control" disabled />
                 </div>
             </div>
             <div class="form-group row py-2">
@@ -55,16 +62,17 @@
                     <label asp-for="Description"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="Description" class="form-control" disabled  />
+                    <textarea asp-for="Description" class="form-control" disabled></textarea>
                 </div>
             </div>
-
-              <div class="form-group row py-2">
+            <div class="form-group row py-2">
                 <div class="col-4">
                     <label asp-for="IsAvailable"></label>
                 </div>
                 <div class="col-8">
-                    <span asp-for="IsAvailable" class="form-control" disabled> @(Model.IsAvailable?"Yes":"No")</span>
+                    <div class="form-check">
+                        <input asp-for="IsAvailable" class="form-check-input" disabled>
+                    </div>
                 </div>
             </div>
             <div class="form-group row py-2">
