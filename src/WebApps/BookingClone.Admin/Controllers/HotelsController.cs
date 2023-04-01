@@ -5,10 +5,11 @@ using BookingClone.Application.Features.HotelFeatures.Queries.GetAll;
 using BookingClone.Application.Features.HotelFeatures.Queries.GetById;
 using BookingClone.Application.Features.HotelFeatures.UpdateHotel;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-
 namespace BookingClone.Admin.Controllers;
 
+[Authorize]
 public sealed class HotelsController : Controller
 {
     private readonly IMediator _mediator;
