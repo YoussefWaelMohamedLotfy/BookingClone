@@ -16,6 +16,9 @@
 # Development settings
 appsettings.Development.json
 
+# SQLite files
+*.db*
+
 # Mono auto generated files
 mono_crash.*
 
