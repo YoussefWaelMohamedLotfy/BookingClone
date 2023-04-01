@@ -4,19 +4,16 @@ using BookingClone.Application.Features.RoomFeatures.Commands.UpdateRoom;
 using BookingClone.Application.Features.RoomFeatures.DTOs;
 using BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms;
 using BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById;
-
-
 using MediatR;
-
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingClone.Admin.Controllers;
-public class RoomController : Controller
-{
 
+public sealed class RoomsController : Controller
+{
     private readonly IMediator _mediator;
 
-    public RoomController(IMediator mediator)
+    public RoomsController(IMediator mediator)
         => _mediator = mediator;
 
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
@@ -24,7 +21,6 @@ public class RoomController : Controller
         var room = await _mediator.Send(new GetAllRoomsQuery() { Query = new(pageNumber, pageSize) }, ct);
         return View(room);
     }
-
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {
@@ -70,7 +66,4 @@ public class RoomController : Controller
         await _mediator.Send(new DeleteRoomCommand { ID = id }, ct);
         return RedirectToAction(nameof(Index));
     }
-
-
-
 }

@@ -1,12 +1,12 @@
 ﻿@using BookingClone.Application.Features.RoomFeatures.DTOs;
 @using BookingClone.Domain.Common;
 @using BookingClone.Domain.Enums;
-
 @model PagedList<GetRoomDto>
-@{ ViewData["Title"] = "Index";
+@{
+    ViewData["Title"] = "Index";
 
 
-   string SetBadgeColor(RoomViewType view)
+    string SetBadgeColor(RoomViewType view)
     {
         return view switch
         {
@@ -26,7 +26,7 @@
     <div class="col-6 text-end">
         <a asp-action="Create" class="btn btn-primary">
             <i class="bi bi-plus"></i>
-            Create New Room 
+            Create New Room
         </a>
     </div>
 </div>
@@ -39,9 +39,8 @@
                     <th>ID</th>
                     <th>ViewType</th>
                     <th>Total Price</th>
-                   @* <th>Hotel ID</th>*@
-                    <th>BedCount</th>
-                    <th>IsAvailable</th>
+                    <th>Bed Count</th>
+                    <th>Available?</th>
                     <th>Description</th>
                     <th>Actions</th>
                 </tr>
@@ -63,12 +62,11 @@
                             @item.BedCount
                         </td>
                         <td>
-                            @item.IsAvailable
+                            <i class="bi @(item.IsAvailable ? "bi-check-lg" : "bi-x") fs-4"></i>
                         </td>
                         <td>
                             @item.Description
                         </td>
-
                         <td>
                             <div>
                                 <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">
@@ -110,4 +108,4 @@
     {
         <p>No Data Available</p>
     }
-        </div>
+</div>
