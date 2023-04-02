@@ -5,10 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 using BookingClone.Application.Features.city.DTOs;
 >>>>>>> salmateest
+=======
+
+>>>>>>> DeleteComments
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Common;
 using MediatR;

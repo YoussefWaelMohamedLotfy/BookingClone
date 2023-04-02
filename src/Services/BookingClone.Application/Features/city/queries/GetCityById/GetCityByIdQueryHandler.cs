@@ -12,6 +12,7 @@ using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttraction
 using BookingClone.Application.Features.city.DTOs;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 using BookingClone.Domain.Contracts;
 
@@ -22,8 +23,11 @@ using BookingClone.Domain.Contracts;
 =======
 using BookingClone.Application.Features.RoomFeatures.DTOs;
 using BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById;
+=======
+
+>>>>>>> DeleteComments
 using BookingClone.Domain.Contracts;
-using BookingClone.Infrastructure.Repositories;
+
 
 >>>>>>> test2
 using MediatR;

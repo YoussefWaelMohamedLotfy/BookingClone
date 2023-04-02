@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 <<<<<<< HEAD
 using AutoMapper;
 
+<<<<<<< HEAD
 
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
@@ -26,6 +27,12 @@ using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
 >>>>>>> salmateest
+=======
+
+using BookingClone.Application.Features.country.DTOs;
+using BookingClone.Domain.Contracts;
+
+>>>>>>> DeleteComments
 
 using MediatR;
 

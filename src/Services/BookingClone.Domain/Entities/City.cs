@@ -37,6 +37,7 @@ public sealed class Cities : BaseEntity<int>
 =======
     public List<CityHotel>? CityHotels { get; set; }
 
+<<<<<<< HEAD
     //public City(string name, City country, List<Attraction>? attractions, List<CityHotel>? cityHotels)
     //{
     //    Name = name;
@@ -45,4 +46,7 @@ public sealed class Cities : BaseEntity<int>
     //    CityHotels = cityHotels;
     //}
 >>>>>>> add city and country and continent
+=======
+   
+>>>>>>> DeleteComments
 }
