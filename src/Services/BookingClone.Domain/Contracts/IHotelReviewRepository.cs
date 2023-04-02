@@ -1,8 +1,11 @@
 ﻿using System;
-namespace BookingClone.Domain.Contracts
+using BookingClone.Domain.Entities;
+
+namespace BookingClone.Domain.Contracts;
+
+public interface IHotelReviewRepository : IGenericRepository<HotelReview, int>
 {
-    public interface HotelReviewRepository
-    {
-    }
+    Task<List<HotelReview>> GetAll(CancellationToken ct = default);
+    
 }
 

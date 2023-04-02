@@ -1,11 +1,10 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview
+using MediatR;
+
+namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview;
+
+public sealed class DeleteHotelReviewCommand : IRequest<int>
 {
-    public class DeleteHotelReviewCommand
-    {
-        public DeleteHotelReviewCommand()
-        {
-        }
-    }
+    public required int ID { get; set; }
 }
 

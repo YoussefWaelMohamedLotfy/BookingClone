@@ -1,9 +1,9 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById
+namespace BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttractionReviewById
 {
-    public class GetHotelReviewByIdQuery
+    public class GetAttractionReviewByIdQuery
     {
-        public GetHotelReviewByIdQuery()
+        public GetAttractionReviewByIdQuery()
         {
         }
     }

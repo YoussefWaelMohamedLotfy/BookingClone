@@ -1,9 +1,9 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview
+namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview
 {
-    public class UpdateHotelReviewCommand
+    public class UpdateAttractionReviewCommand
     {
-        public UpdateHotelReviewCommand()
+        public UpdateAttractionReviewCommand()
         {
         }
     }

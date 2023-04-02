@@ -1,11 +1,14 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview
+
+using FluentValidation;
+
+namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview;
+
+internal sealed class UpdateHotelReviewCommandValidator :AbstractValidator<UpdateHotelReviewCommand>
 {
-    public class UpdateHotelReviewCommandValidator
+    public UpdateHotelReviewCommandValidator()
     {
-        public UpdateHotelReviewCommandValidator()
-        {
-        }
+
     }
 }
 

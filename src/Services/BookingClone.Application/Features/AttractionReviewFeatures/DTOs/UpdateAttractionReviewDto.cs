@@ -1,9 +1,9 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.DTOs
+namespace BookingClone.Application.Features.AttractionReviewFeatures.DTOs
 {
-    public class UpdateHotelReviewDto
+    public class UpdateAttractionReviewDto
     {
-        public UpdateHotelReviewDto()
+        public UpdateAttractionReviewDto()
         {
         }
     }

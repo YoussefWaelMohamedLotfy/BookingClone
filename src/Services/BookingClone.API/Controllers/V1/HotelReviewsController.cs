@@ -24,7 +24,7 @@ public class HotelReviewsController : Controller
         => _mediator = mediator;
 
     [HttpGet("{id}", Name = "Get_[controller]")]
-    public async Task<IActionResult> GetReviewById(int id, CancellationToken ct)
+    public async Task<IActionResult> GetHotelReviewById(int id, CancellationToken ct)
     {
         var result = await _mediator.Send(new GetAttractionReservationByIdQuery { ID = id }, ct);
         return result is null ? NotFound() : Ok(result);
@@ -32,13 +32,27 @@ public class HotelReviewsController : Controller
 
 
     [HttpPost]
-    public async Task<IActionResult> AddNewReservation(AddAttractionReservationDto request, CancellationToken ct)
+    public async Task<IActionResult> AddNewHotelReview(AddAttractionReservationDto request, CancellationToken ct)
     {
         var result = await _mediator.Send(new AddAttractionReservationCommand { Dto = request }, ct);
         return CreatedAtRoute("Get_AttractionReservations", new { id = result.ID }, result);
     }
 
 
+    [HttpPut]
+    public async Task<IActionResult> UpdateExistingHotelReview(UpdateAttractionReservationDto request, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new UpdateAttractionReservationCommand { Dto = request }, ct);
+        return result is not null ? Ok(result) : NotFound();
+    }
+
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> DeleteHotelReviewById(int id, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new DeleteAttractionReservationCommand { ID = id }, ct);
+        return result <= 0 ? NotFound() : NoContent();
+    }
 
 }
 
