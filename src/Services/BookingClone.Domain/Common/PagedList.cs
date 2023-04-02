@@ -5,7 +5,7 @@ public sealed class PagedList<T>
     public List<T> Data { get; set; }
 
     public PagedList()
-    {    
+    {
     }
 
     public PagedList(IEnumerable<T> items, int count, int pageNumber, int pageSize)

@@ -1,11 +1,12 @@
 ﻿using System;
-namespace BookingClone.Application.Features.AttractionReviewFeatures.DTOs
+using BookingClone.Domain.Entities;
+
+namespace BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
+
+public class AddAttractionReviewDto
 {
-    public class AddAttractionReviewDto
-    {
-        public AddAttractionReviewDto()
-        {
-        }
-    }
+    public string Comment { get; set; }
+
+    public Attraction Attraction { get; set; }
 }
 

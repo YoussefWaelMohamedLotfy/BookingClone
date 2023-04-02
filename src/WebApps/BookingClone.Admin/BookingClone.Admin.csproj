@@ -6,7 +6,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.4" />
@@ -24,4 +23,12 @@
     <ProjectReference Include="..\..\Services\BookingClone.Application\BookingClone.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\HotelReviews\" />
+    <None Remove="Views\AttractionReviews\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\HotelReviews\" />
+    <Folder Include="Views\AttractionReviews\" />
+  </ItemGroup>
 </Project>

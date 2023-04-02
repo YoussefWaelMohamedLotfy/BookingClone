@@ -1,9 +1,6 @@
 ﻿using System;
 using AutoMapper;
-using BookingClone.Application.Features.AttractionFeatures.DTOs;
-using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
 using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
-using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
 
