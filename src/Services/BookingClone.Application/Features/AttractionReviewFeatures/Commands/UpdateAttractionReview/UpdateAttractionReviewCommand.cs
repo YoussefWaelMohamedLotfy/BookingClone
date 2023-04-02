@@ -1,11 +1,13 @@
 ﻿using System;
-namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview
+
+using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
+
+using MediatR;
+
+namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview;
+
+public sealed class UpdateAttractionReviewCommand : IRequest<GetAttractionReviewDto?>
 {
-    public class UpdateAttractionReviewCommand
-    {
-        public UpdateAttractionReviewCommand()
-        {
-        }
-    }
+    public required UpdateAttractionReviewDto Dto { get; set; }
 }
 

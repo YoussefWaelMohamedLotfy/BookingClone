@@ -17,6 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BookingClone.Infrastructure\BookingClone.Infrastructure.csproj" />
     <ProjectReference Include="..\BookingClone.Domain\BookingClone.Domain.csproj" />
+    <ProjectReference Include="..\BookingClone.Domain\BookingClone.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,7 +29,8 @@
     <None Remove="Features\HotelReviewFeatures\Commands\DeleteHotelReview\" />
     <None Remove="Features\HotelReviewFeatures\Commands\UpdateHotelReview\" />
     <None Remove="Features\HotelReviewFeatures\Queries\GetHotelReviewById\" />
-    <None Remove="Features\HotelReviewFeatures %28copy%29\" />
+    <None Remove="Features\HotelReviewFeatures\Queries\GetAllHotelReviews\" />
+    <None Remove="Features\AttractionReviewFeatures\Queries\GetAllAttractionReviews\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Features\HotelReviewFeatures\" />
@@ -39,6 +41,7 @@
     <Folder Include="Features\HotelReviewFeatures\Commands\DeleteHotelReview\" />
     <Folder Include="Features\HotelReviewFeatures\Commands\UpdateHotelReview\" />
     <Folder Include="Features\HotelReviewFeatures\Queries\GetHotelReviewById\" />
-    <Folder Include="Features\HotelReviewFeatures %28copy%29\" />
+    <Folder Include="Features\HotelReviewFeatures\Queries\GetAllHotelReviews\" />
+    <Folder Include="Features\AttractionReviewFeatures\Queries\GetAllAttractionReviews\" />
   </ItemGroup>
 </Project>

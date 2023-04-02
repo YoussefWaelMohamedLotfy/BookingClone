@@ -1,8 +1,8 @@
-﻿using BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation;
-using BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation;
-using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
-using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
-using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
+﻿using BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview;
+using BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview;
+using BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview;
+using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
+using BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById;
 
 using MediatR;
 
@@ -26,23 +26,23 @@ public class HotelReviewsController : Controller
     [HttpGet("{id}", Name = "Get_[controller]")]
     public async Task<IActionResult> GetHotelReviewById(int id, CancellationToken ct)
     {
-        var result = await _mediator.Send(new GetAttractionReservationByIdQuery { ID = id }, ct);
+        var result = await _mediator.Send(new GetHotelReviewByIdQuery { ID = id }, ct);
         return result is null ? NotFound() : Ok(result);
     }
 
 
     [HttpPost]
-    public async Task<IActionResult> AddNewHotelReview(AddAttractionReservationDto request, CancellationToken ct)
+    public async Task<IActionResult> AddNewHotelReview(AddHotelReviewDto request, CancellationToken ct)
     {
-        var result = await _mediator.Send(new AddAttractionReservationCommand { Dto = request }, ct);
-        return CreatedAtRoute("Get_AttractionReservations", new { id = result.ID }, result);
+        var result = await _mediator.Send(new AddHotelReviewCommand { Dto = request }, ct);
+        return CreatedAtRoute("Get_HotelReview", new { id = result.ID }, result);
     }
 
 
     [HttpPut]
-    public async Task<IActionResult> UpdateExistingHotelReview(UpdateAttractionReservationDto request, CancellationToken ct)
+    public async Task<IActionResult> UpdateExistingHotelReview(UpdateHotelReviewDto request, CancellationToken ct)
     {
-        var result = await _mediator.Send(new UpdateAttractionReservationCommand { Dto = request }, ct);
+        var result = await _mediator.Send(new UpdateHotelReviewCommand { Dto = request }, ct);
         return result is not null ? Ok(result) : NotFound();
     }
 
@@ -50,7 +50,7 @@ public class HotelReviewsController : Controller
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteHotelReviewById(int id, CancellationToken ct)
     {
-        var result = await _mediator.Send(new DeleteAttractionReservationCommand { ID = id }, ct);
+        var result = await _mediator.Send(new DeleteHotelReviewCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
     }
 

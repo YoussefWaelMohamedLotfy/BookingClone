@@ -1,6 +1,4 @@
 ﻿using System;
-
-using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
 
 using MediatR;

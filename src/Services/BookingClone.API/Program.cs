@@ -1,19 +1,24 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
+
 using Asp.Versioning;
+
 using BookingClone.API.Authentication;
 using BookingClone.API.Extensions;
 using BookingClone.API.OpenApi;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
+
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+
 using Serilog;
+
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,12 +34,7 @@ builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
 
-builder.Services.AddDbContext<BookingDbContext>(o =>
-    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"), c =>
-        c.EnableRetryOnFailure(3))
-);
-
-builder.Services.AddApplicationServices();
+builder.Services.AddApplicationServices(builder.Configuration);
 
 //builder.Services.AddStackExchangeRedisCache(o =>
 //{
@@ -55,6 +55,7 @@ builder.Services.AddApiVersioning(o =>
         );
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
+
 
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
@@ -169,7 +170,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
 
 app.UseHttpsRedirection();
 
-app.UseMiddleware<ApiKeyAuthMiddleware>();
+//app.UseMiddleware<ApiKeyAuthMiddleware>();
 app.UseAuthorization();
 
 app.UseRateLimiter();

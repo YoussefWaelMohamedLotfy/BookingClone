@@ -9,6 +9,29 @@
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <ItemGroup>
     <ProjectReference Include="..\..\Common\BookingClone.Serilog\BookingClone.Serilog.csproj" />
+    <ProjectReference Include="..\..\Services\BookingClone.Application\BookingClone.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\BookingClone.API\BookingClone.API.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\BookingClone.Application\BookingClone.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\BookingClone.Domain\BookingClone.Domain.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Services\BookingClone.Infrastructure\BookingClone.Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Views\HotelReviews\" />
+    <None Remove="Views\AttractionReviews\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\HotelReviews\" />
+    <Folder Include="Views\AttractionReviews\" />
+  </ItemGroup>
 </Project>

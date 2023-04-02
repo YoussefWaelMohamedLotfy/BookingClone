@@ -1,11 +1,14 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HAttractionReviewFeatures.Commands.UpdateAttractionReview
+
+using FluentValidation;
+
+namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview;
+
+internal sealed class UpdateAttractionReviewCommandValidator : AbstractValidator<UpdateAttractionReviewCommand>
 {
-    public class UpdateAttractionReviewCommandValidator
+    public UpdateAttractionReviewCommandValidator()
     {
-        public UpdateAttractionReviewCommandValidator()
-        {
-        }
+
     }
 }
 

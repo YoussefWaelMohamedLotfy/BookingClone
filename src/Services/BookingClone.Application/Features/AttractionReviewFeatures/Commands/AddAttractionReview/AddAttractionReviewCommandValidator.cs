@@ -1,11 +1,10 @@
 ﻿using System;
-namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview
+namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview;
+
+internal class AddAttractionReviewCommandValidator
 {
-    public class AddAttractionReviewCommandValidator
+    public AddAttractionReviewCommandValidator()
     {
-        public AddAttractionReviewCommandValidator()
-        {
-        }
     }
 }
 
