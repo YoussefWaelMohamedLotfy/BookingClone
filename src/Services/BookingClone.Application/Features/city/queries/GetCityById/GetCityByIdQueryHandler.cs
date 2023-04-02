@@ -10,10 +10,9 @@ using Bogus.DataSets;
 using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
 using BookingClone.Application.Features.city.DTOs;
-using BookingClone.Application.Features.RoomFeatures.DTOs;
-using BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById;
+
 using BookingClone.Domain.Contracts;
-using BookingClone.Infrastructure.Repositories;
+
 
 using MediatR;
 
