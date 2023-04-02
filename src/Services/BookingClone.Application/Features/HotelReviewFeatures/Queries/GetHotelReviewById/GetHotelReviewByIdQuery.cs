@@ -1,11 +1,11 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById
+using MediatR;
+using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
+
+namespace BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById;
+
+public sealed class GetHotelReviewByIdQuery : IRequest<GetHotelReviewDto?>
 {
-    public class GetHotelReviewByIdQuery
-    {
-        public GetHotelReviewByIdQuery()
-        {
-        }
-    }
+    public required int ID { get; init; }
 }
 

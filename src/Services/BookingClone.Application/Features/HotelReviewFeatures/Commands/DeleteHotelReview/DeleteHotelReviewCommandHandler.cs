@@ -1,11 +1,18 @@
-﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview
+﻿using BookingClone.Domain.Contracts;
+
+using MediatR;
+
+namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview;
+
+internal sealed class DeleteHotelReviewCommandHandler : IRequestHandler<DeleteHotelReviewCommand, int>
 {
-    public class DeleteHotelReviewCommandHandler
+    private readonly IHotelReviewRepository _HotelReviewRepository;
+
+    public DeleteHotelReviewCommandHandler(IHotelReviewRepository repository)
+        => _HotelReviewRepository = repository;
+
+    public async Task<int> Handle(DeleteHotelReviewCommand request, CancellationToken cancellationToken)
     {
-        public DeleteHotelReviewCommandHandler()
-        {
-        }
+        return await _HotelReviewRepository.DeleteAsync(request.ID, cancellationToken);
     }
 }
-

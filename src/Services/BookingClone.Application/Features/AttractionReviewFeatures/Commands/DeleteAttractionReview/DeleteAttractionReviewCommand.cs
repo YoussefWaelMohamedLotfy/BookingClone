@@ -1,9 +1,9 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview
+namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.DeleteAttractionReview
 {
-    public class DeleteHotelReviewCommand
+    public class DeleteAttractionReviewCommand
     {
-        public DeleteHotelReviewCommand()
+        public DeleteAttractionReviewCommand()
         {
         }
     }

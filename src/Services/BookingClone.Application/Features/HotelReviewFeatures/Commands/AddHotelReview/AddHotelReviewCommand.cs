@@ -1,11 +1,14 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview
+
+using BookingClone.Application.Features.AttractionFeatures.DTOs;
+using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
+
+using MediatR;
+
+namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview;
+
+public sealed class AddHotelReviewCommand : IRequest<GetHotelReviewDto>
 {
-    public class AddHotelReviewCommand
-    {
-        public AddHotelReviewCommand()
-        {
-        }
-    }
+    public required AddHotelReviewDto Dto { get; set; }
 }
 

@@ -1,11 +1,11 @@
 ﻿using System;
-namespace BookingClone.Application.Features.HotelReviewFeatures.DTOs
+using BookingClone.Domain.Entities;
+
+namespace BookingClone.Application.Features.HotelReviewFeatures.DTOs;
+
+public class UpdateHotelReviewDto : AddHotelReviewDto
+
 {
-    public class UpdateHotelReviewDto
-    {
-        public UpdateHotelReviewDto()
-        {
-        }
-    }
+    public int ID { get; set; }
 }
 

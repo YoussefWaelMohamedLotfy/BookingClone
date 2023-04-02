@@ -1,10 +1,36 @@
 ﻿using System;
+using AutoMapper;
+using BookingClone.Application.Features.AttractionFeatures.DTOs;
+using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
+using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
+using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+using BookingClone.Domain.Contracts;
+using BookingClone.Infrastructure.Repositories;
+
 namespace BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById
 {
-    public class GetHotelReviewByIdQueryHandler
+    internal class GetHotelReviewByIdQueryHandler
     {
-        public GetHotelReviewByIdQueryHandler()
+        private readonly IHotelReviewRepository _hotelReviewRepository;
+        private readonly IMapper _mapper;
+
+        public GetHotelReviewByIdQueryHandler(IHotelReviewRepository repository, IMapper mapper)
         {
+            _hotelReviewRepository = repository;
+            _mapper = mapper;
+        }
+
+        public async Task<GetHotelReviewDto?> Handle(GetHotelReviewByIdQuery request, CancellationToken cancellationToken)
+        {
+            var HotelReview = await _hotelReviewRepository.GetByIdAsync(request.ID, cancellationToken);
+
+            if (HotelReview is null)
+            {
+                return null;
+            }
+
+            GetHotelReviewDto result = _mapper.Map<GetHotelReviewDto>(HotelReview);
+            return result;
         }
     }
 }
