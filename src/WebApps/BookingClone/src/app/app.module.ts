@@ -10,6 +10,7 @@ import { NotFoundComponent } from './Shared/Components/not-found/not-found.compo
 import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HotelsComponent } from './Hotels/Components/hotels/hotels.component';
 
 
 
@@ -19,7 +20,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    StaysComponent
+    StaysComponent,
+    HotelsComponent
   ],
   imports: [
     BrowserModule,
