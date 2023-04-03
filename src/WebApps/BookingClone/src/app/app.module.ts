@@ -4,10 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './Components/header/header.component';
-import { FooterComponent } from './Components/footer/footer.component';
-import { NotFoundComponent } from './Components/not-found/not-found.component';
-import { StaysComponent } from './Components/stays/stays.component';
+import { HeaderComponent } from './Shared/Components/header/header.component';
+import { FooterComponent } from './Shared/Components/footer/footer.component';
+import { NotFoundComponent } from './Shared/Components/not-found/not-found.component';
+import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
