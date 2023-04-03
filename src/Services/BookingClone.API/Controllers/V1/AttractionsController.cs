@@ -4,6 +4,8 @@ using BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttrac
 using BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction;
 using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
+using BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions;
+using BookingClone.Domain.Common;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -17,6 +19,19 @@ public class AttractionsController : ControllerBase
 
     public AttractionsController(IMediator mediator)
         => _mediator = mediator;
+
+    /// <summary>
+    /// Get Attractions in pages
+    /// </summary>
+    /// <param name="query"></param>
+    /// <param name="ct"></param>
+    /// <returns></returns>
+    [HttpGet]
+    public async Task<IActionResult> GetPaginatedAttractions([FromQuery] PaginationQuery query, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetPaginatedAttractionsQuery { Query = query }, ct);
+        return Ok(result);
+    }
 
     /// <summary>
     /// Gets a single Attraction by ID
@@ -85,5 +100,11 @@ public class AttractionsController : ControllerBase
     {
         var result = await _mediator.Send(new DeleteAttractionCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
+    }
+
+    [HttpGet("{attractionId}/Reservations")]
+    public async Task<IActionResult> GetReservationsForAttractionById(int attractionId, CancellationToken ct)
+    {
+        return Ok();
     }
 }
