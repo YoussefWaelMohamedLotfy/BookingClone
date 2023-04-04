@@ -11,4 +11,6 @@ public sealed class GetAttractionReservationDto
     public ReservationStatus Status { get; set; }
 
     public DateTimeOffset TourStart { get; set; }
+
+    public List<GetReservedAttractionDto> ReservedAttractions { get; set; }
 }
