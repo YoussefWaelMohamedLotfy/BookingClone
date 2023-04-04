@@ -10,28 +10,26 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-using BookingClone.Domain.Entities;
-
 namespace BookingClone.Admin.Controllers;
 
 [Authorize]
-public sealed class AttractionReviewsController : Controller
+public sealed class AttractionReviewController : Controller
 {
     private readonly IMediator _mediator;
 
-    public AttractionReviewsController(IMediator mediator)
+    public AttractionReviewController(IMediator mediator)
         => _mediator = mediator;
 
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)
     {
-        var attractionReview = await _mediator.Send(new GetAllAttractionReviewsQuery() { Query = new(pageNumber, pageSize) }, ct);
-        return View(attractionReview);
+        var review = await _mediator.Send(new GetAllAttractionReviewsQuery() { Query = new(pageNumber, pageSize) }, ct);
+        return View(review);
     }
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {
-        var attractionReview = await _mediator.Send(new GetAttractionReviewByIdQuery { ID = id }, ct);
-        return View(attractionReview);
+        var review = await _mediator.Send(new GetAttractionReviewByIdQuery { ID = id }, ct);
+        return View(review);
     }
 
     public IActionResult Create()
@@ -50,8 +48,8 @@ public sealed class AttractionReviewsController : Controller
 
     public async Task<IActionResult> Edit(int id, CancellationToken ct)
     {
-        var attractionReview = await _mediator.Send(new GetAttractionReviewByIdQuery { ID = id }, ct);
-        return View(attractionReview);
+        var review = await _mediator.Send(new GetAttractionReviewByIdQuery { ID = id }, ct);
+        return View(review);
     }
 
     [HttpPost]

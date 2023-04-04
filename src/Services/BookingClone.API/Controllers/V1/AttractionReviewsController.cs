@@ -3,6 +3,9 @@ using BookingClone.Application.Features.AttractionReviewFeatures.Commands.Delete
 using BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview;
 using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
 using BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttractionReviewById;
+using BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews;
+using BookingClone.Domain.Common;
+
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +19,15 @@ public class AttractionReviewsController : Controller
 
     public AttractionReviewsController(IMediator mediator)
         => _mediator = mediator;
+
+
+    [HttpGet]
+    public async Task<IActionResult> GetPaginatedReservations([FromQuery] PaginationQuery query, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAllAttractionReviewsQuery() { Query = query }, ct);
+        return Ok(result);
+    }
+
 
     [HttpGet("{id}", Name = "Get_[controller]")]
     public async Task<IActionResult> GetAttractionReviewById(int id, CancellationToken ct)
