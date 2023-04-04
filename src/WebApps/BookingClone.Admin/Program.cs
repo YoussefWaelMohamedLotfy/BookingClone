@@ -1,11 +1,8 @@
 using System.Reflection;
-
 using BookingClone.Application;
 using BookingClone.Serilog;
-
 using FluentValidation;
 using FluentValidation.AspNetCore;
-
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Serilog;
 

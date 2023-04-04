@@ -1,14 +1,11 @@
-﻿using Bogus.DataSets;
-using BookingClone.Application.Features.city.commands.AddCity;
+﻿using BookingClone.Application.Features.city.commands.AddCity;
 using BookingClone.Application.Features.city.commands.DeleteCity;
 using BookingClone.Application.Features.city.commands.UpdateCity;
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
-
 using MediatR;
-
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
