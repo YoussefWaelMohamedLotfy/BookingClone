@@ -10,6 +10,10 @@ import { NotFoundComponent } from './Shared/Components/not-found/not-found.compo
 import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { CityComponent } from './City/city/city.component';
+import { CountryComponent } from './Country/country/country.component';
+import { ContinentComponent } from './Continent/continent/continent.component';
+import { CountryDetailsComponent } from './Country/country-details/country-details.component';
 
 
 
@@ -19,7 +23,11 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    StaysComponent
+    StaysComponent,
+    CityComponent,
+    CountryComponent,
+    ContinentComponent,
+    CountryDetailsComponent,
   ],
   imports: [
     BrowserModule,
