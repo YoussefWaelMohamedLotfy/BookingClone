@@ -6,11 +6,14 @@ using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookingClone.Admin.Controllers;
-public class CityController : Controller
+
+[Authorize]
+public sealed class CityController : Controller
 {
     private readonly IMediator _mediator;
 

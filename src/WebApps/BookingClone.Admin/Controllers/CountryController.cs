@@ -1,19 +1,19 @@
-﻿
-using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
+﻿using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
 using BookingClone.Application.Features.country.commands.AddCountry;
 using BookingClone.Application.Features.country.commands.DeleteCountry;
 using BookingClone.Application.Features.country.commands.UpdateCountry;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Application.Features.country.queries.GitCountryById;
-
 using MediatR;
-
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookingClone.Admin.Controllers;
-public class CountryController : Controller
+
+[Authorize]
+public sealed class CountryController : Controller
 {
     private readonly IMediator _mediator;
 
