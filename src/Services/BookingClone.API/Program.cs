@@ -1,19 +1,24 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
+
 using Asp.Versioning;
+
 using BookingClone.API.Authentication;
 using BookingClone.API.Extensions;
 using BookingClone.API.OpenApi;
 using BookingClone.Application;
 using BookingClone.Infrastructure.Data;
 using BookingClone.Serilog;
+
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+
 using Serilog;
+
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -167,7 +172,7 @@ app.UseHttpsRedirection();
 
 //app.UseMiddleware<ApiKeyAuthMiddleware>();
 app.UseAuthorization();
-
+app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 app.UseRateLimiter();
 
 app.MapControllers();

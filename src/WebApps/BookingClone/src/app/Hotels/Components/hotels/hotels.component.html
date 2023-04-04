@@ -1,1 +1,29 @@
-<p>hotels works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Rating</th>
+
+
+
+    </tr>
+  </thead>
+  <tbody>
+
+
+    <tr *ngFor="let prd of HotelList "> <!-- //day3 -->
+      <!--[hidden]="prd.Quntity==0" !-->
+
+      <td>{{prd.Name | uppercase}}</td>
+
+      <td>{{prd.Description}}</td>
+      <td>{{prd.StarRating}}</td>
+
+
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- <h1>{{asd.Name}}</h1> -->

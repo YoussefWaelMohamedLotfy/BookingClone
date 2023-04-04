@@ -4,6 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 import { Environment } from '../environment/environment';
+import { Hotel } from '../Models/hotel';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class HotelServicesService {
 
 
   getAllHotel(): Observable<IHotel[]> {
-    return this.httpClient.get<IHotel[]>(`${Environment.APIURL}/Hotels`);
+    return this.httpClient.get<IHotel[]>(`${Environment.APIURL}/api/Hotels?PageNumber=3&PageSize=1`);
 
   }
 
