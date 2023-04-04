@@ -18,6 +18,10 @@ import { AllAttractionReservationsComponent } from './Reservations/AttractionRes
 import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/Components/add-new-room-reservation/add-new-room-reservation.component';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { RoomDetailsComponent } from './Rooms/Components/room-details/room-details.component';
+import { CityComponent } from './City/city/city.component';
+import { CountryComponent } from './Country/country/country.component';
+import { ContinentComponent } from './Continent/continent/continent.component';
+import { CountryDetailsComponent } from './Country/country-details/country-details.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +37,11 @@ import { RoomDetailsComponent } from './Rooms/Components/room-details/room-detai
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent,
     RoomDetailsComponent
+    StaysComponent,
+    CityComponent,
+    CountryComponent,
+    ContinentComponent,
+    CountryDetailsComponent,
   ],
   imports: [
     BrowserModule,
