@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using AutoMapper;
-
+﻿using AutoMapper;
 using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
-
 using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
-using BookingClone.Infrastructure.Repositories;
-
 using MediatR;
 
 namespace BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews;
+
 public class GetAllAttractionReviewsQueryHandler : IRequestHandler<GetAllAttractionReviewsQuery, PagedList<GetAttractionReviewDto>>
 {
     private readonly IAttractionReviewRepository _attractionReviewRepository;

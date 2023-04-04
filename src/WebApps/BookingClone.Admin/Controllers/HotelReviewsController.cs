@@ -4,9 +4,7 @@ using BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotel
 using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
 using BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById;
 using BookingClone.Application.Features.HotelReviewFeatures.Queries.GetAllHotelReviews;
-
 using MediatR;
-
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

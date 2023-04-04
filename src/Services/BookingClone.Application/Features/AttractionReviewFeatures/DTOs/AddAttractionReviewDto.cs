@@ -1,5 +1,4 @@
-﻿using System;
-using BookingClone.Domain.Entities;
+﻿using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
 
