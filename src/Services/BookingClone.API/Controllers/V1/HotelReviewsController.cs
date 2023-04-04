@@ -3,21 +3,15 @@ using BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotel
 using BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview;
 using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
 using BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById;
-
 using MediatR;
-
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace BookingClone.API.Controllers.V1;
-
 
 [Route("api/[controller]")]
 [ApiController]
 public class HotelReviewsController : Controller
 {
-
     private readonly IMediator _mediator;
 
     public HotelReviewsController(IMediator mediator)
@@ -30,14 +24,12 @@ public class HotelReviewsController : Controller
         return result is null ? NotFound() : Ok(result);
     }
 
-
     [HttpPost]
     public async Task<IActionResult> AddNewHotelReview(AddHotelReviewDto request, CancellationToken ct)
     {
         var result = await _mediator.Send(new AddHotelReviewCommand { Dto = request }, ct);
         return CreatedAtRoute("Get_HotelReview", new { id = result.ID }, result);
     }
-
 
     [HttpPut]
     public async Task<IActionResult> UpdateExistingHotelReview(UpdateHotelReviewDto request, CancellationToken ct)

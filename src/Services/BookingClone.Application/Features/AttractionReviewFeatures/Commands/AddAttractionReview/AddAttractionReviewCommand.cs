@@ -1,7 +1,4 @@
-﻿using System;
-
-using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
-
+﻿using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
 using MediatR;
 
 namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview;

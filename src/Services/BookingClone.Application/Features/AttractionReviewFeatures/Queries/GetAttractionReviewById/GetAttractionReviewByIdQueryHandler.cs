@@ -1,12 +1,11 @@
-﻿using System;
-using AutoMapper;
+﻿using AutoMapper;
 using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
 using BookingClone.Domain.Contracts;
-using BookingClone.Infrastructure.Repositories;
+using MediatR;
 
 namespace BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttractionReviewById;
 
-internal class GetAttractionReviewByIdQueryHandler
+internal sealed class GetAttractionReviewByIdQueryHandler : IRequestHandler<GetAttractionReviewByIdQuery, GetAttractionReviewDto?>
 {
     private readonly IAttractionReviewRepository _attractionReviewRepository;
     private readonly IMapper _mapper;

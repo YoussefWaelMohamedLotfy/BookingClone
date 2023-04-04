@@ -1,6 +1,4 @@
-﻿using System;
-using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
-
+﻿using BookingClone.Application.Features.HotelReviewFeatures.DTOs;
 using MediatR;
 
 namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview;

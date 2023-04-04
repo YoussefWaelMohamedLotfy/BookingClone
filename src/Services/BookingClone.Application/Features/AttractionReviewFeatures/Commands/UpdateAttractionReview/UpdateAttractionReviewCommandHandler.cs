@@ -1,9 +1,6 @@
 ﻿using AutoMapper;
-
 using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
-
 using BookingClone.Domain.Contracts;
-
 using MediatR;
 
 namespace BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview;

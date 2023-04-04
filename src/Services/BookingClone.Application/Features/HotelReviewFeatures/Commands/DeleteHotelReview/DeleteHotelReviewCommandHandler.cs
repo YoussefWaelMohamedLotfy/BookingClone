@@ -1,5 +1,4 @@
 ﻿using BookingClone.Domain.Contracts;
-
 using MediatR;
 
 namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview;

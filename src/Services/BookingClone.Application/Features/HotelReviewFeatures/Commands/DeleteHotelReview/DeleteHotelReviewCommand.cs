@@ -1,5 +1,4 @@
-﻿using System;
-using MediatR;
+﻿using MediatR;
 
 namespace BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview;
 

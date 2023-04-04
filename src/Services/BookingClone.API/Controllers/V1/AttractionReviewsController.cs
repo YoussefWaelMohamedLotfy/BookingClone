@@ -6,16 +6,12 @@ using BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttr
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace BookingClone.API.Controllers.V1;
-
 
 [Route("api/[controller]")]
 [ApiController]
 public class AttractionReviewsController : Controller
 {
-
     private readonly IMediator _mediator;
 
     public AttractionReviewsController(IMediator mediator)
@@ -28,7 +24,6 @@ public class AttractionReviewsController : Controller
         return result is null ? NotFound() : Ok(result);
     }
 
-
     [HttpPost]
     public async Task<IActionResult> AddNewAttractionReview(AddAttractionReviewDto request, CancellationToken ct)
     {
@@ -36,14 +31,12 @@ public class AttractionReviewsController : Controller
         return CreatedAtRoute("Get_AttractionReview", new { id = result.ID }, result);
     }
 
-
     [HttpPut]
     public async Task<IActionResult> UpdateExistingAttractionReview(UpdateAttractionReviewDto request, CancellationToken ct)
     {
         var result = await _mediator.Send(new UpdateAttractionReviewCommand { Dto = request }, ct);
         return result is not null ? Ok(result) : NotFound();
     }
-
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteAttractionReviewById(int id, CancellationToken ct)
