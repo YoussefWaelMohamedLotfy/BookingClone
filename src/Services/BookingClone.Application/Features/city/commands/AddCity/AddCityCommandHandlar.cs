@@ -29,7 +29,7 @@ public class AddCityCommandHandlar : IRequestHandler<AddCityCommand, CityDetails
     public async Task<CityDetailsDto> Handle(AddCityCommand request, CancellationToken cancellationToken)
     {
 
-        var city = new Cities
+        var city = new City
         {
             Name = request.Name,
             CountryID=request.CountryID

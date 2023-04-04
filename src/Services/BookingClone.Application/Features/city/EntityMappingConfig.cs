@@ -17,11 +17,11 @@ internal class EntityMappingConfig : Profile
     public EntityMappingConfig()
     {
        
-        CreateMap<Cities, CityDetailsDto>().ReverseMap();
-        CreateMap<CityMinimalDto, Cities>().ReverseMap();
+        CreateMap<City, CityDetailsDto>().ReverseMap();
+        CreateMap<CityMinimalDto, City>().ReverseMap();
 
 
-        CreateMap<PagedList<Cities>, PagedList<CityDetailsDto>>()
+        CreateMap<PagedList<City>, PagedList<CityDetailsDto>>()
             .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
 
 

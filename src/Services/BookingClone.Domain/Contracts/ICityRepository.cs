@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Domain.Contracts;
-public interface ICityRepository : IGenericRepository<Cities, int>
+public interface ICityRepository : IGenericRepository<City, int>
 {
-    Task<List<Cities>> GetAll(CancellationToken ct = default);
+    Task<List<City>> GetAll(CancellationToken ct = default);
 }

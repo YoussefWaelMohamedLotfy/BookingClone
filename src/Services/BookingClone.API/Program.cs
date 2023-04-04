@@ -6,9 +6,7 @@ using BookingClone.API.Authentication;
 using BookingClone.API.Extensions;
 using BookingClone.API.OpenApi;
 using BookingClone.Application;
-using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Data;
-using BookingClone.Infrastructure.Repositories;
 using BookingClone.Serilog;
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
@@ -22,7 +20,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(options =>
 {
-    //Miduator
     options.AddServerHeader = false;
     options.ConfigureHttpsDefaults(s => s.AllowAnyClientCertificate());
     options.ConfigureEndpointDefaults(o => o.Protocols = HttpProtocols.Http1AndHttp2AndHttp3);
@@ -37,7 +34,6 @@ builder.Services.AddDbContext<BookingDbContext>(o =>
         c.EnableRetryOnFailure(3))
 );
 
-//builder.Services.AddApplicationServices();
 builder.Services.AddApplicationServices(builder.Configuration);
 
 //builder.Services.AddStackExchangeRedisCache(o =>
@@ -59,9 +55,7 @@ builder.Services.AddApiVersioning(o =>
         );
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
-builder.Services.AddScoped<ICityRepository,CityRepository > ();
-builder.Services.AddScoped<IContinentRepository, ContinentRepository>();
-builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers()
@@ -175,7 +169,6 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
 
 app.UseHttpsRedirection();
 
-//app.UseMiddleware<ApiKeyAuthMiddleware>();
 app.UseAuthorization();
 
 app.UseRateLimiter();

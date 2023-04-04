@@ -34,8 +34,6 @@ public static class ApplicationExtensions
             .AddScoped<IContinentRepository, ContinentRepository>()
             .AddScoped<ICountryRepository, CountryRepository>();
 
-
-
         return services;
     }
 }

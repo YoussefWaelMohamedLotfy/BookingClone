@@ -10,13 +10,13 @@ using BookingClone.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookingClone.Infrastructure.Repositories;
-public class CityRepository : GenericRepository<Cities, int>, ICityRepository
+public class CityRepository : GenericRepository<City, int>, ICityRepository
 {
     public CityRepository(BookingDbContext context) : base(context)
     {
     }
 
-    public  async Task<List<Cities>> GetAll(CancellationToken ct = default)
+    public  async Task<List<City>> GetAll(CancellationToken ct = default)
     
          => await _db.ToListAsync(ct);
     

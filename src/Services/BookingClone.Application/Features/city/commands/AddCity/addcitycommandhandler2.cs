@@ -27,7 +27,7 @@ public class addcitycommandhandler2 : IRequestHandler<addcitycommand2, CityDetai
 
     public async Task<CityDetailsDto> Handle(addcitycommand2 request, CancellationToken cancellationToken)
     {
-        var newCity = _mapper.Map<Cities>(request.Dto);
+        var newCity = _mapper.Map<City>(request.Dto);
         _cityRepository.Add(newCity);
         await _cityRepository.SaveAsync(cancellationToken);
 

@@ -9,6 +9,39 @@ public static class BookingDbContextExtensions
 {
     public static void Seed(this BookingDbContext context, ILogger<BookingDbContext> logger)
     {
+        if (!context.Continents.Any())
+        {
+            context.Continents.AddRange(new[]
+            {
+                new Continent { Name = "Africa" },
+                new Continent { Name = "Asia" },
+                new Continent { Name = "North America" },
+                new Continent { Name = "South America" },
+                new Continent { Name = "Europe" },
+            });
+            context.SaveChanges();
+        }
+
+        if (!context.Countries.Any())
+        {
+            var countriesFaker = new Faker<Country>()
+                .RuleFor(h => h.ContinentID, f => f.Random.Number(1, 5))
+                .RuleFor(h => h.Name, f => f.Address.Country());
+
+            context.Countries.AddRange(countriesFaker.Generate(20));
+            context.SaveChanges();
+        }
+
+        if (!context.Cities.Any())
+        {
+            var citiesFaker = new Faker<City>()
+                .RuleFor(h => h.CountryID, f => f.Random.Number(1, 20))
+                .RuleFor(h => h.Name, f => f.Address.City());
+
+            context.Cities.AddRange(citiesFaker.Generate(20));
+            context.SaveChanges();
+        }
+
         if (!context.Hotels.Any())
         {
             var hotelsFaker = new Faker<Hotel>()
