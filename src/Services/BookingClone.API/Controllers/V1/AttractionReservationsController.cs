@@ -94,7 +94,14 @@ public class AttractionReservationsController : ControllerBase
     [HttpGet("{reservationId}/Reservations")]
     public async Task<IActionResult> GetReservationsForAttractionById(int reservationId, CancellationToken ct)
     {
-        var result = await _mediator.Send(new GetAttractionReservationDetailsQuery { ReservationId = reservationId }, ct);
+        var result = await _mediator.Send(new GetAllReservedAttractionDetailsQuery { ReservationId = reservationId }, ct);
+        return Ok(result);
+    }
+
+    [HttpGet("{reservationId}/Reservations/{attractionId}")]
+    public async Task<IActionResult> GetReservationsForAttractionById(int reservationId, int attractionId, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAllReservedAttractionDetailsQuery { ReservationId = reservationId }, ct);
         return Ok(result);
     }
 }
