@@ -1,11 +1,34 @@
 ﻿using System;
-namespace BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using AutoMapper;
+
+using BookingClone.Application.Features.AttractionReviewFeatures.DTOs;
+
+using BookingClone.Domain.Common;
+using BookingClone.Domain.Contracts;
+using BookingClone.Infrastructure.Repositories;
+
+using MediatR;
+
+namespace BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews;
+public class GetAllAttractionReviewsQueryHandler : IRequestHandler<GetAllAttractionReviewsQuery, PagedList<GetAttractionReviewDto>>
 {
-    public class GetAllAttractionReviewsQueryHandler
+    private readonly IAttractionReviewRepository _attractionReviewRepository;
+    private readonly IMapper _mapper;
+
+    public GetAllAttractionReviewsQueryHandler(IAttractionReviewRepository attractionReviewRepository, IMapper mapper)
     {
-        public GetAllAttractionReviewsQueryHandler()
-        {
-        }
+        _attractionReviewRepository = attractionReviewRepository;
+        _mapper = mapper;
+    }
+
+    public async Task<PagedList<GetAttractionReviewDto>> Handle(GetAllAttractionReviewsQuery request, CancellationToken cancellationToken)
+    {
+        var attractionReview = await _attractionReviewRepository.GetPaginatedList(request.Query, cancellationToken);
+        return _mapper.Map<PagedList<GetAttractionReviewDto>>(attractionReview);
     }
 }
-
