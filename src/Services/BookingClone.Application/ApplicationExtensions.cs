@@ -29,7 +29,11 @@ public static class ApplicationExtensions
             .AddScoped<IAttractionReservationRepository, AttractionReservationRepository>()
             .AddScoped<IAttractionRepository, AttractionRepository>()
             .AddScoped<IRoomRepository, RoomRepository>()
-            .AddScoped<IHotelRepository, HotelRepository>();
+            .AddScoped<IHotelRepository, HotelRepository>()
+            .AddScoped<ICityRepository, CityRepository>()
+            .AddScoped<IContinentRepository, ContinentRepository>()
+            .AddScoped<ICountryRepository, CountryRepository>();
+
         return services;
     }
 }

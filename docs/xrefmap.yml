@@ -827,12 +827,12 @@ references:
   commentId: T:BookingClone.Application.ApplicationExtensions
   fullName: BookingClone.Application.ApplicationExtensions
   nameWithType: ApplicationExtensions
-- uid: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
-  name: AddApplicationServices(IServiceCollection, IConfiguration)
-  href: api/BookingClone.Application.ApplicationExtensions.html#BookingClone_Application_ApplicationExtensions_AddApplicationServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_
-  commentId: M:BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)
-  fullName: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration)
-  nameWithType: ApplicationExtensions.AddApplicationServices(IServiceCollection, IConfiguration)
+- uid: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddApplicationServices(IServiceCollection)
+  href: api/BookingClone.Application.ApplicationExtensions.html#BookingClone_Application_ApplicationExtensions_AddApplicationServices_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: BookingClone.Application.ApplicationExtensions.AddApplicationServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ApplicationExtensions.AddApplicationServices(IServiceCollection)
 - uid: BookingClone.Application.ApplicationExtensions.AddApplicationServices*
   name: AddApplicationServices
   href: api/BookingClone.Application.ApplicationExtensions.html#BookingClone_Application_ApplicationExtensions_AddApplicationServices_
