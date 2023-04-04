@@ -13,11 +13,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace BookingClone.Admin.Controllers;
 
 [Authorize]
-public sealed class AttractionReviewController : Controller
+public sealed class AttractionReviewsController : Controller
 {
     private readonly IMediator _mediator;
 
-    public AttractionReviewController(IMediator mediator)
+    public AttractionReviewsController(IMediator mediator)
         => _mediator = mediator;
 
     public async Task<IActionResult> Index(int pageNumber = 1, int pageSize = 10, CancellationToken ct = default)

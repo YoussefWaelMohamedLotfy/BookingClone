@@ -123,6 +123,7 @@ public static class BookingDbContextExtensions
                 .RuleFor(ar => ar.ComfortRate, f => f.Random.Decimal(1, 10))
                 .RuleFor(ar => ar.FacilitiesRate, f => f.Random.Decimal(1, 10))
                 .RuleFor(ar => ar.StaffRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.ValueForMoneyRate, f => f.Random.Decimal(1, 10))
                 .RuleFor(ar => ar.NegativeReview, f => f.Lorem.Sentence())
                 .RuleFor(ar => ar.PositiveReview, f => f.Lorem.Sentence())
                 .RuleFor(ar => ar.ReviewDate, f => f.Date.RecentOffset());

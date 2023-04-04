@@ -17,7 +17,8 @@
                         <label asp-for="PositiveReview"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="PositiveReview" class="form-control" disabled />
+                        <textarea asp-for="PositiveReview" class="form-control"></textarea>
+                        <span asp-validation-for="PositiveReview" class="text-danger"></span>
                     </div>
                 </div>
                 <div class="form-group row py-2">
@@ -25,7 +26,8 @@
                         <label asp-for="NegativeReview"></label>
                     </div>
                     <div class="col-8">
-                        <textarea asp-for="NegativeReview" class="form-control" disabled></textarea>
+                        <textarea asp-for="NegativeReview" class="form-control"></textarea>
+                        <span asp-validation-for="NegativeReview" class="text-danger"></span>
                     </div>
                 </div>
 
@@ -34,7 +36,8 @@
                         <label asp-for="ComfortRate"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="ComfortRate" class="form-control" disabled />
+                        <input asp-for="ComfortRate" class="form-control" />
+                        <span asp-validation-for="ComfortRate" class="text-danger"></span>
                     </div>
                 </div>
 
@@ -43,7 +46,8 @@
                         <label asp-for="StaffRate"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="StaffRate" class="form-control" disabled />
+                        <input asp-for="StaffRate" class="form-control" />
+                        <span asp-validation-for="StaffRate" class="text-danger"></span>
                     </div>
                 </div>
 
@@ -52,7 +56,8 @@
                         <label asp-for="FacilitiesRate"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="FacilitiesRate" class="form-control" disabled />
+                        <input asp-for="FacilitiesRate" class="form-control" />
+                        <span asp-validation-for="FacilitiesRate" class="text-danger"></span>
                     </div>
                 </div>
 
@@ -61,7 +66,8 @@
                         <label asp-for="ValueForMoneyRate"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="ValueForMoneyRate" class="form-control" disabled />
+                        <input asp-for="ValueForMoneyRate" class="form-control" />
+                        <span asp-validation-for="ValueForMoneyRate" class="text-danger"></span>
                     </div>
                 </div>
 
@@ -70,7 +76,8 @@
                         <label asp-for="CleanlinessRate"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="CleanlinessRate" class="form-control" disabled />
+                        <input asp-for="CleanlinessRate" class="form-control" />
+                        <span asp-validation-for="CleanlinessRate" class="text-danger"></span>
                     </div>
                 </div>
 
@@ -79,7 +86,8 @@
                         <label asp-for="LocationRate"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="LocationRate" class="form-control" disabled />
+                        <input asp-for="LocationRate" class="form-control" />
+                        <span asp-validation-for="LocationRate" class="text-danger"></span>
                     </div>
                 </div>
 
@@ -88,10 +96,10 @@
                         <label asp-for="Hotel"></label>
                     </div>
                     <div class="col-8">
-                        <input asp-for="Hotel" class="form-control" disabled />
+                        <input asp-for="Hotel" class="form-control" />
+                        <span asp-validation-for="Hotel" class="text-danger"></span>
                     </div>
                 </div>
-
 
                 <div class="form-group row py-2">
                     <div class="col-8 offset-4 row">

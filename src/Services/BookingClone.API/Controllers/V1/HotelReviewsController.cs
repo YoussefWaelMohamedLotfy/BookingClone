@@ -20,16 +20,12 @@ public class HotelReviewsController : Controller
     public HotelReviewsController(IMediator mediator)
         => _mediator = mediator;
 
-
-
     [HttpGet]
     public async Task<IActionResult> GetPaginatedReservations([FromQuery] PaginationQuery query, CancellationToken ct)
     {
         var result = await _mediator.Send(new GetAllHotelReviewsQuery() { Query = query }, ct);
         return Ok(result);
     }
-
-
 
     [HttpGet("{id}", Name = "Get_[controller]")]
     public async Task<IActionResult> GetHotelReviewById(int id, CancellationToken ct)

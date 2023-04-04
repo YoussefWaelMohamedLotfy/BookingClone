@@ -5,7 +5,19 @@
 @{
     ViewData["Title"] = "Index";
 
-   
+    string SetBadgeColor(decimal[] rates, out decimal averageRating)
+    {
+        averageRating = rates.Average();
+
+        return averageRating switch
+        {
+            decimal i when i >= 8 && i <= 10 => "bg-success",
+            decimal i when i >= 6 && i < 8 => "bg-secondary",
+            decimal i when i >= 4 && i < 6 => "bg-warning",
+            decimal i when i >= 1 && i < 4 => "bg-danger",
+            _ => string.Empty
+        };
+    }
 }
 
 <div class="row">
@@ -23,32 +35,25 @@
     <table class="table table-striped border">
         <thead>
             <tr class="table-secondary">
+                <th>ID</th>
+                <th>Avg. Rate</th>
                 <th>Positive Review</th>
                 <th>Negative Review</th> 
-                <th>Comfort Rate</th>
-                <th>Staff Rate</th>
-                <th>Facilities Rate</th>
-                <th>Value For Money Rate</th>
-                <th>Cleanliness Rate</th>
-                <th>Location Rate</th>
-                <th>Hotel</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
-
             @foreach (var item in Model.Data)
             {
                 <tr>
+                    <td>@item.ID</td>
+                    <td>
+                        <span class="badge @SetBadgeColor(new[] { item.LocationRate, item.CleanlinessRate, item.ComfortRate, item.StaffRate, item.FacilitiesRate, item.ValueForMoneyRate }, out decimal averageRating)">
+                            @($"{averageRating:0.#}")
+                        </span>
+                    </td>
                     <td>@item.PositiveReview</td>
                     <td>@item.NegativeReview</td>
-                    <td>@item.ComfortRate</td>
-                    <td>@item.StaffRate</td>
-                    <td>@item.FacilitiesRate</td>
-                    <td>@item.ValueForMoneyRate</td>
-                    <td>@item.CleanlinessRate</td>
-                    <td>@item.LocationRate</td>
-                    <td>@item.Hotel</td>
-                   
                     <td>
                         <div>
                             <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">
@@ -87,26 +92,3 @@
         </li>
     </ul>
 </nav>
-
-
-
-
-
-
-
-
-
-
-
-@*@model List<Hotel>
-
-    <h3>Hotels List</h3>
-    @foreach (var item in Model)
-    {
-        <h5>@item.Name </h5>
-        <h5>@item.StarRating </h5>
-        <h5>@item.Rooms </h5>
-        <h5>@item.Reviews </h5>
-        <h5>@item.Description </h5>
-
-    }*@

@@ -3,7 +3,17 @@
 @{
     ViewData["Title"] = "Details";
 
-
+    string SetBadgeColor(decimal rate)
+    {
+        return rate switch
+        {
+            decimal i when i >= 8 && i <= 10 => "bg-success",
+            decimal i when i >= 6 && i < 8 => "bg-secondary",
+            decimal i when i >= 4 && i < 6 => "bg-warning",
+            decimal i when i >= 1 && i < 4 => "bg-danger",
+            _ => string.Empty
+        };
+    }
 }
 
 <div class="border p-3 bg-white">
@@ -18,7 +28,7 @@
                     <label asp-for="PositiveReview"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="PositiveReview" class="form-control" disabled />
+                    <textarea asp-for="PositiveReview" class="form-control" disabled></textarea>
                 </div>
             </div>
             <div class="form-group row py-2">
@@ -35,7 +45,9 @@
                     <label asp-for="ComfortRate"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="ComfortRate" class="form-control" disabled />
+                    <span class="badge @SetBadgeColor(Model.ComfortRate)">
+                        @($"{Model.ComfortRate:0.#}")
+                    </span>
                 </div>
             </div>
 
@@ -44,7 +56,9 @@
                     <label asp-for="StaffRate"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="StaffRate" class="form-control" disabled />
+                    <span class="badge @SetBadgeColor(Model.StaffRate)">
+                        @($"{Model.StaffRate:0.#}")
+                    </span>
                 </div>
             </div>
 
@@ -53,7 +67,9 @@
                     <label asp-for="FacilitiesRate"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="FacilitiesRate" class="form-control" disabled />
+                    <span class="badge @SetBadgeColor(Model.FacilitiesRate)">
+                        @($"{Model.FacilitiesRate:0.#}")
+                    </span>
                 </div>
             </div>
 
@@ -62,7 +78,9 @@
                     <label asp-for="ValueForMoneyRate"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="ValueForMoneyRate" class="form-control" disabled />
+                    <span class="badge @SetBadgeColor(Model.ValueForMoneyRate)">
+                        @($"{Model.ValueForMoneyRate:0.#}")
+                    </span>
                 </div>
             </div>
 
@@ -71,7 +89,9 @@
                     <label asp-for="CleanlinessRate"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="CleanlinessRate" class="form-control" disabled />
+                    <span class="badge @SetBadgeColor(Model.CleanlinessRate)">
+                        @($"{Model.CleanlinessRate:0.#}")
+                    </span>
                 </div>
             </div>
 
@@ -80,10 +100,11 @@
                     <label asp-for="LocationRate"></label>
                 </div>
                 <div class="col-8">
-                    <input asp-for="LocationRate" class="form-control" disabled />
+                    <span class="badge @SetBadgeColor(Model.LocationRate)">
+                        @($"{Model.LocationRate:0.#}")
+                    </span>
                 </div>
             </div>
-
             <div class="form-group row py-2">
                 <div class="col-4">
                     <label asp-for="Hotel"></label>
@@ -92,11 +113,6 @@
                     <input asp-for="Hotel" class="form-control" disabled />
                 </div>
             </div>
-
-
-
-
-
             <div class="form-group row py-2">
                 <div class="col-8 offset-4 row">
 
