@@ -14,4 +14,6 @@ public sealed class HotelReviewRepository : GenericRepository<HotelReview, int>,
 
     public async Task<List<HotelReview>> GetAll(CancellationToken ct = default)
         => await _db.ToListAsync(ct);
+
+
 }
