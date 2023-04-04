@@ -101,10 +101,4 @@ public class AttractionsController : ControllerBase
         var result = await _mediator.Send(new DeleteAttractionCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
     }
-
-    [HttpGet("{attractionId}/Reservations")]
-    public async Task<IActionResult> GetReservationsForAttractionById(int attractionId, CancellationToken ct)
-    {
-        return Ok();
-    }
 }

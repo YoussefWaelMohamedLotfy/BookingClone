@@ -3,6 +3,7 @@ using BookingClone.Application.Features.AttractionReservationFeatures.Commands.D
 using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
+using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetails;
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Domain.Common;
 using MediatR;
@@ -82,5 +83,18 @@ public class AttractionReservationsController : ControllerBase
     {
         var result = await _mediator.Send(new DeleteAttractionReservationCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
+    }
+
+    /// <summary>
+    /// Gets all ReservedRooms for a single Reservation
+    /// </summary>
+    /// <param name="reservationId"></param>
+    /// <param name="ct"></param>
+    /// <returns></returns>
+    [HttpGet("{reservationId}/Reservations")]
+    public async Task<IActionResult> GetReservationsForAttractionById(int reservationId, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAttractionReservationDetailsQuery { ReservationId = reservationId }, ct);
+        return Ok(result);
     }
 }
