@@ -6,6 +6,6 @@ public class AddAttractionReviewDto
 {
     public string Comment { get; set; }
 
-    public Attraction Attraction { get; set; }
+    public int AttractionID { get; set; }
 }
 

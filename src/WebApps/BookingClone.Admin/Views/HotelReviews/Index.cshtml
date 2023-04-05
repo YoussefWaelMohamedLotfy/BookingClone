@@ -39,6 +39,7 @@
                 <th>Avg. Rate</th>
                 <th>Positive Review</th>
                 <th>Negative Review</th> 
+                <th>Hotel ID</th> 
                 <th>Actions</th>
             </tr>
         </thead>
@@ -54,6 +55,7 @@
                     </td>
                     <td>@item.PositiveReview</td>
                     <td>@item.NegativeReview</td>
+                    <td>@item.HotelID</td>
                     <td>
                         <div>
                             <a asp-action="Details" asp-route-id="@item.ID" class="btn btn-secondary">

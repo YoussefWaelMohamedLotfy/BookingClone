@@ -1,8 +1,4 @@
-﻿using System;
-using BookingClone.Domain.Entities;
-
-namespace BookingClone.Application.Features.HotelReviewFeatures.DTOs;
-
+﻿namespace BookingClone.Application.Features.HotelReviewFeatures.DTOs;
 
 public class AddHotelReviewDto
 {
@@ -23,7 +19,7 @@ public class AddHotelReviewDto
 
     public decimal LocationRate { get; set; }
 
-    public Hotel Hotel { get; set; }
+    public int HotelID { get; set; }
 
 }
 
