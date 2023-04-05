@@ -9,7 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyAuthFilter.html",
-          "hash": "o2NMCLAuIc8C147A8PMTkIWS07lrhXHM4+UiPANSJqg="
+          "hash": "SIfLSIsRDuLdsh+q3S/KHEJ8zwNoY1EyT+nBXcYZ5Is="
         }
       },
       "version": ""
@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyAuthMiddleware.html",
-          "hash": "osD7vX9+eXa46CFfEUB9nkCK+LioWH2Ne/gat4MFzQM="
+          "hash": "LDkeahudZjI59hQCF4h1LPqZc1P7u0y49WJxGAv0x20="
         }
       },
       "version": ""
@@ -31,7 +31,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.ApiKeyEndpointFilter.html",
-          "hash": "KgJTuJXa4oOz/+0sR0GE3mjgaL4gL8Lc7Vk3zeSgyvg="
+          "hash": "FrLuGzR0nFwKpIr5QshL92RPP+u4ar+wwuSdZ1/yctU="
         }
       },
       "version": ""
@@ -42,7 +42,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.AuthConstants.html",
-          "hash": "fykEQTQaPMWn4jBCwPvykI58ivxcJhT5YMNdBdNOsWg="
+          "hash": "k11KjVoq5W3D19hmmd3J/UqH8lgNNvIJITq7Q0qdJ5k="
         }
       },
       "version": ""
@@ -53,7 +53,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Authentication.html",
-          "hash": "6/sRjUcAKgHPdE+/Tn/pRXWhnNtq1seB8ROjjMDnJYY="
+          "hash": "BM4GNzN1XxdRKMp79l3tBv3sjeXYl2uo2fc2WqAA4xg="
         }
       },
       "version": ""
@@ -64,7 +64,18 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.AttractionReservationsController.html",
-          "hash": "NTNz0eSz0MQIxVok9G+GLzSgn26kugSQ71MWUOL4X2o="
+          "hash": "NykW5myaS8pQJaL6RYWMAMccEArLhd6DjzgDksAh7zk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.AttractionReviewsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.AttractionReviewsController.html",
+          "hash": "Z0f3WhFNaqx+x2o/eqS9snEAkue8I3mTI5zYsN7qbs4="
         }
       },
       "version": ""
@@ -75,7 +86,62 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.AttractionsController.html",
-          "hash": "aKJvUR5cE+WK1q/ria+HjbqpPhHX0ZaUYeVg2qXdtyk="
+          "hash": "WgQ4ntbZHZ4yiegwx/wbbznuKuOinao2NBI/ccOmRAA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.CitiesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.CitiesController.html",
+          "hash": "qrPFBVF/M+YHEBzH7Zs+nt2fcKNVxhC4L2FrJUygZ2o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.ContinentsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.ContinentsController.html",
+          "hash": "/0RcZ4Iamuq85JxTDzXrjyi29+wDJVeFT/kIN7ypI0Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.CountriesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.CountriesController.html",
+          "hash": "3zQqwIFLE19EWvoeux16al+s0F0oQOen1qEpm8ueAEU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.HotelReviewsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.HotelReviewsController.html",
+          "hash": "MwU/LK1sU4K6pliXSt/0AK4yrVDv1DhesMkE08dhYjs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.HotelsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.HotelsController.html",
+          "hash": "kTvTduxeUJYB7XUD2S91wHkZ3sUKiAcNFQNcNSrlu9g="
         }
       },
       "version": ""
@@ -86,7 +152,18 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.RoomReservationsController.html",
-          "hash": "Xw8LctAZ1Z9MWDrvap2ilMcQdB4B/dexjlCApZi6qSY="
+          "hash": "eaOnqb9Ru8h0JlkmlLngC1b52ODmjbJJEUj49wE5IPE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.API.Controllers.V1.RoomsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.API.Controllers.V1.RoomsController.html",
+          "hash": "rPM67pNt2jfA93TYQmBDF1/LUUwIw8g7uNYF27a2YWI="
         }
       },
       "version": ""
@@ -97,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.WeatherForecastController.html",
-          "hash": "OHUDU2SxTv1JZULyIjElq8/3Z9WeMXADRYZrJ/SdWLs="
+          "hash": "NrKnbvj19cG8hBVup31n6jkbkcSVCzafAIX6GQwE8GE="
         }
       },
       "version": ""
@@ -108,7 +185,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V1.html",
-          "hash": "SpD9Hn1GoLHNlqkTpV4BnLtg6pNYVd58vnbEEkRKaRw="
+          "hash": "FhnzheYbFR8c3cWywJ1uHpTFJRk2oN3+Yaz1lkSQwHM="
         }
       },
       "version": ""
@@ -119,7 +196,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V2.WeatherForecast2Controller.html",
-          "hash": "w2JXX+628Ymyvp84dAkw4Akzj/VibAuR4Hl+VRXvpag="
+          "hash": "NRvXvcdeyCtM1w0v5qnkdiLOKngF5JC/ttMDAWAORuw="
         }
       },
       "version": ""
@@ -130,7 +207,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Controllers.V2.html",
-          "hash": "24PWksc1NSK9YFdyaz9ZEtz4U3Cej+F/XjAXDlCrtU0="
+          "hash": "pBp/exddzQlCyPgKluXaqNevcYXHPu6bO4Zc3skfKSs="
         }
       },
       "version": ""
@@ -141,7 +218,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Extensions.HealthCheckExtension.html",
-          "hash": "cKtZ/RZninT5yLz6LxpqaiDsbWQ+w3a2IRMMel46QpA="
+          "hash": "UQsxxJ1UiiCjCntQRXeGp65T0DmvtAiHyAqmqCbnt7s="
         }
       },
       "version": ""
@@ -152,7 +229,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Extensions.HostExtensions.html",
-          "hash": "lFy333ymo+6sR307zttk/SgBwDGUEmahZe6j8cpntts="
+          "hash": "7a6fjP+l3QCIFgcuG2IAsuA4dvKXc3OiYhmL4COpDXw="
         }
       },
       "version": ""
@@ -163,7 +240,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.Extensions.html",
-          "hash": "N2Q47JHc/OWa6Q0Pl30GgqqpM2usIztdR1dC95oW460="
+          "hash": "NQEi+qEbKZX/YBvCiYYtgIVhjR1D/rpv+cRRLkeMNYk="
         }
       },
       "version": ""
@@ -174,7 +251,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.OpenApi.ConfigureSwaggerOptions.html",
-          "hash": "QH53k/lDUcuOvR9fMpr3+DDWhAplyQAcy6JOR8UrjZc="
+          "hash": "JVe0HPHtTsdvnQ1hPoZga1L6G7jNoXHPjjhOmqOltE8="
         }
       },
       "version": ""
@@ -185,7 +262,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.OpenApi.SwaggerDefaultValues.html",
-          "hash": "XwcJGPCjhGINVPpf3yG7E7ihaiAwMz4C+GLHKxp2FLA="
+          "hash": "aRejTfHOKHbUxniAFyhd1KmDsGURAZFqVyuckk42HfM="
         }
       },
       "version": ""
@@ -196,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.OpenApi.html",
-          "hash": "ZtuFl3m00f3Joo9tGAnhS7fp1D3LmmvLEgGbpP+0Hog="
+          "hash": "CkZjNhjwpiVjmgx8/6m8BEqHqx5bWUK2kgJnkDXAvNc="
         }
       },
       "version": ""
@@ -207,7 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.WeatherForecast.html",
-          "hash": "RJnD8l9bv20guZBV0P61Dw06Tovvxa9pLQ/IzJTNcfE="
+          "hash": "tUqxHgtpBxU1wdmcMQoFOs6lai5x0oJ/ZpRWM+7oBpM="
         }
       },
       "version": ""
@@ -218,7 +295,612 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.API.html",
-          "hash": "1LrJvVHOGckfLEtdTy69QlDQhz6zmoH0GHa8mrTH1U0="
+          "hash": "85cH3/0E5U1aPVQ4if7BnKrhj9llprD6yjY0s4XqRfg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.AccessDeniedModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.AccessDeniedModel.html",
+          "hash": "tWjbnUN5kBRxbimrfild+7KHwVTE7E3kiR2S1nEMxyY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ConfirmEmailChangeModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ConfirmEmailChangeModel.html",
+          "hash": "Tg65FebEPLqXW7vExwuESYLeed+SMtWNfwagKKCVhNk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ConfirmEmailModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ConfirmEmailModel.html",
+          "hash": "rCS6B0bgX04ZQv1pVZ5DWNzy8O1CIY8QsMOCB6BuvHo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ExternalLoginModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ExternalLoginModel.InputModel.html",
+          "hash": "jubYNwc3ugNuI1uTirn6xgDUynDHRHbtaF0YP62UBoE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ExternalLoginModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ExternalLoginModel.html",
+          "hash": "haMuDpTHB31kfau+gXporNAE87lRSrx9kPWG4yyKC5s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ForgotPasswordConfirmation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ForgotPasswordConfirmation.html",
+          "hash": "Vq2lawfu8dwA+qeXQBoxHL+IUuxUnN9JycvYQRFdg3k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ForgotPasswordModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ForgotPasswordModel.InputModel.html",
+          "hash": "JyI+lzVEFIWd1ORdznezjQ+Hu6dWhxGskdAIy8HVf/o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ForgotPasswordModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ForgotPasswordModel.html",
+          "hash": "CXq6bIJTPWankOU2HrjXtjIxpSNltykBgXtCJyebbfs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LockoutModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LockoutModel.html",
+          "hash": "SFQnB59sw7PcKqjds7CmGEPZaesB08h+YjUSeEf18U4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginModel.InputModel.html",
+          "hash": "ppCbNcpWot9KF/hL5GwxyVF+7521VwtJEm2SRuGk9bY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginModel.html",
+          "hash": "+uFBsQjFDrE/+bNBuZ6tMofTaC0zNVF9M/9S2eA67AY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWith2faModel.InputModel.html",
+          "hash": "jLwBvcHUjLcPNH8zMzmnngMO2chVVmS9Y1MZ//f7oY8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWith2faModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWith2faModel.html",
+          "hash": "8zfsedDRDvIwWZBSeFT9gwOZJlh4hyagGKV3s9rCyfY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.InputModel.html",
+          "hash": "CBOeaxfOKka/bXiiNbe6px0IZGJuVLPEMCTSJHvMk5g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LoginWithRecoveryCodeModel.html",
+          "hash": "HiUMFmtc+5/YEovdTK3IXDeS4QDzknT8bleIXvZelAY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LogoutModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.LogoutModel.html",
+          "hash": "lp+4dIDLzDKpQPrSYyNPqaASoY3J67WeQRfxewI+OkI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.InputModel.html",
+          "hash": "WkWsCxJn++VaQm90rSMexvEX2ngFJun5MotsSEb6IO4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ChangePasswordModel.html",
+          "hash": "vjcEE6R2XS9FhYpGVSD8lT42bvYsgw5E0WEDK5DH4hw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.InputModel.html",
+          "hash": "0hmJk17oT5G8Y3SmgRoCPvMt6iJ+2wKt1EULTVdWENM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.DeletePersonalDataModel.html",
+          "hash": "7nH+2oZsUzXuJqqI7SyWFjqx4OlKacsuF2Te3uggk3s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.Disable2faModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.Disable2faModel.html",
+          "hash": "64dg6TtiQblUu/7DTBY466dSspjvEwtslG71otA6/+M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.DownloadPersonalDataModel.html",
+          "hash": "+S6BUoMXCScoO5+33BgVg6dgTyDP95hHFw7wfhzng5g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EmailModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EmailModel.InputModel.html",
+          "hash": "hccLyM7k/NGspJC220c3yaXVGsPMUmFBVaoXJtwUHe8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EmailModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EmailModel.html",
+          "hash": "ZsFbUofWAro3nGviJ/ByWQm+y2GrBLVZEcWJ+cH722w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.InputModel.html",
+          "hash": "s4rguGL/fwTHzPs5GAH2+9/XqIr8SR/SQDOIVaFR4bY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.EnableAuthenticatorModel.html",
+          "hash": "/y7fxGejpOA0pIj8CKkQcB7mXGUIAkS8OBeWRycva9M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ExternalLoginsModel.html",
+          "hash": "bQrzVLsT2pY2cp9To3Vi/h60W5rzK9p10GOUlZ2KaK4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.GenerateRecoveryCodesModel.html",
+          "hash": "ZNvT2QtwnqvO0tvubpjCnGbE0qo3jdRNIP4tZX1xvGo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.IndexModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.IndexModel.InputModel.html",
+          "hash": "MgvqQo+eQIPUOjVUsWrlBRQ/bRQqjdy0NmjRXTPr8BA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.IndexModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.IndexModel.html",
+          "hash": "Q9g+gUN6t1Hm8wfgl7aU9JrEQPZUSgLvBpuvxLfRcVs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ManageNavPages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ManageNavPages.html",
+          "hash": "rggJ0P2dDRNED4T1LEA5rNJZGDXcq2LRE1lTqZ1IXxY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.PersonalDataModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.PersonalDataModel.html",
+          "hash": "klHbcPoDzX+d/7WXVAm8sOQdj5+PUBdRjJZwA/PH2/w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ResetAuthenticatorModel.html",
+          "hash": "pCqV5aiis3bTPpGwz0egOyavlliVQjdyaoUr04qq8Qo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.SetPasswordModel.InputModel.html",
+          "hash": "Y3A2H636P7mnTmRmJKBcQWwUa8qdH50LOdYSod7rH6k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.SetPasswordModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.SetPasswordModel.html",
+          "hash": "LONU2BymvYdGw1cphGw2dSEB4c4SYk6LzzGKms3MvyM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.ShowRecoveryCodesModel.html",
+          "hash": "6AQ3w40czcABzaxUfeCzZNPfzb9z7PM5PIVmm2h1jwk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.TwoFactorAuthenticationModel.html",
+          "hash": "kyjS9lN2kdD4WOFzkPkAyUBcElvoazRDS8SRk2JfCHQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.Manage.html",
+          "hash": "Gh7hYtYtxqZ5qiT0gluLIT75ktc7V0M9wYY9aqnCCHY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.RegisterConfirmationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.RegisterConfirmationModel.html",
+          "hash": "oETnmYlx2euTqf9+s1Ohw0ljRdAR25eD4TyS4y46BAg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.RegisterModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.RegisterModel.InputModel.html",
+          "hash": "GOkeBD3gOsRuAh3gVdr0OB9dA+dfG/3fbAfE9l+920c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.RegisterModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.RegisterModel.html",
+          "hash": "5BNPs1CJtckQiAM7AbrlATE2qMpf+wIEEiThrpPDO0s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.InputModel.html",
+          "hash": "cBsujsEMa3Mr7sOLmATwPGSk4hkYDlUZahIn8K9Y0nE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResendEmailConfirmationModel.html",
+          "hash": "vLStRYNTtwstgX4ohjUOWKLeXXgqBVmzt38YJtEFbdg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResetPasswordConfirmationModel.html",
+          "hash": "IFQUmayY8k3RWCa7Bnfej7C9wd6onXef6psD+tJUI80="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResetPasswordModel.InputModel.html",
+          "hash": "kgGijYD45m4WncHbK5nr9Wtdmn9KdmrhrPLhqzV9eQk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResetPasswordModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.ResetPasswordModel.html",
+          "hash": "SDVLjoMyCQK3JXhvNPfr7Fnfa9tcwv6hiyHjqeI30xY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.Account.html",
+          "hash": "veTZ4Lu5/xQZt//92KrtjlT4zQFjW6qO5/s3LgiyWKQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.ErrorModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.ErrorModel.html",
+          "hash": "01LAEpT5QSJzncFz+m5d239iTwuUt6huwa9M24eG4x8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Areas.Identity.Pages.html",
+          "hash": "naRNvLHu6toroKIAxB8pqmHRnzSCnQh3QRj/oAhsULg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.AttractionReservationsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.AttractionReservationsController.html",
+          "hash": "Esz/XGuKn/Y7xYdRdihRjTNJaHJWx5Bs2mCleS/HYfg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.AttractionReviewsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.AttractionReviewsController.html",
+          "hash": "CHxgZItL4gV9U+XCl8KLyxCxIGFJnZc0kpMy/J7Gxhs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.AttractionsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.AttractionsController.html",
+          "hash": "HuVyEtLX2bpGxMJ+uzEIaUY7HcD4MnkrMOMSNMkAg4w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.CityController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.CityController.html",
+          "hash": "WwSgccqCxKREvkpKDbkitqdiD93WMQNurOkQmuYBWTQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.ContinentController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.ContinentController.html",
+          "hash": "n9bctzfmGgrKnaR0MeQr9W7L++4Ip+vG5/1O5m0VATM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.CountryController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.CountryController.html",
+          "hash": "eCGDSYHMEFB9sCx9vaie6fO/ILXmcX5h1Kca/T58DAY="
         }
       },
       "version": ""
@@ -229,7 +911,51 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Admin.Controllers.HomeController.html",
-          "hash": "Scs04s9NgPMcmJM3j82gED6sDCfqvkAVeUVufvlwbrg="
+          "hash": "CkwSFQouL61dGDPbmul/PBpBsINlh8X2Mngw3cQLzVM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.HotelReviewsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.HotelReviewsController.html",
+          "hash": "lBkrCeubH98BkPVwQ0wOkfodKOIT4x87Of1hjHmqkl4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.HotelsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.HotelsController.html",
+          "hash": "qZJnDyVeSOMXXn3ULWT2q7WdieHJMYtXvt7V7W1arWY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.RoomReservationsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.RoomReservationsController.html",
+          "hash": "n/adukHQEvX2ByTfpwwp/lz/a4zqe9rKvr29C6UMRDQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Controllers.RoomsController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Controllers.RoomsController.html",
+          "hash": "Vddfgr/MW1y5NC5O8b5jyrGe/3P9G6hx7AGbuz7CniU="
         }
       },
       "version": ""
@@ -240,7 +966,51 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Admin.Controllers.html",
-          "hash": "FvfpvF/4DpAHVJDSC5Uu4SIKnQjT3Ukh0vyAIO9R4NM="
+          "hash": "jg2lAYVYssd4x7dcoTRZCt+ddPGqkfLVCx+Jp/y7IN4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Data.BookingCloneAdminContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Data.BookingCloneAdminContext.html",
+          "hash": "CXuJ2hGcxXE1JIjpiefJvchuJ8bLKgyK3lfScuuUWk8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Data.html",
+          "hash": "QvLbj5QwJzmwOAqW8a32zqlj4SQPzbrNdzSVMGBO+aA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Migrations.InitialMigration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Migrations.InitialMigration.html",
+          "hash": "R0G+WBRrB58Jh6Nwkc302izvGwbQtULM6Y9ITsU6QTk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Admin.Migrations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Admin.Migrations.html",
+          "hash": "fmNFklW/zXHbeITB416M6PGUfD/X43kjjtTwCtvC/rE="
         }
       },
       "version": ""
@@ -251,7 +1021,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Admin.Models.ErrorViewModel.html",
-          "hash": "RDKoAWy5bDVwrAz5VJdsU2FyQYX0JLomc6o55uKvGQE="
+          "hash": "FDF/TB4SXLo76zFP1BXwGKiJXyaIZZmgkRvk+fryQy0="
         }
       },
       "version": ""
@@ -262,7 +1032,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Admin.Models.html",
-          "hash": "Y2RhQsQZkXmr5GxNQILsreAay77Nh16bm3cu+4K5jto="
+          "hash": "GRlfzTDzvhCMDXKoRWUEuUfWL5mMDv9I+iVymlIejOM="
         }
       },
       "version": ""
@@ -273,7 +1043,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.ApplicationExtensions.html",
-          "hash": "p6Tm7iKTc1W23icUNJ8IwEJ5ElWkyD0XShdVBNljCAA="
+          "hash": "x78YM9FNUQ+TGMeWQPhtiWiRTr7uWGpjbMMuZcgNpCs="
         }
       },
       "version": ""
@@ -284,7 +1054,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttraction.AddAttractionCommand.html",
-          "hash": "MqCPa2Eu1kfyDSPoJZ3T2C+JuNX8Y/MEqQJ9rz00usI="
+          "hash": "nRAitLZwCFxdwyGSUDtQtAf+FpqGbbRU/AjYG11bpfQ="
         }
       },
       "version": ""
@@ -295,7 +1065,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttraction.html",
-          "hash": "Ob7CvzVOBBEPqBiPUjD6MmoT2PlRMtlis1K3yIREIm0="
+          "hash": "YtL3x8SkbQVMJt/Iy6fZ5KCHEERTeoRt0YWzDZSMmSw="
         }
       },
       "version": ""
@@ -306,7 +1076,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttractionImage.AddAttractionImageCommand.html",
-          "hash": "UM2PcX6IgFOqHeu2f1U6KgRPzZKotYhvJcNmi057Syc="
+          "hash": "QJUAGYyhmp9Z+RgtUaFQvcHAQw1LQIrbuePz5tfwHas="
         }
       },
       "version": ""
@@ -317,7 +1087,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.AddAttractionImage.html",
-          "hash": "GrdDgOS31pgzdtZ9IlK7wp7MPRC6rSjvTOea387BnyI="
+          "hash": "2SsWkB8a047iBEKZKSQ6Zqnazfmq5Lpe7ss316gguDI="
         }
       },
       "version": ""
@@ -328,7 +1098,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttraction.DeleteAttractionCommand.html",
-          "hash": "E0pGzpulnDbp9lBtsmghPtZIAWOCUfBV3XOwzoLHJFM="
+          "hash": "19yZPUo8cWMvE6Wfiv9iXdkfMPZMSbdHJZ3qSE/m858="
         }
       },
       "version": ""
@@ -339,7 +1109,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttraction.html",
-          "hash": "0l3a7VtlzdhlRhBLv19eOKYMUAGxtTnHywrv+iocKfY="
+          "hash": "a4/4hb+jEgqE7Sf3+RvnswDhyl3SgMKsl9yFua5pUsk="
         }
       },
       "version": ""
@@ -350,7 +1120,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction.UpdateAttractionCommand.html",
-          "hash": "fN4MFnM7Rresyqu+6KkUbhGE3zaYSJ/VBSMexj6nZ6g="
+          "hash": "Y083kiy+g1WEY0KCz6fkQsRwPeb/VgN3bMS+Et74dnY="
         }
       },
       "version": ""
@@ -361,7 +1131,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction.html",
-          "hash": "AkCxd/1Y5POQMpxssvDA1SSX2uaMSSskxIasuocChZw="
+          "hash": "yTIQ5VS9gAHi/ABzGfp9PfBxE1F+iNq0GZszY94gEUg="
         }
       },
       "version": ""
@@ -372,7 +1142,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AddAttractionDto.html",
-          "hash": "T7rmA7+33bKiyGZcFwck6P5t23xIsrmZxB6HOEteO44="
+          "hash": "/rD3EKVbJ1FlYDbVQ7gSIp5VwH0GHvbieC58l0erj1g="
         }
       },
       "version": ""
@@ -383,7 +1153,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.AttractionImageDto.html",
-          "hash": "DUqpmvmch0Gjyk3FOlZPdl90iWzzQ+A+S2IT/o8Qwus="
+          "hash": "/B9PtogySzdfVJfQMJwZ9qTl+gwvYhhQg+gVsrf+MEs="
         }
       },
       "version": ""
@@ -394,7 +1164,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.GetAttractionDto.html",
-          "hash": "UfQPsYxQ4IJuOpGFOMv72GpTOz3PsdEGrKZ+G2fSUC4="
+          "hash": "YTGqnHi9oU90OpW0KLpICii1j9bo+hTgRlqZ0XHSzYo="
         }
       },
       "version": ""
@@ -405,7 +1175,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.UpdateAttractionDto.html",
-          "hash": "3SEE14jv5BQPxzOOmookhF+M6lfRIMI+XHnWKk+SIOU="
+          "hash": "ZHcaq1NZHSxk+bT5piGs2wMbGbu06CRlScniQ8m9Z/c="
         }
       },
       "version": ""
@@ -416,7 +1186,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.DTOs.html",
-          "hash": "XmZAjZPn4PKGjR0LbgKTKjokfq7/G6cXTpgxnp2xAn4="
+          "hash": "Lr+Kh2/x1nce7FLlyrV1yaSDx9OYD5hIxvAxyxNGL9A="
         }
       },
       "version": ""
@@ -427,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.GetAttractionByIdQuery.html",
-          "hash": "SeAi8eWrZBlHEb93ksD4Qq/rxkyE84m04FLR3zDaykc="
+          "hash": "WtGFj7FsaKWqhdXTeo0JAOWwuPlTpyzYsMTdShBr8xk="
         }
       },
       "version": ""
@@ -438,7 +1208,29 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById.html",
-          "hash": "yX7KKcyD5wIGZK58J7h/xuaZ072YTnJIRpvOd+8z0Ts="
+          "hash": "ORw3T8lJjELrq63V7Ho90UiqfUhM1gpgCuC47Z3zbcA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions.GetPaginatedAttractionsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions.GetPaginatedAttractionsQuery.html",
+          "hash": "tDeS0AlyarChbjcxGItD/xFuDHy12D0yTkWWJiKiNTo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions.html",
+          "hash": "9cSKGgUs84GiiKcWVExYIE9i3+k0pGBuBcwXmkHRkWQ="
         }
       },
       "version": ""
@@ -449,7 +1241,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.AddAttractionReservationCommand.html",
-          "hash": "6Q72aK1A/pulcmzLSMZjodozULO9exOdhii0DCVhbDc="
+          "hash": "L1unIJvRTOVgcNu5mEalF8MOnXm+7TZLoHF67oBulYI="
         }
       },
       "version": ""
@@ -460,7 +1252,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.AddAttractionReservation.html",
-          "hash": "I9/08giOfpTMBvsoGy18AqneSrRb4vr3cedjz5BbZLs="
+          "hash": "ILuzvWDYHz1i8LdEzMJrxZ1gJjelkR6hYFUvdWfRbkQ="
         }
       },
       "version": ""
@@ -471,7 +1263,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.DeleteAttractionReservationCommand.html",
-          "hash": "OQomLMgEdhNfz9kJ5p6Kduo3nDV5bIOO+1fQt/ys1gI="
+          "hash": "/QSx/8n2+MVUylbzEjk4oiQC5EMCNhyjJY5yI3zBePI="
         }
       },
       "version": ""
@@ -482,7 +1274,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.DeleteAttractionReservation.html",
-          "hash": "veUt3DCT3ovVP3xXq5NwkRY4XKiD/H5zfgh0/SB/C0Q="
+          "hash": "XqquCbu5PnGIwxPE8T5nRpklcJ8AChISzOMUflnNdOc="
         }
       },
       "version": ""
@@ -493,7 +1285,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.UpdateAttractionReservationCommand.html",
-          "hash": "9u7yutU+0Rp9NszLd7HxHpKxwWsWCuM4gyEld8guCnw="
+          "hash": "B7cVyDxgWoFWtbpqsmxG03e81JsmUV+ikutzs76kgms="
         }
       },
       "version": ""
@@ -504,7 +1296,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation.html",
-          "hash": "+LTgkcvskNxTMJyoPFKCq2nrUWch2soFa05+oQfSQWI="
+          "hash": "Hdzp4IZ7vmjoQEz8UnOue6OSp+BF49bheBrcgi6Ozls="
         }
       },
       "version": ""
@@ -515,7 +1307,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.AddAttractionReservationDto.html",
-          "hash": "17w61orYyXiKuJ8WCNy6Hrvl0FbK4Ynu/hRZKcR9y8c="
+          "hash": "o3cSxl6sIzlwhbxmnGlPr2/afwJ958UHaJ6ysQ5WGWs="
         }
       },
       "version": ""
@@ -526,7 +1318,18 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetAttractionReservationDto.html",
-          "hash": "rAJYSvwE7V6lMSDs1LBwX6XdV8yA3UiYM4qAlrkQaUM="
+          "hash": "b+Hu8FxVvYbj/urYEenDqiVcEHs2A9AtvOYNyh0tPGY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetReservedAttractionDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.GetReservedAttractionDto.html",
+          "hash": "gzTYYsttkmTJ0qVp3RjQ1t8dZw+8TgJUtZRB1DRdHHg="
         }
       },
       "version": ""
@@ -537,7 +1340,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.UpdateAttractionReservationDto.html",
-          "hash": "ERIyDgvdxl/nIjRCjotEYIQZz/MtQZubf95LXGsZOHs="
+          "hash": "KC/P2eObybhrVmxul/mQZZHUAD2aSy3XWmrxl/ni7us="
         }
       },
       "version": ""
@@ -548,7 +1351,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.DTOs.html",
-          "hash": "qT5kp37SW17BvGfXthmtcnNASICjmtNTKVWJUZIJHcc="
+          "hash": "iF3ybRBIe+ZguM3qv4Tjv1DBcfk0ObFv3lZhodE1Juc="
         }
       },
       "version": ""
@@ -559,7 +1362,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.GetAttractionReservationByIdQuery.html",
-          "hash": "E7diAk1SmjWRQjKm8Z9WQPbK0Dnmr8DnWmyAh76v3o4="
+          "hash": "TMTObGqHtNS507awWirlOX4tSP7AyFCFgL/tMk+TPfg="
         }
       },
       "version": ""
@@ -570,7 +1373,931 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById.html",
-          "hash": "kLvrbWn/VGemDNFpOgYwDij/y9zkLYP2oJfoQz2gKFg="
+          "hash": "tdpVuv31BcQ54RP+r6dftIKK45TQDaIL7e5stjE0Cbs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetails.GetAllReservedAttractionDetailsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetails.GetAllReservedAttractionDetailsQuery.html",
+          "hash": "mG6jYUezKHCj4DhrR3ndjHijUNvQGte6M0WaHPWuzCk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetails.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetails.html",
+          "hash": "ryJ1tPWxudEHVkIpd2Zk3mspjsJeXiXsbQtRtX390sY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetailsById.GetReservedAttractionDetailsByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetailsById.GetReservedAttractionDetailsByIdQuery.html",
+          "hash": "ZAb8tZBdSq0eSU/xfADdt7Q1WYpzt7WmPoYREOvwJM8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetailsById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetailsById.html",
+          "hash": "FEd97/TjA34IpsJwq8lfg7xgLTa2kzyvc69WyOxV1So="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview.AddAttractionReviewCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview.AddAttractionReviewCommand.html",
+          "hash": "sWJYlYiDT8pJnM6LNhaelwbesnKfZwdsekCXM3fZ/k8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview.AddAttractionReviewCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview.AddAttractionReviewCommandHandler.html",
+          "hash": "oqcp+Yg7jaqcp9RJd0+BZpeG+5eNFWfIQb62dBIU5l4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.AddAttractionReview.html",
+          "hash": "gXBuc8jkI8Fkwo/iEaRrOScuMn/s608qAIvr+XAO06Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.DeleteAttractionReview.DeleteAttractionReviewCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.DeleteAttractionReview.DeleteAttractionReviewCommand.html",
+          "hash": "tXfDCRg/pYZ4PIGW+6+jkZOdGiOGUYPfXRA5VC0gkxo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.DeleteAttractionReview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.DeleteAttractionReview.html",
+          "hash": "6j3++K1kAzKexD50wS+vRNGV8BewQrHsUJ96Z1CJLbQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview.UpdateAttractionReviewCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview.UpdateAttractionReviewCommand.html",
+          "hash": "m1xUlDCXlyL4FPKdGHEuroOtsPTyBFd+2+X5wiL3c58="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Commands.UpdateAttractionReview.html",
+          "hash": "wXVCvrnfH7NdlPqDhP6FIlK4SYong7S+tURCfikCZxs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.AddAttractionReviewDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.AddAttractionReviewDto.html",
+          "hash": "L5Hqz5Z3vMHImtnbw69772ydPbygNKbmw4CQULzUirw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.GetAttractionReviewDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.GetAttractionReviewDto.html",
+          "hash": "ebwWl41OMC3IXi2H5wvu0r6uGx3B9SN9uXMh+X4deSM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.UpdateAttractionReviewDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.UpdateAttractionReviewDto.html",
+          "hash": "+fFCe0vGGSRwwPKvKAkF/3Htlw60vID/SHyFcGjrM2I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.DTOs.html",
+          "hash": "l6MByOeJ2b3ETULzaWrBG9uupm06yBqOSZgQuBtVjZI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.EntityMappingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.EntityMappingConfig.html",
+          "hash": "atmuPPmlfkpum0Dx8avbTvjSToq9KpnJmJqdNFKQqZ4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews.GetAllAttractionReviewsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews.GetAllAttractionReviewsQuery.html",
+          "hash": "FeDVR6SOC1b6oLPWZL4zboD/EBzrrYejXzDAu8RgXjQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews.GetAllAttractionReviewsQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews.GetAllAttractionReviewsQueryHandler.html",
+          "hash": "zjki+KnvbUAwSGNbnfFhNaEj/V6oxNdjKzO4kUJbuPk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAllAttractionReviews.html",
+          "hash": "eajc3U7ZxAUdjuccaW/6HtlpUezX1EMzg3FM/phruHE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttractionReviewById.GetAttractionReviewByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttractionReviewById.GetAttractionReviewByIdQuery.html",
+          "hash": "IKIBuMcWk1X2Yo7/Otshf5f4pWdpdC2sCERuLovsDBM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttractionReviewById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.Queries.GetAttractionReviewById.html",
+          "hash": "pbFtL2LAd/+At5OZ2NVXa7H5wJOYPidkD/2IIP6+T6w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.AttractionReviewFeatures.html",
+          "hash": "qq0+dDaixOKFw+tvi/8Dqat/Z/9/bajjcbuI0kZhWOg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.Commands.AddHotel.AddHotelCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.Commands.AddHotel.AddHotelCommandHandler.html",
+          "hash": "hfFvM36vcO+kv6KrkbSevcXc6ZzevxKqm8j26hV6MaE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.Commands.AddHotel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.Commands.AddHotel.html",
+          "hash": "JcLqjR8ajW+2Aegd1QILDQ+iUj1KU/QnH9w/N/1zD9Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.AddHotel.AddHotelCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.AddHotel.AddHotelCommand.html",
+          "hash": "L7GRsWs7PbXKi8sWXLIUkXzaNwUY4cr6/3oPElEmM40="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.AddHotel.AddHotelCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.AddHotel.AddHotelCommandValidator.html",
+          "hash": "2tdh6yFxO+61gVqCB5Y4DpsUh1TEeNr8/zyeRBG3/mM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.AddHotel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.AddHotel.html",
+          "hash": "7L6OF3NArjDv9/XD/bBAP6Br6XklmXYk31zWJZZfWpE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.AddHotelDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.AddHotelDto.html",
+          "hash": "0Q/vb8/bz+SN7ySf4wN9aM646RXT3EaTg0+1IIQq6eY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.GetHotelsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.GetHotelsDto.html",
+          "hash": "mcEjh5mX45UUbgcQs8frOYfwNVj3LMDAJBp2osVqN8Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.UpdateHotelDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.UpdateHotelDto.html",
+          "hash": "k0xniEsbxy1/2L5Ongrtp0sw9kLf8JrEz2oHCMy1rbg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.DTOs.html",
+          "hash": "v6dkcMVg28xBe/3M78Pq845+lbPhNTiZcYjoRjU0/WM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.DeleteHotel.DeleteHotelCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.DeleteHotel.DeleteHotelCommand.html",
+          "hash": "AbiuYkpe1vQUY7dAXgO6WPd+skSJkecXSnru6Pb2V44="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.DeleteHotel.DeleteHotelCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.DeleteHotel.DeleteHotelCommandHandler.html",
+          "hash": "Q7mse3/+UcBe+czaoooEp5XMF6WnWlrwUZZA1yt4HlQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.DeleteHotel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.DeleteHotel.html",
+          "hash": "o5CmNUi1PfJgCaJ9mYRRF4aRx5EqJaWLTDnkqqQtxAw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.EntityMappingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.EntityMappingConfig.html",
+          "hash": "fhy39R3W+aS3LHqOF9QG8geJ5XrSni04zznOK8wX40s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetAll.GetAllHotelsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetAll.GetAllHotelsQuery.html",
+          "hash": "56QASwIRsqS+ZnGW6FeeTqtoMltpTZGzzbV2VWGWkgA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetAll.GetAllQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetAll.GetAllQueryHandler.html",
+          "hash": "C5Al5n2eEiKm6fdsMZorSddEwk7zCu/R39UqSCcZ1Uo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetAll.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetAll.html",
+          "hash": "MmHkoX2WIJZWiGHdlotFxxPlvAxgMiK5OlEty8UR4JQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetById.GetByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetById.GetByIdQuery.html",
+          "hash": "LqP269FNgSLNkxi/wMaCTUJD3hL8rsOjERTHoNkOR4Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetById.GetByIdQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetById.GetByIdQueryHandler.html",
+          "hash": "Pc4KhFF2XZBIyY0iH5zOaxIUiGFKdUyu63uEWEa5Hf4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.Queries.GetById.html",
+          "hash": "G7TvA0EznRbywTm180YghNzL6vErA6uJV55gVed4ClE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.UpdateHotel.UpdateHotelCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.UpdateHotel.UpdateHotelCommand.html",
+          "hash": "aXv92M8LroLz7MQl5JpvnQXTLMIyWAwmbnOZmIgphr8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.UpdateHotel.UpdateHotelCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.UpdateHotel.UpdateHotelCommandHandler.html",
+          "hash": "U/3x0wQwHjOqF0EKAWYQb/3LBcuq8Bf184EQV75I8+M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.UpdateHotel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.UpdateHotel.html",
+          "hash": "iosBl1ebLe0g5hywZQUiBSVih+9DWSmiVTWKJUTsZKQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelFeatures.html",
+          "hash": "2M9g0/OwpIPyXDdNOyveSzlSGTTNjmv0gQRltYeUk7A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview.AddHotelReviewCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview.AddHotelReviewCommand.html",
+          "hash": "+SG2k8lUOikbQVKStet9BlAoui/w49SA3+lZOj4XdN4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview.AddHotelReviewCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview.AddHotelReviewCommandHandler.html",
+          "hash": "qIERu/g1meStucJbRFbVzUyYOVYlKGKd0TpvrKyhkMk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.AddHotelReview.html",
+          "hash": "tzf/IgfxEN+a71hOdQ1Y1rOx2cJvSXcYcswxQ/W+F0E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview.DeleteHotelReviewCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview.DeleteHotelReviewCommand.html",
+          "hash": "o7r4l4UYVpLxfEBGiJV65kZQM0ImWBZMHYM/kv0oq00="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.DeleteHotelReview.html",
+          "hash": "2wSY+OCLNs7uELs1kXqa0d6CgfMJIA7a5+UaEK8OnNQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview.UpdateHotelReviewCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview.UpdateHotelReviewCommand.html",
+          "hash": "bpBZzPO6zKLrlvBUT7GCF2O2uZhltbCGaDUsUR5a7DU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Commands.UpdateHotelReview.html",
+          "hash": "h7JHeC08U++yFJb6Hc77EmsAFyhT1MSGuBkIEY4f1Ls="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.AddHotelReviewDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.AddHotelReviewDto.html",
+          "hash": "eZ5RMxZOtEDLhxIDa/tCscACwAvGxtBAAUt9F6MIN+A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.GetHotelReviewDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.GetHotelReviewDto.html",
+          "hash": "9/IV52jVpyOZ5YSami0Th6XOmdf8hxrykJjG9ALRhOA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.UpdateHotelReviewDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.UpdateHotelReviewDto.html",
+          "hash": "3YnZ6ApRKJS7YfjQnok6DyiPFgsf3RS0RSjpMNFY4+M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.DTOs.html",
+          "hash": "yzSKtDQlQrdQZFNffLihd9TRrrfcnlli6ssgKQOXc30="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.EntityMappingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.EntityMappingConfig.html",
+          "hash": "UiKiPja2eh+Xb07dwkNel0BsKIY3ftjHUXaTGjPCWDg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetAllHotelReviews.GetAllHotelReviewsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetAllHotelReviews.GetAllHotelReviewsQuery.html",
+          "hash": "JHecdbXXP7qLO1qBUzwr998nNun0b1QP5LzKqO1mJ1Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetAllHotelReviews.GetAllHotelReviewsQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetAllHotelReviews.GetAllHotelReviewsQueryHandler.html",
+          "hash": "XkGEDiXs54Fc8Hypv1muYFiZymqzRbCESrQdXCdMVkc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetAllHotelReviews.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetAllHotelReviews.html",
+          "hash": "A+GshPXHxzmp8pApo7yBGrH973V0SwStMB1M7ET8qXs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById.GetHotelReviewByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById.GetHotelReviewByIdQuery.html",
+          "hash": "undfB06eZGZP2Qxg3Q89lMsKTZQB/D7KGBcn414023k="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.Queries.GetHotelReviewById.html",
+          "hash": "Az497hSnMb0AIA6OQPk55iWJPCYmD1lqyPr4Pb71ry4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.HotelReviewFeatures.html",
+          "hash": "nTXreeQ0Ev4Tge77UjFSuq/DplWiK5qKIWjJR4Tu5Qg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.AddRoom.AddRoomCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.AddRoom.AddRoomCommand.html",
+          "hash": "PzLJiUTBO5ZxWNkYNlLB0iP2r/eDMljq91Pi9PSOw3c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.AddRoom.AddRoomCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.AddRoom.AddRoomCommandHandler.html",
+          "hash": "Lm6n6pThsVxeUHGuXPXipXTINc+wEvXyVvs1pD3Hp/w="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.AddRoom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.AddRoom.html",
+          "hash": "P0QSTGSHRMIEBHcYB8pTwIMRAEu/I+uU6r4ajUTqzwk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.DeleteRoom.DeleteRoomCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.DeleteRoom.DeleteRoomCommand.html",
+          "hash": "HbjrNKOVmDb676H5UQkw2h5bORVmzwHPOPtVnTQKtI8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.DeleteRoom.DeleteRoomCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.DeleteRoom.DeleteRoomCommandHandler.html",
+          "hash": "oX7i3J6QAqZZ+uzUBJ4RcRr88piEA95wIiVviEIR8EE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.DeleteRoom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.DeleteRoom.html",
+          "hash": "chzjtD8yUs/izbVM+kaNR/FW27PYztNWmIe6vKweRgs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.UpdateRoom.UpdateRoomCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.UpdateRoom.UpdateRoomCommand.html",
+          "hash": "oBrAvWSlAWnLTfzdXJuUiv9zuV8ve8RO/M6g8pA+pCM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.UpdateRoom.UpdateRoomCommandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.UpdateRoom.UpdateRoomCommandHandler.html",
+          "hash": "2SPcVlk6aV0BLdN8KHd7zHRpIHJ1C78JulNKacUE+04="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.UpdateRoom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Commands.UpdateRoom.html",
+          "hash": "tYuQJpDf51k4ldsh0U/V4K3lt3aUGr3wwdc0DoqP3Lk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.AddRoomDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.AddRoomDto.html",
+          "hash": "qEE/LnDjy37xaFSeGEglBqqS+iI0m5mOZkMaSzefKbM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.GetRoomDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.GetRoomDto.html",
+          "hash": "52xRiX6byALzbnJvckZGh8fX6wKBjQlILayQg+EuylE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.UpdateRoomDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.UpdateRoomDto.html",
+          "hash": "p/Ao2JArVAmTwzjkvOKAAv3ZPetCIsckD3tvISZnZjo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.DTOs.html",
+          "hash": "97RbzjKWTvxtJQcwa5DEb2syOOgVVkH5YcgdGsOe6sA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.EntityMappingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.EntityMappingConfig.html",
+          "hash": "X+HrRdmlgaF+m8NxiP7cZXVerd++ala1B0ow4IiFt2I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms.GetAllRoomsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms.GetAllRoomsQuery.html",
+          "hash": "nSVhPJeeVlba9IWGFrym9ojMCvTFATrAhPVfz8uIFRg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms.GetAllRoomsQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms.GetAllRoomsQueryHandler.html",
+          "hash": "PjEltQfnCMhjhUztvxlqf3HH7Y35aElTYf7oHQtj5BU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms.html",
+          "hash": "uhtr7DvnWg/zm9pq5N9FtFmWQQcqhd/30ATN5CK4NMM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById.GetRoomByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById.GetRoomByIdQuery.html",
+          "hash": "XyY7ofCb3Yr5l7I4QQ4Vzj40EyD0sXD1apopwmZj5bQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById.GetRoomByIdQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById.GetRoomByIdQueryHandler.html",
+          "hash": "pH11TW0t2//rAdwPG67bbyFYVuU0rQhrgRX3gn5BTKE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.Queries.GetRoomById.html",
+          "hash": "2+gno4kIongkgXKuB454oAvkOnfWT1+LFHonl4QOXQ4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomFeatures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomFeatures.html",
+          "hash": "swaua2udkM1IsoOpEYCpFbatEy2aZe5411w3uIYMqcE="
         }
       },
       "version": ""
@@ -581,7 +2308,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.AddRoomReservationCommand.html",
-          "hash": "CLPZelwQuMqLEDMhBa82gbmV7Qy3d5m6fTRLpF1PQe8="
+          "hash": "Fpzw85AkIB7ClVa1LHJk005WSAOfBXfzT4oK5v2w4cg="
         }
       },
       "version": ""
@@ -592,7 +2319,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.AddRoomReservation.html",
-          "hash": "kNeoEI3mhiEejhGmhq3CwoJS4MliO7XnK6i2SWfl93c="
+          "hash": "pVQ2GiLBEonaOJczj7PXRXSCZ5HzrCiSSS/voeZNgYA="
         }
       },
       "version": ""
@@ -603,7 +2330,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation.DeleteRoomReservationCommand.html",
-          "hash": "6MWVYg4yALvgtwopLeqxRWersZAGUtP1jCTCoQI/W1A="
+          "hash": "LPuueETt2N3mIZKDaKnJ2UVgrWUSby3SVibX6DN4kTQ="
         }
       },
       "version": ""
@@ -614,7 +2341,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.DeleteRoomReservation.html",
-          "hash": "RHVaTz400krA4+1p2OGI/lrsYurtrQ/XFHwap1s27Ns="
+          "hash": "nR0srmK2/kKoBdHsUCHnfmuQ4H6qn7QmGTiCPsmS2aw="
         }
       },
       "version": ""
@@ -625,7 +2352,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation.UpdateRoomReservationCommand.html",
-          "hash": "DleyOpmXD/AmK7/uO1fNzBqsH/FdJoyU78845BVydZE="
+          "hash": "g7bxGulYr1XBBgiV3GfxrgtHQnb56G/NPoBaqbAU4T0="
         }
       },
       "version": ""
@@ -636,7 +2363,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Commands.UpdateRoomReservation.html",
-          "hash": "L5gSxUjtKdtINEEsp2th5qAi7064f5qIPtp9HTp7FNI="
+          "hash": "qi6YaRW6Ms4aegIOGHBR9nuutCrfrb3HBTaRakCR5Ng="
         }
       },
       "version": ""
@@ -647,7 +2374,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.AddRoomReservationDto.html",
-          "hash": "W75deNYkAVB0bLvXdoC9nZS7h7LAIVTskARJV25idfo="
+          "hash": "/nE0AoR//cbPwQXBvJ3/s8Vc/QGzr/nm/CVmObK5Q1M="
         }
       },
       "version": ""
@@ -658,7 +2385,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.GetRoomReservationDto.html",
-          "hash": "FtwpEvj2mj347JOBHrNCAZrepe8JSURrubiEuN2ByOw="
+          "hash": "7d4cNJyumEpXrtxHPTJ4VcK0UxS/9f+CXxb/IzgLxPs="
         }
       },
       "version": ""
@@ -669,7 +2396,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.UpdateRoomReservationDto.html",
-          "hash": "ToPnUt7jbGjb9dyYyVsJxfvAfwbw0nMXUI26R+r2ESI="
+          "hash": "OsmS0EEE3dGkwtvhduzynhg1GgU124pVZlDIWGhyFUI="
         }
       },
       "version": ""
@@ -680,7 +2407,40 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.DTOs.html",
-          "hash": "rzKQUtuIbgb2IiT86CllkKGN619dwLfgAAkaYuxqVEc="
+          "hash": "RWpgu+vgf10EHAQ7qUjz06XK7e6vWPhUgQHSU1WVp1c="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllAttractionReservationsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllAttractionReservationsQuery.html",
+          "hash": "NmQeDEHvnaWZ5w6fyttDWnVsx0wYk/sI9hco8KIkn9g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.GetAllRoomReservationsQuery.html",
+          "hash": "PnDxtLayJfmNIF041P7dBhzBgCjWKaXIPlCp2kcD9rA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations.html",
+          "hash": "ya0GxlF3Wwp+TXrP2JB65nw+KM+xX1O0yHtXKx+7vvw="
         }
       },
       "version": ""
@@ -691,7 +2451,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.GetRoomReservationByIdQuery.html",
-          "hash": "h37unwGOOxqfunWKKzSteW5GHqz1WBQAb29YNJKJlpM="
+          "hash": "kFsBAC3dfaK21f9Kew1Ykdqb6WjxDd2dilFw34/1/RQ="
         }
       },
       "version": ""
@@ -702,7 +2462,854 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.Features.RoomReservationFeatures.Queries.GetRoomReservationById.html",
-          "hash": "/JTWWq/06sHg36l24jfRoKrNW43BnWjPDqDl8x1Auhk="
+          "hash": "zBgeETiSrXd2uumatoLjx0jZ138THiqK0AW/nNoaqOs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.DTOs.CityDetailsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.DTOs.CityDetailsDto.html",
+          "hash": "7mFj76IUBg3CUQZpIaEycjc0krP1gHHzLbOFTPiTzMI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.DTOs.CityMinimalDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.DTOs.CityMinimalDto.html",
+          "hash": "cW2IcAXPjuPiWqzOJj9uUr61lA4c8fXT8O52xm6mQu4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.DTOs.html",
+          "hash": "EJ8SHUgh3ehj4llKCLMCdVxNfrD7SVe/tOcIuaDtyOs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.AddCityCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.AddCityCommand.html",
+          "hash": "gxc5EGykwDnL3ajrraguBLUOIQx6sppSC/ExCRGzbPY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.AddCityCommandHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.AddCityCommandHandlar.html",
+          "hash": "zz0b6PhGGEkVPdIwqTDi7E7/icmgqRL9BjP8noio3xg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.AddCityCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.AddCityCommandValidator.html",
+          "hash": "Lkflj9bgLcqQYA9c1XVuuv5C61++imRDZL8bL54CnIE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.addcitycommand2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.addcitycommand2.html",
+          "hash": "sqMudvwJbvPYAoK3YPPIADEiQ3udY/C5awZp6ZqOY+0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.addcitycommandhandler2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.addcitycommandhandler2.html",
+          "hash": "ynwM/6JMcBhtAsPjxnPtyEDaZ+wdGJ4SBWWUMa7fQoc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.AddCity.html",
+          "hash": "wk6BJz4SJdkXEsNS84cdMdrKOXtPxSgJaR7c0LqfxLU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.DeleteCity.DeleteCityCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.DeleteCity.DeleteCityCommand.html",
+          "hash": "yx/79zT+8R7zod6cXkFsUAyOCjfpmKDOHdH0Mc+hjNM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.DeleteCity.DeleteCityCommandHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.DeleteCity.DeleteCityCommandHandlar.html",
+          "hash": "fj8o/5F7odBRDnZ6peHOlNyxqQybzYLrr89iXHgh0mA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.DeleteCity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.DeleteCity.html",
+          "hash": "Ta1Ut3fbF4pQqmhATGBSyudbCbW9+oUhnD4TL2V+JF8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.UpdateCityCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.UpdateCityCommand.html",
+          "hash": "RE5vLlZvOGxUnZAdaJiEyY4ce0a3ueLpP546TNTRQzQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.UpdateCityCommandHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.UpdateCityCommandHandlar.html",
+          "hash": "q3htVLRhVxE+tT8wRHl4JBo7s2ffQFlhyq7QM3jj/V4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.UpdateCityCommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.UpdateCityCommandValidator.html",
+          "hash": "HzNeGdYLNPFNrk5RPtmDrbvbo0F+fsLgiFfvcEQIYJw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.updatecitycommand2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.updatecitycommand2.html",
+          "hash": "n+OABgcX6fn72e5hljEXOC9SISec1T/LQqkcJnFMTls="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.commands.UpdateCity.html",
+          "hash": "ioczvMQ1n+6mYE1G2qwzZ/+q4TeXPZt7z+1PgLnIW3I="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.GetAllCitiesQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.GetAllCitiesQuery.html",
+          "hash": "rxMlzjCSoDVkXBQTDw/80J5tNkZg6Ixo4HoSmK20LZ8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.GetAllCitiesQueryHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.GetAllCitiesQueryHandlar.html",
+          "hash": "q48I6nwKMvZcX0vZL6HHAs3AnmfvmhlW0BjZEKTTnCM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.getallcitiesquery2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.getallcitiesquery2.html",
+          "hash": "ErpL0sGbewvvM3Bc8I6EjbO+9PTJVhscM/xqLCrVHWA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.getallcitiesqueryhandler2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.getallcitiesqueryhandler2.html",
+          "hash": "YMb6uP1ClJAIf7jS1JS0vDCEDe25ZZfuKFRId9kUXNs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetAllCities.html",
+          "hash": "AeS7D60mMXshy7YQXwjja8RYrR5IF0Wdm3J4fZ5PdGw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetCityById.GetCityByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetCityById.GetCityByIdQuery.html",
+          "hash": "UgW1BPM5FMqIU3gLAmcmmCqXlORAHNYusDLVmwVq0eI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetCityById.GetCityByIdQueryHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetCityById.GetCityByIdQueryHandler.html",
+          "hash": "DndZohNClq7C3a5/5UthI5Sl4DjOk2bW9tsOpcFPTPc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.city.queries.GetCityById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.city.queries.GetCityById.html",
+          "hash": "j9uTQDgpa1PO5KziQvG4Ked8eETXaW9tbtxjmmszCzY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.DTOs.ContinentDetailsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.DTOs.ContinentDetailsDto.html",
+          "hash": "KMbIHrrP5pVH2hrTXynOqnG07g916CyXDWmhGESIltE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.DTOs.ContinentMinimalDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.DTOs.ContinentMinimalDto.html",
+          "hash": "OERhNg82Ii6oBVzeF57DZ3YP8TShujxQG1ACaTXSVS4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.DTOs.html",
+          "hash": "cq+sH1RGYp0WOI3Tr2cjO/dfEnkruElN60U1ow17obE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmand.html",
+          "hash": "j32umBfgj2g99TJWC20+7p+r0WO5Va6GmBUy7BSARXM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandHandler.html",
+          "hash": "IJhtVky1JxG6sqpvR3G5vxz3BlKU0oC4JqFVJCPPTmg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.AddContinentCommmandValidator.html",
+          "hash": "0uGkKUWyxf++grwsdAPkCGKXYn0LWtffkLBx6mOXS+E="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommand2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommand2.html",
+          "hash": "QxrXWW0a1dOEBYb/Yt/n8z61f7ph/qlwwUXxrHXOpCY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommandhandler2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.addcontinentcommandhandler2.html",
+          "hash": "iBYxFkleYJoihVHZ4BySlRCpr6n4fMd6VT3xPWSE4Jw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.AddContinent.html",
+          "hash": "vsCqaE0QeVP2ZhTPRb56qNtH4VMrP3YnirI6fFv+2yw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmand.html",
+          "hash": "Du1hNA7P/Twe7/rZRR0o6d5i6euFEMeQGenkKgfLN+Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmandHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.DeleteContinentCommmandHandlar.html",
+          "hash": "vf5dsIvYHz4WUVHHSGjNJstz7my/NgPFrM06ncGDdvs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.DeleteContinent.html",
+          "hash": "9hoMsFYUcqKDBKXGK7h6O/tFZ+QC4B/6NsrEnOPu09A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmand.html",
+          "hash": "d9rT0tfOD/hYDzEveYi45stxl/sLM5C9k1hOPnBup8g="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmandHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.UpdateContinentCommmandHandlar.html",
+          "hash": "Yw7M43qCOBslyxiUJ5MYKUKc1iNhc4UdZPfYDjjN8rs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.updatecontinentcommand2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.updatecontinentcommand2.html",
+          "hash": "zV1SdMLQibJjxyLhrLz/V896ZWwqtyWv1RWqXgDapEo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.commands.UpdateContinent.html",
+          "hash": "fjKi9tutErQ1V8VaMN9viOccMAXKJ6gpOi+D+348J6s="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQuery.html",
+          "hash": "WATbQOgQVGKof5QjbBEs4gR9D3WoPPs9ao6wD87ouBA="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQueryHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.GetAllcontinentQueryHandlar.html",
+          "hash": "wrpTNZFoIgTLdScSZLSRPkjp38Ig/C8Nbnj9G8h2bMw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.getallcontinentquery2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.getallcontinentquery2.html",
+          "hash": "UwEQViN1SBOdpHEWyESG46DWGfB6C6GvAYXBZT0lu2M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.GetAllcontinent.html",
+          "hash": "FGw1NCN0C5JIkY1MRC8SzQwn6NFcUAkuUTghpusLmII="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQuery.html",
+          "hash": "ZuVPlImlWsyQaUb1gwOlopoxfD6dg7Jg7PdHMZI5gFo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQueryHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.GetContinentByIdQueryHandlar.html",
+          "hash": "uULJnOSKJkCQophnZhaWcKx3KlDsFYeJdTbrDAPyuhc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.GetContinentById.html",
+          "hash": "MwFC1OfjPgw2mNxL9P/CJtW4Xe4ymJXkicVnTtdArvg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.GetAllContinentsQuerywithoutpagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.GetAllContinentsQuerywithoutpagination.html",
+          "hash": "MfDQicKo5IH/SijUbmdNNkZtNCJ0Ncx9fXyKXVAGvb4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.getAllContinentswithoutpaginationQueryHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.getAllContinentswithoutpaginationQueryHandlar.html",
+          "hash": "YIkp/5+a1R9E57Hk+jmaujKVmSh2OxW084KmPdnrJn0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination.html",
+          "hash": "llwlgMLwTmFZ233h58MDi373doiwzoTbiXUc27m0MJg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryDetailsDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryDetailsDto.html",
+          "hash": "mGj332aCW8yGPaxtBPcWvIpp+AwHK87gcwn4BKpFP/0="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryMinimalDto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.DTOs.CountryMinimalDto.html",
+          "hash": "zk/GEX56xZfZcm7Y6/BEom29Fy4Z351SEWHpcJ2foWQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.DTOs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.DTOs.html",
+          "hash": "vbzWxBEnXnzgvuJNEcd5NNlSP4y7zY3UPRwAKyRiicE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmand.html",
+          "hash": "02FXc0MsyOOX1LlEY4TSPb5ZcWd8huDYEi4JIHMAYyU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmandHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.AddCountryCommmandHandlar.html",
+          "hash": "q3E2bEbu96wDA1z3EhWfrib0kYfUILnOSwrXXAqfgvM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountrycommand2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountrycommand2.html",
+          "hash": "ihxdJTx16mRL3GbNwITzPsXdWNxzVfWLLWMHYtEJIWg="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountycommandhandler2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.addcountycommandhandler2.html",
+          "hash": "DFNOmBt37sU51zuTObrk/MaFFYAMpmOzyFaxQIyYVso="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.AddCountry.html",
+          "hash": "Ms4s0okcm8X5sL3x3KEURoxc9AdrHPNO1LvfJrQa9t4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmand.html",
+          "hash": "mmSHDvG3WzVYh7wcMwSAsbA/oRSCYPsSEpAgGAqBDlE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmandHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.DeleteCountryCommmandHandlar.html",
+          "hash": "w0ov5uNmOApAM4waRaRZ9kE6G1hqDMpov4yHjQCWS48="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.DeleteCountry.html",
+          "hash": "448VdcyhYn7GVeOLX10P098S1qFOaLzqizi1mo6b1Do="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmand.html",
+          "hash": "ILJUBy14YqbDhk4rL+lpcGkRzxr7da4XXgCq1suu8IE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmandHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.UpdateCountryCommmandHandler.html",
+          "hash": "kE6cusMcV5kgOcjrfOJ1PHBSAXirOGMopQZBAPe7vY8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.updatecountrycommand2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.updatecountrycommand2.html",
+          "hash": "pDrUcPJdIJEnj93Pge1uzkbqK2qSZ/bO+bJ4pl//ubU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.commands.UpdateCountry.html",
+          "hash": "ntPiWzXpWsZqcRCoIJIswRzcTY3VX8yGmcB7Uw1LzPw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuery.html",
+          "hash": "cCqqHm6sSDXdPvM6aM31Frr3CJ5NlWLR/MWZRrUnWBE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQueryHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQueryHandlar.html",
+          "hash": "038suEuuuqCzA2gVFTo9VGhyXXVCYgxW5NbWcGZXtnM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuerywithoutpagination.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.GetAllCountriesQuerywithoutpagination.html",
+          "hash": "CwBbS3gD45lbjRCOpGDhjkKFR94R31D51+ll45HoEd4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getAllCountrieswithoutpaginationQueryHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getAllCountrieswithoutpaginationQueryHandlar.html",
+          "hash": "DUAVQWpCfF2QlJJFdsio/BkijzmK3VhzffbG6z6TMLk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getallcountryquery2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.getallcountryquery2.html",
+          "hash": "3WYMioRg/nds7ha2mQmh2pTFMLMoPpv2J4barvL254Q="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitAllCountries.html",
+          "hash": "117oVgWC/NZdh1wfyNB9TOMrTUPi0X/PWUdQnlOJOKQ="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQuery.html",
+          "hash": "DOX5Sb/WU2icNLtJXs+vFSfVHCI1qmSefjBbVpN1xuo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQueryHandlar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.GetCountryByIdQueryHandlar.html",
+          "hash": "NVYi7gmg7IBG6bc4tAUrd5vEJy20HCxRPa18CJJbmNs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.GitCountryById.html",
+          "hash": "uXRqJgNP8ce1+bePTwBStC8ewF0dLxCUD+izWUTPn/o="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.getallcountryqueryhandler2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.getallcountryqueryhandler2.html",
+          "hash": "SzYUExdPi0jh3PfiLUcctVb28r9vSdrJmqUBP8ke0qM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Application.Features.country.queries.getAllCountries.html",
+          "hash": "pKE6r0i+8ic6fG1RZy+6AoZU9AISKfJJOLZ1IGm54s4="
         }
       },
       "version": ""
@@ -713,7 +3320,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Application.html",
-          "hash": "dsAKTgV+Cezv+UqWI4rVEZbYAU9tnUaHd2VQzF2Y8Ps="
+          "hash": "8E/2D3w+VNISe6VzrfsbYbPyRXEPqLNMNuYx9zXsW+E="
         }
       },
       "version": ""
@@ -724,7 +3331,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.BaseAuditableEntity-1.html",
-          "hash": "eDFGtUkPmBJ5sY1Cf1/prfM6fBiC7y6CRKUV3i2fclE="
+          "hash": "XGdeWaCDSE4PhjZm+GKpALhPV1k9Lpb61Y0xsznK6Ts="
         }
       },
       "version": ""
@@ -735,7 +3342,29 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.BaseEntity-1.html",
-          "hash": "rEOrTguf4CHP8HJ39ES6duDBXSJwiOdFYoyTKJYKfUU="
+          "hash": "ZQuCeKXQTSWBGYRzAGxa4gsoRexShAaUSCKX2bOisgI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Common.PagedList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Common.PagedList-1.html",
+          "hash": "48Y5i1/J0Eo7W74BxUFKMl2Ziu6sglmUjxMDiUOJP8A="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Common.PaginationQuery.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Common.PaginationQuery.html",
+          "hash": "WW45smaHvxa2jUvyo2U8GnD61AYMiT1npqgDTbmtKMA="
         }
       },
       "version": ""
@@ -746,7 +3375,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Common.html",
-          "hash": "jDaoMUaIBnMZUMC4JYGRDFvbH8KT23M0eKLfJmRXzPk="
+          "hash": "M5Cx9AcALGYORm5oBZOeDeeyg4JjpvGbhRKkznbYUyo="
         }
       },
       "version": ""
@@ -757,7 +3386,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IAttractionRepository.html",
-          "hash": "oKvpkmfCeAFLAcjhhgftQ5LaZO3YD12NCz/3Xgq74G8="
+          "hash": "CvG33F0QblYDyZECXR2/8R5mK8+kQtlzABvRcP8IXkM="
         }
       },
       "version": ""
@@ -768,7 +3397,51 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IAttractionReservationRepository.html",
-          "hash": "sb5Jx5Gxeyzc4g99RpYtX7wuUNMTSewj/pCNvrLApJQ="
+          "hash": "VyDhCFsbnZ3nGxlPpmIjrQrRCCO3DBK+TPl2EgyuWVs="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Contracts.IAttractionReviewRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.IAttractionReviewRepository.html",
+          "hash": "6Z/MipRZwwpRRg3oy0TdyZXdSwk4hVKEBzqPaLGOZoU="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Contracts.ICityRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.ICityRepository.html",
+          "hash": "4Lx9QoUgyOzw1vbJ99AGqXbKfzmWXVP3JK7H++i1hQ8="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Contracts.IContinentRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.IContinentRepository.html",
+          "hash": "GCHZf8gqtvxR75ioyUXZFdnqrmlApHi+ofgkDr3yE+Y="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Contracts.ICountryRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.ICountryRepository.html",
+          "hash": "as4gIpGaD7mp6ss//Mc3aqIKR8LjnURb2sRgdkDn/60="
         }
       },
       "version": ""
@@ -779,7 +3452,40 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IGenericRepository-2.html",
-          "hash": "zxio93Z9uWx4QI0jVK1if+k1HouAWUmWLFd3lHjC1pM="
+          "hash": "zD7c1orkwjpfbRXHyOnAMwEJFO0hmBlNHxzlshlTOFc="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Contracts.IHotelRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.IHotelRepository.html",
+          "hash": "JaU9+tapdI0TAl9LHprntdL5BRwAiHeXwZ3TeqvyeZk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Contracts.IHotelReviewRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.IHotelReviewRepository.html",
+          "hash": "p0CaEVcB3ke7XGUQyLF1tOnhY7KWOanfesUoihHe2zI="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Domain.Contracts.IRoomRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Domain.Contracts.IRoomRepository.html",
+          "hash": "VK8PMJS+DHiUna6lCWPcj+jhVb+A4Zyh3q28Cnq0XTM="
         }
       },
       "version": ""
@@ -790,7 +3496,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.IRoomReservationRepository.html",
-          "hash": "CJUTjSz1b9PejMbjPDmMXyE5/MPnC2/uxJfkJe6b8Bs="
+          "hash": "bygX2VKmKFpQYIQ/PLCWL+v19cmWY3Oe71Zd1eiLJWI="
         }
       },
       "version": ""
@@ -801,7 +3507,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Contracts.html",
-          "hash": "IAkOKS9OIMjpgdaieBS9hyFnAV9zLKdD464i0oTeA24="
+          "hash": "0a6GE5UskGh0XWcxfJRrjJop6v73ZVuKhN7KKjy2VsY="
         }
       },
       "version": ""
@@ -812,7 +3518,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Attraction.html",
-          "hash": "91X3t6ROVJGPWKdcuhSrig40UtR0UyaF2aOnRINulHY="
+          "hash": "Ryg5xIVLjl/uMfhi6nweAeBsyhqpfuBliLXm0Z5kbzo="
         }
       },
       "version": ""
@@ -823,7 +3529,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionImage.html",
-          "hash": "FeYN3ZRX/i/5NP9afNx/sohnnddBmo4hHMYBj6eWo5g="
+          "hash": "Jq+EhQX2+uBVhEIiW4co3u2hiRk1jua+ypJOwN9M6gc="
         }
       },
       "version": ""
@@ -834,7 +3540,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionReservation.html",
-          "hash": "Iz1UBxBNOnOKmbnd1pEDDHJ8py85netWOLL3/Lu+CEY="
+          "hash": "POp/dloW5LwO/vuqQw6MboB7VB4rs4p0Jvq9202aKe4="
         }
       },
       "version": ""
@@ -845,7 +3551,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.AttractionReview.html",
-          "hash": "CO2L4KiL6k962TfbeHUPLltsvGLYMLdM9AV8hAIn01M="
+          "hash": "HVjSb6ZdEkEHbbM57X3fYZxa/iyuWhwhtA2WYxgfEfI="
         }
       },
       "version": ""
@@ -856,7 +3562,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.City.html",
-          "hash": "pstLuYg9r0nxPUtD3sj0nhyMTBEkZ6Vb/5ByfA+33Og="
+          "hash": "Um0x+0mF3ulcEbAWowUjWZtgN4aVGV0PIXtp4I2AYu4="
         }
       },
       "version": ""
@@ -867,7 +3573,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.CityHotel.html",
-          "hash": "RrO+eLM0+lBtIOR2873mkTm4XXPvmw04JTuJaJV3NCM="
+          "hash": "WJEDghUUQKTyjFgVzq5tpWpw+F1vl3vypS8vP++cAa8="
         }
       },
       "version": ""
@@ -878,7 +3584,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Continent.html",
-          "hash": "aNql4JQRadQ4opawise/IMFKgHjg82iSGN3xAIv7pd4="
+          "hash": "wJpCMkxx0lTaHHWYva5g/17eNYc6aUCoTkptLdwdG1g="
         }
       },
       "version": ""
@@ -889,7 +3595,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Country.html",
-          "hash": "LWJJuceoMgDKcpTp0CHh0vyOPMXqHLNmFWizA+pnFMU="
+          "hash": "FDyAJ9QzFLj9OM2PY593ZQk/ln+BpUXWFlJoEg6GSX0="
         }
       },
       "version": ""
@@ -900,7 +3606,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Hotel.html",
-          "hash": "qEbl7IivMYmD69/UtQsFTFzO9LyemBW/9ZYQIU19nlc="
+          "hash": "XVW8EZ1WGA5vI0j8R/cCDgO+zP0594BxdHpJ02MuSNM="
         }
       },
       "version": ""
@@ -911,7 +3617,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.HotelReview.html",
-          "hash": "lk//fzMItadT4VgAX56CI7BEgJSnAMiqStvJc/7fJoE="
+          "hash": "vkcNp1A4nyF7NZS86L//3lMmbWXZT60Cg/KDKWn7qsg="
         }
       },
       "version": ""
@@ -922,7 +3628,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Reservation.html",
-          "hash": "TjImCLEe12uFAe649fBEa1eh4jxed/PiRZ2uvkntDW0="
+          "hash": "BAlr36mNiR0mU6nGNHJmpT3S2ut9RTVCJtwRwVbtGDo="
         }
       },
       "version": ""
@@ -933,7 +3639,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.ReservedAttraction.html",
-          "hash": "ylXGeIFJ86rR82XS40hWgqtVt7ue3TV7glSY6zBNnoc="
+          "hash": "l3jBx93mgOVfu6jUA6IcGDg0UyLbwDD7Gu0KH2+g1h8="
         }
       },
       "version": ""
@@ -944,7 +3650,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.ReservedRoom.html",
-          "hash": "LJE3iUiTyEy+ko82BxKeWTSk9+A6g3Y5hcs9ApTgdhE="
+          "hash": "DuaNmY5IhN14xO6EECjOHXrAv6L8pwuIqFUrixEBvIE="
         }
       },
       "version": ""
@@ -955,7 +3661,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Review.html",
-          "hash": "CDPnWa4QuxfoVuMTnluziDernJ4zwH9yMLOYzY4lmm0="
+          "hash": "0GaTU/qs74kbO0TroGMTJL+DcY5FEQc1IOr+E+Sfhpk="
         }
       },
       "version": ""
@@ -966,7 +3672,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.Room.html",
-          "hash": "mVU1OnKTCmlOv/XzSf6iEkmxQITEgB8CM6LC311VWlI="
+          "hash": "tSI4/9VWtWev2dzC0A+jUyqHkWBeU8LACjbsZkb0FbE="
         }
       },
       "version": ""
@@ -977,7 +3683,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.RoomReservation.html",
-          "hash": "ftihLssBjyTaufYZNH3a+uQ478GD6qyXaEpSz65Zkn4="
+          "hash": "j3wcTP0alZxibcgpMb2Kkogntt5AgaFhPQZ/0pd3NEA="
         }
       },
       "version": ""
@@ -988,7 +3694,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Entities.html",
-          "hash": "Fj6g8l3Kb3vTCYdTvzZqNkFCsG4VFDvq72nyg8626ag="
+          "hash": "nDbLcrkUTHSAhAgdz+nP/QrtWHf8bnXMzUj7WjfnAFE="
         }
       },
       "version": ""
@@ -999,7 +3705,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.ReservationStatus.html",
-          "hash": "es3T2kVC++F5DlSFCTBbACTQOMhkHYjeXNFpsQjmbjU="
+          "hash": "TcFtSdAhjqV4lZUKgK6AoVUIZMoQ2lrnrBJpYlGOXpM="
         }
       },
       "version": ""
@@ -1010,7 +3716,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.RoomViewType.html",
-          "hash": "2iAeBklSOmd1FfJg9/nQ/p6rEcDTJXK6d1ObJr1HC2I="
+          "hash": "d3AfaTNJBZZYuffexGzm9p7jqJ7zSTIhetvLsVSVv+4="
         }
       },
       "version": ""
@@ -1021,7 +3727,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Domain.Enums.html",
-          "hash": "ndr4tVwkp7jkFxy3S8AuePxtbF1vqFtSTkZuaiw3lWE="
+          "hash": "L12peRFKxTrprfmpHFvLU0R+Vmih/Z13XTEFqWpyWMo="
         }
       },
       "version": ""
@@ -1032,7 +3738,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.BookingDbContext.html",
-          "hash": "qRIYv58V6+w4TDB0dDHJuZhAN1ia6oVT5x7MCvzNqaE="
+          "hash": "ubhyaBwVQYF0ei31yV7vAeJ6svqwNJ76WeG/JU5x6Yc="
         }
       },
       "version": ""
@@ -1043,7 +3749,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.BookingDbContextExtensions.html",
-          "hash": "0Iseo7dvTGKVmkVdeNSVXDbl46y0aUBcAW2KkG9a3o0="
+          "hash": "vHYNPDrOR4J28Zbdyroucd0k7D0/ZnrtIkb1UrZ28wY="
         }
       },
       "version": ""
@@ -1054,7 +3760,51 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Data.html",
-          "hash": "E7xUJ4Yn0HUoj/VHWDT2QTSKVQ9HQGsGbAhS7/8yiHs="
+          "hash": "CFrfljcM5vNgmTgULGKfOSjO/1jxzifDtL7m0I0GZeo="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.EntityConfigurations.HotelConfiguration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.EntityConfigurations.HotelConfiguration.html",
+          "hash": "Gq4eoyZoUr/GL4j9QjKY3eT+mdRv/2ea9/1RWTZaLr4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.EntityConfigurations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.EntityConfigurations.html",
+          "hash": "RfShEIINgnMRJfQ+bS/XLWsanVCrsJ/MJ1TjDZ8b4Ko="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Extensions.PagedListQueryableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Extensions.PagedListQueryableExtensions.html",
+          "hash": "j42qil6LlGG23KsZWhsqSpB8npENizYYIV3rgtaOXpw="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Extensions.html",
+          "hash": "sqNoXTuOU9WqeGwHXKn04lWniO5rBTLX+mCbfJW3xc0="
         }
       },
       "version": ""
@@ -1065,7 +3815,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.AddAttractionImagesTable.html",
-          "hash": "/If0W0qeMHNmLEKrcXR3dOMJy1LTJm3dJXPV/Xz1n5A="
+          "hash": "ciAcQd/0cDoTFykKDDWY/N7JM5+8jwwEBOYkp6Bkg/0="
         }
       },
       "version": ""
@@ -1076,7 +3826,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.AddCityNullInAttractionTable.html",
-          "hash": "8wfCvkfsVZ7MhaZBuwSo3/Y68QqNwuf76wpWgU6DY2c="
+          "hash": "kPRAtuHq8tQWMQb+liJjrBTjRp+0QVPcpqI/70ZAZUg="
         }
       },
       "version": ""
@@ -1087,7 +3837,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.DescriptionMaxLengthInAttractionTable.html",
-          "hash": "imgU2h714AuIyuC9zvDH5PQHX97YF7MafwzFBMnYlmk="
+          "hash": "CCXmnXBksm4U+oYiS21aWjBdGcEDt+rNL6F3cpegmWA="
         }
       },
       "version": ""
@@ -1098,7 +3848,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.InitialMigration.html",
-          "hash": "MqeyKT6fNRtX1I4VbspNXNSCcijW+QfjBZDw7lSq/vk="
+          "hash": "hnhEitW3VE8Peatvva8krln4yAnpllPd/P8ZKqOmpew="
         }
       },
       "version": ""
@@ -1109,7 +3859,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Migrations.html",
-          "hash": "jg5RrjFR41cfHKmjDuvVYbV4aU14YYSbkwBkBBIBzlc="
+          "hash": "uZqtZXxWko0e3XnIo/Yt6YkWwobdMt5dJlU65C1PRNA="
         }
       },
       "version": ""
@@ -1120,7 +3870,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionRepository.html",
-          "hash": "PwpbIqo7n9TlJzkQeisYR7c+DtcGJc2L12TutIyC/f0="
+          "hash": "1ss+GsCKoh3CRZJdtEQp/AyQwxk0zf30yGlyBcXmOJY="
         }
       },
       "version": ""
@@ -1131,7 +3881,51 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionReservationRepository.html",
-          "hash": "le3W5Tg0PYb0AIuMmN7CZva3gHzMk2ZnlhlGgmcaPpY="
+          "hash": "sHps2sOvjKcB8GCPKZ+/D0VHOsvXrikSM4bzd8U3LZM="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionReviewRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Repositories.AttractionReviewRepository.html",
+          "hash": "Lvb0kTISVMF0hrZnkg6XDzGYcItoqDZQ0yuKXRgOY0M="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Repositories.CityRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Repositories.CityRepository.html",
+          "hash": "hOT72RYNqfG7VXKdWY9A8kW8t5nzZSELrNJGn8tiAY4="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Repositories.ContinentRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Repositories.ContinentRepository.html",
+          "hash": "fGggkzWbpAMatnYztDXOBsu6FTOvIzaxmiFdLkl5gyk="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Repositories.CountryRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Repositories.CountryRepository.html",
+          "hash": "1vdRlC2r6ryeNWr9lB1+7hjHGSzfDmnHFHWeXYZjZLI="
         }
       },
       "version": ""
@@ -1142,7 +3936,40 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.GenericRepository-2.html",
-          "hash": "r4EvJIMbT0J6IUvMAA16S7n6Il1+73AoYBDRdmqIVdE="
+          "hash": "pvLT+NwMNP0CLMul1lNSTY8aa6Bul8nH5ZaTBZbkYKE="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Repositories.HotelRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Repositories.HotelRepository.html",
+          "hash": "moMSzvxWuG0PvDrWGz7GVvc5i8o1Vehoq7GMkj3MP14="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Repositories.HotelReviewRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Repositories.HotelReviewRepository.html",
+          "hash": "EKB1QotPzrZchEl1LBJe31RlR8S5Yula/zVsor91SrY="
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/BookingClone.Infrastructure.Repositories.RoomRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/BookingClone.Infrastructure.Repositories.RoomRepository.html",
+          "hash": "LxZs2ifm4zQtVGWuRMyHYZzdmg3O4bRmR1255sygbts="
         }
       },
       "version": ""
@@ -1153,7 +3980,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.RoomReservationRepository.html",
-          "hash": "riQ+mCrf7Y3efvR+OwokvHbSri4lmhYUMb5v0rEYuQc="
+          "hash": "44CjIK2xiWmsp/e55+WKZDl00pNcDmZRDwgOEvLnyfw="
         }
       },
       "version": ""
@@ -1164,7 +3991,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Infrastructure.Repositories.html",
-          "hash": "hyFWHTeKSamUJpfNlfsQjAAxZmE6BjsHbuL1fSMY0i4="
+          "hash": "4VQM3qYx4dRiWLAseuAlJZM+3FO/K7F0YY8eqZPxGCU="
         }
       },
       "version": ""
@@ -1175,7 +4002,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Serilog.Serilogger.html",
-          "hash": "pjGh+RIuv7bJzBJTS54NVvxJ9uLEPwPC+ze9gJ0dMU8="
+          "hash": "Ftw5BlziPCcgKrGz7YWrW7os91d4uzwr4+Xru1nTBAM="
         }
       },
       "version": ""
@@ -1186,7 +4013,7 @@
       "output": {
         ".html": {
           "relative_path": "api/BookingClone.Serilog.html",
-          "hash": "B0Pv452Iskkme28R08vRRzyBCn83bPlUkx24AI7NIUE="
+          "hash": "+X16e4+ywwn0DITOMtIa/Otsv5c0HDXm9lruDivWpQc="
         }
       },
       "version": ""
@@ -1197,7 +4024,7 @@
       "output": {
         ".html": {
           "relative_path": "api/index.html",
-          "hash": "UNpvH6omFrx5MB8PtfKKU2TwrWeXLLp0l88bIkdYoWk="
+          "hash": "F8yz88OPcN6XnDsMYgmU6d80khONMDt3DXVZI1WqxAE="
         }
       },
       "version": ""
@@ -1208,11 +4035,11 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "0Jx4p3IIw6Dj6De/6Q6xS92LwcPeingteyTzYJmaf1g="
+          "hash": "0AkpHvy2Nqq3VOoOeNujRiKU8i0/6DEwLXzhe1xlWeQ="
         },
         ".json": {
           "relative_path": "api/toc.json",
-          "hash": "vzXmFGtI5ngHvdV6+Kd/y9iSzxoZ5VYOrjFVpZxKrEg="
+          "hash": "dmNLOGpX/mgmGDJ0t2YWFK7dCW8D66DgiN22beqVUAY="
         }
       },
       "version": ""
@@ -1223,7 +4050,7 @@
       "output": {
         ".html": {
           "relative_path": "articles/intro.html",
-          "hash": "ewxkVRK4uOVD2Q7+M4x7VhLBTmA2DAx+KV5d8CRSMpk="
+          "hash": "8dK7gKGfPpEsooS65vwq7dTguRc3td4DLXSX4o+7Fjk="
         }
       },
       "version": ""
@@ -1249,7 +4076,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "zgPQ0axGIHKdnwBlkIEk06o6++1bXdvfSxZrQLnE9zg="
+          "hash": "vPfQcthBUM+I4UIFwLOvTHimsbGK1MmUHNMOWFpOUlU="
         }
       },
       "version": ""
