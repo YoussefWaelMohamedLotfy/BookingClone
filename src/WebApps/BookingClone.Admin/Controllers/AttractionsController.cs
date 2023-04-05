@@ -5,11 +5,13 @@ using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingClone.Admin.Controllers;
 
-public class AttractionsController : Controller
+[Authorize]
+public sealed class AttractionsController : Controller
 {
     private readonly IMediator _mediator;
 
