@@ -1,1 +1,85 @@
-<p>hotel-details works!</p>
+<section class="container">
+  <div class="row">
+    <div class="col-xl-7 my-3 ">
+      <img [src]="imgUrl" class="img-fluid w-100 ">
+    </div>
+
+    <div class="col-xl-4 col-lg-4 col-md-6 border border-2 border-warning py-1 my-3 mx-3">
+      <div class="content  py-2 my-2">
+        <!-- <img [src]="imgUrl" class="img-fluid"> -->
+        <h4 class="fs-4 fw-bold my-3">{{hotelDetail?.name}}</h4>
+        <p>Description: {{hotelDetail?.description}}</p>
+        <p> <i class="bi bi-star-fill mx-2"></i>StarRating: {{hotelDetail?.starRating}}</p>
+
+        <div class="row d-grid">
+          <ul class="d-flex list-unstyled">
+            <li class="mx-2 border border-1 p-2"> <i class="bi bi-building-fill"> City View</i></li>
+            <li class="mx-2 border border-1 p-2"> <i class="bi bi-building-fill"> City View</i></li>
+            <li class="mx-2 border border-1 p-2"> <i class="bi bi-building-fill"> City View</i></li>
+
+
+          </ul>
+
+
+        </div>
+
+        <div class="row d-grid">
+          <ul class="d-flex list-unstyled">
+            <li class="mx-2 border border-1 p-2"> <i class="bi bi-building-fill"> City View</i></li>
+            <li class="mx-2 border border-1 p-2"> <i class="bi bi-building-fill"> City View</i></li>
+            <li class="mx-2 border border-1 p-2"> <i class="bi bi-building-fill"> City View</i></li>
+
+
+          </ul>
+
+
+        </div>
+        <div class="row">
+          <h5>Most popular facilities</h5>
+
+          <ul class="d-flex list-unstyled">
+            <li class="mx-2 "> <i class="bi bi-wifi "> City View</i></li>
+            <li class="mx-2 "> <i class="bi bi-wifi"> City View</i></li>
+            <li class="mx-2 "> <i class="bi bi-wifi"> City View</i></li>
+
+
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
+
+
+<section class="container">
+  <div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-4">
+      <div class="content text-center py-2 my-2">
+        <div>
+        </div>
+        <h4>{{room?.name}}</h4>
+        <p>{{room?.description}}</p>
+        <p>{{room?.starRating}}</p>
+        <p *ngIf="room?.isAvailable==true" class="text-primary">Available</p>
+        <p *ngIf="room?.isAvailable==false" class="text-danger">Not Available</p>
+
+        <p>{{room?.price}}</p>
+        <p>{{room?.roomNumber}}</p>
+        <p>{{room?.bedCount}}</p>
+        <p>{{room?.viewType}}</p>
+
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+</section>

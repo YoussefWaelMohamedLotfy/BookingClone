@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'Stays', component: StaysComponent },
   { path: '', redirectTo: '/Stays', pathMatch: 'full' },
   { path: 'Hotels', component: HotelsComponent },
-  { path: 'HotelDetails', component: HotelDetailsComponent },
+  { path: 'HotelDetails/:id', component: HotelDetailsComponent },
   { path: '**', component: NotFoundComponent },
 ];
 

@@ -1,4 +1,4 @@
-<table class="table">
+<!-- <table class="table">
   <thead>
     <tr>
       <th>Name</th>
@@ -12,18 +12,43 @@
   <tbody>
 
 
-    <tr *ngFor="let prd of HotelList "> <!-- //day3 -->
-      <!--[hidden]="prd.Quntity==0" !-->
+    <tr *ngFor="let prd of hotelList">
+      <tr *ngFor="hotelList"> -->
 
-      <td>{{prd.Name | uppercase}}</td>
+<!-- <td>{{prd.name | uppercase}}</td>
 
-      <td>{{prd.Description}}</td>
-      <td>{{prd.StarRating}}</td>
+      <td>{{prd.description}}</td>
+      <td>{{prd.starRating}}</td>
 
 
     </tr>
   </tbody>
-</table>
+</table> -->
 
 
-<!-- <h1>{{asd.Name}}</h1> -->
+<section class="container">
+  <div class="row">
+
+    <div class="col-xl-3 col-lg-4 col-md-6" *ngFor="let hotel of hotelList ">
+      <div class="content  card">
+
+        <a [routerLink]='["/HotelDetails",hotel.id]' class="text-decoration-none text-black card-body"
+          (click)="seImgtUrl(hotel)">
+
+          <div class="">
+            <img [src]="hotel.url" [alt]="hotel.name" class=" img-fluid">
+          </div>
+          <h4 class="card-title">{{hotel.name}}</h4>
+          <p class="card-text">{{hotel.description}}</p>
+          <p>{{hotel.starRating}}</p>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+</section>
