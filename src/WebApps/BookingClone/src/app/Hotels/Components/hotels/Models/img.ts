@@ -33,15 +33,15 @@ export const hotelImg = [
   },
   {
     id: 9,
-    name: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZd9kgR9NOCr70DM-se7tC4Q4GP-KU_jJPw&usqp=CAU'
+    name: 'https://img.freepik.com/free-photo/dubai-marina_158595-2000.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=sph'
   },
   {
     id: 10,
-    name: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDWOGEG0JP9zkC6VSDmcO3mfvpjYpKt559Q&usqp=CAU'
+    name: 'https://img.freepik.com/free-photo/abu-dhabi-uae-march-16-emirates-palace-hotel-march-16-2012-emirates-palace-is-luxurious-most-expensive-7-star-hotel-designed-by-renowned-architect-john-elliott-riba_158595-1971.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=sph'
   },
   {
     id: 11,
-    name: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDWOGEG0JP9zkC6VSDmcO3mfvpjYpKt559Q&usqp=CAU'
+    name: 'https://img.freepik.com/free-photo/hotel-pool_74190-1259.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=sph'
   }
 
 

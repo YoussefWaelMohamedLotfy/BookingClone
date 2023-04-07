@@ -26,11 +26,11 @@
 </table> -->
 
 
-<section class="container">
+<section class="container my-3">
   <div class="row">
 
-    <div class="col-xl-3 col-lg-4 col-md-6" *ngFor="let hotel of hotelList ">
-      <div class="content  card">
+    <div class="col-xl-4 col-lg-4 col-md-6" *ngFor="let hotel of hotelList ">
+      <!-- <div class="content  card">
 
         <a [routerLink]='["/HotelDetails",hotel.id]' class="text-decoration-none text-black card-body"
           (click)="seImgtUrl(hotel)">
@@ -44,8 +44,18 @@
 
         </a>
 
-      </div>
-
+      </div> -->
+      <a [routerLink]='["/HotelDetails",hotel.id]' class="text-decoration-none text-black card-body"
+        (click)="seImgtUrl(hotel)">
+        <div class="card mb-3">
+          <img [src]="hotel.url" class="card-img-top" [alt]="hotel.name">
+          <div class="card-body">
+            <h5 class="card-title fs-4 fw-bold">{{hotel.name}}</h5>
+            <p class="card-text ">{{hotel.description}}</p>
+            <p class="card-text"> <i class="bi bi-star-fill mx-2"></i>{{hotel.starRating}}</p>
+          </div>
+        </div>
+      </a>
     </div>
 
   </div>
