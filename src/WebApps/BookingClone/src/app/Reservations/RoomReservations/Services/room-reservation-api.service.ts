@@ -5,6 +5,7 @@ import { IRoomReservation } from '../Models/iroom-reservation';
 import { environment } from 'src/app/environments/environment.development';
 import { IAddRoomReservation } from '../Models/iadd-room-reservation';
 import { IUpdateRoomReservation } from '../Models/iupdate-room-reservation';
+import { IPagedList } from 'src/app/Shared/Models/ipaged-list';
 
 @Injectable({
   providedIn: 'root'
@@ -20,8 +21,8 @@ export class RoomReservationApiService {
     };
   }
 
-  getPagedRoomReservation(pagesize: Number = 10, pageNumber: Number = 1) {
-    
+  getPagedRoomReservation(pagesize: Number = 10, pageNumber: Number = 1) : Observable<IPagedList<IRoomReservation>> {
+    return this.httpClient.get<IPagedList<IRoomReservation>>(`${environment.APIURL}/RoomReservations?pageNumber=${pageNumber}&pageSize=${pagesize}`);
   }
 
   getRoomReservationById(reservationId: Number): Observable<IRoomReservation> {
