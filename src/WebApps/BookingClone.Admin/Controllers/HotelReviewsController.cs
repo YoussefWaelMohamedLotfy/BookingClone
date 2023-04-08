@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookingClone.Admin.Controllers;
 
-[Authorize]
+//[Authorize]
 public sealed class HotelReviewsController : Controller
 {
     private readonly IMediator _mediator;
