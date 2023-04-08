@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Shared/Components/header/header.component';
 import { FooterComponent } from './Shared/Components/footer/footer.component';
 import { NotFoundComponent } from './Shared/Components/not-found/not-found.component';
-import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { StaysComponent } from './Models/Stays/Stays-Component/Stays.component';
+import { ReviewsComponent } from './Models/Reviews/Reviews-Component/Reviews.component';
 
 
 
@@ -19,7 +20,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
     HeaderComponent,
     FooterComponent,
     NotFoundComponent,
-    StaysComponent
+    StaysComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
