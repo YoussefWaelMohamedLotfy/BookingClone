@@ -64,7 +64,7 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
 >>>>>>> api(country_continent_city)
 =======
         var Continent = _continentRepository.GetAll().Result;
-        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name });
+        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name,ID=a.ID });
         return (ContinentDto);
 >>>>>>> finalcommit
     }

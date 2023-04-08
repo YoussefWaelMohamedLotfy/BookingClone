@@ -110,6 +110,7 @@ public class CityController : Controller
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.ViewData["Countries"] =  _mediator.Send(new GetAllCountriesQuerywithoutpagination()).Result
         
         .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
@@ -173,6 +174,9 @@ public class CityController : Controller
         return View();
 =======
         var reservation = await _mediator.Send(new GetCityByIdQuery(id), ct);
+=======
+        var reservation = await _mediator.Send(new GetCityBYCountryIdquery(id), ct);
+>>>>>>> new action getcitybycountryid
         return View(reservation);
 >>>>>>> salmateest
     }
@@ -208,7 +212,7 @@ public class CityController : Controller
 
        .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
       .ToList();
-        var reservations = await _mediator.Send(new GetCityByIdQuery (id ), ct);
+        var reservations = await _mediator.Send(new GetCityBYCountryIdquery (id ), ct);
         return View(reservations);
     }
 

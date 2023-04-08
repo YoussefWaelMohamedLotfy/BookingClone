@@ -19,5 +19,6 @@ public class CityRepository : GenericRepository<Cities, int>, ICityRepository
     public  async Task<List<Cities>> GetAll(CancellationToken ct = default)
     
          => await _db.ToListAsync(ct);
+  
     
 }

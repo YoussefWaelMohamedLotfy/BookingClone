@@ -43,7 +43,10 @@ public class GetAllCountriesQueryHandlar : IRequestHandler<GetAllCountriesQuery,
 =======
 >>>>>>> almostdone
         var Country = _countryRepository.GetAll().Result;
-        var CountryDto = Country.Select(a => new CountryMinimalDto { Name = a.Name });
+        var CountryDto = Country.Select(a => new CountryMinimalDto {
+            Name = a.Name,
+            ContinentID=a.ContinentID,
+        });
         return (CountryDto);
     }
 }

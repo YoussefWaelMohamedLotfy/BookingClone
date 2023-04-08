@@ -12,7 +12,8 @@ public class CountryMinimalDto
    
 
     public string Name { get; set; }
-
+    public int? ContinentID { get; set; }
+    
     //public CountryMinimalDto(string name)
     //{
     //    Name = name;

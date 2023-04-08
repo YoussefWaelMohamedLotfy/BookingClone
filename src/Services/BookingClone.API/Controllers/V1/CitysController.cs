@@ -63,6 +63,9 @@ public class CitiesController : ControllerBase
         return result is null ? NotFound() : Ok(result);
     }
 
+   
+
+
 
     [HttpPost]
     public async Task<IActionResult> AddCity([FromBody] AddCityCommand addCityCommand, CancellationToken ct)
@@ -146,6 +149,13 @@ public class CitiesController : ControllerBase
 >>>>>>> add city and country and continent
 =======
 
+    [HttpGet("GetCityByCountryId")]
+
+    public async Task<IActionResult> GetCityByCountryId(int id, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetCityBYCountryIdquery(id), ct);
+        return result is null ? NotFound() : Ok(result);
+    }
 
 }
 >>>>>>> finalcommit

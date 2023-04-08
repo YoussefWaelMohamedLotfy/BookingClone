@@ -23,12 +23,18 @@ public class GetAllCitiesQuery : IRequest<IEnumerable<CityMinimalDto>>
     public string? Name { get; set; }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
    
 =======
 >>>>>>> add city and country and continent
 =======
    
 >>>>>>> salmateest
+=======
+    public int? CountryID { get; set; }
+    
+
+>>>>>>> new action getcitybycountryid
 }
 
 

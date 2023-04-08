@@ -12,9 +12,9 @@ public class CountryDetailsDto
 <<<<<<< HEAD
 <<<<<<< HEAD
 
-    public int ID { get; set; }
+    public int? ID { get; set; }
     public int? ContinentID { get; set; }
-    public string Name { get; set; }
+    public string? Name { get; set; }
 
     
 =======

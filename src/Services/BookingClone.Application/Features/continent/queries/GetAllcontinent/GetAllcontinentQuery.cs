@@ -21,7 +21,7 @@ namespace BookingClone.Application.Features.continent.queries.GetAllcontinent;
 public class GetAllcontinentQuery : IRequest<IEnumerable<ContinentMinimalDto>>
 {
     public string? Name { get; set; }
+    public int? ID { get; set; }
 
 
-   
 }

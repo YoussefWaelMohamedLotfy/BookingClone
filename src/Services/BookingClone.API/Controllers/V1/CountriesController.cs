@@ -1,4 +1,6 @@
-﻿using BookingClone.Application.Features.continent.commands.AddContinent;
+﻿using System.Runtime.InteropServices;
+
+using BookingClone.Application.Features.continent.commands.AddContinent;
 using BookingClone.Application.Features.continent.commands.DeleteContinent;
 using BookingClone.Application.Features.continent.commands.UpdateContinent;
 using BookingClone.Application.Features.continent.queries.GetAllcontinent;
@@ -32,8 +34,8 @@ public sealed class CountriesController : ControllerBase
         return Ok(await _mediator.Send(new GetAllCountriesQuery(), ct));
     }
 
-    [HttpGet("{id}", Name = "Get_[controller]")]
-
+    //[HttpGet("{id}", Name = "GetCountryById_[controller]")]
+     [HttpGet("GetCountryById")]
     public async Task<IActionResult> GetCountryById(int id, CancellationToken ct)
     {
         var result = await _mediator.Send(new GetCountryByIdQuery(id), ct);
@@ -61,6 +63,7 @@ public sealed class CountriesController : ControllerBase
         var result = await _mediator.Send(new DeleteCountryCommmand(id), ct);
         return result <= 0 ? NotFound() : NoContent();
     }
+<<<<<<< HEAD
 
 =======
 public class CountriesController : ControllerBase
@@ -114,4 +117,12 @@ public sealed class CountriesController : ControllerBase
 =======
 
 >>>>>>> finalcommit
+=======
+ [HttpGet("{contientid}")]
+    public async Task<IActionResult> GetCountryByContientId(int contientid, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetCountryByContientIdQuery(contientid), ct);
+        return result is null ? NotFound() : Ok(result);
+    }
+>>>>>>> new action getcitybycountryid
 }
