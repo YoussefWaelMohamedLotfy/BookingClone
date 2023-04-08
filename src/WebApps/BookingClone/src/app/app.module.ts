@@ -11,6 +11,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { StaysComponent } from './Models/Stays/Stays-Component/Stays.component';
 import { ReviewsComponent } from './Models/Reviews/Reviews-Component/Reviews.component';
+import { StaysHeaderComponent } from './Models/Stays/Stays-Header-Component/Stays-Header.component';
 
 
 
@@ -21,7 +22,8 @@ import { ReviewsComponent } from './Models/Reviews/Reviews-Component/Reviews.com
     FooterComponent,
     NotFoundComponent,
     StaysComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    StaysHeaderComponent
   ],
   imports: [
     BrowserModule,
