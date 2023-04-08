@@ -9,9 +9,9 @@ import { FooterComponent } from './Shared/Components/footer/footer.component';
 import { NotFoundComponent } from './Shared/Components/not-found/not-found.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { StaysComponent } from './Models/Stays/Stays-Component/Stays.component';
+import { StaysComponent } from './Stays/Stays-Component/Stays.component';
 import { ReviewsComponent } from './Models/Reviews/Reviews-Component/Reviews.component';
-import { StaysHeaderComponent } from './Models/Stays/Stays-Header-Component/Stays-Header.component';
+import { StaysHeaderComponent } from './Stays/Stays-Header-Component/Stays-Header.component';
 
 
 
