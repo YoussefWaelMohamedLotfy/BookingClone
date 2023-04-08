@@ -29,7 +29,7 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
         //.Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
 
         var Continent = _continentRepository.GetAll().Result;
-        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name });
+        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name,ID=a.ID });
         return (ContinentDto);
     }
 }

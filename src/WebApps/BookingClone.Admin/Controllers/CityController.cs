@@ -30,7 +30,7 @@ public class CityController : Controller
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {
-        var reservation = await _mediator.Send(new GetCityByIdQuery(id), ct);
+        var reservation = await _mediator.Send(new GetCityBYCountryIdquery(id), ct);
         return View(reservation);
     }
 
@@ -65,7 +65,7 @@ public class CityController : Controller
 
        .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
       .ToList();
-        var reservations = await _mediator.Send(new GetCityByIdQuery (id ), ct);
+        var reservations = await _mediator.Send(new GetCityBYCountryIdquery (id ), ct);
         return View(reservations);
     }
 

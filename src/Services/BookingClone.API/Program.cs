@@ -174,6 +174,7 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
 }
 
 app.UseHttpsRedirection();
+app.UseCors(Policy => Policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
 //app.UseMiddleware<ApiKeyAuthMiddleware>();
 app.UseAuthorization();

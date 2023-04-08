@@ -40,7 +40,7 @@ public class ContinentsController : ControllerBase
 
 
 
-    [HttpGet("{id}", Name = "Get_[controller]")]
+    [HttpGet("{id}")]//, Name = "Get_[controller]")]
 
     public async Task<IActionResult> GetContinentById(int id, CancellationToken ct)
     {

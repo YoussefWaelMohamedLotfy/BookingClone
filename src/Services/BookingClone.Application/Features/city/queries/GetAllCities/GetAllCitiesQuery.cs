@@ -13,7 +13,9 @@ namespace BookingClone.Application.Features.city.queries.GetAllCities;
 public class GetAllCitiesQuery : IRequest<IEnumerable<CityMinimalDto>>
 {
     public string? Name { get; set; }
-   
+    public int? CountryID { get; set; }
+    
+
 }
 
 

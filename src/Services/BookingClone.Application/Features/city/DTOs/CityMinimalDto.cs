@@ -12,7 +12,8 @@ public sealed class CityMinimalDto
     
 
     public string Name { get; set; }
-
+    public int? CountryID { get; set; }
+    
 
     //public CityMinimalDto(string name)
     //{

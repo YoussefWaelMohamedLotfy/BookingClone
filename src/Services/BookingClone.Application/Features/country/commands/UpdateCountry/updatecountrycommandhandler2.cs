@@ -25,7 +25,7 @@ internal class updatecountrycommandhandler2 : IRequestHandler<updatecountrycomma
 
     public async Task<CountryDetailsDto?> Handle(updatecountrycommand2 request, CancellationToken cancellationToken)
     {
-        var reservation = await _countryRepository.GetByIdAsync(request.Dto.ID, cancellationToken);
+        var reservation = await _countryRepository.GetByIdAsync(request.Dto.ID.Value, cancellationToken);
 
         if (reservation is null)
         {
