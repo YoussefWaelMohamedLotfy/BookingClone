@@ -22,6 +22,10 @@ import { CityComponent } from './City/city/city.component';
 import { CountryComponent } from './Country/country/country.component';
 import { ContinentComponent } from './Continent/continent/continent.component';
 import { CountryDetailsComponent } from './Country/country-details/country-details.component';
+import { RouterModule } from '@angular/router';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CityDetailsComponent } from './City/city-details/city-details.component';
 
 @NgModule({
   declarations: [
@@ -42,8 +46,11 @@ import { CountryDetailsComponent } from './Country/country-details/country-detai
     CountryComponent,
     ContinentComponent,
     CountryDetailsComponent,
+    CityDetailsComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
+    RouterModule,
     BrowserModule,
     AppRoutingModule,
     FormsModule,

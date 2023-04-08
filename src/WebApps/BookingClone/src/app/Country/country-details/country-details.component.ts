@@ -11,39 +11,7 @@ import { ICity } from 'src/app/City/city/Models/icity';
   templateUrl: './country-details.component.html',
   styleUrls: ['./country-details.component.css']
 })
-export class CountryDetailsComponent implements OnInit {
-
-  currentCountryID: number = 0;
-  returnedCity: ICity[]=[];
-  Cities: ICity[]| undefined = undefined;
-
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    private location:Location,
-   private cityService: CityServiceService
-  ) {}
-  ngOnInit(): void {
-    this.currentCountryID = this.activatedRoute.snapshot.paramMap.get('CountryID')
-    ? Number(this.activatedRoute.snapshot.paramMap.get('CountryID'))
-    : 0;
+export class CountryDetailsComponent  {
 
 
-    this.cityService.getcitiesByCountryId(this.currentCountryID).subscribe(data => {
-      this.returnedCity = data;
-
-
-    });
-
-    if (this.returnedCity) {
-    this.Cities = this.returnedCity;
-
-
-    }
-    else{
-      alert("Cities not found")
-      this.location.back();
-    }
- }
 }
-
-

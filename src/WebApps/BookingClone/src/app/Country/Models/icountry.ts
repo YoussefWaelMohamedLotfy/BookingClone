@@ -1,8 +1,8 @@
 export interface ICountry {
 
-    ID:number;
-    Name:string;
-    ContinentID:number;
+    id:number;
+    name:string;
+    continentID:number;
 
 
 }

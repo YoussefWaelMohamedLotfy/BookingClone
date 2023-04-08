@@ -8,43 +8,9 @@ import { Router } from '@angular/router';
   templateUrl: './city.component.html',
   styleUrls: ['./city.component.css']
 })
-export class CityComponent implements OnInit {
-  date1: Date = new Date();
-  ListOfCities: ICity[] = [];
-  receivedCountryID: number = 0;
-
-  constructor(private cityServiceService: CityServiceService,  private router: Router)
-
-   {
-
-   }
+export class CityComponent  {
 
 
-   ngOnInit(): void {
-    if(this.receivedCountryID==0){
-
-      this.cityServiceService.getAllCities().subscribe(data1=>{
-        // console.log('dddddddddddddd',data1)
-        this.ListOfCities=data1;
-
-
-      })
-    }
-    else{
-    this.cityServiceService.getcitiesByCountryId(this.receivedCountryID).subscribe(data => {
-      this.ListOfCities = data;
-
-
-    });
-
-
-
-  }
-}
-
- CityDetails(CityID: number) {
-    this.router.navigate(['CityDetails', CityID]);
-  }
 
 }
 

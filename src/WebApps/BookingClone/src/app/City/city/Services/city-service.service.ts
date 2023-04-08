@@ -11,15 +11,18 @@ export class CityServiceService {
   constructor(private httpClient: HttpClient) {}
 
   getAllCities(): Observable<ICity[]> {
-    return this.httpClient.get<ICity[]>("https://localhost:13000/api/Cities");
-   // return this.httpClient.get<ICity[]>("https://localhost:13000/v1/api/GetAllCities");
+    return this.httpClient.get<ICity[]>(`${environment.APIURL}/cities`);
+
 
   }
 
-  getcitiesByCountryId(CountryID: number): Observable<ICity[]> {
-    return this.httpClient.get<ICity[]>(
-      `${environment.APIURL}/cities?CountryID=${CountryID}`
-    );
+
+
+
+
+  getcitiesByCountryId(id: number): Observable<any> {
+    // alert("Service"+id)
+    return this.httpClient.get(`${environment.APIURL}/cities/GetCityByCountryId?id=${id}`)
   }
 
   getCitytByID(CityID: number): Observable<ICity> {
