@@ -11,6 +11,7 @@ import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Components/all-room-reservations/all-room-reservations.component';
+import { AllAttractionReservationsComponent } from './Reservations/AttractionReservations/Components/all-attraction-reservations/all-attraction-reservations.component';
 
 
 
@@ -21,7 +22,8 @@ import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Co
     FooterComponent,
     NotFoundComponent,
     StaysComponent,
-    AllRoomReservationsComponent
+    AllRoomReservationsComponent,
+    AllAttractionReservationsComponent
   ],
   imports: [
     BrowserModule,
