@@ -1,6 +1,6 @@
 export interface IContinent {
 
-    ID:number;
-    Name:string;
+    id:number;
+    name:string;
 
 }

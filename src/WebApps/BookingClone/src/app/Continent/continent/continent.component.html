@@ -1,27 +1,64 @@
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12"></div>
-    <h1>Explore more destinations</h1>
-    <p class="text-dark opacity-50"> Find things to do in cities around the World</p>
-
-    <ng-container *ngFor="let item of ContinentList" >
-      <ul class="nav nav-underline" name="Con" id="Con" [(ngModel)]="selectedContinentID" >
-        <li class="nav-item"  >
-          <a class="nav-link "  routerLinkActive="active"  href="#"   >{{item.Name}}</a>
-        </li>
-      </ul>
-    </ng-container>
 
 
-    <!-- <div>
-      <label for="cat">Select Category:</label>
-      <select name="cat" id="cat" class="form-control" [(ngModel)]="selectedCatID">
-        <option value="0">All</option>
-        <option *ngFor="let cat of catList" [value]="cat.id">{{cat.name}}</option>
-      </select>
-    </div> -->
+
+<section>
+  <div class="container-fluid">
+    <div class="mb-5">
+      <h1>Explore more destinations</h1>
+      <p class="text-dark opacity-50"> Find things to do in cities around the World</p>
+    </div>
+
+    <div class="all-work text-center" >
+
+      <section class="service-title d-flex justify-content-between mb-3">
+
+        <div class="category-select "  *ngFor="let work of ContinentList" routerLinkActive="active" routerLink="/Continent/{{work.id}}"
 
 
+
+        >
+          <div   >
+            <!-- <div routerLink="{{work.name}}"> -->
+                <span  >{{work.name}}</span>
+              <!-- </div> -->
+            </div>
+          </div>
+        </section>
+    </div>
+
+
+    <div class="row">
+       <ng-container  *ngFor="let Country of ListOfCountries; let index=index"
+       >
+            <div  class="item-box position-relative col-lg-3 col-mg-2 ">
+
+
+
+             <!-- <a (click)="CountryDetails(Country.id)"> -->
+              <a routerLink="/CityDetails/{{Country.id}}" >
+                 <div class="card text-bg-dark"   >
+
+                  <div class="photo" >
+
+                  <img class=" img-fluid"  src="../../../assets/CountryImg/{{Country.name}}.jpg" >
+
+                  </div>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title"   >{{Country.name}}</h5>
+
+                  </div>
+                </div>
+            </a>
+
+
+
+          </div>
+
+         </ng-container>
+
+
+
+    </div>
   </div>
-</div>
-<app-country  [receivedContinentID]="selectedContinentID" ></app-country>
+</section>
+

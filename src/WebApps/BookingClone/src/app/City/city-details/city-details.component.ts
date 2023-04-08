@@ -3,6 +3,8 @@ import { ICity } from '../city/Models/icity';
 import { ActivatedRoute } from '@angular/router';
 import { CityServiceService } from '../city/Services/city-service.service';
 import { Location } from '@angular/common';
+import { ICountry } from 'src/app/Country/Models/icountry';
+import { CountryService } from 'src/app/Country/country/Services/country.service';
 @Component({
   selector: 'app-city-details',
   templateUrl: './city-details.component.html',
@@ -10,36 +12,74 @@ import { Location } from '@angular/common';
 })
 export class CityDetailsComponent implements OnInit {
 
-  currentCityID: number = 0;
-  returnedCity: ICity| undefined=undefined;
-  City: ICity | undefined = undefined;
+  currentCountryID: number = 30;
+  returnedCity: ICity[]=[];
+  City: ICity []=[];
+  id:number=0;
+  ListOfCountries: ICountry={
+    id: 0,
+    name: '',
+    continentID: 0
+  };
+  findname:ICountry | undefined
+
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private cityService: CityServiceService,
-    private location:Location
+    private location:Location,
+    private countryService : CountryService,
   ) {}
   ngOnInit(): void {
-    this.currentCityID = this.activatedRoute.snapshot.paramMap.get('CityID')
-    ? Number(this.activatedRoute.snapshot.paramMap.get('CityID'))
-    : 0;
 
 
-    this.cityService.getCitytByID(this.currentCityID).subscribe(data => {
-      this.returnedCity = data;
+
+
+
+
+
+this.activatedRoute.paramMap.subscribe(a=> {
+
+this.currentCountryID  =Number(a.get('CountryID'))  ;
+this.getfindname();
+
+})
+
+
+      this.cityService.getcitiesByCountryId(this.currentCountryID).subscribe(data => {
+        this.returnedCity = data;
+
+      if (this.returnedCity) {
+      this.City = this.returnedCity;
+
+
+      }
+      else{
+        alert("City not found")
+        this.location.back();
+      }
 
 
     });
 
-    if (this.returnedCity) {
-    this.City = this.returnedCity;
 
 
-    }
-    else{
-      alert("City not found")
-      this.location.back();
-    }
- }
 
+  }
+
+  getfindname():void{
+    console.log(this.currentCountryID)
+    this.countryService.getContrytByID(this.currentCountryID).subscribe(d=>{
+      this.findname=d;
+      console.log("hi",d)
+      console.log(this.currentCountryID)
+
+
+
+
+
+    })
+
+
+  }
 }

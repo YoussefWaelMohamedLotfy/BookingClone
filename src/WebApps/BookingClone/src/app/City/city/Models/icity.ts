@@ -1,5 +1,5 @@
 export interface ICity {
-  ID:number;
-  Name:string;
-  CountryID:number;
+  id:number;
+  name:string;
+  countryID:number;
 }

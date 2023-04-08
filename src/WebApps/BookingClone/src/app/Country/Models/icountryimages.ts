@@ -1,3 +1,4 @@
 export interface ICountryimages {
-  img:string,
+  // id:number,
+  // img:string,
 }
