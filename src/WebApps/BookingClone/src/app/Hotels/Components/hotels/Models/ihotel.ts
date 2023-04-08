@@ -9,11 +9,7 @@ export interface IHotel {
   StarRating: number
 
   url: string
-  // pageNumber: number
-  // totalPages: number
-  // isFirstPage: boolean
-  // isLastPage: boolean
-  // pageSize: number
+
 
 
 

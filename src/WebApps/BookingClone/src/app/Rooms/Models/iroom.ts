@@ -1,6 +1,6 @@
 export interface Iroom {
 
-  ID: number
+  id: number
   RoomNumber: string
 
   Description: string
@@ -11,7 +11,7 @@ export interface Iroom {
 
   ViewType: any //enum
 
-  HotelId: number
+  hotelId: number
   Price: number
-
+  url?: string
 }

@@ -10,7 +10,8 @@ export class RoomServiceService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getRoomByHotelId(id: number): Observable<any> {
-    return this.httpClient.get(`${Environment.APIURL}/api/Rooms/${id}`)
+  getRoomsByHotelId(id: number, pageNumber: number, pageSize: number): Observable<any> {
+    // return this.httpClient.get(`${Environment.APIURL}/api/Rooms/${id}`)
+    return this.httpClient.get(`${Environment.APIURL}/api/Rooms?PageNumber=${pageNumber}&PageSize=${pageSize}`)
   }
 }

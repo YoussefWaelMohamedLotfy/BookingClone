@@ -14,9 +14,10 @@ import { hotelImg } from './Models/img'
 })
 export class HotelsComponent implements OnInit {
   hotelList: any
-  pageNumber: string = ''
-  pageSize: string = ''
-
+  pageNumber: number = 1;
+  pageSize: number = 10;
+  totalItems: number = 0;
+  totalPages: number = 100;
 
 
   // hotelImg = [
@@ -66,11 +67,30 @@ export class HotelsComponent implements OnInit {
   // ]
 
   constructor(private hotelApi: HotelServicesService, private router: Router) { }
+  showMsg: boolean = false;
+  getHotels(type: string) {
+    if (type === 'Previous' && this.pageNumber > 1) {
+      this.pageNumber--;
+    }
+    else if (type === 'Next') {
+      this.pageNumber++;
+    }
+    else if (type !== 'First') {
+      return
+    }
 
-  getHotels() {
-    this.hotelApi.getAllHotel(`${this.pageNumber}`, `&${this.pageSize}`).subscribe(({
+    this.hotelApi.getAllHotel(this.pageNumber, this.pageSize).subscribe(({
       next: res => {
-        this.hotelList = res.data
+        if (Number(res.pageNumber) > Number(res.totalPages)) {
+          this.pageNumber--;
+          this.showMsg = true;
+          return
+        }
+        else {
+          this.showMsg = false;
+        }
+        this.totalItems = Number(res.totalPages) * Number(res.pageSize);
+        this.hotelList = res.data;
 
         this.hotelList.map((item: IHotel, ind: number) => {
           let hotel = item;
@@ -89,7 +109,7 @@ export class HotelsComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.getHotels();
+    this.getHotels("First");
 
   }
 

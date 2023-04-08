@@ -26,8 +26,8 @@ export class HotelServicesService {
     localStorage.setItem('url', url);
   }
 
-  getAllHotel(pageNumber: string, pageSize: string): Observable<any> {
-    return this.httpClient.get(`${Environment.APIURL}/api/Hotels`);
+  getAllHotel(pageNumber: number, pageSize: number): Observable<any> {
+    return this.httpClient.get(`${Environment.APIURL}/api/Hotels?pageNumber=${pageNumber}&pageSize=${pageSize}`);
 
     // ?PageNumber=${pageNumber}&PageSize=${}
   }
