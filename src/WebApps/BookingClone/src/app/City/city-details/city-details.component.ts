@@ -12,15 +12,11 @@ import { CountryService } from 'src/app/Country/country/Services/country.service
 })
 export class CityDetailsComponent implements OnInit {
 
-  currentCountryID: number = 30;
+  currentCountryID: number = 0;
   returnedCity: ICity[]=[];
   City: ICity []=[];
-  id:number=0;
-  ListOfCountries: ICountry={
-    id: 0,
-    name: '',
-    continentID: 0
-  };
+
+
   findname:ICountry | undefined
 
 
@@ -71,11 +67,6 @@ this.getfindname();
     console.log(this.currentCountryID)
     this.countryService.getContrytByID(this.currentCountryID).subscribe(d=>{
       this.findname=d;
-      console.log("hi",d)
-      console.log(this.currentCountryID)
-
-
-
 
 
     })
