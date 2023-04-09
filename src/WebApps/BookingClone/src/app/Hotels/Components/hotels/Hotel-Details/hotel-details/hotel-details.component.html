@@ -1,10 +1,10 @@
 <section class="container">
   <div class="row container">
-    <div class="col-xl-7 my-3 col-lg-7 col-md-6 col-sm-6">
+    <div class="col-xl-7 my-3 col-lg-7 col-md-6 col-sm-12">
       <img [src]="imgUrl" class="img-fluid w-100 ">
     </div>
 
-    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 border border-2 border-warning py-1 my-3">
+    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-12 border border-2 border-warning py-1 my-3">
       <div class="content  py-2 my-2 container">
         <!-- <img [src]=" imgUrl" class="img-fluid"> -->
         <h4 class="fs-4 fw-bold my-3">{{hotelDetail?.name}}</h4>
@@ -111,7 +111,7 @@
       </ng-container>
       <ng-container *ngIf="rooms.length > 0">
 
-
+        <h2 class="fs-5 mx-3">Rooms of this hotel</h2>
         <ng-container *ngFor="let room of rooms">
           <div class="container ">
             <div class=" card mb-3 w-75 ">
