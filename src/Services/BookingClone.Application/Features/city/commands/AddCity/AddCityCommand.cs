@@ -23,5 +23,9 @@ public class AddCityCommand : IRequest<CityDetailsDto>
 
     }
 
-
+    public AddCityCommand(string name, int? countryID)
+    {
+        Name = name;
+        CountryID = countryID;
+    }
 }

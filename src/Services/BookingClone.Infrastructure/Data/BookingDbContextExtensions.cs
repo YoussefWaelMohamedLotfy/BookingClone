@@ -69,6 +69,14 @@ public static class BookingDbContextExtensions
             context.SaveChanges();
         }
 
+       
+
+
+
+
         logger.LogInformation("Completed Seeding of context.");
+
+
+
     }
 }
