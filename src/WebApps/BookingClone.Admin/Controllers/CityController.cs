@@ -65,7 +65,7 @@ public class CityController : Controller
 
        .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
       .ToList();
-        var reservations = await _mediator.Send(new GetCityBYCountryIdquery (id ), ct);
+        var reservations = await _mediator.Send(new GetCityByIdQuery(id ), ct);
         return View(reservations);
     }
 
