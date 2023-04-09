@@ -78,15 +78,15 @@ export const roomImg = [
   },
   {
     id: 8,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpEfAd0xYic2tTcxXAmmBme9TnW9iSdatVg&usqp=CAU'
+    imgName: 'https://img.freepik.com/free-photo/luxury-bedroom-design_1388-230.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   },
   {
     id: 9,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZd9kgR9NOCr70DM-se7tC4Q4GP-KU_jJPw&usqp=CAU'
+    imgName: 'https://img.freepik.com/free-photo/modern-living-room_114579-1406.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   },
   {
     id: 10,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDWOGEG0JP9zkC6VSDmcO3mfvpjYpKt559Q&usqp=CAU'
+    imgName: 'https://img.freepik.com/free-photo/white-pillow-bed_74190-3601.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   }
 
 
