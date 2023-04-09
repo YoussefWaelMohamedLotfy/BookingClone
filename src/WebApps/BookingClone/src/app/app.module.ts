@@ -12,6 +12,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Components/all-room-reservations/all-room-reservations.component';
 import { AllAttractionReservationsComponent } from './Reservations/AttractionReservations/Components/all-attraction-reservations/all-attraction-reservations.component';
+import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/Components/add-new-room-reservation/add-new-room-reservation.component';
 
 
 
@@ -23,7 +24,8 @@ import { AllAttractionReservationsComponent } from './Reservations/AttractionRes
     NotFoundComponent,
     StaysComponent,
     AllRoomReservationsComponent,
-    AllAttractionReservationsComponent
+    AllAttractionReservationsComponent,
+    AddNewRoomReservationComponent
   ],
   imports: [
     BrowserModule,

@@ -13,7 +13,7 @@ export class AllAttractionReservationsComponent implements OnInit {
   constructor(private attractionReservationApi: AttractionReservationApiService) { }
   
   ngOnInit(): void {
-    this.attractionReservationApi.getPagedRoomReservation().subscribe(response => {
+    this.attractionReservationApi.getPagedAttractionReservation().subscribe(response => {
       this.attractionReservationsList = response.data;
     })
   }

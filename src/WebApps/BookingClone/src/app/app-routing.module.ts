@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'Room/Reservations', component: AllRoomReservationsComponent },
   { path: 'Attraction/Reservations', component: AllAttractionReservationsComponent },
   { path: 'Stays', component: StaysComponent },
-  { path: '', redirectTo: '/Attraction/Reservations', pathMatch: 'full' },
+  { path: '', redirectTo: '/Room/Reservations', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
 

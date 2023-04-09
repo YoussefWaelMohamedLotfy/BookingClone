@@ -19,7 +19,7 @@ export class AttractionReservationApiService {
     };
   }
 
-  getPagedRoomReservation(pagesize: Number = 10, pageNumber: Number = 1) : Observable<IPagedList<IAttractionReservation>> {
+  getPagedAttractionReservation(pagesize: Number = 10, pageNumber: Number = 1) : Observable<IPagedList<IAttractionReservation>> {
     return this.httpClient.get<IPagedList<IAttractionReservation>>(`${environment.APIURL}/AttractionReservations?pageNumber=${pageNumber}&pageSize=${pagesize}`);
   }
 }
