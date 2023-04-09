@@ -41,5 +41,9 @@ public class AddCityCommand : IRequest<CityDetailsDto>
 >>>>>>> api(country_continent_city)
     }
 
-
+    public AddCityCommand(string name, int? countryID)
+    {
+        Name = name;
+        CountryID = countryID;
+    }
 }

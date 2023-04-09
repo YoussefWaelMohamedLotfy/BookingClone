@@ -110,6 +110,7 @@ public static class BookingDbContextExtensions
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         if (!context.AttractionReviews.Any())
         {
             var attractionReviewsFaker = new Faker<AttractionReview>()
@@ -142,6 +143,16 @@ public static class BookingDbContextExtensions
 
 =======
 >>>>>>> first commit
+=======
+       
+
+
+
+
+>>>>>>> solve_error_in_create_city
         logger.LogInformation("Completed Seeding of context.");
+
+
+
     }
 }

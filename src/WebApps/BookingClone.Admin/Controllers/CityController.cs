@@ -111,6 +111,7 @@ public class CityController : Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         this.ViewData["Countries"] =  _mediator.Send(new GetAllCountriesQuerywithoutpagination()).Result
         
         .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
@@ -177,6 +178,9 @@ public class CityController : Controller
 =======
         var reservation = await _mediator.Send(new GetCityBYCountryIdquery(id), ct);
 >>>>>>> new action getcitybycountryid
+=======
+        var reservation = await _mediator.Send(new GetCityByIdQuery(id), ct);
+>>>>>>> solve_error_in_create_city
         return View(reservation);
 >>>>>>> salmateest
     }
