@@ -13,4 +13,6 @@ namespace BookingClone.Application.Features.RoomFeatures.Queries.GetAllRooms;
 public class GetAllRoomsQuery: IRequest<PagedList<GetRoomDto>>
 {
     public required PaginationQuery Query { get; set; }
+
+    //public decimal? Price { get; set; }
 }

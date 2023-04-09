@@ -15,5 +15,7 @@ public class EntityMappingConfig : Profile
         CreateMap<UpdateRoomDto, Room>();
         CreateMap<PagedList<Room>, PagedList<GetRoomDto>>()
            .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
+
+
     }
 }

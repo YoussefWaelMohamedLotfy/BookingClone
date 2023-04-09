@@ -1,12 +1,12 @@
 <section class="container">
-  <div class="row">
-    <div class="col-xl-7 my-3 ">
+  <div class="row container">
+    <div class="col-xl-7 my-3 col-lg-7 col-md-6 col-sm-6">
       <img [src]="imgUrl" class="img-fluid w-100 ">
     </div>
 
-    <div class="col-xl-4 col-lg-4 col-md-6 border border-2 border-warning py-1 my-3 mx-3">
-      <div class="content  py-2 my-2">
-        <!-- <img [src]="imgUrl" class="img-fluid"> -->
+    <div class="col-xl-5 col-lg-5 col-md-6 col-sm-6 border border-2 border-warning py-1 my-3">
+      <div class="content  py-2 my-2 container">
+        <!-- <img [src]=" imgUrl" class="img-fluid"> -->
         <h4 class="fs-4 fw-bold my-3">{{hotelDetail?.name}}</h4>
         <p>Description: {{hotelDetail?.description}}</p>
         <p *ngIf="hotelDetail?.starRating==5">
@@ -57,7 +57,7 @@
 
 
         </div> -->
-        <div class="row mt-5">
+        <div class="row mt-5 container">
           <h5>Most popular facilities</h5>
 
           <ul class="d-flex list-unstyled">
@@ -113,22 +113,26 @@
 
 
         <ng-container *ngFor="let room of rooms">
-          <div class="card mb-3 w-75">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img [src]="room?.url" class=" w-100" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">{{room?.roomNumber}}</h5>
-                  <p class="card-text">{{room?.price}}</p>
-                  <p class="card-text">{{room?.roomNumber}}</p>
+          <div class="container ">
+            <div class=" card mb-3 w-75 ">
+              <div class=" row g-0">
+                <div class="col-md-4">
+                  <img [src]="room?.url" class=" w-100" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body my-2">
+                    <h5 class="card-title ">Room Number: {{room?.roomNumber}}</h5>
+                    <p class="card-text ">Room Price: {{room?.price}}</p>
+                    <p class="card-text ">Number of Beds : {{room?.bedCount}}</p>
+                    <p class="card-text" *ngIf="room?.isAvailable==true" class="text-primary">Available</p>
+                    <p class="card-text" *ngIf="room?.isAvailable==false" class="text-danger">Not Available</p>
 
-                  <p *ngIf="room?.viewType==1" class="card-text">Sea View</p>
-                  <p *ngIf="room?.viewType==2" class="card-text">Garden View</p>
-                  <p *ngIf="room?.viewType==3" class="card-text">Pool View</p>
+                    <p *ngIf="room?.viewType==1" class="card-text">Room View: Sea View</p>
+                    <p *ngIf="room?.viewType==2" class="card-text"> Room View: Garden View</p>
+                    <p *ngIf="room?.viewType==3" class="card-text">Room View: Pool View</p>
 
 
+                  </div>
                 </div>
               </div>
             </div>

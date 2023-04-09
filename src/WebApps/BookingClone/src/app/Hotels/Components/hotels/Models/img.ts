@@ -50,31 +50,31 @@ export const hotelImg = [
 export const roomImg = [
   {
     id: 1,
-    imgName: "https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg"
+    imgName: "https://img.freepik.com/free-photo/small-hotel-bedroom-with-white-walls-panoramic-window_1262-12488.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais"
   },
   {
     id: 2,
-    imgName: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03l4v5BtW03JxMvJQsCNTOlr7FmBgBrOvZWPbbLznzeOSChEIKPQFmY6QX7zmJdAC7gY&usqp=CAU"
+    imgName: "https://img.freepik.com/free-photo/interior-modern-comfortable-hotel-room_1232-1822.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais"
   },
   {
     id: 3,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_grF9sk4c2W8S89wxSsUoFnz7ngOyQXTQFg&usqp=CAU'
+    imgName: 'https://img.freepik.com/free-photo/side-view-breakfast-with-coffee-cup-omelette-plate-hotel-room_176474-3020.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   },
   {
     id: 4,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_8jI5Pv6RQ5HeYf57DZpiQf42au21gH7Xg&usqp=CAU'
+    imgName: 'https://img.freepik.com/free-photo/relax-bedroom_1150-17980.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   },
   {
     id: 5,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZrIF2aB6wwZ4Bt2vvx1E0QGzVoCzu2KxwA&usqp=CAU'
+    imgName: 'https://img.freepik.com/premium-photo/bangkok-thailand-modern-hotel-room-suite-yahn-hotel-bangkok_677754-8144.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   },
   {
     id: 6,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbhc8gBbbeXDThSGr3xGEGsuxFrhwiG_lVmA&usqp=CAU'
+    imgName: 'https://img.freepik.com/premium-photo/illustration-bedroom-interior_252025-88818.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   },
   {
     id: 7,
-    imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJTvribeBvVrWRCinz5t9uLrdqsoyMTT2jg&usqp=CAU'
+    imgName: 'https://img.freepik.com/free-photo/hotel-room-interior-with-bedroom-area-living-space-kitchen_1262-12288.jpg?size=626&ext=jpg&ga=GA1.1.1273576946.1674688352&semt=ais'
   },
   {
     id: 8,
