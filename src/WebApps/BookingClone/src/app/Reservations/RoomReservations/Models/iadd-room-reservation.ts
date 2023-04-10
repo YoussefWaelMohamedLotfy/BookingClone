@@ -1,5 +1,5 @@
 export interface IAddRoomReservation {
-    totalCost: Number,
+    totalCost: number,
     checkIn: Date,
     checkOut: Date
 }
