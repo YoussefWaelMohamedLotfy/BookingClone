@@ -3,6 +3,8 @@ using BookingClone.Application.Features.AttractionReservationFeatures.Commands.D
 using BookingClone.Application.Features.AttractionReservationFeatures.Commands.UpdateAttractionReservation;
 using BookingClone.Application.Features.AttractionReservationFeatures.DTOs;
 using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetAttractionReservationById;
+using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetails;
+using BookingClone.Application.Features.AttractionReservationFeatures.Queries.GetReservedAttractionDetailsById;
 using BookingClone.Application.Features.RoomReservationFeatures.Queries.GetAllRoomReservations;
 using BookingClone.Domain.Common;
 using MediatR;
@@ -82,5 +84,32 @@ public class AttractionReservationsController : ControllerBase
     {
         var result = await _mediator.Send(new DeleteAttractionReservationCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
+    }
+
+    /// <summary>
+    /// Gets all ReservedRooms for a single Reservation
+    /// </summary>
+    /// <param name="reservationId"></param>
+    /// <param name="ct"></param>
+    /// <returns></returns>
+    [HttpGet("{reservationId}/Reservations")]
+    public async Task<IActionResult> GetReservedAttractionDetails(int reservationId, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAllReservedAttractionDetailsQuery { ReservationId = reservationId }, ct);
+        return Ok(result);
+    }
+
+    /// <summary>
+    /// Get a single ReservedRoom for a single Reservation
+    /// </summary>
+    /// <param name="reservationId"></param>
+    /// <param name="attractionId"></param>
+    /// <param name="ct"></param>
+    /// <returns></returns>
+    [HttpGet("{reservationId}/Reservations/{attractionId}")]
+    public async Task<IActionResult> GetReservedAttractionDetailsById(int reservationId, int attractionId, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetReservedAttractionDetailsByIdQuery(reservationId, attractionId), ct);
+        return Ok(result);
     }
 }

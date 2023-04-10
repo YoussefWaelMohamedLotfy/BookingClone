@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
+
 using BookingClone.Admin.Models;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookingClone.Admin.Controllers;

@@ -18,5 +18,7 @@ public sealed class HotelReview : Review
     
     public decimal LocationRate { get; set; }
 
+    public int HotelID { get; set; }
+
     public Hotel Hotel { get; set; }
 }

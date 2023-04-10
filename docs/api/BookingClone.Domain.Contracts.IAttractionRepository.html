@@ -15,7 +15,10 @@
       <meta name="docfx:tocrel" content="toc.html">
       
       
-      <meta name="docfx:docurl" content="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Domain_Contracts_IAttractionRepository.md&amp;value=---%0Auid%3A%20BookingClone.Domain.Contracts.IAttractionRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/BOOK-45-update-docs/apiSpec/new?filename=BookingClone_Domain_Contracts_IAttractionRepository.md&amp;value=---%0Auid%3A%20BookingClone.Domain.Contracts.IAttractionRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+
+      <script type="text/javascript" src="../styles/docfx.min.js"></script>
+      <script type="text/javascript" src="../styles/main.js"></script>
   </head>
 
   <body data-layout="" data-yaml-mime="ManagedReference">
@@ -64,9 +67,10 @@
         <article data-uid="BookingClone.Domain.Contracts.IAttractionRepository">
 
 
+
   <h1 id="BookingClone_Domain_Contracts_IAttractionRepository" data-uid="BookingClone.Domain.Contracts.IAttractionRepository" class="text-break">
     Interface IAttractionRepository
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.Domain/Contracts/IAttractionRepository.cs/#L5"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/BOOK-45-update-docs/src/Services/BookingClone.Domain/Contracts/IAttractionRepository.cs/#L5"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,6 +104,9 @@
       <a class="xref" href="BookingClone.Domain.Contracts.IGenericRepository-2.html#BookingClone_Domain_Contracts_IGenericRepository_2_GetByIdAsync__1_System_Threading_CancellationToken_">IGenericRepository&lt;Attraction, int&gt;.GetByIdAsync(int, CancellationToken)</a>
     </div>
     <div>
+      <a class="xref" href="BookingClone.Domain.Contracts.IGenericRepository-2.html#BookingClone_Domain_Contracts_IGenericRepository_2_GetPaginatedList_BookingClone_Domain_Common_PaginationQuery_System_Threading_CancellationToken_">IGenericRepository&lt;Attraction, int&gt;.GetPaginatedList(PaginationQuery, CancellationToken)</a>
+    </div>
+    <div>
       <a class="xref" href="BookingClone.Domain.Contracts.IGenericRepository-2.html#BookingClone_Domain_Contracts_IGenericRepository_2_SaveAsync_System_Threading_CancellationToken_">IGenericRepository&lt;Attraction, int&gt;.SaveAsync(CancellationToken)</a>
     </div>
     <div>
@@ -111,14 +118,16 @@
 
 
 
+
   <h2 class="section" id="methods">Methods
 </h2>
+
 
   <a id="BookingClone_Domain_Contracts_IAttractionRepository_GetAll_" data-uid="BookingClone.Domain.Contracts.IAttractionRepository.GetAll*"></a>
 
   <h3 id="BookingClone_Domain_Contracts_IAttractionRepository_GetAll_System_Threading_CancellationToken_" data-uid="BookingClone.Domain.Contracts.IAttractionRepository.GetAll(System.Threading.CancellationToken)">
   GetAll(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.Domain/Contracts/IAttractionRepository.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/BOOK-45-update-docs/src/Services/BookingClone.Domain/Contracts/IAttractionRepository.cs/#L7"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -130,13 +139,13 @@
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
+    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">Task</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Attraction.html">Attraction</a>&gt;&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="BookingClone.Domain.Entities.Attraction.html">Attraction</a>&gt;&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -154,7 +163,7 @@
 
   <h3 id="BookingClone_Domain_Contracts_IAttractionRepository_GetAttractionDetails_System_Int32_System_Threading_CancellationToken_" data-uid="BookingClone.Domain.Contracts.IAttractionRepository.GetAttractionDetails(System.Int32,System.Threading.CancellationToken)">
   GetAttractionDetails(int, CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/reservations-mvc/src/Services/BookingClone.Domain/Contracts/IAttractionRepository.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/blob/BOOK-45-update-docs/src/Services/BookingClone.Domain/Contracts/IAttractionRepository.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -166,17 +175,18 @@
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>id</code> <span class="xref">int</span></dt>
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
     <dd></dd>
-    <dt><code>ct</code> <span class="xref">CancellationToken</span></dt>
+    <dt><code>ct</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><span class="xref">Task</span>&lt;<a class="xref" href="BookingClone.Domain.Entities.Attraction.html">Attraction</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="BookingClone.Domain.Entities.Attraction.html">Attraction</a>&gt;</dt>
     <dd></dd>
   </dl>
+
 
 
 
@@ -191,7 +201,7 @@
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/reservations-mvc/apiSpec/new?filename=BookingClone_Domain_Contracts_IAttractionRepository.md&amp;value=---%0Auid%3A%20BookingClone.Domain.Contracts.IAttractionRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
+          <a href="https://github.com/YoussefWaelMohamedLotfy/BookingClone/new/BOOK-45-update-docs/apiSpec/new?filename=BookingClone_Domain_Contracts_IAttractionRepository.md&amp;value=---%0Auid%3A%20BookingClone.Domain.Contracts.IAttractionRepository%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="edit-link">Edit this page</a>
         </div>
       </div>
 
@@ -208,8 +218,5 @@
         </div>
       </div>
     </footer>
-
-    <script type="text/javascript" src="../styles/docfx.min.js"></script>
-    <script type="text/javascript" src="../styles/main.js"></script>
   </body>
 </html>

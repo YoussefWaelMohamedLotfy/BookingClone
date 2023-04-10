@@ -14,5 +14,7 @@ internal sealed class EntityMappingConfig : Profile
         CreateMap<UpdateAttractionReservationDto, AttractionReservation>();
         CreateMap<PagedList<AttractionReservation>, PagedList<GetAttractionReservationDto>>()
             .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
+
+        CreateMap<ReservedAttraction, GetReservedAttractionDto>();
     }
 }

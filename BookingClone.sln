@@ -36,7 +36,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Proxy", "Proxy", "{227DC152
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingClone.YARP", "src\Proxy\BookingClone.YARP\BookingClone.YARP.csproj", "{76455E32-7711-40CA-9017-D6512C960AE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.Admin", "src\WebApps\BookingClone.Admin\BookingClone.Admin.csproj", "{C396182A-8D7C-4824-82FC-C1CB0C2FB88F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingClone.Admin", "src\WebApps\BookingClone.Admin\BookingClone.Admin.csproj", "{C396182A-8D7C-4824-82FC-C1CB0C2FB88F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

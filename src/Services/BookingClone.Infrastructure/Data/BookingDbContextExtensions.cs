@@ -9,12 +9,44 @@ public static class BookingDbContextExtensions
 {
     public static void Seed(this BookingDbContext context, ILogger<BookingDbContext> logger)
     {
+        if (!context.Continents.Any())
+        {
+            context.Continents.AddRange(new[]
+            {
+                new Continent { Name = "Africa" },
+                new Continent { Name = "Asia" },
+                new Continent { Name = "North America" },
+                new Continent { Name = "South America" },
+                new Continent { Name = "Europe" },
+            });
+            context.SaveChanges();
+        }
+
+        if (!context.Countries.Any())
+        {
+            var countriesFaker = new Faker<Country>()
+                .RuleFor(h => h.ContinentID, f => f.Random.Number(1, 5))
+                .RuleFor(h => h.Name, f => f.Address.Country());
+
+            context.Countries.AddRange(countriesFaker.Generate(20));
+            context.SaveChanges();
+        }
+
+        if (!context.Cities.Any())
+        {
+            var citiesFaker = new Faker<City>()
+                .RuleFor(h => h.CountryID, f => f.Random.Number(1, 20))
+                .RuleFor(h => h.Name, f => f.Address.City());
+
+            context.Cities.AddRange(citiesFaker.Generate(20));
+            context.SaveChanges();
+        }
+
         if (!context.Hotels.Any())
         {
             var hotelsFaker = new Faker<Hotel>()
                 .RuleFor(h => h.Name, f => f.Company.CompanyName())
-                .RuleFor(h => h.Description, f => f.Company.CatchPhrase())
-                .RuleFor(h => h.StarRating, f => f.Random.Decimal(1, 5));
+                .RuleFor(h => h.Description, f => f.Company.CatchPhrase());
 
             context.Hotels.AddRange(hotelsFaker.Generate(20));
             context.SaveChanges();
@@ -68,6 +100,36 @@ public static class BookingDbContextExtensions
                 .RuleFor(ar => ar.CheckOut, f => f.Date.FutureOffset());
 
             context.RoomReservations.AddRange(roomReservationsFaker.Generate(20));
+            context.SaveChanges();
+        }
+
+        if (!context.AttractionReviews.Any())
+        {
+            var attractionReviewsFaker = new Faker<AttractionReview>()
+                .RuleFor(ar => ar.Comment, f => f.Lorem.Sentence())
+                .RuleFor(ar => ar.AttractionID, f => f.Random.Number(1, 20))
+                .RuleFor(ar => ar.ReviewDate, f => f.Date.RecentOffset());
+
+            context.AttractionReviews.AddRange(attractionReviewsFaker.Generate(20));
+            context.SaveChanges();
+        }
+
+        if (!context.HotelReviews.Any())
+        {
+            var hotelReviewsFaker = new Faker<HotelReview>()
+                .RuleFor(ar => ar.HotelID, f => f.Random.Number(1, 20))
+                .RuleFor(ar => ar.LocationRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.CleanlinessRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.StaffRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.ComfortRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.FacilitiesRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.StaffRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.ValueForMoneyRate, f => f.Random.Decimal(1, 10))
+                .RuleFor(ar => ar.NegativeReview, f => f.Lorem.Sentence())
+                .RuleFor(ar => ar.PositiveReview, f => f.Lorem.Sentence())
+                .RuleFor(ar => ar.ReviewDate, f => f.Date.RecentOffset());
+
+            context.HotelReviews.AddRange(hotelReviewsFaker.Generate(20));
             context.SaveChanges();
         }
 
