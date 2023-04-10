@@ -4,7 +4,7 @@ import { NotFoundComponent } from './Shared/Components/not-found/not-found.compo
 import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { HotelsComponent } from './Hotels/Components/hotels/hotels.component';
 import { combineLatest } from 'rxjs';
-import { HotelDetailsComponent } from './Hotels/Components/hotels/Hotel-Details/hotel-details/hotel-details.component';
+import { HotelDetailsComponent } from './Hotels/hotel-details/hotel-details.component';
 
 const routes: Routes = [
   { path: 'Stays', component: StaysComponent },

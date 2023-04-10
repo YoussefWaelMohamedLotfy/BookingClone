@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { HotelServicesService } from './Services/hotel-services.service';
-import { IHotel } from './Models/ihotel';
+import { HotelServicesService } from '../../Services/hotel-services.service';
+import { IHotel } from '../../Models/ihotel';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { hotelImg } from './Models/img'
+import { hotelImg } from '../../Models/img'
 
 
 
@@ -20,51 +20,7 @@ export class HotelsComponent implements OnInit {
   totalPages: number = 100;
 
 
-  // hotelImg = [
-  //   {
-  //     id: 1,
-  //     imgName: "https://cdn.britannica.com/96/115096-050-5AFDAF5D/Bellagio-Hotel-Casino-Las-Vegas.jpg"
-  //   },
-  //   {
-  //     id: 2,
-  //     imgName: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR03l4v5BtW03JxMvJQsCNTOlr7FmBgBrOvZWPbbLznzeOSChEIKPQFmY6QX7zmJdAC7gY&usqp=CAU"
-  //   },
-  //   {
-  //     id: 3,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_grF9sk4c2W8S89wxSsUoFnz7ngOyQXTQFg&usqp=CAU'
-  //   },
-  //   {
-  //     id: 4,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_8jI5Pv6RQ5HeYf57DZpiQf42au21gH7Xg&usqp=CAU'
-  //   },
-  //   {
-  //     id: 5,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcZrIF2aB6wwZ4Bt2vvx1E0QGzVoCzu2KxwA&usqp=CAU'
-  //   },
-  //   {
-  //     id: 6,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbhc8gBbbeXDThSGr3xGEGsuxFrhwiG_lVmA&usqp=CAU'
-  //   },
-  //   {
-  //     id: 7,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJTvribeBvVrWRCinz5t9uLrdqsoyMTT2jg&usqp=CAU'
-  //   },
-  //   {
-  //     id: 8,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqpEfAd0xYic2tTcxXAmmBme9TnW9iSdatVg&usqp=CAU'
-  //   },
-  //   {
-  //     id: 9,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZd9kgR9NOCr70DM-se7tC4Q4GP-KU_jJPw&usqp=CAU'
-  //   },
-  //   {
-  //     id: 10,
-  //     imgName: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLDWOGEG0JP9zkC6VSDmcO3mfvpjYpKt559Q&usqp=CAU'
-  //   }
 
-
-
-  // ]
 
   constructor(private hotelApi: HotelServicesService, private router: Router) { }
   showMsg: boolean = false;
@@ -94,7 +50,7 @@ export class HotelsComponent implements OnInit {
 
         this.hotelList.map((item: IHotel, ind: number) => {
           let hotel = item;
-          // hotel.url = this.hotelImg[ind].imgName;
+
           hotel.url = hotelImg[ind % hotelImg.length].name;
           return hotel
         });

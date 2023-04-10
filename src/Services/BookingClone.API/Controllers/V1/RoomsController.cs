@@ -53,4 +53,11 @@ public class RoomsController : ControllerBase
         var result = await _mediator.Send(new DeleteRoomCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
     }
+
+    [HttpGet("GetFilterdRooms")]
+    public async Task<IActionResult> GetFilterdRooms(int from,int to,bool ava, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetFilterdRoomQuery { from = from,to=to,ava=ava }, ct);
+        return result is null ? NotFound() : Ok(result);
+    }
 }

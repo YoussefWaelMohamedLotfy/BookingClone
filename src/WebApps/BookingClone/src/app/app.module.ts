@@ -11,7 +11,7 @@ import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HotelsComponent } from './Hotels/Components/hotels/hotels.component';
-import { HotelDetailsComponent } from './Hotels/Components/hotels/Hotel-Details/hotel-details/hotel-details.component';
+import { HotelDetailsComponent } from './Hotels/hotel-details/hotel-details.component';
 import { RoomsComponent } from './Rooms/Components/rooms/rooms.component';
 
 
