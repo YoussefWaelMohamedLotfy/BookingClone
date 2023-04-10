@@ -13,11 +13,14 @@ import { CountryComponent } from './Country/country/country.component';
 import { CountryDetailsComponent } from './Country/country-details/country-details.component';
 import { ContinentComponent } from './Continent/continent/continent.component';
 import { CityDetailsComponent } from './City/city-details/city-details.component';
+import { CityComponent } from './City/city/city.component';
 
 const routes: Routes = [
   { path: 'Stays', component: StaysComponent },
-  { path: '', redirectTo: '/Stays', pathMatch: 'full' },
+
+   {path:'City',component:CityComponent},
   {path:'CityDetails/:CountryID',component:CityDetailsComponent},
+  { path: '', redirectTo: '/Stays', pathMatch: 'full' },
   {path:'Continent',component:ContinentComponent},
   { path: 'Room/Reservations', component: AllRoomReservationsComponent },
   { path: 'Attraction/Reservations', component: AllAttractionReservationsComponent },
@@ -25,6 +28,7 @@ const routes: Routes = [
   { path: 'HotelDetails/:id', component: HotelDetailsComponent },
   { path: '', redirectTo: '/Room/Reservations', pathMatch: 'full' },
   {path:'Continent/:id',component:ContinentComponent},
+
   { path: '**', component: NotFoundComponent },
 ];
 
