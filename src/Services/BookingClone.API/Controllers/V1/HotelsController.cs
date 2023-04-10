@@ -1,8 +1,11 @@
 ﻿using BookingClone.Application.Features.HotelFeatures.AddHotel;
 using BookingClone.Application.Features.HotelFeatures.DeleteHotel;
 using BookingClone.Application.Features.HotelFeatures.DTOs;
+using BookingClone.Application.Features.HotelFeatures.Queries.GetAll;
 using BookingClone.Application.Features.HotelFeatures.Queries.GetById;
 using BookingClone.Application.Features.HotelFeatures.UpdateHotel;
+using BookingClone.Domain.Common;
+
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -16,6 +19,13 @@ public class HotelsController : ControllerBase
 
     public HotelsController(IMediator mediator)
         => _mediator = mediator;
+
+    [HttpGet]
+    public async Task<IActionResult> GetPaginatedHotels([FromQuery] PaginationQuery query, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAllHotelsQuery() { Query = query }, ct);
+        return Ok(result);
+    }
 
     [HttpGet("{id}")]
     public async Task<IActionResult> GetHotelById(int id, CancellationToken ct)

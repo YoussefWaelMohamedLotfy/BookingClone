@@ -10,11 +10,12 @@ import { NotFoundComponent } from './Shared/Components/not-found/not-found.compo
 import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HotelsComponent } from './Hotels/Components/hotels/hotels.component';
+import { HotelDetailsComponent } from './Hotels/Components/hotel-details/hotel-details.component';
+import { RoomsComponent } from './Rooms/Components/rooms/rooms.component';
 import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Components/all-room-reservations/all-room-reservations.component';
 import { AllAttractionReservationsComponent } from './Reservations/AttractionReservations/Components/all-attraction-reservations/all-attraction-reservations.component';
 import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/Components/add-new-room-reservation/add-new-room-reservation.component';
-
-
 
 @NgModule({
   declarations: [
@@ -23,6 +24,9 @@ import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/
     FooterComponent,
     NotFoundComponent,
     StaysComponent,
+    HotelsComponent,
+    HotelDetailsComponent,
+    RoomsComponent
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent

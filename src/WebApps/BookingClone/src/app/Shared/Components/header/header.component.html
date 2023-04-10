@@ -48,15 +48,15 @@
               <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">Select your
-                      language
+                    <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">
+                      {{"Select your language" | translate}}
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <h6 class="fw-bold mb-3">All languages</h6>
-                    <button class="btn btn-danger d-block" (click)="translate.use('en')">EN</button>
-                    <button class="btn btn-danger" (click)="translate.use('ar')">AR</button>
+                    <h6 class="fw-bold mb-3">{{"All languages" | translate}}</h6>
+                    <button class="btn btn-secondary d-block" (click)="changeLanguage('en')">EN</button>
+                    <button class="btn btn-secondary" (click)="changeLanguage('ar')">AR</button>
                     <div id="languageModal" class="row"></div>
                   </div>
                 </div>
@@ -94,7 +94,7 @@
     <div class="container">
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a class="nav-link text-white" href="../Stays/index.html">
+          <a class="nav-link text-white" href="" routerLink="Attractions">
             <i class="bi bi-tree"></i>
             <!-- Stays --> {{"Stays"| translate}}
           </a>
@@ -112,7 +112,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="../Attractions/index.html">
+          <a class="nav-link text-white" href="" routerLink="Attractions">
             <i class="bi bi-binoculars-fill"></i>
             <!-- Attractions --> {{"Attractions"|translate}}
           </a>
@@ -123,6 +123,14 @@
             <!-- Airport Taxis --> {{"Airport Taxis"|translate}}
           </a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link active rounded-5 border" href="" routerLink="Hotels">
+            <i class="bi bi-taxi-front-fill"></i>
+            <!-- Airport Taxis --> Hotels
+          </a>
+        </li>
+
       </ul>
     </div>
   </nav>
