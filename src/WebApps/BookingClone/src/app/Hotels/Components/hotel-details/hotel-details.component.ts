@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { HotelServicesService } from '../Services/hotel-services.service';
+import { HotelServicesService } from '../../Services/hotel-services.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { IHotel } from '../Models/ihotel';
+import { IHotel } from '../../Models/ihotel';
 import { Location } from '@angular/common';
 import { RoomServiceService } from 'src/app/Rooms/Services/room-service.service';
 import { Iroom } from 'src/app/Rooms/Models/iroom';
-import { roomImg } from '../Models/img';
-
-
+import { roomImg } from '../../Models/img';
 
 @Component({
   selector: 'app-hotel-details',
