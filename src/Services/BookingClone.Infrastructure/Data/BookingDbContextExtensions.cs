@@ -26,6 +26,7 @@ public static class BookingDbContextExtensions
                 .RuleFor(h => h.RoomNumber, f => f.Company.CompanyName())
                 .RuleFor(h => h.Description, f => f.Company.CatchPhrase())
                 .RuleFor(h => h.BedCount, f => f.Random.Number(1, 3))
+                .RuleFor(h => h.Price, f => f.Random.Decimal(100, 1000))
                 .RuleFor(h => h.ViewType, f => f.Random.Enum<RoomViewType>())
                 .RuleFor(h => h.IsAvailable, f => f.Random.Bool(0.7f))
                 .RuleFor(h => h.HotelId, f => f.Random.Number(1, 20));
