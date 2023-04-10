@@ -4,13 +4,17 @@ import { NotFoundComponent } from './Shared/Components/not-found/not-found.compo
 import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { ContinentComponent } from './Continent/continent/continent.component';
 import { CityDetailsComponent } from './City/city-details/city-details.component';
+import { CityComponent } from './City/city/city.component';
 
 const routes: Routes = [
   { path: 'Stays', component: StaysComponent },
-  { path: '', redirectTo: '/Stays', pathMatch: 'full' },
+
+   {path:'City',component:CityComponent},
   {path:'CityDetails/:CountryID',component:CityDetailsComponent},
+  { path: '', redirectTo: '/Stays', pathMatch: 'full' },
   {path:'Continent',component:ContinentComponent},
   {path:'Continent/:id',component:ContinentComponent},
+
   { path: '**', component: NotFoundComponent },
 ];
 

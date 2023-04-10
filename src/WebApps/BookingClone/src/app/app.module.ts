@@ -16,8 +16,10 @@ import { ContinentComponent } from './Continent/continent/continent.component';
 import { CountryDetailsComponent } from './Country/country-details/country-details.component';
 import { RouterModule } from '@angular/router';
 
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CityDetailsComponent } from './City/city-details/city-details.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 
 
 
@@ -35,10 +37,13 @@ import { CityDetailsComponent } from './City/city-details/city-details.component
     CityDetailsComponent,
   ],
   imports: [
+
     BrowserAnimationsModule,
     RouterModule,
     BrowserModule,
     AppRoutingModule,
+
+    NgImageSliderModule,
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
