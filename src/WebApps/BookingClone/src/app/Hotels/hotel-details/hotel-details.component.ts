@@ -85,6 +85,9 @@ export class HotelDetailsComponent implements OnInit {
       this.rooms = x
 
       this.rooms = x;
+      this.rooms = this.rooms.filter((x: any) => x.hotelId == this.id);
+      console.log(this.rooms);
+
       this.rooms.map((item: Iroom, ind: number) => {
         let room = item;
         room.url = roomImg[ind].imgName;
