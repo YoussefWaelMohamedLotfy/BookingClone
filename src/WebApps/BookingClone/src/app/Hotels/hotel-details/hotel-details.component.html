@@ -54,15 +54,17 @@
   </div>
 </section>
 
-<section>
-  <label for="customRange1" class="form-label">Example range</label>
-  <input type="range" class="form-range col-md-4" id="customRange1" min="0" max="1000" value="500"
+<section class="container ">
+  <label for="customRange1" class="form-label mx-2">Filter By Price</label>
+  <input type="range" class="form-range col-md-4 w-25 " id="customRange1" min="0" max="1000" value="500"
     (change)="ChangeValue($event.target, select.value)" #input />
   <span id="valueRange">{{ range }}</span>
 </section>
 
-<section>
-  <select class="form-controle" #select (change)="ChangeValue(input, select.value)">
+<section class="container ">
+  <span class="my-2">Filter By Availability</span>
+  <select class="form-control w-25" #select (change)="ChangeValue(input, select.value)">
+
     <option value="1">Available</option>
     <option value="0">Not Available</option>
   </select>
