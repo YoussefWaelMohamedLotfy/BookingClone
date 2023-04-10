@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './Shared/Components/not-found/not-found.component';
-import { StaysComponent } from './Stays/Stays-Component/Stays.component';
-import { ReviewsComponent } from './Models/Reviews/Reviews-Component/Reviews.component';
+import { StaysComponent } from './Stays/Component/Stays.component';
+import { ReviewsComponent } from './Reviews/Reviews-Component/Reviews.component';
 
 const routes: Routes = [
   { path: 'Stays', component: StaysComponent },
