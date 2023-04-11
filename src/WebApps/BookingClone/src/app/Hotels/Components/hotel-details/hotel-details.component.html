@@ -54,7 +54,7 @@
   </div>
 </section>
 
-<section class="container ">
+<section class="container">
   <label for="customRange1" class="form-label mx-2">Filter By Price</label>
   <input type="range" class="form-range col-md-4 w-25 " id="customRange1" min="0" max="1000" value="500"
     (change)="ChangeValue($event.target, select.value)" #input />
@@ -74,47 +74,12 @@
   <div class="row">
     <div class="content py-2 my-2">
       <ng-container *ngIf="rooms.length == 0">
-        <div>No Rooms Found For This Hotel</div>
+        <h4 class="text-danger fw-bold">No Rooms Found For This Hotel</h4>
       </ng-container>
       <ng-container *ngIf="rooms.length > 0">
         <h2 class="fs-5 mx-3">Rooms of this hotel</h2>
         <ng-container *ngFor="let room of rooms">
-          <div class="container">
-            <div class="card mb-3 w-75">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img [src]="room?.url" class="w-100" alt="..." />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body my-2">
-                    <h5 class="card-title">
-                      Room Number: {{ room?.roomNumber }}
-                    </h5>
-                    <p class="card-text">Room Price: {{ room?.price }}</p>
-                    <p class="card-text">
-                      Number of Beds : {{ room?.bedCount }}
-                    </p>
-                    <p class="card-text" *ngIf="room?.isAvailable == true" class="text-primary">
-                      Available
-                    </p>
-                    <p class="card-text" *ngIf="room?.isAvailable == false" class="text-danger">
-                      Not Available
-                    </p>
-
-                    <p *ngIf="room?.viewType == 1" class="card-text">
-                      Room View: Sea View
-                    </p>
-                    <p *ngIf="room?.viewType == 2" class="card-text">
-                      Room View: Garden View
-                    </p>
-                    <p *ngIf="room?.viewType == 3" class="card-text">
-                      Room View: Pool View
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <app-room-details [roomDetails]="room"></app-room-details>
         </ng-container>
       </ng-container>
     </div>
