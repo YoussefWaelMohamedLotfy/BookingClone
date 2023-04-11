@@ -17,12 +17,12 @@ internal class GetAttractionsByIdQueryHandler
 
 
 
-public class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractionsByCityIdQuery, List<CityDetailsDto?>>
+public class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractionsByCityIdQuery, List<AttractionsDetailsDto?>>
 {
-    private readonly ICityRepository _cityRepository;
+    private readonly IAttractionRepository _AttractionRepository;
     private readonly IMapper _mapper;
 
-    public GetAttractionsByCityIdQueryHandler(ICityRepository cityRepository, IMapper mapper)
+    public GetAttractionsByCityIdQueryHandler(IAttractionRepository AttractionRepository, IMapper mapper)
     {
         _cityRepository = cityRepository;
         _mapper = mapper;
@@ -31,10 +31,10 @@ public class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractions
 
 
 
-    public async Task<List<CityDetailsDto?>> Handle(GetAttractionsByCityIdQuery request, CancellationToken cancellationToken)
+    public async Task<List<AttractionsDetailsDto?>> Handle(GetAttractionsByCityIdQuery request, CancellationToken cancellationToken)
     {
-        var result = _cityRepository.GetAll().Result.Where(x => x.CountryID == request.ID).ToList();
-        return result is null ? null : _mapper.Map<List<CityDetailsDto>>(result);
+        var result = _AttractionRepository.GetAll().Result.Where(x => x.CountryID == request.ID).ToList();
+        return result is null ? null : _mapper.Map<List<AttractionsyDetailsDto>>(result);
     }
 
 
