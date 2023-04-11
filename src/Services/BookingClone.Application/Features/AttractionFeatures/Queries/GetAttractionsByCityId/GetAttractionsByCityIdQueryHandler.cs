@@ -36,4 +36,3 @@ internal class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractio
 }
 
 
-}
