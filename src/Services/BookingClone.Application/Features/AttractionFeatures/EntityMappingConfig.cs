@@ -17,9 +17,17 @@ internal sealed class EntityMappingConfig : Profile
         CreateMap<AddAttractionDto, Attraction>();
         CreateMap<UpdateAttractionDto, Attraction>();
 <<<<<<< HEAD
+<<<<<<< HEAD
         CreateMap<PagedList<Attraction>, PagedList<GetAttractionDto>>()
             .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
 =======
 >>>>>>> first commit
+=======
+        CreateMap<AttractionDetailsDto, Attraction>().ReverseMap();
+
+
+
+
+>>>>>>> Add_Action_getAttractionbycityid_inAttraction
     }
 }
