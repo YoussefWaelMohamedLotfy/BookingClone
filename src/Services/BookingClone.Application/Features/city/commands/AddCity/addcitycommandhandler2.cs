@@ -9,12 +9,15 @@ using AutoMapper;
 using BookingClone.Application.Features.city.DTOs;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 using BookingClone.Application.Features.RoomFeatures.Commands.AddRoom;
 using BookingClone.Application.Features.RoomFeatures.DTOs;
 >>>>>>> test2
 =======
 >>>>>>> country,continent,city
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
@@ -36,10 +39,14 @@ public class addcitycommandhandler2 : IRequestHandler<addcitycommand2, CityDetai
     public async Task<CityDetailsDto> Handle(addcitycommand2 request, CancellationToken cancellationToken)
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         var newCity = _mapper.Map<City>(request.Dto);
 =======
         var newCity = _mapper.Map<Cities>(request.Dto);
 >>>>>>> test2
+=======
+        var newCity = _mapper.Map<Cities>(request.Dto);
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         _cityRepository.Add(newCity);
         await _cityRepository.SaveAsync(cancellationToken);
 

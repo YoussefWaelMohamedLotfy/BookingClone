@@ -6,13 +6,19 @@ using System.Threading.Tasks;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using AutoMapper;
 
 <<<<<<< HEAD
+=======
+using AutoMapper;
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 
+<<<<<<< HEAD
 =======
 =======
 using AutoMapper;
@@ -33,6 +39,8 @@ using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 
 >>>>>>> DeleteComments
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using MediatR;
 
@@ -41,6 +49,9 @@ public class GetCountryByIdQueryHandlar : IRequestHandler<GetCountryByIdQuery, C
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     private readonly ICountryRepository _countryRepository;
     private readonly IMapper _mapper;
@@ -82,6 +93,7 @@ public class GetCountryByIdQueryHandlar : IRequestHandler<GetCountryByIdQuery, C
 
         //}
     
+<<<<<<< HEAD
 =======
 =======
 
@@ -131,4 +143,6 @@ public class GetCountryByIdQueryHandlar : IRequestHandler<GetCountryByIdQuery, C
         //}
     
 >>>>>>> countryview
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }

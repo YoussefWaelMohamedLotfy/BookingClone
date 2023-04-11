@@ -5,6 +5,7 @@ namespace BookingClone.Domain.Entities;
 public sealed class Cities : BaseEntity<int>
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 
     public string Name { get; set; }
@@ -13,6 +14,13 @@ public sealed class Cities : BaseEntity<int>
     
     public int? CountryID { get; set; }
     
+=======
+   
+
+
+    public string Name { get; set; }
+    public int? CountryID { get; set; }
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     public Country Country { get; set; }
 =======
    
@@ -20,6 +28,7 @@ public sealed class Cities : BaseEntity<int>
 
     public List<Attraction>? Attractions { get; set; }
 
+<<<<<<< HEAD
     public List<CityHotel>? CityHotels { get; set; }  
 =======
 
@@ -49,4 +58,9 @@ public sealed class Cities : BaseEntity<int>
 =======
    
 >>>>>>> DeleteComments
+=======
+    public List<CityHotel>? CityHotels { get; set; }
+
+   
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }

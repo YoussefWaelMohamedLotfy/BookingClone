@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
 
+<<<<<<< HEAD
 =======
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
@@ -25,6 +29,8 @@ using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
 
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using MediatR;
 
 namespace BookingClone.Application.Features.continent.queries.GetAllcontinent;
@@ -43,10 +49,14 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         // return (await _continentRepository.GetAll()) /*calling */
         //.Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
 
         var Continent = _continentRepository.GetAll().Result;
+<<<<<<< HEAD
         var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name });
         return (ContinentDto);
 =======
@@ -67,5 +77,9 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
         var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name,ID=a.ID });
         return (ContinentDto);
 >>>>>>> finalcommit
+=======
+        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name,ID=a.ID });
+        return (ContinentDto);
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 }

@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
 
+<<<<<<< HEAD
 =======
 using BookingClone.Application.Features.city.commands.AddCity;
 using BookingClone.Application.Features.city.DTOs;
@@ -25,6 +29,8 @@ using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Repositories;
 
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using MediatR;
 
 namespace BookingClone.Application.Features.continent.commands.AddContinent;
@@ -45,6 +51,7 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
             Name = request.Name,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
             Countries = request.Countries,
@@ -52,6 +59,9 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
 =======
             
 >>>>>>> api(country_continent_city)
+=======
+            
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
            
         };
 
@@ -60,6 +70,9 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
         continent = _continentRepository.Add(continent);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         _continentRepository.SaveAsync(cancellationToken);
         return new ContinentDetailsDto()
         {   Name = continent.Name,
@@ -71,6 +84,7 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
 
     }
 
+<<<<<<< HEAD
 =======
 =======
         _continentRepository.SaveAsync(cancellationToken);
@@ -90,5 +104,7 @@ public class AddContinentCommmandHandler : IRequestHandler<AddContinentCommmand,
 =======
 
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 }

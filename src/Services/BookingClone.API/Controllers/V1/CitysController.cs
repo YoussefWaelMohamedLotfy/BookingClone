@@ -17,12 +17,16 @@ namespace BookingClone.API.Controllers.V1;
 [ApiController]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 public class CitiesController : ControllerBase
 {
     private readonly IMediator _mediator;
 
     public CitiesController(IMediator mediator)
         => _mediator = mediator;
+<<<<<<< HEAD
 =======
 public class CitysController : ControllerBase
 =======
@@ -42,12 +46,17 @@ public class CitiesController : ControllerBase
     public CitiesController(IMediator mediator)
         => _mediator = mediator;
 >>>>>>> finalcommit
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 
 
     [HttpGet]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     public async Task<IActionResult> GetAllCities(CancellationToken ct)
     {
         return Ok(await _mediator.Send(new GetAllCitiesQuery(), ct));
@@ -72,6 +81,7 @@ public class CitiesController : ControllerBase
     {
         var result = await _mediator.Send(addCityCommand, ct);
         return CreatedAtRoute("Get_Cities", new { id = result.ID }, result);
+<<<<<<< HEAD
 =======
     public async Task<IActionResult> GetAllCities()
 =======
@@ -79,10 +89,13 @@ public class CitiesController : ControllerBase
 >>>>>>> finalcommit
     {
         return Ok(await _mediator.Send(new GetAllCitiesQuery(), ct));
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 
 
 
+<<<<<<< HEAD
     [HttpGet("{id}", Name = "Get_[controller]")]
 
     public async Task<IActionResult> GetCityById(int id, CancellationToken ct)
@@ -105,11 +118,14 @@ public class CitiesController : ControllerBase
 
 
 <<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     [HttpPut]
     public async Task<IActionResult> UpdateCity([FromBody] UpdateCityCommand updateCityCommand, CancellationToken ct)
     {
         var result = await _mediator.Send(updateCityCommand, ct);
         return result is not null ? Ok(result) : NotFound();
+<<<<<<< HEAD
 =======
         var result = await _mediator.Send(addCityCommand, ct);
         return CreatedAtRoute("Get_Cities", new { id = result.ID }, result);
@@ -136,6 +152,8 @@ public class CitiesController : ControllerBase
     {
         var result = await _mediator.Send(updateCityCommand, ct);
         return result is not null ? Ok(result) : NotFound();
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 
     [HttpDelete("{id}")]
@@ -145,9 +163,12 @@ public class CitiesController : ControllerBase
         return result <= 0 ? NotFound() : NoContent();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> add city and country and continent
 =======
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     [HttpGet("GetCityByCountryId")]
 
@@ -157,5 +178,9 @@ public class CitiesController : ControllerBase
         return result is null ? NotFound() : Ok(result);
     }
 
+<<<<<<< HEAD
 }
 >>>>>>> finalcommit
+=======
+}
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05

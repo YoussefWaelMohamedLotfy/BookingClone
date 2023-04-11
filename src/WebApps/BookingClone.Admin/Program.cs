@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using System.Reflection;
 using BookingClone.Application;
 using BookingClone.Serilog;
@@ -10,10 +11,17 @@ using System.Reflection;
 
 using BookingClone.Application;
 using BookingClone.Serilog;
+=======
+using System.Reflection;
+
+using BookingClone.Application;
+using BookingClone.Serilog;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using FluentValidation;
 using FluentValidation.AspNetCore;
 
+<<<<<<< HEAD
 >>>>>>> city handler
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Serilog;
@@ -33,6 +41,8 @@ builder.Services.AddRazorPages();
 
 =======
 using BookingClone.Serilog;
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Serilog;
 
@@ -50,8 +60,11 @@ builder.Host.UseSerilog(Serilogger.Configure);
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> city handler
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 builder.Services.AddMediatR(c => c.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

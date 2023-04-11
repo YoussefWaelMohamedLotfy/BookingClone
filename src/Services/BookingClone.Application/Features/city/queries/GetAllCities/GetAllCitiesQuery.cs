@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using BookingClone.Application.Features.city.DTOs;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Domain.Common;
 
 =======
@@ -15,12 +16,17 @@ using BookingClone.Domain.Common;
 using BookingClone.Domain.Common;
 
 >>>>>>> salmateest
+=======
+using BookingClone.Domain.Common;
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using MediatR;
 
 namespace BookingClone.Application.Features.city.queries.GetAllCities;
 public class GetAllCitiesQuery : IRequest<IEnumerable<CityMinimalDto>>
 {
     public string? Name { get; set; }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,6 +41,11 @@ public class GetAllCitiesQuery : IRequest<IEnumerable<CityMinimalDto>>
     
 
 >>>>>>> new action getcitybycountryid
+=======
+    public int? CountryID { get; set; }
+    
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }
 
 

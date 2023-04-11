@@ -48,9 +48,15 @@ public static class ApplicationExtensions
             .AddScoped<ICityRepository, CityRepository>()
             .AddScoped<IContinentRepository, ContinentRepository>()
 <<<<<<< HEAD
+<<<<<<< HEAD
             .AddScoped<ICountryRepository, CountryRepository>()
             .AddScoped<IHotelReviewRepository, HotelReviewRepository>()
             .AddScoped<IAttractionReviewRepository, AttractionReviewRepository>();
+=======
+            .AddScoped<ICountryRepository, CountryRepository>();
+
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
         return services;
     }

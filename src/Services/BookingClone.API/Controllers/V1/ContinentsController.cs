@@ -10,9 +10,12 @@ using BookingClone.Application.Features.continent.queries.GetAllcontinent;
 using BookingClone.Application.Features.continent.queries.GetContinentById;
 using BookingClone.Application.Features.country.commands.UpdateCountry;
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.commands.UpdateCountry;
 =======
 >>>>>>> add city and country and continent
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Infrastructure.Data;
 using MediatR;
 
@@ -26,6 +29,9 @@ public class ContinentsController : ControllerBase
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     private readonly IMediator _mediator;
 
@@ -35,6 +41,7 @@ public class ContinentsController : ControllerBase
        => _mediator = mediator;
 
 
+<<<<<<< HEAD
 =======
     private readonly BookingDbContext _context;
     private readonly IMediator _mediator;
@@ -56,12 +63,17 @@ public class ContinentsController : ControllerBase
 
 
 >>>>>>> finalcommit
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 
 
     [HttpGet]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     public async Task<IActionResult> GetAllContinent(CancellationToken ct)
     {
         return Ok(await _mediator.Send(new GetAllcontinentQuery(), ct));
@@ -75,6 +87,7 @@ public class ContinentsController : ControllerBase
     {
         var result = await _mediator.Send(new GetContinentByIdQuery(id), ct);
         return result is null ? NotFound() : Ok(result);
+<<<<<<< HEAD
 =======
     public IActionResult GetAllContinent()
 =======
@@ -93,12 +106,15 @@ public class ContinentsController : ControllerBase
 <<<<<<< HEAD
         return Ok(await _mediator.Send(new GetContinentByIdQuery(id)));
 >>>>>>> add city and country and continent
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 
 
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -137,6 +153,8 @@ public class ContinentsController : ControllerBase
     {
 =======
 >>>>>>> finalcommit
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 
     [HttpPost]
@@ -161,10 +179,16 @@ public class ContinentsController : ControllerBase
         return result <= 0 ? NotFound() : NoContent();
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> add city and country and continent
 =======
 
 
 
 >>>>>>> finalcommit
+=======
+
+
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 using BookingClone.Application.Features.city.commands.UpdateCity;
@@ -14,6 +15,9 @@ using BookingClone.Application.Features.city.DTOs;
 =======
 
 >>>>>>> select
+=======
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
@@ -37,8 +41,11 @@ public class UpdateContinentCommmandHandlar : IRequestHandler<UpdateContinentCom
        
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
          
 
         var cont = new ContinentDetailsDto { Name = request.Name };
@@ -53,10 +60,14 @@ public class UpdateContinentCommmandHandlar : IRequestHandler<UpdateContinentCom
         
         
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     }
 }
 
+<<<<<<< HEAD
 =======
           _continentRepository.Update(Continent);
 =======
@@ -69,3 +80,5 @@ public class UpdateContinentCommmandHandlar : IRequestHandler<UpdateContinentCom
 =======
 
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05

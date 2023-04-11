@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 
@@ -22,6 +23,11 @@ using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 
 >>>>>>> country,continent,city
+=======
+using BookingClone.Application.Features.country.DTOs;
+using BookingClone.Domain.Contracts;
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using MediatR;
 
@@ -44,6 +50,9 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         
 
         var con =new CountryDetailsDto {
@@ -63,6 +72,7 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
 
 
 
+<<<<<<< HEAD
 =======
         _countryRepository.Update(country);
         return new CountryDetailsDto { Name = country.Name };
@@ -88,5 +98,7 @@ public class UpdateCountryCommmandHandler : IRequestHandler<UpdateCountryCommman
 
 
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 }

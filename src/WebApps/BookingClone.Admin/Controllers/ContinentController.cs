@@ -1,16 +1,23 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using BookingClone.Application.Features.continent.commands.AddContinent;
 =======
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 ﻿
 
 
 using BookingClone.Application.Features.continent.commands.AddContinent;
+<<<<<<< HEAD
 >>>>>>> salmateest
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.continent.commands.DeleteContinent;
 using BookingClone.Application.Features.continent.commands.UpdateContinent;
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Application.Features.continent.queries.GetAllcontinent;
 using BookingClone.Application.Features.continent.queries.GetContinentById;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 using MediatR;
@@ -27,6 +34,9 @@ using BookingClone.Infrastructure.Data;
 =======
 
 >>>>>>> almostdone
+=======
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using MediatR;
 
@@ -35,7 +45,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookingClone.Admin.Controllers;
 public class ContinentController : Controller
+<<<<<<< HEAD
 >>>>>>> salmateest
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 {
 
     private readonly IMediator _mediator;
@@ -58,10 +71,14 @@ public class ContinentController : Controller
     public IActionResult Create()
         => View();
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
     
 >>>>>>> salmateest
+=======
+    
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(ContinentDetailsDto request, CancellationToken ct)
@@ -108,6 +125,7 @@ public class ContinentController : Controller
 
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -206,3 +224,6 @@ public class ContinentController : Controller
 =======
 }
 >>>>>>> DeleteComments
+=======
+}
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05

@@ -26,6 +26,9 @@ public class GetAllCitiesQueryHandlar : IRequestHandler<GetAllCitiesQuery, IEnum
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         var city =  _cityRepository.GetAll().Result;
         var city_Dto = city.Select(a => new CityMinimalDto { 
             Name = a.Name,
@@ -33,6 +36,7 @@ public class GetAllCitiesQueryHandlar : IRequestHandler<GetAllCitiesQuery, IEnum
         }); 
         return (city_Dto);
          
+<<<<<<< HEAD
 =======
         return (await _cityRepository.GetAll()) /*calling */
          .Select(a => new CityMinimalDto { Name =a.Name} );  /*Mapping*/
@@ -48,6 +52,8 @@ public class GetAllCitiesQueryHandlar : IRequestHandler<GetAllCitiesQuery, IEnum
 >>>>>>> finalcommit
          
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 
 

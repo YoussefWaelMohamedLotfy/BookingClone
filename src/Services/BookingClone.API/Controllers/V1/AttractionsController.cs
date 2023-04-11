@@ -6,6 +6,7 @@ using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions;
 using BookingClone.Domain.Common;
 =======
@@ -15,6 +16,11 @@ using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttraction
 using BookingClone.Application.Features.city.queries.GetCityById;
 
 >>>>>>> Add_Action_getAttractionbycityid_inAttraction
+=======
+using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionsByCityId;
+using BookingClone.Application.Features.city.queries.GetCityById;
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 

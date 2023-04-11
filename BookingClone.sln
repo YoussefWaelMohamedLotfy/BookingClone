@@ -38,6 +38,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingClone.YARP", "src\Pr
 EndProject
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingClone.Admin", "src\WebApps\BookingClone.Admin\BookingClone.Admin.csproj", "{C396182A-8D7C-4824-82FC-C1CB0C2FB88F}"
 =======
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.Admin", "src\WebApps\BookingClone.Admin\BookingClone.Admin.csproj", "{C396182A-8D7C-4824-82FC-C1CB0C2FB88F}"
@@ -45,6 +46,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingClone.Admin", "src\W
 =======
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingClone.Admin", "src\WebApps\BookingClone.Admin\BookingClone.Admin.csproj", "{C396182A-8D7C-4824-82FC-C1CB0C2FB88F}"
 >>>>>>> add city and country and continent
+=======
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookingClone.Admin", "src\WebApps\BookingClone.Admin\BookingClone.Admin.csproj", "{C396182A-8D7C-4824-82FC-C1CB0C2FB88F}"
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

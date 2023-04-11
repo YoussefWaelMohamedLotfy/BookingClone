@@ -1,15 +1,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using BookingClone.Application.Features.city.commands.AddCity;
 =======
 ﻿using Bogus.DataSets;
 using BookingClone.Application.Features.city.commands.AddCity;
 >>>>>>> salmateest
+=======
+﻿using Bogus.DataSets;
+using BookingClone.Application.Features.city.commands.AddCity;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.city.commands.DeleteCity;
 using BookingClone.Application.Features.city.commands.UpdateCity;
 using BookingClone.Application.Features.city.DTOs;
 using BookingClone.Application.Features.city.queries.GetAllCities;
 using BookingClone.Application.Features.city.queries.GetCityById;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -68,6 +74,9 @@ using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Data;
 =======
 >>>>>>> country,continent,city
+=======
+using BookingClone.Application.Features.country.queries.GitAllCountries;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using MediatR;
 
@@ -88,6 +97,7 @@ public class CityController : Controller
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         var Cities = context.Cities;
         ViewBag.Citiess = Cities;
@@ -103,11 +113,16 @@ public class CityController : Controller
 >>>>>>> test1
         return View(reservations);
 >>>>>>> salmateest
+=======
+        var reservations = await _mediator.Send(new getallcitiesquery2() { Query = new(pageNumber, pageSize) }, ct);
+        return View(reservations);
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 
 
     public async Task<IActionResult> Details(int id, CancellationToken ct)
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -183,6 +198,10 @@ public class CityController : Controller
 >>>>>>> solve_error_in_create_city
         return View(reservation);
 >>>>>>> salmateest
+=======
+        var reservation = await _mediator.Send(new GetCityByIdQuery(id), ct);
+        return View(reservation);
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 
     public IActionResult Create()
@@ -245,6 +264,7 @@ public class CityController : Controller
     }
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -381,4 +401,6 @@ public class CityController : Controller
 >>>>>>> salmateest
 =======
 >>>>>>> countryview
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }

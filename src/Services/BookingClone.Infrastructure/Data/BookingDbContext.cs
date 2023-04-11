@@ -61,16 +61,22 @@ public sealed class BookingDbContext : DbContext
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 =======
 >>>>>>> first commit
 =======
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     //protected override void OnConfiguring(DbContextOptionsBuilder DbContextOptionsBuilder)
     //{
     //    DbContextOptionsBuilder.UseSqlServer("Data Source=DESKTOP-P73CSRJ\\SQLEXPRESS;Database=BookingClone;Integrated Security=True;Connect Timeout=30;Encrypt=False") ;
     //}
 
+<<<<<<< HEAD
 >>>>>>> add city and country and continent
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }

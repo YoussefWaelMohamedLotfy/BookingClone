@@ -11,11 +11,15 @@ public class ContinentDetailsDto
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     public int ID { get; set; }
     public string Name { get; set; }
 
 
+<<<<<<< HEAD
 }
 =======
    
@@ -33,3 +37,6 @@ public class ContinentDetailsDto
 
 }
 >>>>>>> api(country_continent_city)
+=======
+}
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05

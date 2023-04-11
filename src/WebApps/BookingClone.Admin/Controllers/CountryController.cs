@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
 =======
 ﻿
@@ -11,12 +12,17 @@ using BookingClone.Application.Features.city.queries.GetCityById;
 >>>>>>> country,continent,city
 using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
 >>>>>>> almostdone
+=======
+﻿
+using BookingClone.Application.Features.continent.queries.getAllContinentswithoutpagination;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.country.commands.AddCountry;
 using BookingClone.Application.Features.country.commands.DeleteCountry;
 using BookingClone.Application.Features.country.commands.UpdateCountry;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Application.Features.country.queries.GitAllCountries;
 using BookingClone.Application.Features.country.queries.GitCountryById;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 using MediatR;
@@ -33,6 +39,8 @@ using BookingClone.Domain.Entities;
 using BookingClone.Infrastructure.Data;
 =======
 >>>>>>> countryview
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using MediatR;
 
@@ -41,7 +49,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace BookingClone.Admin.Controllers;
 public class CountryController : Controller
+<<<<<<< HEAD
 >>>>>>> salmateest
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 {
     private readonly IMediator _mediator;
 
@@ -63,8 +74,11 @@ public class CountryController : Controller
     public IActionResult Create()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> almostdone
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     {
         this.ViewData["Continents"] = _mediator.Send(new GetAllContinentsQuerywithoutpagination()).Result
 
@@ -74,11 +88,14 @@ public class CountryController : Controller
     }
        
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         => View();
 >>>>>>> salmateest
 =======
 >>>>>>> almostdone
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     [HttpPost]
     [ValidateAntiForgeryToken]
@@ -97,18 +114,24 @@ public class CountryController : Controller
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> almostdone
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         this.ViewData["Continents"] = _mediator.Send(new GetAllContinentsQuerywithoutpagination()).Result
 
       .Select(c => new SelectListItem() { Text = c.Name, Value = c.ID.ToString() })
       .ToList();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> salmateest
 =======
 >>>>>>> almostdone
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         var reservations = await _mediator.Send(new GetCountryByIdQuery(id), ct);
         return View(reservations);
     }
@@ -135,6 +158,7 @@ public class CountryController : Controller
         return RedirectToAction(nameof(Index));
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
    
@@ -207,5 +231,8 @@ public class CountryController : Controller
 =======
    
 >>>>>>> countryview
+=======
+   
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 }

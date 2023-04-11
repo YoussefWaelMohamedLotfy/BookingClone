@@ -49,6 +49,15 @@ builder.Host.UseSerilog(Serilogger.Configure);
 // Add services to the container.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+builder.Services.AddDbContext<BookingDbContext>(o =>
+    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"), c =>
+        c.EnableRetryOnFailure(3))
+);
+
+//builder.Services.AddApplicationServices();
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 builder.Services.AddApplicationServices(builder.Configuration);
 =======
 builder.Services.AddDbContext<BookingDbContext>(o =>
@@ -84,6 +93,7 @@ builder.Services.AddApiVersioning(o =>
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
@@ -94,6 +104,11 @@ builder.Services.AddScoped<ICityRepository,CityRepository > ();
 builder.Services.AddScoped<IContinentRepository, ContinentRepository>();
 builder.Services.AddScoped<ICountryRepository, CountryRepository>();
 >>>>>>> add city and country and continent
+=======
+builder.Services.AddScoped<ICityRepository,CityRepository > ();
+builder.Services.AddScoped<IContinentRepository, ContinentRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers()

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 =======
@@ -20,6 +21,10 @@ using BookingClone.Infrastructure.Repositories;
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 >>>>>>> country,continent,city
+=======
+using BookingClone.Application.Features.country.DTOs;
+using BookingClone.Domain.Contracts;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using MediatR;
 
@@ -40,12 +45,15 @@ public class getAllCountrieswithoutpaginationQueryHandlar : IRequestHandler<GetA
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         //return (await _countryRepository.GetAll()) /*calling */
         //.Select(a => new CountryMinimalDto { Name = a.Name });  /*Mapping*/
 >>>>>>> select
 =======
 >>>>>>> almostdone
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         var Country = _countryRepository.GetAll().Result;
         var CountryDto = Country.Select(a => new CountryDetailsDto { Name = a.Name,ID=a.ID });
         return (CountryDto);

@@ -11,14 +11,18 @@ using BookingClone.Domain.Contracts;
 using BookingClone.Domain.Entities;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Infrastructure.Repositories;
 
 using MediatR;
 
 using Microsoft.EntityFrameworkCore.Diagnostics;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -27,6 +31,8 @@ using MediatR;
 >>>>>>> add city and country and continent
 =======
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 namespace BookingClone.Application.Features.city.commands.AddCity;
 public class AddCityCommandHandlar : IRequestHandler<AddCityCommand, CityDetailsDto>
 {
@@ -46,6 +52,9 @@ public class AddCityCommandHandlar : IRequestHandler<AddCityCommand, CityDetails
             Name = request.Name,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
             CountryID=request.CountryID
         };
 
@@ -64,6 +73,7 @@ public class AddCityCommandHandlar : IRequestHandler<AddCityCommand, CityDetails
     }
 
 
+<<<<<<< HEAD
 =======
             Country = request.Country,
             Attractions = request.Attractions,
@@ -93,5 +103,7 @@ public class AddCityCommandHandlar : IRequestHandler<AddCityCommand, CityDetails
 =======
 
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 }

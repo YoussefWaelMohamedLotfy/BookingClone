@@ -13,10 +13,14 @@ using BookingClone.Application.Features.city.DTOs;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using BookingClone.Domain.Contracts;
 
 
+<<<<<<< HEAD
 =======
 using BookingClone.Domain.Contracts;
 >>>>>>> add city and country and continent
@@ -30,6 +34,8 @@ using BookingClone.Domain.Contracts;
 
 
 >>>>>>> test2
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using MediatR;
 
 namespace BookingClone.Application.Features.city.queries.GetCityById;
@@ -38,6 +44,9 @@ public class GetCityByIdQueryHandler : IRequestHandler<GetCityByIdQuery, CityDet
     private readonly ICityRepository _cityRepository;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     private readonly IMapper _mapper;
 
     public GetCityByIdQueryHandler(ICityRepository cityRepository, IMapper mapper)
@@ -61,6 +70,7 @@ public class GetCityByIdQueryHandler : IRequestHandler<GetCityByIdQuery, CityDet
      
     }
 
+<<<<<<< HEAD
 =======
    
 =======
@@ -93,4 +103,6 @@ public class GetCityByIdQueryHandler : IRequestHandler<GetCityByIdQuery, CityDet
 =======
 
 >>>>>>> test2
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 

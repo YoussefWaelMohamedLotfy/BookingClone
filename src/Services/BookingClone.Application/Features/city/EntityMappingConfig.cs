@@ -9,6 +9,7 @@ using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.city.DTOs;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
 using BookingClone.Domain.Common;
 =======
@@ -17,6 +18,10 @@ using BookingClone.Domain.Common;
 using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
 using BookingClone.Domain.Common;
 >>>>>>> test2
+=======
+using BookingClone.Application.Features.RoomReservationFeatures.DTOs;
+using BookingClone.Domain.Common;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.city;
@@ -24,6 +29,7 @@ internal class EntityMappingConfig : Profile
 {
     public EntityMappingConfig()
     {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
        
@@ -43,6 +49,8 @@ internal class EntityMappingConfig : Profile
         CreateMap<updatecityDto2, Cities>();
 >>>>>>> salmateest
 =======
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
        
         CreateMap<Cities, CityDetailsDto>().ReverseMap();
         CreateMap<CityMinimalDto, Cities>().ReverseMap();
@@ -53,7 +61,10 @@ internal class EntityMappingConfig : Profile
 
 
         
+<<<<<<< HEAD
 >>>>>>> test2
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 
 

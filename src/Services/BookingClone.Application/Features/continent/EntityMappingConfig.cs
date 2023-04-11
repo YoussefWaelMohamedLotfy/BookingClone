@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Common;
@@ -21,6 +22,11 @@ using BookingClone.Application.Features.continent.DTOs;
 =======
 using BookingClone.Domain.Common;
 >>>>>>> continentview
+=======
+
+using BookingClone.Application.Features.continent.DTOs;
+using BookingClone.Domain.Common;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Domain.Entities;
 
 namespace BookingClone.Application.Features.continent;
@@ -31,6 +37,9 @@ internal class EntityMappingConfig : Profile
     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         CreateMap<Continent, ContinentDetailsDto>().ReverseMap();
         CreateMap<Continent, ContinentMinimalDto>().ReverseMap();
 
@@ -43,6 +52,7 @@ internal class EntityMappingConfig : Profile
     }
 
 
+<<<<<<< HEAD
 =======
         CreateMap<Continent, ContinentDetailsDto>();
         CreateMap<Continent, ContinentMinimalDto>();
@@ -65,4 +75,6 @@ internal class EntityMappingConfig : Profile
 >>>>>>> salmateest
 =======
 >>>>>>> continentview
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }

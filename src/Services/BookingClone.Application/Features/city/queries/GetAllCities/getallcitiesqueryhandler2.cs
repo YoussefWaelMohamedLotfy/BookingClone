@@ -9,6 +9,7 @@ using AutoMapper;
 using BookingClone.Application.Features.city.DTOs;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
 =======
@@ -23,6 +24,10 @@ using BookingClone.Infrastructure.Repositories;
 >>>>>>> city handler
 =======
 >>>>>>> country,continent,city
+=======
+using BookingClone.Domain.Common;
+using BookingClone.Domain.Contracts;
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using MediatR;
 
@@ -45,6 +50,7 @@ public class getallcitiesqueryhandler2 : IRequestHandler<getallcitiesquery2, Pag
         var reservations = await _cityRepository.GetPaginatedList(request.Query, cancellationToken);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
        return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
 =======
         return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
@@ -52,5 +58,8 @@ public class getallcitiesqueryhandler2 : IRequestHandler<getallcitiesquery2, Pag
 =======
        return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
 >>>>>>> test 4
+=======
+       return _mapper.Map<PagedList<CityDetailsDto>>(reservations);
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 }

@@ -11,12 +11,16 @@ public sealed class CityDetailsDto
 {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
     public int ID { get; set; }
     public int? CountryID { get; set; }
     public string Name { get; set; }
 
    
+<<<<<<< HEAD
 =======
    
 =======
@@ -35,6 +39,8 @@ public sealed class CityDetailsDto
 =======
    
 >>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 
     

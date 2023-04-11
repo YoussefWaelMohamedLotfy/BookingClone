@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 using BookingClone.Application.Features.city.commands.UpdateCity;
@@ -16,6 +17,9 @@ using BookingClone.Application.Features.city.DTOs;
 =======
 
 >>>>>>> select
+=======
+
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;

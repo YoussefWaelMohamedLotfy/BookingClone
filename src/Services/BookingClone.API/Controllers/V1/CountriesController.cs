@@ -21,6 +21,9 @@ namespace BookingClone.API.Controllers.V1;
 [ApiController]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 public sealed class CountriesController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -40,6 +43,9 @@ public sealed class CountriesController : ControllerBase
     {
         var result = await _mediator.Send(new GetCountryByIdQuery(id), ct);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         return result is null ? NotFound() : Ok(result);
     }
 
@@ -63,6 +69,7 @@ public sealed class CountriesController : ControllerBase
         var result = await _mediator.Send(new DeleteCountryCommmand(id), ct);
         return result <= 0 ? NotFound() : NoContent();
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 =======
@@ -118,11 +125,16 @@ public sealed class CountriesController : ControllerBase
 
 >>>>>>> finalcommit
 =======
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
  [HttpGet("{contientid}")]
     public async Task<IActionResult> GetCountryByContientId(int contientid, CancellationToken ct)
     {
         var result = await _mediator.Send(new GetCountryByContientIdQuery(contientid), ct);
         return result is null ? NotFound() : Ok(result);
     }
+<<<<<<< HEAD
 >>>>>>> new action getcitybycountryid
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }
