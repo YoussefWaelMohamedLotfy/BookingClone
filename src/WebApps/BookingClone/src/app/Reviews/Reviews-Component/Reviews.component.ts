@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReviewsService } from '../services/reviews.service';
 
 @Component({
   selector: 'app-Reviews',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
-  constructor() { }
+  reviews:any[]=[]
+
+  constructor(private service:ReviewsService) { }
+
 
   ngOnInit() {
   }
+
+getReviews(){
+  this.service.getAllReviews().subscribe((result:any) =>{
+
+    console.log(result)
+  })
+}
 
 }

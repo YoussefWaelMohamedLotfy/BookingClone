@@ -36,7 +36,6 @@ import { RouterLink, RouterModule } from '@angular/router';
     AppRoutingModule,
     FormsModule,
     RouterModule,
-    RouterLink,
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
