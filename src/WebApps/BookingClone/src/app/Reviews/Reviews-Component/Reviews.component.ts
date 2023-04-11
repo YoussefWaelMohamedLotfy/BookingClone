@@ -14,13 +14,20 @@ export class ReviewsComponent implements OnInit {
 
 
   ngOnInit() {
+    this.getReviews()
   }
 
 getReviews(){
   this.service.getAllReviews().subscribe((result:any) =>{
 
-    console.log(result)
+    this.reviews = result
   })
+
+
 }
+
+
+
+
 
 }
