@@ -27,11 +27,16 @@
                 <p *ngIf="roomDetails?.viewType == 3" class="card-text">
                     Room View: Pool View
                 </p>
-                <button class="btn btn-success">
+                <button class="btn btn-success" (click)="togglePayFlag()">
                     <i class="bi bi-bookmark-check"></i>
                     Book
                 </button>
             </div>
         </div>
+    </div>
+</div>
+<div class="card" *ngIf="payFlag">
+    <div class="card-body">
+        <app-add-new-room-reservation [roomCost]="roomDetails?.price"></app-add-new-room-reservation>
     </div>
 </div>

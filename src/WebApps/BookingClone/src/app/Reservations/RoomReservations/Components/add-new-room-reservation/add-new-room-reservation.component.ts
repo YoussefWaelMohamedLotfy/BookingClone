@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IAddRoomReservation } from '../../Models/iadd-room-reservation';
 import { RoomReservationApiService } from '../../Services/room-reservation-api.service';
 import { IPayPalConfig, ICreateOrderRequest } from 'ngx-paypal';
@@ -15,8 +15,11 @@ export class AddNewRoomReservationComponent implements OnInit {
 
   newRoomReservation: IAddRoomReservation = {} as IAddRoomReservation;
 
+  @Input()
+  roomCost: any = 100;
+
   constructor(private roomReservationAPI: RoomReservationApiService, private router: Router) {
-    this.newRoomReservation.totalCost = 100;
+    this.newRoomReservation.totalCost = this.roomCost;
   }
 
   ngOnInit(): void {

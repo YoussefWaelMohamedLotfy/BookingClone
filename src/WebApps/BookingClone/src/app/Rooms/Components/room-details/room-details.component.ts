@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Iroom } from '../../Models/iroom';
 
 @Component({
   selector: 'app-room-details',
@@ -11,7 +10,11 @@ export class RoomDetailsComponent {
   @Input()
   roomDetails: any = {};
 
+  payFlag: boolean = false;
+
   constructor() { }
   
-
+  togglePayFlag() {
+    this.payFlag = !this.payFlag;
+  }
 }
