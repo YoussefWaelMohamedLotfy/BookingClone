@@ -20,6 +20,8 @@ import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CityDetailsComponent } from './City/city-details/city-details.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+// import { RegisterComponent } from './AUTH/Register/register.component';
+import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component';
 
 
 
@@ -35,6 +37,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     ContinentComponent,
     CountryDetailsComponent,
     CityDetailsComponent,
+    // RegisterComponent,
+    EgyptCitiesComponent,
   ],
   imports: [
 
