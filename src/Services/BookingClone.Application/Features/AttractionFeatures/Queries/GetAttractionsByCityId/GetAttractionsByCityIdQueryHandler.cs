@@ -33,6 +33,7 @@ internal class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractio
         return result is null ? null : _mapper.Map<List<AttractionDetailsDto>>(result);
     }
 
+}
 
 
 }

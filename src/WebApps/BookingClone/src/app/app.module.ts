@@ -23,6 +23,7 @@ import { CountryComponent } from './Country/country/country.component';
 import { ContinentComponent } from './Continent/continent/continent.component';
 import { CountryDetailsComponent } from './Country/country-details/country-details.component';
 import { RouterModule } from '@angular/router';
+import { AttractionsComponent } from './Attraction/Component/attractions/attractions.component';
 
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -41,6 +42,7 @@ import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component
     HotelsComponent,
     HotelDetailsComponent,
     RoomsComponent,
+    AttractionsComponent,
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent,

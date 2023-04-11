@@ -10,11 +10,13 @@ using MediatR;
 namespace BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionsByCityId;
 public class GetAttractionsByCityIdQuery : IRequest<List<AttractionDetailsDto>>
 {
+
     public int ID { get; set; }
 
     public GetAttractionsByCityIdQuery(int iD)
     {
         ID = iD;
     }
-   
+
 }
+
