@@ -27,8 +27,16 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
         var city = await _cityRepository.GetByIdAsync(request.ID);
         var cityy = new CityDetailsDto
         {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
            Name = request.Name,
            CountryID=request.CountryID
+<<<<<<< HEAD
+=======
+           Name = request.Name,
+           CountryID=request.CountryID
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
         };
         city.Name = request.Name;
@@ -36,6 +44,28 @@ public class UpdateCityCommandHandlar : IRequestHandler<UpdateCityCommand, CityD
        
           _cityRepository.Update(city);
         _cityRepository.SaveAsync(cancellationToken);
+<<<<<<< HEAD
+=======
+           Name = city.Name,
+=======
+           Name = request.Name,
+>>>>>>> api(country_continent_city)
+           
+=======
+>>>>>>> select
+
+        };
+        city.Name = request.Name;
+       
+       
+          _cityRepository.Update(city);
+<<<<<<< HEAD
+>>>>>>> add city and country and continent
+=======
+        _cityRepository.SaveAsync(cancellationToken);
+>>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
         return cityy;
     }

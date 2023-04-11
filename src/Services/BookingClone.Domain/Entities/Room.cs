@@ -16,9 +16,13 @@ public sealed class Room : BaseEntity<int>
     public RoomViewType ViewType { get; set; }
 
     public decimal Price { get; set; }
+<<<<<<< HEAD
     
     public int HotelId { get; set; }
     
+=======
+
+>>>>>>> first commit
     public Hotel Hotel { get; set; }
 
     public List<ReservedRoom> ReservedRooms { get; set; }

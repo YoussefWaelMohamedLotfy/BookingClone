@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { NotFoundComponent } from './Shared/Components/not-found/not-found.component';
 import { StaysComponent } from './Shared/Components/stays/stays.component';
 import { HotelsComponent } from './Hotels/Components/hotels/hotels.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   { path: '', redirectTo: '/Room/Reservations', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
+=======
+
+const routes: Routes = [];
+>>>>>>> first commit
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

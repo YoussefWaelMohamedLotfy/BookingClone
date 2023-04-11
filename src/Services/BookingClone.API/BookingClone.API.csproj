@@ -13,7 +13,10 @@
         <DockerComposeProjectPath>..\..\..\docker-compose.dcproj</DockerComposeProjectPath>
     </PropertyGroup>
 
+<<<<<<< HEAD
     <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+=======
+>>>>>>> first commit
     <ItemGroup>
         <PackageReference Include="Asp.Versioning.Http" Version="7.0.0" />
         <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="7.0.0" />
@@ -29,7 +32,11 @@
         <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.4" />
         <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="7.0.4" />
         <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="7.0.4" />
+<<<<<<< HEAD
         <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+=======
+        <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+>>>>>>> first commit
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     </ItemGroup>
 

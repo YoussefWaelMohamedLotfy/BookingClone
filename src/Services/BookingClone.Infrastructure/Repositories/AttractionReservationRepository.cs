@@ -13,6 +13,7 @@ public sealed class AttractionReservationRepository : GenericRepository<Attracti
 
     public async Task<List<AttractionReservation>> GetAll(CancellationToken ct = default)
         => await _db.ToListAsync(ct);
+<<<<<<< HEAD
 
     public async Task<List<ReservedAttraction>> GetAllReservedAttractionsDetails(int reservationId, CancellationToken ct = default)
     {
@@ -29,4 +30,6 @@ public sealed class AttractionReservationRepository : GenericRepository<Attracti
 
         return attractionReservation.ReservedAttractions.FirstOrDefault(a => a.AttractionID == attractionId);
     }
+=======
+>>>>>>> first commit
 }

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,11 +34,21 @@ import { RoomDetailsComponent } from './Rooms/Components/room-details/room-detai
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent,
     RoomDetailsComponent
+=======
+import { HttpClientModule } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+>>>>>>> first commit
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+<<<<<<< HEAD
     HttpClientModule,
     NgxPayPalModule,
     TranslateModule.forRoot({
@@ -48,14 +59,20 @@ import { RoomDetailsComponent } from './Rooms/Components/room-details/room-detai
         deps: [HttpClient]
       }
     })
+=======
+    HttpClientModule
+>>>>>>> first commit
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+<<<<<<< HEAD
 export function httpTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http);
 
 }
 
 
+=======
+>>>>>>> first commit

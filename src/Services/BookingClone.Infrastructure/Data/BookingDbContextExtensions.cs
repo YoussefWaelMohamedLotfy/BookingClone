@@ -9,6 +9,7 @@ public static class BookingDbContextExtensions
 {
     public static void Seed(this BookingDbContext context, ILogger<BookingDbContext> logger)
     {
+<<<<<<< HEAD
         if (!context.Continents.Any())
         {
             context.Continents.AddRange(new[]
@@ -42,6 +43,8 @@ public static class BookingDbContextExtensions
             context.SaveChanges();
         }
 
+=======
+>>>>>>> first commit
         if (!context.Hotels.Any())
         {
             var hotelsFaker = new Faker<Hotel>()
@@ -52,6 +55,7 @@ public static class BookingDbContextExtensions
             context.SaveChanges();
         }
 
+<<<<<<< HEAD
         if (!context.Rooms.Any())
         {
             var roomsFaker = new Faker<Room>()
@@ -67,6 +71,8 @@ public static class BookingDbContextExtensions
             context.SaveChanges();
         }
 
+=======
+>>>>>>> first commit
         if (!context.Attractions.Any()) 
         {
             var attractionsFaker = new Faker<Attraction>()
@@ -103,6 +109,9 @@ public static class BookingDbContextExtensions
             context.SaveChanges();
         }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
         if (!context.AttractionReviews.Any())
         {
             var attractionReviewsFaker = new Faker<AttractionReview>()
@@ -133,6 +142,23 @@ public static class BookingDbContextExtensions
             context.SaveChanges();
         }
 
+=======
+>>>>>>> first commit
+=======
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
+       
+
+
+
+
+<<<<<<< HEAD
+>>>>>>> solve_error_in_create_city
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         logger.LogInformation("Completed Seeding of context.");
+
+
+
     }
 }

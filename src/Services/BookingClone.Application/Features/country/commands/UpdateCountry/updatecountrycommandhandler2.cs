@@ -5,6 +5,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 using AutoMapper;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+using BookingClone.Application.Features.city.commands.UpdateCity;
+using BookingClone.Application.Features.city.DTOs;
+>>>>>>> continentview
+=======
+>>>>>>> country,continent,city
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
@@ -25,7 +36,7 @@ internal class updatecountrycommandhandler2 : IRequestHandler<updatecountrycomma
 
     public async Task<CountryDetailsDto?> Handle(updatecountrycommand2 request, CancellationToken cancellationToken)
     {
-        var reservation = await _countryRepository.GetByIdAsync(request.Dto.ID, cancellationToken);
+        var reservation = await _countryRepository.GetByIdAsync(request.Dto.ID.Value, cancellationToken);
 
         if (reservation is null)
         {

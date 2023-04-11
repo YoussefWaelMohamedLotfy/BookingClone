@@ -15,13 +15,41 @@ public class AddCityCommand : IRequest<CityDetailsDto>
     
 
     public string Name { get; set; }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     public int? CountryID { get; set; }
 
     public AddCityCommand(string name)
     {
         Name = name;
 
+<<<<<<< HEAD
+=======
+=======
+    public int? CountryID { get; set; }
+>>>>>>> api(country_continent_city)
+
+    public AddCityCommand(string name)
+    {
+        Name = name;
+<<<<<<< HEAD
+        Country = country;
+        Attractions = attractions;
+        CityHotels = cityHotels;
+>>>>>>> add city and country and continent
+=======
+
+>>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 
-
+    public AddCityCommand(string name, int? countryID)
+    {
+        Name = name;
+        CountryID = countryID;
+    }
 }

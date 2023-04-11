@@ -3,6 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+using BookingClone.Application.Features.city.DTOs;
+using BookingClone.Application.Features.city.queries.GetAllCities;
+using BookingClone.Application.Features.continent.DTOs;
+>>>>>>> salmateest
+=======
+>>>>>>> almostdone
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using BookingClone.Application.Features.country.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
@@ -24,8 +37,22 @@ public class GetAllCountriesQueryHandlar : IRequestHandler<GetAllCountriesQuery,
     
     public async Task<IEnumerable<CountryMinimalDto>> Handle(GetAllCountriesQuery request, CancellationToken cancellationToken)
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        //return (await _countryRepository.GetAll()) /*calling */
+        //.Select(a => new CountryMinimalDto { Name = a.Name });  /*Mapping*/
+>>>>>>> salmateest
+=======
+>>>>>>> almostdone
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         var Country = _countryRepository.GetAll().Result;
-        var CountryDto = Country.Select(a => new CountryMinimalDto { Name = a.Name });
+        var CountryDto = Country.Select(a => new CountryMinimalDto {
+            Name = a.Name,
+            ContinentID=a.ContinentID,
+        });
         return (CountryDto);
     }
 }

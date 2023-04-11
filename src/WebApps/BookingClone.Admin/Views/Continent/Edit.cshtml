@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 ﻿
 @using BookingClone.Application.Features.continent.DTOs;
 @model ContinentDetailsDto
@@ -6,6 +12,10 @@
 }
 
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 <form method="post" asp-action="Edit">
     <input asp-for="ID" hidden />
     <div class="border p-3 bg-white">
@@ -117,4 +127,146 @@
     </div>
 </form>
 
+<<<<<<< HEAD
 *@
+=======
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+=======
+﻿@using BookingClone.Application.Features.city.DTOs;
+@model CityDetailsDto
+>>>>>>> test1
+=======
+﻿
+@using BookingClone.Application.Features.continent.DTOs;
+@model ContinentDetailsDto
+>>>>>>> select
+@{
+    ViewData["Title"] = "Edit";
+}
+<<<<<<< HEAD
+>>>>>>> salmateest
+=======
+
+=======
+>>>>>>> almostdone
+<form method="post" asp-action="Edit">
+    <input asp-for="ID" hidden />
+    <div class="border p-3 bg-white">
+        <div class="form-group row">
+            <h2 class="text-info ps-3">Edit Continent for ID @Model.ID</h2>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row py-2">
+                    <div class="col-4">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Name" class="form-control" type="text" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group row py-2">
+                    <div class="col-8 offset-4 row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check-circle"></i>
+                                Submit
+                            </button>
+                            <a asp-action="Details" asp-route-id="@Model.ID" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i>
+                                Back
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                @* Keep this empty *@
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+
+@*<form method="post" asp-action="Edit">
+    <input asp-for="ID" hidden />
+    <div class="border p-3 bg-white">
+        <div class="form-group row">
+            <h2 class="text-info ps-3">Edit Continent for ID @Model.ID</h2>
+        </div>
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group row py-2">
+                    <div class="col-4">
+                        <label asp-for="Name"></label>
+                    </div>
+                    <div class="col-8">
+                        <input asp-for="Name" class="form-control" type="text" />
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group row py-2">
+                    <div class="col-8 offset-4 row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check-circle"></i>
+                                Submit
+                            </button>
+                            <a asp-action="Details" asp-route-id="@Model.ID" class="btn btn-secondary">
+                                <i class="bi bi-arrow-left"></i>
+                                Back
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                @* Keep this empty 
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+
+@*<form method="post" asp-controller="Continent" asp-action="Edit">
+    <input asp-for="ID" hidden />
+
+    <label class="fs-4 fw-lighter mb-1">Continent Name</label>
+    <input type="text" name="Name" class="form-control w-50 " />
+   
+    <div class="form-group row py-2">
+        <div class="col-8 offset-4 row">
+            <div class="col">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-check-circle"></i>
+                    Submit
+                </button>
+                <a asp-action="Details" asp-route-id="@Model.ID" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i>
+                    Back
+                </a>
+            </div>
+        </div>
+    </div>
+</form>
+
+<<<<<<< HEAD
+>>>>>>> test1
+=======
+*@
+>>>>>>> select
+=======
+*@
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05

@@ -6,7 +6,7 @@ public sealed class CityHotel
 
     public int HotelID { get; set; }
 
-    public City City { get; set; }
+    public Cities City { get; set; }
 
     public Hotel Hotel { get; set; }
 

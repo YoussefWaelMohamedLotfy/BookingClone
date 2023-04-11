@@ -4,11 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 
 using BookingClone.Application.Features.continent.DTOs;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Repositories;
 
+<<<<<<< HEAD
+=======
+using BookingClone.Application.Features.city.DTOs;
+using BookingClone.Application.Features.city.queries.GetAllCities;
+=======
+
+>>>>>>> DeleteComments
+using BookingClone.Application.Features.continent.DTOs;
+using BookingClone.Domain.Contracts;
+<<<<<<< HEAD
+>>>>>>> add city and country and continent
+=======
+using BookingClone.Infrastructure.Repositories;
+
+>>>>>>> api(country_continent_city)
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 using MediatR;
 
 namespace BookingClone.Application.Features.continent.queries.GetAllcontinent;
@@ -25,11 +47,39 @@ public class GetAllcontinentQueryHandlar : IRequestHandler<GetAllcontinentQuery,
 
     public async Task<IEnumerable<ContinentMinimalDto>> Handle(GetAllcontinentQuery request, CancellationToken cancellationToken)
     {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
         // return (await _continentRepository.GetAll()) /*calling */
         //.Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
 
         var Continent = _continentRepository.GetAll().Result;
+<<<<<<< HEAD
         var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name });
         return (ContinentDto);
+=======
+        return (await _continentRepository.GetAll()) /*calling */
+       .Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
+>>>>>>> add city and country and continent
+=======
+        // return (await _continentRepository.GetAll()) /*calling */
+        //.Select(a => new ContinentMinimalDto { Name = a.Name });  /*Mapping*/
+
+<<<<<<< HEAD
+        var x = _continentRepository.GetAll().Result;
+        var y = x.Select(a => new ContinentMinimalDto { Name = a.Name });
+        return (y);
+>>>>>>> api(country_continent_city)
+=======
+        var Continent = _continentRepository.GetAll().Result;
+        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name,ID=a.ID });
+        return (ContinentDto);
+>>>>>>> finalcommit
+=======
+        var ContinentDto = Continent.Select(a => new ContinentMinimalDto { Name = a.Name,ID=a.ID });
+        return (ContinentDto);
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
     }
 }

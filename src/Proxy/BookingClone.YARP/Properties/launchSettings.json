@@ -3,17 +3,28 @@
     "https": {
       "commandName": "Project",
       "launchBrowser": true,
+<<<<<<< HEAD
       "applicationUrl": "https://localhost:12000;http://localhost:12001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true
+=======
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:12000;http://localhost:12001"
+>>>>>>> first commit
     },
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+<<<<<<< HEAD
       "environmentVariables": {},
+=======
+>>>>>>> first commit
       "publishAllPorts": true,
       "useSSL": true
     }

@@ -1,7 +1,10 @@
 ﻿using BookingClone.Domain.Common;
 using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Data;
+<<<<<<< HEAD
 using BookingClone.Infrastructure.Extensions;
+=======
+>>>>>>> first commit
 using Microsoft.EntityFrameworkCore;
 
 namespace BookingClone.Infrastructure.Repositories;
@@ -17,11 +20,14 @@ public abstract class GenericRepository<TEntity, TId> : IGenericRepository<TEnti
         _db = context.Set<TEntity>();
     }
 
+<<<<<<< HEAD
     public async Task<PagedList<TEntity>> GetPaginatedList(PaginationQuery query, CancellationToken ct = default)
     {
         return await _db.ToPagedListAsync(query.PageNumber, query.PageSize, ct);
     }
 
+=======
+>>>>>>> first commit
     public async Task<TEntity?> GetByIdAsync(TId id, CancellationToken ct = default)
         => await _db.FindAsync(new object[] { id! }, ct);
 

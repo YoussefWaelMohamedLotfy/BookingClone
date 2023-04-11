@@ -7,6 +7,7 @@ namespace BookingClone.Infrastructure.Data;
 
 public sealed class BookingDbContext : DbContext
 {
+<<<<<<< HEAD
    
     public BookingDbContext(DbContextOptions options) : base(options)
     {
@@ -16,11 +17,17 @@ public sealed class BookingDbContext : DbContext
 
 
 
+=======
+    public BookingDbContext(DbContextOptions options) : base(options)
+    {
+    }
+
+>>>>>>> first commit
     public DbSet<Attraction> Attractions { get; set; }
     public DbSet<AttractionImage> AttractionImages { get; set; }
     public DbSet<AttractionReservation> AttractionReservations { get; set; }
     public DbSet<AttractionReview> AttractionReviews { get; set; }
-    public DbSet<City> Cities { get; set; }
+    public DbSet<Cities> Cities { get; set; }
     public DbSet<CityHotel> CityHotels { get; set; }
     public DbSet<Continent> Continents { get; set; }
     public DbSet<Country> Countries { get; set; }
@@ -52,6 +59,24 @@ public sealed class BookingDbContext : DbContext
         configurationBuilder.Conventions.Add(_ => new StringMaxLengthConvention(90));
         base.ConfigureConventions(configurationBuilder);
     }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> first commit
+=======
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
+
+    //protected override void OnConfiguring(DbContextOptionsBuilder DbContextOptionsBuilder)
+    //{
+    //    DbContextOptionsBuilder.UseSqlServer("Data Source=DESKTOP-P73CSRJ\\SQLEXPRESS;Database=BookingClone;Integrated Security=True;Connect Timeout=30;Encrypt=False") ;
+    //}
+
+<<<<<<< HEAD
+>>>>>>> add city and country and continent
+=======
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 }

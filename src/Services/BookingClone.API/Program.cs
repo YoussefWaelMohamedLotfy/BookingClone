@@ -1,30 +1,44 @@
 using System.Reflection;
 using System.Text.Json.Serialization;
 using System.Threading.RateLimiting;
+<<<<<<< HEAD
 
 using Asp.Versioning;
 
+=======
+using Asp.Versioning;
+>>>>>>> first commit
 using BookingClone.API.Authentication;
 using BookingClone.API.Extensions;
 using BookingClone.API.OpenApi;
 using BookingClone.Application;
+using BookingClone.Domain.Contracts;
 using BookingClone.Infrastructure.Data;
+using BookingClone.Infrastructure.Repositories;
 using BookingClone.Serilog;
+<<<<<<< HEAD
 
+=======
+>>>>>>> first commit
 using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
+<<<<<<< HEAD
 
 using Serilog;
 
+=======
+using Serilog;
+>>>>>>> first commit
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(options =>
 {
+    //Miduator
     options.AddServerHeader = false;
     options.ConfigureHttpsDefaults(s => s.AllowAnyClientCertificate());
     options.ConfigureEndpointDefaults(o => o.Protocols = HttpProtocols.Http1AndHttp2AndHttp3);
@@ -34,7 +48,30 @@ builder.Host.UseSerilog(Serilogger.Configure);
 
 // Add services to the container.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+builder.Services.AddDbContext<BookingDbContext>(o =>
+    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"), c =>
+        c.EnableRetryOnFailure(3))
+);
+
+//builder.Services.AddApplicationServices();
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 builder.Services.AddApplicationServices(builder.Configuration);
+=======
+builder.Services.AddDbContext<BookingDbContext>(o =>
+    o.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection"), c =>
+        c.EnableRetryOnFailure(3))
+);
+
+<<<<<<< HEAD
+builder.Services.AddApplicationServices();
+>>>>>>> first commit
+=======
+//builder.Services.AddApplicationServices();
+builder.Services.AddApplicationServices(builder.Configuration);
+>>>>>>> salmateest
 
 //builder.Services.AddStackExchangeRedisCache(o =>
 //{
@@ -55,8 +92,23 @@ builder.Services.AddApiVersioning(o =>
         );
 })
     .AddApiExplorer(o => o.SubstituteApiVersionInUrl = true);
+<<<<<<< HEAD
+<<<<<<< HEAD
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> first commit
+=======
+builder.Services.AddScoped<ICityRepository,CityRepository > ();
+builder.Services.AddScoped<IContinentRepository, ContinentRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+>>>>>>> add city and country and continent
+=======
+builder.Services.AddScoped<ICityRepository,CityRepository > ();
+builder.Services.AddScoped<IContinentRepository, ContinentRepository>();
+builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+>>>>>>> f37231b51413aa449c366de214aabaf312833b05
 builder.Services.AddTransient<IConfigureOptions<SwaggerGenOptions>, ConfigureSwaggerOptions>();
 
 builder.Services.AddControllers()
@@ -169,12 +221,27 @@ if (app.Environment.IsDevelopment() || app.Environment.IsStaging() || app.Enviro
 }
 
 app.UseHttpsRedirection();
+app.UseCors(Policy => Policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 app.UseAuthorization();
+=======
+app.UseMiddleware<ApiKeyAuthMiddleware>();
+=======
+//app.UseMiddleware<ApiKeyAuthMiddleware>();
+>>>>>>> api(country_continent_city)
+app.UseAuthorization();
+
+>>>>>>> first commit
 app.UseRateLimiter();
 
 app.MapControllers();
 app.MapCustomHealthChecks();
 
+<<<<<<< HEAD
 app.Run();
+=======
+app.Run();
+>>>>>>> first commit

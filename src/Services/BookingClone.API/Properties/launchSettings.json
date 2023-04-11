@@ -1,22 +1,40 @@
 {
+<<<<<<< HEAD
   "$schema": "https://json.schemastore.org/launchsettings.json",
+=======
+>>>>>>> first commit
   "profiles": {
     "https": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
+<<<<<<< HEAD
       "applicationUrl": "https://localhost:13000;http://localhost:13001",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true
+=======
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:13000;http://localhost:13001"
+>>>>>>> first commit
     },
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+<<<<<<< HEAD
       "environmentVariables": {},
       "publishAllPorts": true
     }
   }
+=======
+      "publishAllPorts": true
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+>>>>>>> first commit
 }
