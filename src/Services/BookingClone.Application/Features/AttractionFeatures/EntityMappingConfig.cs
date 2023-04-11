@@ -13,8 +13,10 @@ internal sealed class EntityMappingConfig : Profile
         CreateMap<AttractionImage, AttractionImageDto>();
         CreateMap<AddAttractionDto, Attraction>();
         CreateMap<UpdateAttractionDto, Attraction>();
-       
+        CreateMap<AttractionDetailsDto, Attraction>().ReverseMap();
 
-        
+
+
+
     }
 }
