@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { NotFoundComponent } from './Shared/Components/not-found/not-found.component';
-import { StaysComponent } from './Stays/Component/Stays.component';
+import { StaysComponent } from './Stays/Stays-Component/Stays.component';
 import { ReviewsComponent } from './Reviews/Reviews-Component/Reviews.component';
+import {OffersComponent} from './Offers/Component/offers/offers.component'
 
 const routes: Routes = [
   { path: 'Stays', component: StaysComponent },
+  { path: 'Offers', component: OffersComponent },
   { path: 'Reviews', component: ReviewsComponent },
-  { path: '', redirectTo: '/Stays', pathMatch: 'full' },
+  { path: '', redirectTo: 'Stays', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
 

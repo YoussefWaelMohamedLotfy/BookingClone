@@ -9,9 +9,13 @@ import { FooterComponent } from './Shared/Components/footer/footer.component';
 import { NotFoundComponent } from './Shared/Components/not-found/not-found.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { StaysComponent } from './Stays/Component/Stays.component';
+import { StaysComponent } from './Stays/Stays-Component/Stays.component';
 import { ReviewsComponent } from './Reviews/Reviews-Component/Reviews.component';
 import { StaysHeaderComponent } from './Stays/Stays-Header-Component/Stays-Header.component';
+import { OffersComponent } from './Offers/Component/offers/offers.component';
+import { OffersHeaderComponent } from './Offers/Component/offersHeader/offersHeader.component';
+import { RouterLink, RouterModule } from '@angular/router';
+
 
 
 
@@ -23,12 +27,16 @@ import { StaysHeaderComponent } from './Stays/Stays-Header-Component/Stays-Heade
     NotFoundComponent,
     StaysComponent,
     ReviewsComponent,
-    StaysHeaderComponent
+    StaysHeaderComponent,
+    OffersComponent,
+    OffersHeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    RouterModule,
+    RouterLink,
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
