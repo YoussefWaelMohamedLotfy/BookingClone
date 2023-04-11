@@ -13,7 +13,7 @@ const routes: Routes = [
   {path:'egyptcities',component:EgyptCitiesComponent},
    {path:'City',component:CityComponent},
   {path:'CityDetails/:CountryID',component:CityDetailsComponent},
-  {path:'Continent',component:ContinentComponent},
+  {path:'continent',component:ContinentComponent},
   {path:'Continent/:id',component:ContinentComponent},
   { path: '**', component: NotFoundComponent },
 ];

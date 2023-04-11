@@ -41,8 +41,18 @@ export class ContinentComponent  {
   ngOnInit(): void {
     this. continentService.getAllContinent().subscribe(data => {
     this.ContinentList = data;
-      });
 
+      });
+if(this.id==0){
+  this.countryService.getAllCountries().subscribe(data1=>{
+
+
+    this.ListOfCountries=data1;
+
+
+
+  })
+}
 this.activRoute.paramMap.subscribe(x=>{
   this.id=Number(x.get('id'))
 
