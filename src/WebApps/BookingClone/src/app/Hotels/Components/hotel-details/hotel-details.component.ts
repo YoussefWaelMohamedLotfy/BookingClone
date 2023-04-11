@@ -42,26 +42,14 @@ export class HotelDetailsComponent implements OnInit {
   }
 
   getRoomsByHotelId(id: number) {
-    console.log(id);
-
     this.roomService.getRoomsByHotelId(id, 1, 100).subscribe(({
       next: res => {
-
         this.rooms = res.data?.filter((x: Iroom) => id == x.hotelId);
-        console.log("res.data");
-        console.log(res.data);
-        console.log("this.rooms");
-        console.log(this.rooms);
-
-
-
         this.rooms.map((item: Iroom, ind: number) => {
           let room = item;
           room.url = this.roomImgs[ind].imgName;
           return room
         });
-        console.log("this.rooms");
-        console.log(this.rooms);
       },
       error: (err: any) => {
         console.log(err.error)
@@ -75,9 +63,8 @@ export class HotelDetailsComponent implements OnInit {
     setTimeout(() => {
       this.imgUrl = this.hotelApi.getImgUrl();
     }, 100);
-
-
   }
+
   ChangeValue(input: any, dropValue: any) {
     this.roomService.getFilterdRoom(0, input.value, dropValue == 0 ? false : true).subscribe(x => {
       this.rooms = x

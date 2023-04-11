@@ -17,6 +17,7 @@ import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Co
 import { AllAttractionReservationsComponent } from './Reservations/AttractionReservations/Components/all-attraction-reservations/all-attraction-reservations.component';
 import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/Components/add-new-room-reservation/add-new-room-reservation.component';
 import { NgxPayPalModule } from 'ngx-paypal';
+import { RoomDetailsComponent } from './Rooms/Components/room-details/room-details.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NgxPayPalModule } from 'ngx-paypal';
     RoomsComponent,
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
-    AddNewRoomReservationComponent
+    AddNewRoomReservationComponent,
+    RoomDetailsComponent
   ],
   imports: [
     BrowserModule,
