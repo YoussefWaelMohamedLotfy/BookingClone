@@ -6,35 +6,40 @@ using System.Threading.Tasks;
 
 using AutoMapper;
 
-using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionsByCityID;
+using BookingClone.Application.Features.AttractionFeatures.DTOs;
+using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionsByCityId;
 using BookingClone.Application.Features.city.DTOs;
+using BookingClone.Application.Features.city.queries.GetCityById;
 using BookingClone.Domain.Contracts;
+using BookingClone.Infrastructure.Repositories;
+
 using MediatR;
 
 namespace BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionsByCityId;
-internal class GetAttractionsByIdQueryHandler
-{
 
 
 
-public class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractionsByCityIdQuery, List<CityDetailsDto?>>
-{
-    private readonly ICityRepository _cityRepository;
+
+    public class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractionsByCityIdQuery, List<AttractionsDetailsDto?>>
+    {
+      
+    private IAttractionRepository _AttractionRepository;
     private readonly IMapper _mapper;
 
-    public GetAttractionsByCityIdQueryHandler(ICityRepository cityRepository, IMapper mapper)
+        public GetAttractionsByCityIdQueryHandler(IAttractionRepository AttractionRepository, IMapper mapper)
+        {
+        _AttractionRepository = AttractionRepository;
+            _mapper = mapper;
+        }
+
+
+
+
+
+    public List<AttractionsDetailsDto?> Handle(GetAttractionsByCityIdQuery request, CancellationToken cancellationToken)
     {
-        _cityRepository = cityRepository;
-        _mapper = mapper;
-    }
-
-
-
-
-    public async Task<List<CityDetailsDto?>> Handle(GetAttractionsByCityIdQuery request, CancellationToken cancellationToken)
-    {
-        var result = _cityRepository.GetAll().Result.Where(x => x.CountryID == request.ID).ToList();
-        return result is null ? null : _mapper.Map<List<CityDetailsDto>>(result);
+        var result = _AttractionRepository.GetAll().Result.Where(x => x.CityID == request.ID).ToList();
+        return result is null ? null : _mapper.Map<List<AttractionsDetailsDto>>(result);
     }
 
 
@@ -44,4 +49,3 @@ public class GetAttractionsByCityIdQueryHandler : IRequestHandler<GetAttractions
 }
 
 
-}

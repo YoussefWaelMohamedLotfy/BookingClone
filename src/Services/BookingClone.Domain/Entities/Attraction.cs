@@ -21,4 +21,5 @@ public sealed class Attraction : BaseEntity<int>
     public List<ReservedAttraction> ReservedAttractions { get; set; }
 
     public List<AttractionImage> Images { get; set; }
+    public int CityID { get; set; }
 }
