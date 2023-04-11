@@ -26,7 +26,7 @@ import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/
     StaysComponent,
     HotelsComponent,
     HotelDetailsComponent,
-    RoomsComponent
+    RoomsComponent,
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent
