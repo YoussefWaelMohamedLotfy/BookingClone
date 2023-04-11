@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IAddRoomReservation } from '../../Models/iadd-room-reservation';
 import { RoomReservationApiService } from '../../Services/room-reservation-api.service';
 import { IPayPalConfig, ICreateOrderRequest } from 'ngx-paypal';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-new-room-reservation',
@@ -14,7 +15,7 @@ export class AddNewRoomReservationComponent implements OnInit {
 
   newRoomReservation: IAddRoomReservation = {} as IAddRoomReservation;
 
-  constructor(private roomReservationAPI: RoomReservationApiService) {
+  constructor(private roomReservationAPI: RoomReservationApiService, private router: Router) {
     this.newRoomReservation.totalCost = 100;
   }
 
@@ -64,13 +65,16 @@ export class AddNewRoomReservationComponent implements OnInit {
       onApprove: (data, actions) => {
         console.log('onApprove - transaction was approved, but not authorized', data, actions);
         this.addNewRoomReservation();
+
         actions.order.get().then((details: any) => {
           console.log('onApprove - you can get full order details inside onApprove: ', details);
+          this.router.navigate(['/Stays'])
         });
       },
       onClientAuthorization: (data) => {
         console.log('onClientAuthorization - you should probably inform your server about completed transaction at this point', data);
         this.showSuccess = true;
+        this.router.navigate(['/Stays'])
       },
       onCancel: (data, actions) => {
         console.log('OnCancel', data, actions);
