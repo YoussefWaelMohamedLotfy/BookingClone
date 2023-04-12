@@ -56,13 +56,45 @@ public static class BookingDbContextExtensions
 
         if (!context.Cities.Any())
         {
-            var citiesFaker = new Faker<City>()
-                .RuleFor(h => h.CountryID, f => f.Random.Number(1, 20))
-                .RuleFor(h => h.Name, f => f.Address.City());
-
             context.Cities.AddRange(new[]
             {
                 new City { Name = "Cairo", CountryID = 1 },
+                new City { Name = "Nassau", CountryID = 1 },
+                new City { Name = "Baku", CountryID = 1 },
+                new City { Name = "la paz", CountryID = 1 },
+                new City { Name = "Sofia", CountryID = 1 },
+                new City { Name = "Praia", CountryID = 1 },
+                new City { Name = "Dili", CountryID = 1 },
+                new City { Name = "Asmara", CountryID = 1 },
+                new City { Name = "Conakry", CountryID = 1 },
+                new City { Name = "Tokyo", CountryID = 1 },
+                new City { Name = "Lisban", CountryID = 1 },
+                new City { Name = "Apia", CountryID = 1 },
+                new City { Name = "Sanaa", CountryID = 1 },
+                new City { Name = "Downtown", CountryID = 1 },
+                new City { Name = "Torino", CountryID = 1 },
+                new City { Name = "Milano", CountryID = 1 },
+                new City { Name = "Roma", CountryID = 1 },
+                new City { Name = "Soul", CountryID = 1 },
+                new City { Name = "Sirte", CountryID = 1 },
+                new City { Name = "Baku", CountryID = 1 },
+                new City { Name = "Nassau", CountryID = 1 },
+                new City { Name = "Paria", CountryID = 1 },
+                new City { Name = "Suva", CountryID = 1 },
+                new City { Name = "Riga", CountryID = 1 },
+                new City { Name = "Giza", CountryID = 1 },
+                new City { Name = "Alexandria", CountryID = 1 },
+                new City { Name = "Sohag", CountryID = 1 },
+                new City { Name = "Qena", CountryID = 1 },
+                new City { Name = "Matareya", CountryID = 1 },
+                new City { Name = "Al-mansura", CountryID = 1 },
+                new City { Name = "Tanta", CountryID = 1 },
+                new City { Name = "Asyut", CountryID = 1 },
+                new City { Name = "Jabalia", CountryID = 1 },
+                new City { Name = "Gaza", CountryID = 1 },
+                new City { Name = "Paris", CountryID = 1 },
+                new City { Name = "taloq", CountryID = 1 },
+                new City { Name = "Chad", CountryID = 1 },
             });
             context.SaveChanges();
         }
