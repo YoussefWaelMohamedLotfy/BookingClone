@@ -6,6 +6,8 @@ public sealed class Attraction : BaseEntity<int>
 {
     public string Name { get; set; }
 
+    public int? CityID { get; set; }
+
     public string Description { get; set; }
 
     public int AvailableTickets { get; set; }

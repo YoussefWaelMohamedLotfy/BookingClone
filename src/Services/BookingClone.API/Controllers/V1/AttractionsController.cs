@@ -4,6 +4,7 @@ using BookingClone.Application.Features.AttractionFeatures.Commands.DeleteAttrac
 using BookingClone.Application.Features.AttractionFeatures.Commands.UpdateAttraction;
 using BookingClone.Application.Features.AttractionFeatures.DTOs;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionById;
+using BookingClone.Application.Features.AttractionFeatures.Queries.GetAttractionsByCityId;
 using BookingClone.Application.Features.AttractionFeatures.Queries.GetPaginatedAttractions;
 using BookingClone.Domain.Common;
 using MediatR;
@@ -100,5 +101,13 @@ public class AttractionsController : ControllerBase
     {
         var result = await _mediator.Send(new DeleteAttractionCommand { ID = id }, ct);
         return result <= 0 ? NotFound() : NoContent();
+    }
+
+    [HttpGet("GetAttractionsByCityId")]
+
+    public async Task<IActionResult> GetAttractionsByCityId(int id, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetAttractionsByCityIdQuery(id), ct);
+        return result is null ? NotFound() : Ok(result);
     }
 }
