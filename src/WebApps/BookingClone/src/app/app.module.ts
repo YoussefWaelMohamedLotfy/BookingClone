@@ -44,7 +44,7 @@ import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent,
-    RoomDetailsComponent
+    RoomDetailsComponent,
     StaysComponent,
     CityComponent,
     CountryComponent,

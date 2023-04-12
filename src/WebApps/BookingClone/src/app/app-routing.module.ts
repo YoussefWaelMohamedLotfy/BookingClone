@@ -13,7 +13,6 @@ import { CountryComponent } from './Country/country/country.component';
 import { CountryDetailsComponent } from './Country/country-details/country-details.component';
 import { ContinentComponent } from './Continent/continent/continent.component';
 import { CityDetailsComponent } from './City/city-details/city-details.component';
-import { CityComponent } from './City/city/city.component';
 import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component';
 
 const routes: Routes = [
