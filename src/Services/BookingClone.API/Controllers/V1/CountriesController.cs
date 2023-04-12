@@ -30,7 +30,8 @@ public sealed class CountriesController : ControllerBase
         return Ok(await _mediator.Send(new GetAllCountriesQuery(), ct));
     }
 
-    [HttpGet("{id}", Name = "Get_[controller]")]
+    //[HttpGet("{id}", Name = "Get_[controller]")]
+    [HttpGet("GetCountryById")]
 
     public async Task<IActionResult> GetCountryById(int id, CancellationToken ct)
     {
@@ -57,6 +58,13 @@ public sealed class CountriesController : ControllerBase
     {
         var result = await _mediator.Send(new DeleteCountryCommmand(id), ct);
         return result <= 0 ? NotFound() : NoContent();
+    }
+
+    [HttpGet("{contientid}")]
+    public async Task<IActionResult> GetCountryByContientId(int contientid, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetCountryByContientIdQuery(contientid), ct);
+        return result is null ? NotFound() : Ok(result);
     }
 
 }
