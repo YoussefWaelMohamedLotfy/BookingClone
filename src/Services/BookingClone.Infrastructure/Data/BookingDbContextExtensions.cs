@@ -15,20 +15,42 @@ public static class BookingDbContextExtensions
             {
                 new Continent { Name = "Africa" },
                 new Continent { Name = "Asia" },
-                new Continent { Name = "North America" },
-                new Continent { Name = "South America" },
                 new Continent { Name = "Europe" },
+                new Continent { Name = "Australia" },
+                new Continent { Name = "South America" },
+                new Continent { Name = "North America" },
+                new Continent { Name = "Antarcatica" },
             });
             context.SaveChanges();
         }
 
         if (!context.Countries.Any())
         {
-            var countriesFaker = new Faker<Country>()
-                .RuleFor(h => h.ContinentID, f => f.Random.Number(1, 5))
-                .RuleFor(h => h.Name, f => f.Address.Country());
-
-            context.Countries.AddRange(countriesFaker.Generate(20));
+            context.Countries.AddRange(new[]
+            {
+                new Country { Name = "Egypt", ContinentID = 1 },
+                new Country { Name = "Algeria", ContinentID = 1 },
+                new Country { Name = "Angola", ContinentID = 1 },
+                new Country { Name = "Austria", ContinentID = 3 },
+                new Country { Name = "Belarus", ContinentID = 2 },
+                new Country { Name = "Palestine", ContinentID = 2 },
+                new Country { Name = "China", ContinentID = 2 },
+                new Country { Name = "France", ContinentID = 3 },
+                new Country { Name = "Gaban", ContinentID = 1 },
+                new Country { Name = "Greece", ContinentID = 3 },
+                new Country { Name = "Iceland", ContinentID = 3 },
+                new Country { Name = "India", ContinentID = 2 },
+                new Country { Name = "Iran", ContinentID = 2 },
+                new Country { Name = "Italy", ContinentID = 3 },
+                new Country { Name = "Japan", ContinentID = 2 },
+                new Country { Name = "Jordan", ContinentID = 2 },
+                new Country { Name = "Korea", ContinentID = 2 },
+                new Country { Name = "Libya", ContinentID = 1 },
+                new Country { Name = "Niger", ContinentID = 1 },
+                new Country { Name = "Qater", ContinentID = 2 },
+                new Country { Name = "Vienna", ContinentID = 3 },
+                new Country { Name = "Chile", ContinentID = 1 },
+            });
             context.SaveChanges();
         }
 
@@ -38,7 +60,10 @@ public static class BookingDbContextExtensions
                 .RuleFor(h => h.CountryID, f => f.Random.Number(1, 20))
                 .RuleFor(h => h.Name, f => f.Address.City());
 
-            context.Cities.AddRange(citiesFaker.Generate(20));
+            context.Cities.AddRange(new[]
+            {
+                new City { Name = "Cairo", CountryID = 1 },
+            });
             context.SaveChanges();
         }
 
