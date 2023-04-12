@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { IReviews } from '../Models/IReviews';
 import { ReviewsService } from '../services/reviews.service';
+
 
 @Component({
   selector: 'app-Reviews',
@@ -8,7 +10,7 @@ import { ReviewsService } from '../services/reviews.service';
 })
 export class ReviewsComponent implements OnInit {
 
-  reviews:any[]=[]
+  reviews:IReviews[]=[];
 
   constructor(private service:ReviewsService) { }
 
@@ -17,12 +19,16 @@ export class ReviewsComponent implements OnInit {
     this.getReviews()
   }
 
-getReviews(){
-  this.service.getAllReviews().subscribe((result:any) =>{
 
-    this.reviews = result
+getReviews(){
+
+  this.service.getReviews().subscribe(response => {
+    this.reviews = response.data;
+    console.log(this.reviews)
+
   })
 
+  
 
 }
 

@@ -161,7 +161,7 @@
 
 </header>
 
-<div class="container-fluid ms-5">
+<div class="container-fluid ">
   <div class="row ms-5">
     <div class="col-lg-2 col-sm-6">
       <h4 class=" fw-bold text-muted">Top Countries</h4>
@@ -185,31 +185,24 @@
 
     </div>
 
-    <div class="col-lg-8 col-sm-6">
+    <div class="col-lg-8 col-sm-12">
       <h3 class=" fw-bold text-muted text-center" >Recent Reviews</h3>
-      <div class="row row-cols-lg-3 g-4">
-        <div class="col-6">
-          <div class="card">
+      <div class="row ">
+        <div class=" col-lg-4 col-md-3 col-sm-12" *ngFor=" let item of reviews">
+          <div class="card mt-5">
             <img src="assets/images/2.jpg" class="card-img-top" alt="photo room1">
             <div class="card-body">
-              <h5 class="card-title">Mamlouk Pyramids Hotel
-                Cairo, Egypt</h5>
-              <p class="card-text">the location? it’s very warm, clean and hot shower. nice stuff and
-                beautiful view from
-                the rooftop
-
-                Negative section of review
-                not all rooms have window view.
-
-                Reviewed: January 20, 2023
-                Stayed in January 2023</p>
-              <p class="card-text"><strong>EGP 900</strong> </p>
+              <p class="card-text"><i class="fa-regular fa-plus fa-xs me-2" style="color: #49bc4a;"></i>{{item.positiveReview}}</p>
+             <p class="card-text"><i class="fa-solid fa-minus fa-xs me-2" style="color: #49bc4a;"></i>{{item.negativeReview}}</p>
+              <p class="card-text fw-bold"></p>
             </div>
           </div>
         </div>
 
-       
+
       </div>
     </div>
+
+
   </div>
 </div>
