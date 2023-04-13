@@ -16,6 +16,7 @@ import { OffersComponent } from './Offers/Component/offers/offers.component';
 import { OffersHeaderComponent } from './Offers/Component/offersHeader/offersHeader.component';
 import { RouterLink, RouterModule } from '@angular/router';
 import { ReviewHeaderComponent } from './Reviews/Review-Header/Review-Header/Review-Header.component';
+import { LoginComponent } from './Login/Component/Login/Login.component';
 
 
 
@@ -31,7 +32,8 @@ import { ReviewHeaderComponent } from './Reviews/Review-Header/Review-Header/Rev
     StaysHeaderComponent,
     OffersComponent,
     OffersHeaderComponent,
-    ReviewHeaderComponent
+    ReviewHeaderComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
