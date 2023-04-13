@@ -33,7 +33,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
 import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component';
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HeaderComponent,
     FooterComponent,
