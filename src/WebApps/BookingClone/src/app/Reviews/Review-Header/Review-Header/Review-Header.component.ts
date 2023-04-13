@@ -15,7 +15,7 @@ export class ReviewHeaderComponent implements OnInit {
 
   reviewCounterStop:any = setInterval(()=>{
     this.reviewCounter++;
-    if(this.reviewCounter == 156){
+    if(this.reviewCounter == 157){
       clearInterval(this.reviewCounterStop);
     }
   },10)
