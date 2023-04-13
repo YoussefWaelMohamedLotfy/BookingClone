@@ -1,15 +1,60 @@
-import { Component, OnInit } from '@angular/core';
+
+import { TranslateService } from '@ngx-translate/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, Renderer2 } from '@angular/core';
+
+
+declare let $: any
 
 @Component({
   selector: 'app-Stays',
   templateUrl: './Stays.component.html',
   styleUrls: ['./Stays.component.css']
 })
-export class StaysComponent implements OnInit {
+export class StaysComponent {
+  curentLang: string = ""
+  constructor(public translate: TranslateService, private rendrer: Renderer2,
+    @Inject(DOCUMENT) private document: Document) {
 
-  constructor() { }
+    this.curentLang = localStorage.getItem('curentLang') || 'en';
+    this.translate.use(this.curentLang);
 
-  ngOnInit() {
+    //Change Lang:
+    this.curentLang = localStorage.getItem('curentLang') || 'en';
+    this.translate.use(this.curentLang);
+    if (this.curentLang == "en") {
+      this.document.getElementsByTagName('html')[0].lang = 'en';
+      this.document.getElementsByTagName('html')[0].dir = 'ltr';
+      this.document.getElementById('Appcontainer')?.classList.remove('is-rtl');
+
+
+    }
+    else if (this.curentLang == "ar") {
+      this.document.getElementsByTagName('html')[0].lang = 'ar';
+      this.document.getElementsByTagName('html')[0].dir = 'rtl';
+      this.document.getElementById('Appcontainer')?.classList.add('is-rtl');
+    }
+
   }
 
+
+  changeLanguage(lang: string) {
+    localStorage.setItem('curentLang', lang)
+    this.translate.use(lang);
+    if (lang == "en") {
+      this.document.getElementsByTagName('html')[0].lang = 'en';
+      this.document.getElementsByTagName('html')[0].dir = 'ltr';
+      this.document.getElementById('Appcontainer')?.classList.remove('is-rtl');
+      $('#lang').modal('hide');
+
+    }
+    else if (lang == "ar") {
+      this.document.getElementsByTagName('html')[0].lang = 'ar';
+      this.document.getElementsByTagName('html')[0].dir = 'rtl';
+      this.document.getElementById('Appcontainer')?.classList.add('is-rtl');
+      $('#lang').modal('hide');
+
+    }
+
+  }
 }
