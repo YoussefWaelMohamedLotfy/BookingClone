@@ -60,5 +60,9 @@
   "Sea View":"Sea View",
   "Garden View":"Garden View",
   "Pool View":"Pool View",
-  "No Hotels Found":"No Hotels Found"
+  "No Hotels Found":"No Hotels Found",
+  "Make a new Room Reservation":"Make a new Room Reservation",
+  "Total Cost":"Total Cost",
+  "Room Reservations":"Room Reservations",
+  "Attraction Reservations":"Attraction Reservations"
 }

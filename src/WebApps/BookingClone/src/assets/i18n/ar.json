@@ -60,5 +60,9 @@
   "Sea View": "اطلالة البحر",
   "Garden View": "إطلالة على الحديقة",
   "Pool View": "أطلالة على حمام السباحة",
-  "No Hotels Found":"لم يتم العثور على فنادق"
+  "No Hotels Found":"لم يتم العثور على فنادق",
+  "Make a new Room Reservation":"قم بإجراء حجز جديد للغرفة",
+  "Total Cost":"التكلفة الإجمالية",
+  "Room Reservations":"حجز الغرف",
+  "Attraction Reservations":"حجز المعالم السياحة"
 }
