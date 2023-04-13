@@ -45,7 +45,7 @@ export class ContinentComponent  {
       });
 if(this.id==0){
   this.countryService.getAllCountries().subscribe(data1=>{
-
+// alert(this.id)
 
     this.ListOfCountries=data1;
 
@@ -60,12 +60,13 @@ this.activRoute.paramMap.subscribe(x=>{
     this.countryService.getContrytByContientID(this.id).subscribe(d=>{
     this.ListOfCountries=d;
 
+
     })
     }else{
 
       this.countryService.getAllCountries().subscribe(data1=>{
 
-
+      //  alert(this.id)
        this.ListOfCountries=data1;
 
 

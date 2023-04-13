@@ -12,7 +12,7 @@ public class CountryMinimalDto
    
 
     public string Name { get; set; }
-
+    public int? ID { get; set; }
     //public CountryMinimalDto(string name)
     //{
     //    Name = name;

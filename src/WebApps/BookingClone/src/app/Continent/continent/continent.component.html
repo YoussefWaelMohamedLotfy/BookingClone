@@ -12,15 +12,20 @@
 
       <section class="service-title d-flex justify-content-between mb-3">
 
-        <div class="category-select "  *ngFor="let work of ContinentList" routerLinkActive="active" routerLink="/Continent/{{work.id}}"
+        <div class="category-select "
+         *ngFor="let work of ContinentList"
+         routerLinkActive="active"
+         routerLink="/Continent/{{work.id}}"
 
 
         >
-          <div   >
+
+        <div>
+
 
         <span  >{{work.name}}</span>
 
-            </div>
+       </div>
           </div>
         </section>
     </div>
@@ -29,11 +34,14 @@
     <div class="row">
        <ng-container  *ngFor="let Country of ListOfCountries; let index=index"
        >
-            <div  class="item-box position-relative col-lg-3 col-mg-2 ">
+            <div  class="item-box position-relative col-lg-4 col-md-6  col-xl-3">
 
 
 
              <!-- <a (click)="CountryDetails(Country.id)"> -->
+
+              <!-- <a [routerLink]='["/CityDetails",Country.id]'> -->
+
               <a routerLink="/CityDetails/{{Country.id}}" >
                  <div class="card text-bg-dark"   >
 
@@ -48,6 +56,7 @@
                   </div>
                 </div>
             </a>
+            <!-- </a> -->
 
 
 

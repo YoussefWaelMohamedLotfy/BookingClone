@@ -53,8 +53,10 @@ import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component
     CityDetailsComponent,
     // RegisterComponent,
     EgyptCitiesComponent,
+
   ],
   imports: [
+
 
     BrowserAnimationsModule,
     RouterModule,

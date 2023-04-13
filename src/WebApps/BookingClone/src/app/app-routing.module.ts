@@ -14,17 +14,20 @@ import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component
 
 const routes: Routes = [
   { path: '', redirectTo: '/Stays', pathMatch: 'full' },
-  { path: 'Stays', component: StaysComponent },
-  { path: 'egyptcities', component: EgyptCitiesComponent },
-  { path: 'City', component: CityComponent },
-  { path: 'CityDetails/:CountryID', component: CityDetailsComponent },
-  { path: 'Continent', component: ContinentComponent },
-  { path: 'Room/Reservations', component: AllRoomReservationsComponent },
-  { path: 'Attraction/Reservations', component: AllAttractionReservationsComponent },
-  { path: 'Hotels', component: HotelsComponent },
-  { path: 'HotelDetails/:id', component: HotelDetailsComponent },
-  { path: '', redirectTo: '/Room/Reservations', pathMatch: 'full' },
-  { path: 'Continent/:id', component: ContinentComponent },
+  // { path: 'Stays', component: StaysComponent },
+  { path:'Continent',component: ContinentComponent },
+  { path:'Continent/:id',component: ContinentComponent },
+  { path:'city',component: CityComponent },
+  { path:'CityDetails/:CountryID',component: CityDetailsComponent },
+
+  { path:'egyptcities',component: EgyptCitiesComponent },
+
+  // { path: 'Room/Reservations', component: AllRoomReservationsComponent },
+  // { path: 'Attraction/Reservations', component: AllAttractionReservationsComponent },
+  // { path: 'Hotels', component: HotelsComponent },
+  // { path: 'HotelDetails/:id', component: HotelDetailsComponent },
+  // { path: '', redirectTo: '/Room/Reservations', pathMatch: 'full' },
+
   { path: '**', component: NotFoundComponent },
 ];
 
