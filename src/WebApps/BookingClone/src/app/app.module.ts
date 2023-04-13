@@ -15,6 +15,7 @@ import { StaysHeaderComponent } from './Stays/Stays-Header-Component/Stays-Heade
 import { OffersComponent } from './Offers/Component/offers/offers.component';
 import { OffersHeaderComponent } from './Offers/Component/offersHeader/offersHeader.component';
 import { RouterLink, RouterModule } from '@angular/router';
+import { ReviewHeaderComponent } from './Reviews/Review-Header/Review-Header/Review-Header.component';
 
 
 
@@ -29,7 +30,8 @@ import { RouterLink, RouterModule } from '@angular/router';
     ReviewsComponent,
     StaysHeaderComponent,
     OffersComponent,
-    OffersHeaderComponent
+    OffersHeaderComponent,
+    ReviewHeaderComponent
   ],
   imports: [
     BrowserModule,

@@ -127,51 +127,28 @@
           </ul>
       </div>
 
-      <section id="section1">
-        <p class="p_section"><strong id="increase_number">1000000</strong></p>
-        <p class="p_section" style="font-size: 30px;"><strong>destination reviews from real travelers</strong></p>
-
-        <!-- Button trigger modal -->
-        <button type="button" id="question_botton" class="btn btn-primary" data-bs-toggle="modal"
-          data-bs-target="#exampleModal">
-          <strong style="font-size: 17px; "> How was your stay?</strong>
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Verified reviews from real guests.</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <img src="assets/images/90.PNG" alt="photo" width="482px" height="300px">
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Sign in and leave a review</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<app-Review-Header></app-Review-Header>
 
   </nav>
 
 </header>
 
-<div class="container-fluid ">
-  <div class="row ms-5">
-    <div class="col-lg-2 col-sm-6">
-      <h4 class=" fw-bold text-muted">Top Countries</h4>
+<div class="container-fluid">
+  <img src="assets/images/pic1.png" class="img-fluid"  alt="">
+
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-2  col-md-12 col-sm-6" style="background-color: rgb(238, 236, 236);">
+      <h4 class=" fw-bold text-muted text-center pt-5">Top Countries</h4>
       <div class="mt-5">
-        <a
+        <a class="text-center"
           href="https://www.booking.com/reviews/country/ae.html?aid=376381&label=bookings-naam-0U48THtFadjZBwJ4BHv4SgS267724713972%3Apl%3Ata%3Ap1%3Ap22%2C563%2C000%3Aac%3Aap%3Aneg%3Afi%3Atikwd-65526620%3Alp1005390%3Ali%3Adec%3Adm%3Appccp%3DUmFuZG9tSVYkc2RlIyh9YV19IumoQ3O5HnTajxNh2ss&sid=d140edc6f2925d60e453aba149dffe78">
           United Arab Emirates</a>
-        <h6 class="fw-bold text-muted">DAMAC Maison Distinction </h6>
+        <h6 class="fw-bold text-muted text-center">DAMAC Maison Distinction </h6>
 
-        <p class="fw-light text-muted"> Very friendly and welcoming staff and I would like to
+        <p class="fw-light text-muted text-center"> Very friendly and welcoming staff and I would like to
         thanks Mrs.
         Grace and Mrs. Sumitra for there smoothie chick in and upgraded my room. - The location in waking
         distance to
@@ -180,15 +157,14 @@
         room, the hall apartment with balcony have very nice view on khalifah tower.”
       </p>
       </div>
-
-
-
     </div>
 
+<div class="col-lg-1"></div>
+
     <div class="col-lg-8 col-sm-12">
-      <h3 class=" fw-bold text-muted text-center" >Recent Reviews</h3>
-      <div class="row ">
-        <div class=" col-lg-4 col-md-3 col-sm-12" *ngFor=" let item of reviews">
+      <h3 class=" fw-bold text-muted text-center pt-5" >Recent Reviews</h3>
+      <div class="row">
+        <div class=" col-lg-4 col-md-3 col-sm-12 " *ngFor=" let item of reviews">
           <div class="card mt-5">
             <img src="assets/images/2.jpg" class="card-img-top" alt="photo room1">
             <div class="card-body">
