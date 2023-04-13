@@ -6,8 +6,10 @@ import { AttractionsComponent } from './Attraction/Component/attractions/attract
 
 import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Components/all-room-reservations/all-room-reservations.component';
 import { AllAttractionReservationsComponent } from './Reservations/AttractionReservations/Components/all-attraction-reservations/all-attraction-reservations.component';
+import { Attractions2Component } from './Attractions2/component/Attractions2.component';
 
 const routes: Routes = [
+  { path: 'attractions2', component: Attractions2Component },
   { path: 'attractions', component: AttractionsComponent },
   { path: 'Room/Reservations', component: AllRoomReservationsComponent },
   { path: 'Attraction/Reservations', component: AllAttractionReservationsComponent },
@@ -20,4 +22,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -14,11 +14,13 @@ import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Co
 import { AllAttractionReservationsComponent } from './Reservations/AttractionReservations/Components/all-attraction-reservations/all-attraction-reservations.component';
 import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/Components/add-new-room-reservation/add-new-room-reservation.component';
 import { AttractionsComponent } from './Attraction/Component/attractions/attractions.component';
+import { Attractions2Component } from './Attractions2/component/Attractions2.component';
+import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
     HeaderComponent,
     FooterComponent,
@@ -27,11 +29,13 @@ import { AttractionsComponent } from './Attraction/Component/attractions/attract
     AttractionsComponent,
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
-    AddNewRoomReservationComponent
-  ],
+    AddNewRoomReservationComponent,
+      Attractions2Component
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule,
     FormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
