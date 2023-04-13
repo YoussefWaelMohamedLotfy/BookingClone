@@ -13,6 +13,7 @@ internal sealed class EntityMappingConfig : Profile
         CreateMap<AttractionImage, AttractionImageDto>();
         CreateMap<AddAttractionDto, Attraction>();
         CreateMap<UpdateAttractionDto, Attraction>();
+        CreateMap<AttractionDetailsDto, Attraction>().ReverseMap();
         CreateMap<PagedList<Attraction>, PagedList<GetAttractionDto>>()
             .ForMember(x => x.Data, f => f.MapFrom(x => x.Data));
     }
