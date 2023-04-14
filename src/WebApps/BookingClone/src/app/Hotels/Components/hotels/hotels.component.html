@@ -40,8 +40,8 @@
         <li class="page-item"><a class="page-link" (click)="getHotels('Next')">Next</a></li>
       </ul>
     </nav>
-    <ng-container *ngIf="hotelList.length == 0 && !showMsg">{{"No Hotels Found"|translate}}</ng-container>
-    <ng-container *ngIf="hotelList.length > 0">
+    <ng-container *ngIf="hotelList?.length == 0 && !showMsg">{{"No Hotels Found"|translate}}</ng-container>
+    <ng-container *ngIf="hotelList?.length > 0">
       <div class="col-xl-4 col-lg-4 col-md-6" *ngFor="let hotel of hotelList ">
         <!-- <div class="content  card">
 
