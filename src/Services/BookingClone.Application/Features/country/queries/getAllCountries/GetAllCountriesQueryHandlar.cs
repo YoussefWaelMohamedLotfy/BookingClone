@@ -25,7 +25,7 @@ public class GetAllCountriesQueryHandlar : IRequestHandler<GetAllCountriesQuery,
     public async Task<IEnumerable<CountryMinimalDto>> Handle(GetAllCountriesQuery request, CancellationToken cancellationToken)
     {
         var Country = _countryRepository.GetAll().Result;
-        var CountryDto = Country.Select(a => new CountryMinimalDto { Name = a.Name });
+        var CountryDto = Country.Select(a => new CountryMinimalDto { Name = a.Name,ID=a.ID });
         return (CountryDto);
     }
 }

@@ -18,6 +18,18 @@ import { AllAttractionReservationsComponent } from './Reservations/AttractionRes
 import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/Components/add-new-room-reservation/add-new-room-reservation.component';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { RoomDetailsComponent } from './Rooms/Components/room-details/room-details.component';
+import { CityComponent } from './City/city/city.component';
+import { CountryComponent } from './Country/country/country.component';
+import { ContinentComponent } from './Continent/continent/continent.component';
+import { CountryDetailsComponent } from './Country/country-details/country-details.component';
+import { RouterModule } from '@angular/router';
+
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CityDetailsComponent } from './City/city-details/city-details.component';
+import { NgImageSliderModule } from 'ng-image-slider';
+// import { RegisterComponent } from './AUTH/Register/register.component';
+import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +44,26 @@ import { RoomDetailsComponent } from './Rooms/Components/room-details/room-detai
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent,
-    RoomDetailsComponent
+    RoomDetailsComponent,
+    StaysComponent,
+    CityComponent,
+    CountryComponent,
+    ContinentComponent,
+    CountryDetailsComponent,
+    CityDetailsComponent,
+    // RegisterComponent,
+    EgyptCitiesComponent,
+
   ],
   imports: [
+
+
+    BrowserAnimationsModule,
+    RouterModule,
     BrowserModule,
     AppRoutingModule,
+
+    NgImageSliderModule,
     FormsModule,
     HttpClientModule,
     NgxPayPalModule,

@@ -1,0 +1,72 @@
+
+
+
+<section>
+  <div class="container-fluid">
+    <div class="mb-5">
+      <h1>{{"Explore more destinations"|translate}}</h1>
+      <p class="text-dark opacity-50"> {{"Find things to do in cities around the World"|translate}}</p>
+    </div>
+
+    <div class="all-work text-center" >
+
+      <section class="service-title d-flex justify-content-between mb-3">
+
+        <div class="category-select "
+         *ngFor="let work of ContinentList"
+         routerLinkActive="active"
+         routerLink="/Continent/{{work.id}}"
+
+
+        >
+
+        <div>
+
+
+        <span  >{{work.name}}</span>
+
+       </div>
+          </div>
+        </section>
+    </div>
+
+
+    <div class="row">
+       <ng-container  *ngFor="let Country of ListOfCountries; let index=index"
+       >
+            <div  class="item-box position-relative col-lg-4 col-md-6  col-xl-3">
+
+
+
+             <!-- <a (click)="CountryDetails(Country.id)"> -->
+
+              <!-- <a [routerLink]='["/CityDetails",Country.id]'> -->
+
+              <a routerLink="/CityDetails/{{Country.id}}" >
+                 <div class="card text-bg-dark"   >
+
+                  <div class="photo" >
+
+                  <img class=" img-fluid"  src="../../../assets/CountryImg/{{Country.name}}.jpg" >
+
+                  </div>
+                  <div class="card-img-overlay">
+                    <h5 class="card-title"   >{{Country.name}}</h5>
+
+                  </div>
+                </div>
+            </a>
+            <!-- </a> -->
+
+
+
+          </div>
+
+         </ng-container>
+
+
+
+    </div>
+  </div>
+</section>
+

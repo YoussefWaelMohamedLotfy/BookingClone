@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <h1>{{"Nearby destinations"|translate}}</h1>
+<div class="row">
+  <ng-container  *ngFor="let City of returnedCity; let index=index">
+       <div  class="item-box position-relative col-lg-4 col-mg-2 ">
+
+
+
+
+         <!-- <a routerLink="/CityDetails/{{Country.id}}" > -->
+            <div class="card text-bg-dark"   >
+
+             <div class="photo" >
+
+             <img class=" img-fluid"  src="../../../assets/CityImg/{{City.name}}.jpg" >
+
+             </div>
+             <div class="card-img-overlay">
+               <h5 class="card-title"   >{{City.name}}</h5>
+
+             </div>
+           </div>
+       <!-- </a> -->
+
+
+
+     </div>
+
+    </ng-container>
+  </div>
+

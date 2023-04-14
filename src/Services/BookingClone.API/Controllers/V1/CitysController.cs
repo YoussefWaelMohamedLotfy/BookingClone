@@ -64,5 +64,14 @@ public class CitiesController : ControllerBase
         return result <= 0 ? NotFound() : NoContent();
     }
 
+    [HttpGet("GetCityByCountryId")]
+
+    public async Task<IActionResult> GetCityByCountryId(int id, CancellationToken ct)
+    {
+        var result = await _mediator.Send(new GetCityBYCountryIdquery(id), ct);
+        return result is null ? NotFound() : Ok(result);
+    }
+
+
 
 }
