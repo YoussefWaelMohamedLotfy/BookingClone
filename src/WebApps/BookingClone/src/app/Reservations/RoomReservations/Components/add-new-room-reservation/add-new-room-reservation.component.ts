@@ -71,13 +71,13 @@ export class AddNewRoomReservationComponent implements OnInit {
 
         actions.order.get().then((details: any) => {
           console.log('onApprove - you can get full order details inside onApprove: ', details);
-          this.router.navigate(['/Stays'])
+          this.router.navigate(['/Hotels'])
         });
       },
       onClientAuthorization: (data) => {
         console.log('onClientAuthorization - you should probably inform your server about completed transaction at this point', data);
         this.showSuccess = true;
-        this.router.navigate(['/Stays'])
+        this.router.navigate(['/Hotels'])
       },
       onCancel: (data, actions) => {
         console.log('OnCancel', data, actions);

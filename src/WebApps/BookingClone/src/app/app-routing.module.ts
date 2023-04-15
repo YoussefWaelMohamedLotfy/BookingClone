@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'Hotels', component: HotelsComponent },
   { path: 'HotelDetails/:id', component: HotelDetailsComponent },
   { path: 'Forms', component: FormsComponent },
-  { path: '', redirectTo: '/Room/Reservations', pathMatch: 'full' },
+  { path: '', redirectTo: '/Hotels', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];
 
