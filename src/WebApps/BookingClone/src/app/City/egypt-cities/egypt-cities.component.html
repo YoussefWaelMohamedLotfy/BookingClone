@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <h1>{{"Nearby destinations"|translate}}</h1>
+  <h2>{{"Nearby destinations"|translate}}</h2>
 <div class="row">
   <ng-container  *ngFor="let City of returnedCity; let index=index">
        <div  class="item-box position-relative col-lg-4 col-mg-2 ">
@@ -7,7 +7,7 @@
 
 
 
-         <!-- <a routerLink="/CityDetails/{{Country.id}}" > -->
+         <a routerLink="/CityAttractions/{{City.id}}" >
             <div class="card text-bg-dark"   >
 
              <div class="photo" >
@@ -20,7 +20,7 @@
 
              </div>
            </div>
-       <!-- </a> -->
+       </a>
 
 
 

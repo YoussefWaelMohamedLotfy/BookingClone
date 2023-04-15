@@ -30,6 +30,8 @@ import { CityDetailsComponent } from './City/city-details/city-details.component
 import { NgImageSliderModule } from 'ng-image-slider';
 // import { RegisterComponent } from './AUTH/Register/register.component';
 import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component';
+import { AttractionsComponent } from './Attractions/attractions/attractions.component';
+import { LoginComponent } from './Login/login/login.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +55,8 @@ import { EgyptCitiesComponent } from './City/egypt-cities/egypt-cities.component
     CityDetailsComponent,
     // RegisterComponent,
     EgyptCitiesComponent,
+    AttractionsComponent,
+    LoginComponent,
 
   ],
   imports: [
