@@ -27,7 +27,7 @@
         <p *ngIf="roomDetails?.viewType == 3" class="card-text">
           {{"Room View"|translate}}: {{"Pool View"|translate}}
         </p>
-        <button class="btn btn-success" (click)="togglePayFlag()">
+        <button class="btn btn-success" *ngIf="roomDetails?.isAvailable" (click)="togglePayFlag()">
           <i class="bi bi-bookmark-check"></i>
           {{"Book"|translate}}
         </button>
