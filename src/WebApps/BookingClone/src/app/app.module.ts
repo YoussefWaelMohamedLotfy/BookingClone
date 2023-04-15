@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +18,7 @@ import { AllAttractionReservationsComponent } from './Reservations/AttractionRes
 import { AddNewRoomReservationComponent } from './Reservations/RoomReservations/Components/add-new-room-reservation/add-new-room-reservation.component';
 import { NgxPayPalModule } from 'ngx-paypal';
 import { RoomDetailsComponent } from './Rooms/Components/room-details/room-details.component';
+import { FormsComponent } from './UserForm/Components/forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -32,12 +33,15 @@ import { RoomDetailsComponent } from './Rooms/Components/room-details/room-detai
     AllRoomReservationsComponent,
     AllAttractionReservationsComponent,
     AddNewRoomReservationComponent,
-    RoomDetailsComponent
+    RoomDetailsComponent,
+    FormsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     NgxPayPalModule,
     TranslateModule.forRoot({

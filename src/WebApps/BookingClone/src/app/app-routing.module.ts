@@ -7,6 +7,7 @@ import { combineLatest } from 'rxjs';
 import { HotelDetailsComponent } from './Hotels/Components/hotel-details/hotel-details.component';
 import { AllRoomReservationsComponent } from './Reservations/RoomReservations/Components/all-room-reservations/all-room-reservations.component';
 import { AllAttractionReservationsComponent } from './Reservations/AttractionReservations/Components/all-attraction-reservations/all-attraction-reservations.component';
+import { FormsComponent } from './UserForm/Components/forms/forms.component';
 
 const routes: Routes = [
   { path: 'Stays', component: StaysComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'Attraction/Reservations', component: AllAttractionReservationsComponent },
   { path: 'Hotels', component: HotelsComponent },
   { path: 'HotelDetails/:id', component: HotelDetailsComponent },
+  { path: 'Forms', component: FormsComponent },
   { path: '', redirectTo: '/Room/Reservations', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent },
 ];

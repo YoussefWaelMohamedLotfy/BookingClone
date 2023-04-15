@@ -14,7 +14,11 @@ export class RoomServiceService {
     // return this.httpClient.get(`${Environment.APIURL}/api/Rooms/${id}`)
     return this.httpClient.get(`${Environment.APIURL}/api/Rooms?PageNumber=${pageNumber}&PageSize=${pageSize}`)
   }
-  getFilterdRoom(from: number, to: number, ava: boolean): Observable<any> {
-    return this.httpClient.get(`${Environment.APIURL}/api/Rooms/GetFilterdRooms?from=${from}&to=${to}&ava=${ava} `);
+  getFilterdRoom(from: number, to: number, ava: boolean | undefined): Observable<any> {
+    let query = `from=${from}&to=${to}`
+    if (ava) {
+      query += `&ava=${ava}`;
+    }
+    return this.httpClient.get(`${Environment.APIURL}/api/Rooms/GetFilterdRooms?${query}`);
   }
 }
