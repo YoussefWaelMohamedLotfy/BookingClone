@@ -21,7 +21,7 @@ export class HotelDetailsComponent implements OnInit {
   hotelDetail: any
   imgUrl: string = '';
   roomImgs = roomImg;
-  range: any = 1000;
+  range: any = 500;
   constructor(private hotelApi: HotelServicesService,
     private router: Router,
     private roomService: RoomServiceService,
@@ -68,9 +68,10 @@ export class HotelDetailsComponent implements OnInit {
   ChangeValue(input: any, dropValue: any) {
 
     console.log(dropValue);
-    let type = undefined
+    let type = undefined;
+
     if (dropValue !== "Selcet Type") {
-      type = dropValue == 0;
+      type = dropValue != 0;
     }
     this.roomService.getFilterdRoom(0, input.value, type).subscribe(x => {
       console.log("this.rooms before");

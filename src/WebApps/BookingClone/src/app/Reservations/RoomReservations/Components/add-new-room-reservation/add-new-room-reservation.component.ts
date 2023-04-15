@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 import { IAddRoomReservation } from '../../Models/iadd-room-reservation';
 import { RoomReservationApiService } from '../../Services/room-reservation-api.service';
 import { IPayPalConfig, ICreateOrderRequest } from 'ngx-paypal';
@@ -9,21 +9,27 @@ import { Router } from '@angular/router';
   templateUrl: './add-new-room-reservation.component.html',
   styleUrls: ['./add-new-room-reservation.component.css']
 })
-export class AddNewRoomReservationComponent implements OnInit {
+export class AddNewRoomReservationComponent implements OnInit, OnChanges {
   public payPalConfig?: IPayPalConfig;
   public showSuccess: boolean = false;
 
   newRoomReservation: IAddRoomReservation = {} as IAddRoomReservation;
 
   @Input()
-  roomCost: any = 100;
+  roomCost: number = 100;
 
   constructor(private roomReservationAPI: RoomReservationApiService, private router: Router) {
-    this.newRoomReservation.totalCost = this.roomCost;
+    // this.newRoomReservation.totalCost = this.roomCost;
   }
 
   ngOnInit(): void {
     this.initConfig();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    this.newRoomReservation.totalCost = changes['roomCost']?.currentValue;
+    // this.newRoomReservation.totalCost = changes['roomCost']?.currentValue +100;
+
   }
 
   private initConfig(): void {
