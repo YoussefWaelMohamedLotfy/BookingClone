@@ -1,0 +1,46 @@
+<div class="container mt-5 w-25">
+  <div class="row align-items-start ">
+    <form [formGroup]="loginForm">
+      <div>
+        <h5 class="fw-bold">Update your account</h5>
+        <label for="" class="mt-3 fs-6">Email address</label>
+        <input type="text" formControlName="email" class="form-control w-100 text-center border border-dark">
+      </div>
+
+      <div>
+
+        <label for="" class="mt-3 fs-6">Password</label>
+        <input type="password" formControlName="password" class="form-control w-100 text-center border border-dark">
+      </div>
+
+      <div>
+
+        <label for="" class="mt-3 fs-6">Address</label>
+        <input type="text" formControlName="address" class="form-control w-100 text-center border border-dark">
+      </div>
+      <div>
+
+        <button class="btn btn-primary m-1" type="button" [disabled]="loginForm.invalid"
+          (click)="updateData()">Update</button>
+        <!-- <label for="check2" class="mt-3 fs-6 mx-2">Register</label> -->
+        <!-- <input type="checkbox" class=" text-center border border-dark" name="check" id="check2" value="register"> -->
+      </div>
+
+      <!-- <div class="d-grid gap-2 col-12 mx-auto mt-2">
+      <button class="btn btn-secondary h-100" type="button">Continue with email</button>
+    </div> -->
+
+
+    </form>
+
+
+
+    <hr class=" border-1 border-start-1 border-dark mt-3 me-1">
+    <h6 class="fs-6 fw-light">By signing in or creating an account, you agree with our Terms & conditions and Privacy
+      statement</h6>
+
+
+
+  </div>
+</div>
+

@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,6 +16,12 @@ import { OffersHeaderComponent } from './Offers/Component/offersHeader/offersHea
 import { RouterLink, RouterModule } from '@angular/router';
 import { ReviewHeaderComponent } from './Reviews/Review-Header/Review-Header/Review-Header.component';
 import { LoginComponent } from './Login/Component/Login/Login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbRatingModule } from '@ng-bootstrap/ng-bootstrap'
+import { FormsComponent } from './UserForm/Components/forms/forms.component';
+import { UserAcountComponent } from './UserForm/user-acount/user-acount.component';
+
+
 
 
 
@@ -33,13 +38,19 @@ import { LoginComponent } from './Login/Component/Login/Login.component';
     OffersComponent,
     OffersHeaderComponent,
     ReviewHeaderComponent,
-    LoginComponent
+    LoginComponent,
+    FormsComponent,
+    UserAcountComponent,
+
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule,
+    ReactiveFormsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
@@ -48,8 +59,12 @@ import { LoginComponent } from './Login/Component/Login/Login.component';
         useFactory: httpTranslateLoader,
         deps: [HttpClient]
       }
-    })
+    }),
+    NgbRatingModule
   ],
+
+
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,137 +1,136 @@
-
 <header class="bg-body-tertiary">
   <nav class="navbar navbar-expand-md bg-primary">
-      <div class="container">
-          <a class="navbar-brand text-white fw-bold" href="#">Booking.com</a>
-          <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarToggler" aria-controls="navbarToggler " aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon "></span>
-          </button>
-          <div class="collapse navbar-collapse text-white" id="navbarToggler">
-              <ul class="navbar-nav ms-auto text-white d-flex mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <div class="d-grid gap-2 d-md-block">
-                          <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
-                              data-bs-target="#currenciesModal" data-bs-tooltip="tooltip"
-                              data-bs-placement="bottom" data-bs-title="Choose your currency">
-                              EGP
-                          </button>
-                      </div>
-                      <div class="modal fade" id="currenciesModal" tabindex="-1"
-                          aria-labelledby="currenciesModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-xl">
-                              <div class="modal-content">
-                                  <div class="modal-header">
-                                      <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
-                                          currency
-                                      </h1>
-                                      <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                          aria-label="Close"></button>
-                                  </div>
-                                  <div class="modal-body">
-                                      <h6 class="fw-bold mb-3">All currencies</h6>
-                                      <div id="currencyModal" class="row">
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                    <div class="d-grid gap-2 d-md-block">
-                      <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
-                        data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
-                        data-bs-title="Choose your language">
-                        <i class="fi fi-gb fs-5"></i>
-                      </button>
+    <div class="container">
+      <a class="navbar-brand text-white fw-bold" href="#">Booking.com</a>
+      <button class="navbar-toggler bg-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+        aria-controls="navbarToggler " aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse text-white" id="navbarToggler">
+        <ul class="navbar-nav ms-auto text-white d-flex mb-2 mb-lg-0">
+          <li class="nav-item">
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                data-bs-target="#currenciesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                data-bs-title="Choose your currency">
+                EGP
+              </button>
+            </div>
+            <div class="modal fade" id="currenciesModal" tabindex="-1" aria-labelledby="currenciesModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="currenciesModalLabel">Select your
+                      currency
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6 class="fw-bold mb-3">All currencies</h6>
+                    <div id="currencyModal" class="row">
                     </div>
-                    <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
-                      aria-hidden="true">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-outline-light border-0 mx-1" data-bs-toggle="modal"
+                data-bs-target="#languagesModal" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                data-bs-title="Choose your language">
+                <i class="fi fi-gb fs-5"></i>
+              </button>
+            </div>
+            <div class="modal fade" id="languagesModal" tabindex="-1" aria-labelledby="languagesModalLabel"
+              aria-hidden="true">
 
-                      <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">
-                              {{"Select your language" | translate}}
-                            </h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <h6 class="fw-bold mb-3">{{"All languages" | translate}}</h6>
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold" id="languagesModalLabel">
+                      {{"Select your language" | translate}}
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h6 class="fw-bold mb-3">{{"All languages" | translate}}</h6>
 
-                            <button class="btn btn-dark d-block m-5" (click)="changeLanguage('en')"><i class="fi fi-gb fs-5 me-2"></i>EN</button>
-                            <button class="btn btn-secondary m-5" (click)="changeLanguage('ar')"><i class="fi fi-eg fs-5 me-2"></i>AR</button>
-                            <div id="languageModal" class="row"></div>
-                          </div>
-                        </div>
-                      </div>
+                    <button class="btn btn-dark d-block m-5" (click)="changeLanguage('en')"><i
+                        class="fi fi-gb fs-5 me-2"></i>EN</button>
+                    <button class="btn btn-secondary m-5" (click)="changeLanguage('ar')"><i
+                        class="fi fi-eg fs-5 me-2"></i>AR</button>
+                    <div id="languageModal" class="row"></div>
+                  </div>
+                </div>
+              </div>
 
-                    </div>
-                  </li>
-                  <li class="nav-item">
-                      <div class="d-grid gap-2 d-md-block">
-                          <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip"
-                              data-bs-placement="bottom" data-bs-title="Contact Customer Service">
-                              <i class="bi bi-question-circle fs-5"></i>
-                          </button>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                      <div class="d-grid gap-2 d-md-block">
-                          <a href="#" class="btn btn-outline-light border mx-1">List your property</a>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                      <div class="d-grid gap-2 d-md-block">
-                          <a href="#" routerLink="/Login" class="btn btn-light mx-1">Register</a>
-                      </div>
-                  </li>
-                  <li class="nav-item">
-                      <div class="d-grid gap-2 d-md-block">
-                          <a href="#" class="btn btn-light mx-1" routerLink="/Login" >Sign in</a>
-                      </div>
-                  </li>
-              </ul>
-          </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn btn-outline-light border-0 mx-1" data-bs-tooltip="tooltip" data-bs-placement="bottom"
+                data-bs-title="Contact Customer Service">
+                <i class="bi bi-question-circle fs-5"></i>
+              </button>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="d-grid gap-2 d-md-block">
+              <a href="#" class="btn btn-outline-light border mx-1">{{'List your property' | translate}}</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="d-grid gap-2 d-md-block">
+              <a href="#" routerLink="/Forms" class="btn btn-light mx-1">{{'Register' | translate}}</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <div class="d-grid gap-2 d-md-block">
+              <a href="#" class="btn btn-light mx-1" routerLink="/Forms">{{'Signin' | translate}}</a>
+            </div>
+          </li>
+        </ul>
       </div>
+    </div>
   </nav>
   <nav class="navbar- bg-primary">
-      <div class="container">
-          <ul class="nav nav-pills">
-              <li class="nav-item">
-                  <a class="nav-link active rounded-5 border text-white" aria-current="page" href="index.html">
-                      <i class="bi bi-tree"></i>
-                      Stays
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="#">
-                      <i class="bi bi-airplane"></i>
-                      Flights
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="../Car Rentals/index.html">
-                      <i class="bi bi-car-front"></i>
-                      Car rentals
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="../Attractions/index.html">
-                      <i class="bi bi-binoculars-fill"></i>
-                      Attractions
-                  </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link text-white" href="../Airport Taxis/index.html">
-                      <i class="bi bi-taxi-front-fill"></i>
-                      Airport Taxis
-                  </a>
-              </li>
-          </ul>
-      </div>
-      <app-StaysHeader></app-StaysHeader>
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link active rounded-5 border text-white" aria-current="page" href="index.html">
+            <i class="bi bi-tree"></i>
+            {{'Stays' | translate}}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">
+            <i class="bi bi-airplane"></i>
+            {{'Flights' |translate}}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../Car Rentals/index.html">
+            <i class="bi bi-car-front"></i>
+            {{'CarRentals' | translate}}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" routerLink="/Rating" href="../Attractions/index.html">
+            <i class="bi bi-binoculars-fill"></i>
+            {{'Attractions' | translate}}
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="../Airport Taxis/index.html">
+            <i class="bi bi-taxi-front-fill"></i>
+            {{'Airport Taxis' | translate}}
+          </a>
+        </li>
+      </ul>
+    </div>
+    <app-StaysHeader></app-StaysHeader>
 
   </nav>
 
@@ -139,749 +138,605 @@
 
 
 
- <div class="container-fluid  p-4 ps-5 me-5">
+<div class="container-fluid  p-4 ps-5 me-5">
   <!-- ps= padding start -->
   <input class="form-check-input border rounded-0" type="checkbox" value="" id="flexCheckDefault">
   <label class="form-check-label me-5 " for="flexCheckDefault">
-      I'm looking for an entire home or apartment
+    {{"I'm looking for an entire home or apartment" | translate}}
   </label>
 
 
   <input class="form-check-input col-sm-12 border rounded-0" type="checkbox" value="" id="flexCheckDefault2">
   <!-- border rounded-0= borders -->
   <label class="form-check-label " for="flexCheckDefault2">
-      I'm traveling for work
+    {{"I'm traveling for work"|translate}}
   </label>
 
 
 </div>
-        <!-- covid message  -->
-        <div class="container-fluid px-5">
-          <div class=" col-sm-12 col-xs-12 col-lg-12 border rounded-0 ps-3 pt-2 h-100">
-              <i class="bi bi-info-circle fs-4 me-3 text-gold"></i>
-              Get the advice you need. Check the latest COVID-19 restrictions before you travel.
-              <span class=" ms-4"> <a href="#">Learn more</a>
-              </span>
-          </div>
+<!-- covid message  -->
+<div class="container-fluid px-5">
+  <div class=" col-sm-12 col-xs-12 col-lg-12 border rounded-0 ps-3 pt-2 h-100">
+    <i class="bi bi-info-circle fs-4 me-3 text-gold"></i>
+    {{'Get the advice you need. Check the latest COVID-19 restrictions before you travel.'|translate}}
+    <span class=" ms-4"> <a href="#">{{'Learn more'|translate}}</a>
+    </span>
+  </div>
 
-          <div class="mt-4 ms-4 col-sm-12">
-              <!--  mt= margin top/ ms= margin start  -->
-              <h4 class="fw-bold"> Offers</h4> <!--  fw= font weight  -->
-              <h6 class="opacity-75">Promotions, deals, and special offers for you</h6>
-          </div>
+  <div class="mt-4 ms-4 col-sm-12">
+    <!--  mt= margin top/ ms= margin start  -->
+    <h4 class="fw-bold"> {{'Offers'|translate}}</h4> <!--  fw= font weight  -->
+    <h6 class="opacity-75">{{'Promotions, deals, and special offers for you'|translate}}</h6>
+  </div>
 
-          <!-- two card assets/images that has overlays so we can write on them -->
+  <!-- two card assets/images that has overlays so we can write on them -->
 
-          <div class=" text-decoration-none ms-5 g-col-6">
-              <div class="row pe-5 ">
-                  <div class="col-md-6 col-sm-12 ">
-                      <div class="card text-bg-dark col ps-0 pe-0 border rounded-4">
-                          <img src="assets/images/1.jpeg" class="card-img rounded-4" alt="">
-                          <div class="card-img-overlay border rounded-4">
-                              <h5 class="card-title d-none d-md-inline d-lg-inline d-xl-inline pt-5">Escape for a
-                                  while</h5>
-                              <p class="card-text d-none d-lg-block d-xl-block pe-5">Enjoy the freedom of a monthly
-                                  stay on Booking.com</p>
-                              <a routerLink="/Offers"  class="btn btn-secondary btn-sm rounded-0" role="button"> Discover monthly
-                                  stays</a>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6 col-sm-12">
-                      <div class="  card text-bg-dark col ps-0 pe-0 border rounded-4 ">
-                          <img src="assets/images/2.jpeg" class="card-img rounded-4 " alt="">
-                          <div class="card-img-overlay float-sm-none  border rounded-4 ">
-                              <h5 class="card-title d-none d-md-inline d-lg-inline d-xl-inline  mt-2">New year, New
-                                  adventures</h5>
-                              <p class="card-text d-none d-lg-block d-xl-block pe-5">Save 15% or more when you book
-                                  and stay before March 31, 2023
-                              </p>
-                              <a class="btn btn-secondary btn-sm rounded-0" href="#" role="button"> Find early 2023
-                                  Deals</a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+  <div class=" text-decoration-none ms-5 g-col-6">
+    <div class="row pe-5 ">
+      <div class=" {{'.'|translate}} col-md-6 col-sm-12 ">
+        <div class="card text-bg-dark col ps-0 pe-0 border rounded-4">
+          <img src="assets/images/1.jpeg" class="card-img rounded-4" alt="">
+          <div class="card-img-overlay border rounded-4">
+            <h5 class="card-title d-none d-md-inline d-lg-inline d-xl-inline pt-5">{{'Escape for a while'| translate}}
+            </h5>
+            <p class="card-text d-none d-lg-block d-xl-block pe-5">{{'Enjoy the freedom of a monthly stay on
+              Booking.com'|translate}}</p>
+            <a routerLink="/Offers" class="btn btn-secondary btn-sm rounded-0" role="button"> {{'Discover monthly
+              stays'|translate}}</a>
           </div>
-
-          <div class="border rounded-0 ps-3 pt-2 mt-5" style="height: 150px;">
-              <div class="container">
-                  <img src="assets/images/3.png" class="img mt-3 g-col-2" style="height: 100px;" alt="">
-                  <span class="fw-bold mt-0 pb-5"> We have one question about your experience</span>
-              </div>
-          </div>
+        </div>
       </div>
-
-
-
-
-
-      <div class="container">
-          <!-- container for all the elements 4 coloumns -->
-          <div class="pt-4 mt-2 ms-3  ps-4">
-              <h4 class=" fw-bold ">Browse by property type</h4>
+      <div class="col-md-6 col-sm-12 {{'d-block'|translate}}">
+        <div class="  card text-bg-dark col ps-0 pe-0 border rounded-4 ">
+          <img src="assets/images/2.jpeg" class="card-img rounded-4 " alt="">
+          <div class="card-img-overlay float-sm-none  border rounded-4 ">
+            <h5 class="card-title d-none d-md-inline d-lg-inline d-xl-inline  mt-2">{{'New year, New
+              adventures'|translate}}</h5>
+            <p class="card-text d-none d-lg-block d-xl-block pe-5">{{'Save 15% or more when you book and stay before
+              March 31, 2023' |translate}}</p>
+            <a class="btn btn-secondary btn-sm rounded-0" href="#" role="button"> {{'Find early 2023 Deals'
+              |translate}</a>
           </div>
-          <div class="row mt-3  ms-4 mt-3  me-3  ">
-              <!-- a row and then deivided to 6 coloumns-->
-              <div class="col-lg-3 col-md-4 col-sm-6 pe-0">
-                  <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic1.jpeg"
-                              alt=""></a>
-                      <h6 class=" card-title fw-bold mt-3  ms-1 ">Hotels</h6>
-                      <h6 class="card-subtitle mb-2 text-muted ms-1 ">934,677 hotels</h6>
-                      <!--text muted = to grey out-->
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic2.jpeg"
-                              alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
-                      <h6 class="card-title fw-bold mt-3  ms-1">Apartments</h6>
-                      <h6 class="card-subtitle mb-2 text-muted ms-1">935,621 apartments</h6>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic3.jpeg"
-                              alt=""></a>
-                      <h6 class="card-title mt-3 fw-bold ms-1">Resorts</h6>
-                      <h6 class="card-subtitle mb-2 text-muted ms-1">18,701 resorts</h6>
-                  </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-6 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic4.jpeg"
-                              alt="">
+  <div class="border rounded-0 {{'d-block'|translate}} ps-3 pt-2 mt-5" style="height: 150px;">
+    <div class="container ">
+      <img src="assets/images/3.png" class="img mt-3 g-col-2" style="height: 100px;" alt="">
+      <span class="fw-bold mt-0 pb-5"> {{'We have one question about your experience'|translate}}</span>
+    </div>
+  </div>
+</div>
 
-                      </a>
-                      <h6 class="card-title mt-3 fw-bold ms-1">Villas</h6>
-                      <h6 class="card-subtitle mb-2 text-muted ms-1">508,620 villas</h6>
-                  </div>
-              </div>
+
+
+
+
+<div class="container">
+  <!-- container for all the elements 4 coloumns -->
+  <div class="pt-4 mt-2 ms-3  ps-4">
+    <h4 class=" fw-bold ">{{'Browse by property type'| translate}}</h4>
+  </div>
+  <div class="row mt-3  ms-4 mt-3  me-3  ">
+    <!-- a row and then deivided to 6 coloumns-->
+    <div class="col-lg-3 col-md-4 col-sm-6 pe-0">
+      <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic1.jpeg"
+            alt=""></a>
+        <h6 class=" card-title fw-bold mt-3  ms-1 ">{{'Hotels' |translate}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted ms-1 ">{{'934,677 hotels'|translate}}</h6>
+        <!--text muted = to grey out-->
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 pe-0 ">
+      <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic2.jpeg"
+            alt=""></a>
+
+        <h6 class="card-title fw-bold mt-3  ms-1">{{'Apartments'|translate}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted ms-1">{{'935,621 apartments'|translate}}</h6>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 pe-0 ">
+      <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic3.jpeg"
+            alt=""></a>
+        <h6 class="card-title mt-3 fw-bold ms-1">{{'Resorts'|translate}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted ms-1">{{'18,701 resorts'|translate}}</h6>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 pe-0 ">
+      <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/pic4.jpeg" alt="">
+
+        </a>
+        <h6 class="card-title mt-3 fw-bold ms-1">{{'Villas'|translate}}</h6>
+        <h6 class="card-subtitle mb-2 text-muted ms-1">{{'508,620 villas'|translate}}</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class=" container ">
+  <!-- container for all the elements 2 coloumns -->
+  <div class="row row mt-3  ms-4 mt-3  me-3  ">
+    <!-- a row and then deivided to 6 coloumns -->
+    <div class="col-md-6 col-sm-6 col-xs-10 pe-0">
+      <div class="card border-0 "><a class="stretched-link" href=""><img class="  img-fluid border-0"
+            src="assets/images/back1.webp" alt=""></a>
+        <div class="card-img-overlay ">
+          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">{{'Hurghada'|translate}}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-10  pe-0 ">
+      <div class=" card border-0 "><a class="stretched-link" href=""><img class="img-fluid border-0 "
+            src="assets/images/back2.webp" alt=""></a>
+        <div class="card-img-overlay">
+          <h3 class="card-title fw-bold mt-3 text-white ms-1">{{'Dubai'|translate}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class=" container-fluid">
+  <!-- container for all the elements 4 coloumns -->
+
+  <div class="row mt-4  ms-4 mt-3  me-3  ">
+    <!-- a row and then deivided to 6 coloumns-->
+    <div class="col-lg-4 col-md-4 col-sm-6  pe-0">
+      <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
+            src="assets/images/p1.webp" alt=""></a>
+        <div class="card-img-overlay ">
+          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">{{'Ain Sokhna'|translate}}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 pe-0 ">
+      <div class=" card border-0 "><a class="stretched-link" href=""><img class="img-fluid border-0"
+            src="assets/images/p2.webp" alt=""></a>
+        <div class="card-img-overlay ">
+          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">{{'Cairo'|translate}}</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-sm-6 pe-0 ">
+      <div class=" card border-0 col-xs-10 "><a class="stretched-link" href=""><img class="img-fluid border-0"
+            src="assets/images/p3.webp" alt=""></a>
+        <div class="card-img-overlay ">
+          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">{{'Sharm El Sheikh'|translate}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="pt-4 mt-2 ms-3 ps-4 {{'d-block'|translate}}">
+  <h4 class=" fw-bold ">{{'Popular destinations by month'|translate}</h4>
+  <h6 class=" text-muted">{{'Travelers Egypt are loving these places'|translate}}</h6>
+</div>
+
+
+<!-- calandar nav -->
+
+<div class="container-md mt-3 ps-4 {{'d-block'|translate}}">
+  <ul class="nav nav-pills">
+    <li class=" nav-item ">
+      <a class="nav-link  border rounded-5 text-dark " href="#">
+        February
+      </a>
+    </li>
+
+    <li class=" nav-item">
+      <a class="  nav-link text-dark " href="#">
+        March
+      </a>
+    </li>
+    <li class="  nav-item">
+      <a class="nav-link text-dark" href="#">
+        April
+      </a>
+    </li>
+    <li class="  nav-item">
+      <a class="nav-link text-dark " href="#">
+        May
+      </a>
+    </li>
+    <li class="  nav-item">
+      <a class="nav-link text-dark" href="#">
+        June
+      </a>
+    </li>
+
+    <li class="  nav-item">
+      <a class="nav-link text-dark" href="#">
+        July
+      </a>
+    </li>
+  </ul>
+</div>
+
+<div class=" container ">
+  <!-- container for all the elements 6 coloumns countries -->
+
+  <div class="pt-4 mt-2 ms-3 ps-4">
+    <h4 class=" fw-bold ">{{'Explore Egypt'|translate}}</h4>
+    <h6 class=" text-muted">These popular destinations have a lot to offer</h6>
+  </div>
+
+  <div class="row mt-3  ms-4 me-3  ">
+    <!-- a row and then deivided to 6 coloumns-->
+    <div class="col-md-2 col-sm-4 pe-0">
+      <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="assets/images/cairo.jpeg"
+            alt=""></a>
+
+
+        <h6 class=" card-title fw-bold ms-1 ">Cairo, Egypt</h6>
+        <!--text muted = to grey out-->
+
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-4 pe-0 ">
+      <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/hurghada.jpeg"
+            alt=""></a>
+        <h6 class="card-title fw-bold ms-1">Hurghada, Egypt</h6>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-4 pe-0 ">
+      <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/alex.jpeg"
+            alt=""></a>
+        <h6 class="card-title fw-bold ms-1">Alexandria, Egypt</h6>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-4 pe-0 ">
+      <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/dubai.jpeg" alt=""></a>
+        <h6 class="card-title fw-bold ms-1">Dubai, United Arab Emirates</h6>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-4 pe-0 ">
+      <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/saudi.jpeg" alt=""></a>
+        <h6 class="card-title fw-bold ms-1">Mecca, Saudi Arabia </h6>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-4 ">
+      <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/sharm.jpeg" alt=""></a>
+
+        <h6 class="card-title fw-bold ms-1">Sharm El Sheikh, Egypt</h6>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pt-4 mt-2 ms-3 ps-4">
+  <h4 class=" fw-bold ">{{'Quick and easy trip planner'|translate}}</h4>
+  <h6 class=" text-muted {{'d-block'|translate}}">Pick a vibe and explore the top destinations in Egypt</h6>
+</div>
+
+<!-- nav of beaches -->
+<div class="container-md mt-3 ">
+  <ul class="nav nav-pills">
+    <li class=" nav-item ">
+      <a class="nav-link  border rounded-5 text-dark " href="#">
+        {{'Beach'|translate}}
+      </a>
+    </li>
+    <li class=" nav-item">
+      <a class="  nav-link text-dark " href="#">
+        {{'City'|translate}}
+      </a>
+    </li>
+    <li class="  nav-item">
+      <a class="nav-link text-dark" href="#">
+        {{'Outdoors'|translate}}
+      </a>
+    </li>
+
+
+    <div class=" container-md ">
+      <!-- container for all the elements 6 coloumns countries -->
+      <div class="row mt-3  ms-4 me-3  ">
+        <div class="col-md-2 col-sm-4 pe-0">
+          <div class=" card border-0  "><a href=""><img class="img-fluid border-0" src="assets/images/ain.jpeg"
+                alt=""></a>
+
+            <h6 class=" fw-bold ms-1 mt-2 ">{{'Ain Sokhna'|translate}}</h6>
+            <h6 class=" {{'d-block'|translate}} text-muted">116 km away</h6>
           </div>
-      </div>
+        </div>
+        <div class="col-md-2 col-sm-4 pe-0 ">
+          <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/ras.jpeg"
+                alt=""></a>
 
+            <h6 class="card-title fw-bold ms-1 mt-2">{{'Ras Sedr'|translate}}</h6>
+            <h6 class=" {{'d-block'|translate}} text-muted">152 km away</h6>
 
-      <div class=" container ">
-          <!-- container for all the elements 2 coloumns -->
-          <div class="row row mt-3  ms-4 mt-3  me-3  ">
-              <!-- a row and then deivided to 6 coloumns-->
-              <div class="col-md-6 col-sm-6 col-xs-10 pe-0">
-                  <div class="card border-0 "><a class="stretched-link" href=""><img class="  img-fluid border-0"
-                              src="assets/images/back1.webp" alt=""></a>
-                      <div class="card-img-overlay ">
-                          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">Hurghada</h3>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-6 col-sm-6 col-xs-10  pe-0 ">
-                  <div class=" card border-0 "><a class="stretched-link" href=""><img class="img-fluid border-0 "
-                              src="assets/images/back2.webp" alt=""></a>
-                      <div class="card-img-overlay">
-                          <h3 class="card-title fw-bold mt-3 text-white ms-1">Dubai</h3>
-                      </div>
-                  </div>
-              </div>
           </div>
-      </div>
+        </div>
 
+        <div class="col-md-2 col-sm-4 pe-0 ">
+          <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/ras1.jpeg"
+                alt=""></a>
 
-      <div class=" container-fluid">
-          <!-- container for all the elements 4 coloumns -->
-
-          <div class="row mt-4  ms-4 mt-3  me-3  ">
-              <!-- a row and then deivided to 6 coloumns-->
-              <div class="col-lg-4 col-md-4 col-sm-6  pe-0">
-                  <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
-                              src="assets/images/p1.webp" alt=""></a>
-                      <div class="card-img-overlay ">
-                          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">Ain Sokhna</h3>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 pe-0 ">
-                  <div class=" card border-0 "><a class="stretched-link" href=""><img class="img-fluid border-0"
-                              src="assets/images/p2.webp" alt=""></a>
-                      <div class="card-img-overlay ">
-                          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">Cairo</h3>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-lg-4 col-md-4 col-sm-6 pe-0 ">
-                  <div class=" card border-0 col-xs-10 "><a class="stretched-link" href=""><img
-                              class="img-fluid border-0" src="assets/images/p3.webp" alt=""></a>
-                      <div class="card-img-overlay ">
-                          <h3 class="card-title fw-bold mt-3 text-white ms-1 ">Sharm El Sheikh</h3>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-
-      <div class="pt-4 mt-2 ms-3 ps-4">
-          <h4 class=" fw-bold ">Popular destinations by month</h4>
-          <h6 class=" text-muted">Travelers Egypt are loving these places</h6>
-      </div>
-
-
-      <!-- calandar nav -->
-
-      <div class="container-md mt-3 ps-4">
-          <ul class="nav nav-pills">
-              <li class=" nav-item ">
-                  <a class="nav-link  border rounded-5 text-dark " href="#">
-                      February
-                  </a>
-              </li>
-
-              <li class=" nav-item">
-                  <a class="  nav-link text-dark " href="#">
-                      March
-                  </a>
-              </li>
-              <li class="  nav-item">
-                  <a class="nav-link text-dark" href="#">
-                      April
-                  </a>
-              </li>
-              <li class="  nav-item">
-                  <a class="nav-link text-dark " href="#">
-                      May
-                  </a>
-              </li>
-              <li class="  nav-item">
-                  <a class="nav-link text-dark" href="#">
-                      June
-                  </a>
-              </li>
-
-              <li class="  nav-item">
-                  <a class="nav-link text-dark" href="#">
-                      July
-                  </a>
-              </li>
-          </ul>
-      </div>
-
-      <div class=" container ">
-          <!-- container for all the elements 6 coloumns countries -->
-
-          <div class="pt-4 mt-2 ms-3 ps-4">
-              <h4 class=" fw-bold ">Explore Egypt</h4>
-              <h6 class=" text-muted">These popular destinations have a lot to offer</h6>
-          </div>
-
-          <div class="row mt-3  ms-4 me-3  ">
-              <!-- a row and then deivided to 6 coloumns-->
-              <div class="col-md-2 col-sm-4 pe-0">
-                  <div class=" card border-0  "><a href=""><img class="img-thumbnail border-0" src="assets/images/cairo.jpeg"
-                              alt=""></a>
-
-
-                      <h6 class=" card-title fw-bold ms-1 ">Cairo, Egypt</h6>
-                      <!--text muted = to grey out-->
-
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/hurghada.jpeg"
-                              alt=""></a>
-                      <h6 class="card-title fw-bold ms-1">Hurghada, Egypt</h6>
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-thumbnail border-0" src="assets/images/alex.jpeg"
-                              alt=""></a>
-                      <h6 class="card-title fw-bold ms-1">Alexandria, Egypt</h6>
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/dubai.jpeg"
-                              alt=""></a>
-                      <h6 class="card-title fw-bold ms-1">Dubai, United Arab Emirates</h6>
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/saudi.jpeg"
-                              alt=""></a>
-                      <h6 class="card-title fw-bold ms-1">Mecca, Saudi Arabia </h6>
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/sharm.jpeg"
-                              alt=""></a>
-
-                      <h6 class="card-title fw-bold ms-1">Sharm El Sheikh, Egypt</h6>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="pt-4 mt-2 ms-3 ps-4">
-          <h4 class=" fw-bold ">Quick and easy trip planner</h4>
-          <h6 class=" text-muted">Pick a vibe and explore the top destinations in Egypt</h6>
-      </div>
-
-      <!-- nav of beaches -->
-      <div class="container-md mt-3 ">
-          <ul class="nav nav-pills">
-              <li class=" nav-item ">
-                  <a class="nav-link  border rounded-5 text-dark " href="#">
-                      Beach
-                  </a>
-              </li>
-              <li class=" nav-item">
-                  <a class="  nav-link text-dark " href="#">
-                      City
-                  </a>
-              </li>
-              <li class="  nav-item">
-                  <a class="nav-link text-dark" href="#">
-                      Outdoors
-                  </a>
-              </li>
-
-
-      <div class=" container-md ">
-          <!-- container for all the elements 6 coloumns countries -->
-          <div class="row mt-3  ms-4 me-3  ">
-              <div class="col-md-2 col-sm-4 pe-0">
-                  <div class=" card border-0  "><a href=""><img class="img-fluid border-0" src="assets/images/ain.jpeg"
-                              alt=""></a>
-
-                      <h6 class=" fw-bold ms-1 mt-2 ">Ain Sokhna</h6>
-                      <h6 class=" text-muted">116 km away</h6>
-                  </div>
-              </div>
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/ras.jpeg"
-                              alt=""></a>
-
-                      <h6 class="card-title fw-bold ms-1 mt-2">Ras Sedr</h6>
-                      <h6 class=" text-muted">152 km away</h6>
-
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/ras1.jpeg"
-                              alt=""></a>
-
-                      <h6 class="card-title fw-bold ms-1 mt-2">Ras Matarma</h6>
-                      <h6 class=" text-muted">162 km away</h6>
-
-
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/port.jpeg"
-                              alt=""></a>
-
-                      <h6 class="card-title fw-bold ms-1 mt-2">Port Said</h6>
-                      <h6 class=" text-muted">175 km away</h6>
-
-
-
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4 pe-0 ">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/raselbar.jpeg"
-                              alt=""></a>
-                      <h6 class="card-title fw-bold ms-1 mt-2">Ras El Bar</h6>
-                      <h6 class=" text-muted">180 km away</h6>
-
-
-                  </div>
-              </div>
-
-              <div class="col-md-2 col-sm-4">
-                  <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/alxx.jpeg"
-                              alt=""></a>
-
-                      <h6 class="card-title fw-bold ms-1 mt-2">Alexandria</h6>
-                      <h6 class=" text-muted">182 km away</h6>
-                  </div>
-              </div>
+            <h6 class="card-title fw-bold ms-1 mt-2">{{'Ras Matarma'|translate}}</h6>
+            <h6 class=" {{'d-block'|translate}} text-muted">162 km away</h6>
 
 
           </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 pe-0 ">
+          <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/port.jpeg"
+                alt=""></a>
+
+            <h6 class="card-title fw-bold ms-1 mt-2">{{'Port Said'| translate}}</h6>
+            <h6 class=" {{'d-block'|translate}} text-muted">175 km away</h6>
+
+
+
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4 pe-0 ">
+          <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/raselbar.jpeg"
+                alt=""></a>
+            <h6 class="card-title fw-bold ms-1 mt-2">{{'Ras El Bar'|translate}}</h6>
+            <h6 class=" {{'d-block'|translate}} text-muted">180 km away</h6>
+
+
+          </div>
+        </div>
+
+        <div class="col-md-2 col-sm-4">
+          <div class=" card border-0 "><a href=""><img class="img-fluid border-0" src="assets/images/alxx.jpeg"
+                alt=""></a>
+
+            <h6 class="card-title fw-bold ms-1 mt-2">{{'Alexandria'|translate}}</h6>
+            <h6 class="{{'d-block'|translate}} text-muted">182 km away</h6>
+          </div>
+        </div>
 
 
       </div>
 
 
-      <div class="pt-4 mt-2 ms-3 ps-4">
-          <h4 class=" fw-bold ">Get inspiration for your next trip</h4>
-
-      </div>
-
-      <div class=" container-fluid ">
-          <!-- container for all the elements 3 coloumns countries -->
-
-          <div class="row mt-3  ms-4 me-5 ">
+    </div>
 
 
+    <div class=" {{'d-block'|translate}} pt-4 mt-2 ms-3 ps-4">
+      <h4 class=" fw-bold ">Get inspiration for your next trip</h4>
 
-              <div class="col-md-4 col-sm-12 pe-0">
-                  <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
-                              src="assets/images/grass.webp" alt=""></a>
+    </div>
 
-                      <div class="card-img-overlay mt-5">
-                          <div class="h-50"></div>
-                          <div class="card-body p-0">
+    <div class="{{'d-block'|translate}} container-fluid ">
+      <!-- container for all the elements 3 coloumns countries -->
 
-                              <h5 class="text-white fw-bold">
-
-                                  Where to experience spring break in the US
-                              </h5>
-                              <p class="card-text fw-bold text-white">
+      <div class="row mt-3  ms-4 me-5 ">
 
 
-                                  <small> Featuring frosty mountain hot springs and white-sand beaches with lots of
-                                      parties. </small>
-                              </p>
-                          </div>
 
-                      </div>
+        <div class="col-md-4 col-sm-12 pe-0">
+          <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
+                src="assets/images/grass.webp" alt=""></a>
+
+            <div class="card-img-overlay mt-5">
+              <div class="h-50"></div>
+              <div class="card-body p-0">
+
+                <h5 class="text-white fw-bold">
+
+                  Where to experience spring break in the US
+                </h5>
+                <p class="card-text fw-bold text-white">
 
 
-                  </div>
+                  <small> Featuring frosty mountain hot springs and white-sand beaches with lots of
+                    parties. </small>
+                </p>
               </div>
 
-              <div class="col-md-4 col-sm-12 pe-0 ">
-                  <div class=" card border-0 "><a class="stretched-link" href="">
-                          <img class="img-fluid border-0" src="assets/images/train.webp" alt=""></a>
-
-                      <div class="card-img-overlay mt-5">
-                          <div class="h-50"></div>
-                          <div class="card-body p-0">
-
-                              <h5 class="text-white fw-bold">
-
-                                  Neighboring countries to visit from Switzerland
-                              </h5>
-                              <p class="card-text fw-bold text-white">
-
-
-                                  <small>Map out a trip to any five of Switzerland's foreign neighbors from these
-                                      Swiss cities. </small>
-                              </p>
-                          </div>
-
-                      </div>
-
-                  </div>
-              </div>
-
-
-              <div class="col-md-4 col-sm-12 pe-0 ">
-
-                  <div class="card border-0 "><a class="stretched-link" href="">
-                          <img class="img-fluid border-0" src="assets/images/vit3.jpeg" alt=""></a>
-
-                      <div class="card-img-overlay mt-5">
-                          <div class="h-50"></div>
-                          <div class="card-body p-0">
-
-                              <h5 class="text-white fw-bold ">
-                                  Top 5 spots to visit in Vietnam for Tết
-                              </h5>
-                              <p class="card-text fw-bold text-white">
-                                  <small>Welcome the new year with tropical island-hopping and treks past tumbling
-                                      rice terraces.</small>
-                              </p>
-                          </div>
-
-                      </div>
-                  </div>
-
-
-
-              </div>
+            </div>
 
 
           </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 pe-0 ">
+          <div class=" card border-0 "><a class="stretched-link" href="">
+              <img class="img-fluid border-0" src="assets/images/train.webp" alt=""></a>
+
+            <div class="card-img-overlay mt-5">
+              <div class="h-50"></div>
+              <div class="card-body p-0">
+
+                <h5 class="text-white fw-bold">
+
+                  Neighboring countries to visit from Switzerland
+                </h5>
+                <p class="card-text fw-bold text-white">
 
 
-      </div>
-
-
-
-      <div class=" container-md ">
-          <!-- container for all the elements 2 coloumns countries -->
-
-          <div class="row mt-3  ms-4 me-5  ">
-
-
-
-              <div class="col-md-6 col-sm-12 pe-0">
-
-
-                  <div class=" card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
-                              src="assets/images/ind.jpeg" alt=""></a>
-
-                      <div class="card-img-overlay mt-5">
-
-                          <div class="h-75"></div>
-                          <div class="card-body p-0">
-
-                              <h5 class="text-white position-fixed fw-bold mt-5 pt-5">
-
-                                  7 incredible UNESCO World Heritage sites in India
-
-                              </h5>
-                              <p class="card-text fw-bold text-white">
-                                  Featuring frosty mountain hot springs and white-sand beaches with lots of parties.
-                              </p>
-                          </div>
-
-                      </div>
-
-
-                  </div>
+                  <small>Map out a trip to any five of Switzerland's foreign neighbors from these
+                    Swiss cities. </small>
+                </p>
               </div>
 
-              <div class="col-md-6 col-sm-12 pe-0 ">
-                  <div class=" card border-0 "><a class="stretched-link" href="">
-                          <img class="img-fluid border-0" src="assets/images/brazil.jpeg" alt=""></a>
-
-                      <div class="card-img-overlay mt-5">
-                          <div class="h-75"></div>
-                          <div class="card-body p-0">
-
-                              <h5 class="text-white position-fixed fw-bold mt-5 pt-5">
-
-                                  Neighboring countries to visit from Switzerland
-                              </h5>
-                              <p class="card-text fw-bold text-white">
-
-
-                                  Map out a trip to any five of Switzerland's foreign neighbors from these Swiss
-                                  cities. </p>
-                          </div>
-
-                      </div>
-
-                  </div>
-              </div>
-
-
-
+            </div>
 
           </div>
+        </div>
+
+
+        <div class="col-md-4 col-sm-12 pe-0 ">
+
+          <div class="card border-0 "><a class="stretched-link" href="">
+              <img class="img-fluid border-0" src="assets/images/vit3.jpeg" alt=""></a>
+
+            <div class="card-img-overlay mt-5">
+              <div class="h-50"></div>
+              <div class="card-body p-0">
+
+                <h5 class="text-white fw-bold ">
+                  Top 5 spots to visit in Vietnam for Tết
+                </h5>
+                <p class="card-text fw-bold text-white">
+                  <small>Welcome the new year with tropical island-hopping and treks past tumbling
+                    rice terraces.</small>
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
 
 
       </div>
 
-      <div class=" container-fluid ">
-          <!-- container for all the elements 4 coloumns countries -->
 
-
-          <div class="pt-4 mt-4 ms-2 ps-4">
-              <h4 class=" fw-bold ">Stay at our top unique properties</h4>
-              <h6 class=" text-muted">From castles and villas to boats and igloos, we have it all</h6>
-          </div>
-
-
-          <div class="row mt-3  ms-4 me-5 ">
+    </div>
 
 
 
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3 border-0 ">
-                      <a class="stritched-link" href=""> <img src="assets/images/snow.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">La Roulotte de Ciney</h6>
+    <div class=" container-md ">
+      <!-- container for all the elements 2 coloumns countries -->
 
-                          <p class="card-text"><small class="text-muted">Belgium, Ciney
-                              </small></p>
-                      </div>
-                  </div>
+      <div class="row mt-3  ms-4 me-5  ">
+
+
+
+        <div class="col-md-6 col-sm-12 pe-0">
+
+
+          <div class=" {{'d-block'|translate}} card border-0  "><a class="stretched-link" href=""><img class="img-fluid border-0"
+                src="assets/images/ind.jpeg" alt=""></a>
+
+            <div class="card-img-overlay mt-5">
+
+              <div class="h-75"></div>
+              <div class="card-body p-0">
+
+                <h5 class="text-white position-fixed fw-bold mt-5 pt-5">
+
+                  7 incredible UNESCO World Heritage sites in India
+
+                </h5>
+                <p class="card-text fw-bold text-white">
+                  Featuring frosty mountain hot springs and white-sand beaches with lots of parties.
+                </p>
               </div>
 
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3  border-0 ">
-                      <a class="stritched-link" href=""> <img src="assets/images/shelter.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">Wierszyki Shelters</h6>
-
-                          <p class="card-text"><small class="text-muted">Poland, Zakopane
-                              </small></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3  border-0 ">
-                      <a class="stritched-link" href=""> <img src="assets/images/house.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">Ranczo w Dolinie</h6>
-
-                          <p class="card-text"><small class="text-muted">Poland, Kiszkowo
-                              </small></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3  border-0 rounded-0">
-                      <a class="stritched-link" href=""> <img src="assets/images/wood.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">Tiny House Dreischwesternherz</h6>
-
-                          <p class="card-text"><small class="text-muted">Germany, Trier
-                              </small></p>
-                      </div>
-                  </div>
-              </div>
-
-
+            </div>
 
 
           </div>
+        </div>
+
+        <div class="{{'d-block'|translate}} col-md-6 col-sm-12 pe-0 ">
+          <div class=" card border-0 "><a class="stretched-link" href="">
+              <img class="img-fluid border-0" src="assets/images/brazil.jpeg" alt=""></a>
+
+            <div class="card-img-overlay mt-5">
+              <div class="h-75"></div>
+              <div class="card-body p-0">
+
+                <h5 class="text-white position-fixed fw-bold mt-5 pt-5">
+
+                  Neighboring countries to visit from Switzerland
+                </h5>
+                <p class="card-text fw-bold text-white">
+
+
+                  Map out a trip to any five of Switzerland's foreign neighbors from these Swiss
+                  cities. </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
 
 
       </div>
 
-      <div class=" container-md ">
-          <!-- container for all the elements 6 coloumns countries -->
+
+    </div>
+
+    <div class=" {{'d-block'|translate}} container-fluid ">
+      <!-- container for all the elements 4 coloumns countries -->
 
 
-          <div class="pt-4 mt-4 ms-2 ps-4">
-              <h4 class=" fw-bold ">Homes guests love</h4>
-
-          </div>
-
-
-          <div class="row mt-3  ms-4 me-5 ">
-
-
-
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3 border-0 ">
-                      <a class="stritched-link" href=""> <img src="assets/images/prague.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">3 Epoques Apartments by Prague Residences</h6>
-
-                          <p class="card-text"><small class="text-muted">Prague 1, Czech Republic, Praha 1
-                                  Starting from <strong class="text-dark fw-bold">US$131</strong>
-                              </small></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3  border-0 ">
-                      <a class="stritched-link" href=""> <img src="assets/images/white.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">7Seasons Apartments Budapest</h6>
-
-                          <p class="card-text"><small class="text-muted">7Seasons Apartments Budapest
-                                  06.
-                                  Starting from
-                                  <strong class="text-dark fw-bold">US$98</strong>
-                              </small></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3  border-0 ">
-                      <a class="stritched-link" href=""> <img src="assets/images/bed.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">Aparthotel Stare Miasto</h6>
-
-                          <p class="card-text"><small class="text-muted">Prague 1, Czech Republic, Praha 1
-                                  Starting from <strong class="text-dark fw-bold">US$141</strong>
-                              </small></p>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="col-md-3 col-sm-6 pe-0 ">
-                  <div class="card mb-3  border-0 rounded-0">
-                      <a class="stritched-link" href=""> <img src="assets/images/stairs.webp" class="card-img-top rounded-0"
-                              alt="..."> </a>
-                      <div class="card-body">
-                          <h6 class="card-title fw-bold">Cheval Three Quays at The Tower of London</h6>
-
-                          <p class="card-text"><small class="text-muted">Prague 1, Czech Republic, Praha 1
-                                  Starting from <strong class="text-dark fw-bold">US$431</strong>
-                              </small></p>
-                      </div>
-                  </div>
-              </div>
-
-
-
-
-          </div>
-
-
+      <div class="pt-4 mt-4 ms-2 ps-4">
+        <h4 class=" fw-bold ">Stay at our top unique properties</h4>
+        <h6 class=" text-muted">From castles and villas to boats and igloos, we have it all</h6>
       </div>
-
 
 
       <div class="row mt-3  ms-4 me-5 ">
 
 
 
-          <div class="col-md-3 col-sm-4 pe-0 ">
-              <div class="card mb-3 border-0 ">
-                  <a class="stritched-link" href=""> <img src="assets/images/giza.jpeg" class="card-img-top rounded-0"
-                          alt="..."> </a>
-                  <div class="card-body">
-                      <h6 class="card-title fw-bold"> Egypt </h6>
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3 border-0 ">
+            <a class="stritched-link" href=""> <img src="assets/images/snow.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">La Roulotte de Ciney</h6>
 
-                      <p class="card-text"><small class="text-muted">Travel community <br>
-                              79,016 travelers
-                          </small></p>
-                  </div>
-              </div>
+              <p class="card-text"><small class="text-muted">Belgium, Ciney
+                </small></p>
+            </div>
           </div>
+        </div>
 
-          <div class="col-md-3 col-sm-4 pe-0 ">
-              <div class="card mb-3  border-0 ">
-                  <a class="stritched-link" href=""> <img src="assets/images/friends.jpeg" class="card-img-top rounded-0"
-                          alt="..."> </a>
-                  <div class="card-body">
-                      <h6 class="card-title fw-bold">Travel discussions</h6>
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3  border-0 ">
+            <a class="stritched-link" href=""> <img src="assets/images/shelter.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Wierszyki Shelters</h6>
 
-                      <p class="card-text"><small class="text-muted">View forum <br>
-                              559,436 travelers
-
-                          </small></p>
-                  </div>
-              </div>
+              <p class="card-text"><small class="text-muted">Poland, Zakopane
+                </small></p>
+            </div>
           </div>
+        </div>
 
-          <div class="col-md-3 col-sm-4 pe-0 ">
-              <div class="card mb-3  border-0 ">
-                  <a class="stritched-link" href=""> <img src="assets/images/friends2.png" class="card-img-top rounded-0"
-                          alt="..."> </a>
-                  <div class="card-body">
-                      <h6 class="card-title fw-bold">More communities</h6>
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3  border-0 ">
+            <a class="stritched-link" href=""> <img src="assets/images/house.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Ranczo w Dolinie</h6>
 
-                      <p class="card-text"><small class="text-muted">View all <br>
-                              9,894,940 travelers
-                          </small></p>
-                  </div>
-              </div>
+              <p class="card-text"><small class="text-muted">Poland, Kiszkowo
+                </small></p>
+            </div>
           </div>
+        </div>
 
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3  border-0 rounded-0">
+            <a class="stritched-link" href=""> <img src="assets/images/wood.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">Tiny House Dreischwesternherz</h6>
 
+              <p class="card-text"><small class="text-muted">Germany, Trier
+                </small></p>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -889,4 +744,139 @@
       </div>
 
 
+    </div>
 
+    <div class=" container-md ">
+      <!-- container for all the elements 6 coloumns countries -->
+
+
+      <div class="pt-4 mt-4 ms-2 ps-4">
+        <h4 class=" fw-bold ">{{'Homes guests love'|translate}}</h4>
+
+      </div>
+
+
+      <div class="row mt-3  ms-4 me-5 ">
+
+
+
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3 border-0 ">
+            <a class="stritched-link" href=""> <img src="assets/images/prague.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">{{'Aparthotel Stare Miasto'|translate}}</h6>
+
+              <p class=" card-text"><small class="text-muted">Prague 1, Czech Republic, Praha 1
+                  Starting from <strong class="text-dark fw-bold">US$131</strong>
+                </small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3  border-0 ">
+            <a class="stritched-link" href=""> <img src="assets/images/white.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">{{'7Seasons Apartments Budapest'|translate}}</h6>
+
+              <p class="card-text"><small class="text-muted">7Seasons Apartments Budapest
+                  Starting from
+                  <strong class="text-dark fw-bold">US$98</strong>
+                </small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3  border-0 ">
+            <a class="stritched-link" href=""> <img src="assets/images/bed.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">{{'Aparthotel Stare Miasto'|translate}}</h6>
+
+              <p class="card-text"><small class="text-muted">Prague 1, Czech Republic, Praha 1
+                  Starting from <strong class="text-dark fw-bold">US$141</strong>
+                </small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 pe-0 ">
+          <div class="card mb-3  border-0 rounded-0">
+            <a class="stritched-link" href=""> <img src="assets/images/stairs.webp" class="card-img-top rounded-0"
+                alt="..."> </a>
+            <div class="card-body">
+              <h6 class="card-title fw-bold">{{'numa I Vita Apartments'|translate  }}</h6>
+
+              <p class="card-text"><small class="text-muted">Prague 1, Czech Republic, Praha 1
+                  Starting from <strong class="text-dark fw-bold">US$431</strong>
+                </small></p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="row mt-3  ms-4 me-5 ">
+
+      <div class=" mb-2 {{'d-block'|translate}} " >
+        <h4 class=""> <strong> Connect with other travellers</strong></h4>
+      </div>
+
+
+      <div class="col-md-3 col-sm-4 pe-0 {{'d-block'|translate}} ">
+        <div class="card mb-3 border-0 ">
+          <a class="stritched-link" href=""> <img src="assets/images/giza.jpeg" class="card-img-top rounded-0"
+              alt="..."> </a>
+          <div class="card-body">
+            <h6 class="card-title fw-bold"> Egypt </h6>
+
+            <p class="card-text"><small class="text-muted">Travel community <br>
+                79,016 travelers
+              </small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 pe-0 {{'d-block'|translate}}">
+        <div class="card mb-3  border-0 ">
+          <a class="stritched-link" href=""> <img src="assets/images/friends.jpeg" class="card-img-top rounded-0"
+              alt="..."> </a>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">Travel discussions</h6>
+
+            <p class="card-text"><small class="text-muted">View forum <br>
+                559,436 travelers
+
+              </small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-4 pe-0 {{'d-block'|translate}}">
+        <div class="card mb-3  border-0 ">
+          <a class="stritched-link" href=""> <img src="assets/images/friends2.png" class="card-img-top rounded-0"
+              alt="..."> </a>
+          <div class="card-body">
+            <h6 class="card-title fw-bold">More communities</h6>
+
+            <p class="card-text"><small class="text-muted">View all <br>
+                9,894,940 travelers
+              </small></p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>

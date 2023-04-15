@@ -1,0 +1,135 @@
+<!-- Reviews -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Write your review
+</button>
+
+<div class="modal fade modal-dialog-scrollable" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-xl ">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">How users rated this hotel</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+<div class=" container mb-3">
+
+</div>
+
+
+<form #reviewForm="ngForm" (ngSubmit)="onReviewCreate(reviewForm.value)" class="row align-items-center ms-5 ">
+  <!-- Name input -->
+  <div class="col-2"></div>
+  <div class="col-lg-4 col-md-6">
+  <div class="form-outline mb-4">
+    <label class="form-label" for="typeNumber">Staff Rate:</label>
+    <input type="number" id="typeNumber" name="staffRate" class="form-control" ngModel />
+
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+     <label class="form-label" for="typeNumber">Comfort Rate: </label>
+    <input type="number" id="typeNumber" name="comfortRate"  class="form-control" ngModel />
+
+  </div>
+
+  <div class="form-outline mb-4">
+    <label class="form-label" for="typeNumber">Location Rate: </label>
+    <input type="number" id="typeNumber" name="locationRate"  class="form-control" ngModel/>
+
+  </div>
+</div>
+
+<div class="col-lg-4 col-md-6">
+
+  <div class="form-outline mb-4">
+    <label class="form-label" for="typeNumber">Value for money Rate: </label>
+    <input type="number" id="typeNumber" name="valueForMoneyRate"  class="form-control" ngModel/>
+
+  </div>
+
+  <div class="form-outline mb-4">
+    <label class="form-label" for="typeNumber">Cleanliness Rate:</label>
+    <input type="number" id="typeNumber" name="CleanlinessRate" class="form-control" ngModel/>
+
+  </div>
+  <div class="form-outline mb-4">
+    <label class="form-label" for="typeNumber">Facilities Rate:</label>
+    <input type="number" id="typeNumber" name="facilitiesRate" class="form-control" ngModel/>
+
+  </div>
+
+</div>
+
+
+  <!-- Message input -->
+  <div class="col-3"></div>
+  <div class="form-outline col-lg-3 mb-4 ">
+
+    <textarea class="form-control mt-4" id="form4Example3" name="positiveReview"  rows="4" placeholder="Positive Review" ngModel></textarea>
+
+  </div>
+  <div class="form-outline col-lg-3 mb-4 ">
+
+    <textarea class="form-control mt-4" id="form4Example3" name="negativeReview"  rows="4" placeholder="Negative Review" ngModel></textarea>
+
+  </div>
+
+  <!-- Submit button -->
+  <div class="col-5"></div>
+  <button type="submit" class="btn btn-primary col-2  text-center btn-block mb-4" >Submit</button>
+</form>
+
+</div>
+<hr class="my-5">
+<div class="mb-3">
+  <div class="d-lg-flex align-items-center justify-content-between mb-5">
+    <!-- Reviews -->
+    <div class="mb-3 mb-lg-0">
+      <h3 class="ms-5 text-center ">Hotel Reviews</h3>
+    </div>
+    <div>
+      <form class="form-inline">
+        <div class="d-flex align-items-center me-2">
+          <span class="position-absolute ps-3">
+            <i class="fe fe-search"></i>
+          </span>
+          <input type="search" class="form-control me-5" placeholder="Search Review">
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- Rating -->
+  <div class="d-flex align-items-start border rounded-3 ms-4 pb-4 mb-4" *ngFor=" let item of reviews">
+
+    <div class="ms-3">
+      <h4 class="my-4">
+        Max Hawkins
+        <span class="ms-1 fs-6 text-muted">2 Days ago</span>
+      </h4>
+      <div class="fs-6 mb-2">
+        <i class="mdi mdi-star me-n1 text-warning"></i>
+        <i class="mdi mdi-star me-n1 text-warning"></i>
+        <i class="mdi mdi-star me-n1 text-warning"></i>
+        <i class="mdi mdi-star me-n1 text-warning"></i>
+        <i class="mdi mdi-star me-n1 text-warning"></i>
+      </div>
+      <p>Positive review: {{item.positiveReview}}</p>
+      <p>Negative review: {{item.positiveReview}}</p>
+      <p>Staff Rate: {{item.staffRate}}</p>
+      <p>Comfort Rate: {{item.comfortRate}}</p>
+      <p>Location Rate: {{item.locationRate}}</p>
+      <p>Value for money Rate: {{item.valueForMoneyRate}}</p>
+
+      <div class="d-lg-flex">
+        <p class="mb-0">Was this review helpful?</p>
+        <a href="#" class="btn btn-xs btn-primary ms-lg-3">Yes</a>
+        <a href="#" class="btn btn-xs btn-outline-white ms-1">No</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+</div>

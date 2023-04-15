@@ -32,6 +32,7 @@ public sealed class BookingDbContext : DbContext
     public DbSet<Review> Reviews { get; set; }
     public DbSet<Room> Rooms { get; set; }
     public DbSet<RoomReservation> RoomReservations { get; set; }
+    public DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
