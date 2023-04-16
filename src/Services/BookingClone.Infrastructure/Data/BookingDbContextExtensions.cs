@@ -46,6 +46,7 @@ public static class BookingDbContextExtensions
         {
             var hotelsFaker = new Faker<Hotel>()
                 .RuleFor(h => h.Name, f => f.Company.CompanyName())
+                .RuleFor(h => h.StarRating, f => f.Random.Number(1, 5))
                 .RuleFor(h => h.Description, f => f.Company.CatchPhrase());
 
             context.Hotels.AddRange(hotelsFaker.Generate(20));
@@ -60,10 +61,10 @@ public static class BookingDbContextExtensions
                 .RuleFor(h => h.BedCount, f => f.Random.Number(1, 3))
                 .RuleFor(h => h.Price, f => f.Random.Decimal(100, 1000))
                 .RuleFor(h => h.ViewType, f => f.Random.Enum<RoomViewType>())
-                .RuleFor(h => h.IsAvailable, f => f.Random.Bool(0.7f))
+                .RuleFor(h => h.IsAvailable, f => f.Random.Bool(0.5f))
                 .RuleFor(h => h.HotelId, f => f.Random.Number(1, 20));
 
-            context.Rooms.AddRange(roomsFaker.Generate(20));
+            context.Rooms.AddRange(roomsFaker.Generate(40));
             context.SaveChanges();
         }
 
